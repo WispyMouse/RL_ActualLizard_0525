@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CampaignInfo>
+
+	<Name txt="Actual Lizard Tactics Jam Map for Pride"></Name>
+	
+	<Description txt="This is a work in progress campaign, containing one gameplay map. This is for the FE Actual Lizard game jam. The goal is to make a &quot;single chapter&quot; tactics rpg experience, with a theme based on &quot;Pride&quot;. This map contains a small, self-contained story about actualization and realizing your value, aided by embracing queer identity."></Description>
+	
+	<FirstScene txt="Introduction"></FirstScene>
+
+</CampaignInfo>
