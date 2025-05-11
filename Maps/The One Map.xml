@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/10/2025 9:06:46 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/11/2025 2:21:33 AM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Army 1" color="Blue" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Army 2" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -176,5 +176,71 @@
 	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,14,4,Right,None</Unit>
 	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,15,6,Right,None</Unit>
 	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,17,5,Right,None</Unit>
+
+	<Script>Set Lesbian Talkable
+		<Action>AddStatus/Kyat,Talkable</Action>
+		<Action>AddStatus/Nobeta,Talkable</Action>
+	</Script>
+
+	<Dialogue trigger="OnTalk/Kyat,Nobeta" convID="Lesbians Talk Dialogue" r="true">
+		<Branch num="0" name="">/
+			<Action>RemoveStatus/Kyat,Talkable</Action>
+			<Action>RemoveStatus/Nobeta,Talkable</Action>
+			<Action>SetVal/Lesbian Discussions Count,+:1</Action>
+			<Action>IfValGoTo/Lesbian Discussions Count,=,1,Go To First Lesbian Dialogue</Action>
+			<Action>IfValGoTo/Lesbian Discussions Count,=,2,Go To Second Lesbian Dialogue</Action>
+			<Action>IfValGoTo/Lesbian Discussions Count,=,3,Go To Third Lesbian Dialogue</Action>
+		</Branch>
+		<Branch num="1" name="Go To First Lesbian Dialogue">/
+			<Action>LoadConv/First Lesbian Dialogue</Action>
+		</Branch>
+		<Branch num="2" name="Go To Second Lesbian Dialogue">/
+			<Action>LoadConv/Second Lesbian Dialogue</Action>
+		</Branch>
+		<Branch num="3" name="Go To Third Lesbian Discussion">/
+			<Action>LoadConv/Third Lesbian Dialogue</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnTurn/-VAL:Next Turn-" convID="Round Start Dialogue" r="true">
+		<Branch num="0" name="">/
+			<Action>SetVal/Next Turn,+:1</Action>
+			<Action>IfValRun/Lesbian Discussions Count,l,2,Set Lesbian Talkable</Action>
+			<Action>AddTextOverlay/This is now turn -VAL:Next Turn-,3</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="BeforeTurn/0" convID="Map Start Dialogue" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/Lesbian Discussions Count,=:0</Action>
+			<Action>SetVal/Next Turn,=:0</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="First Lesbian Dialogue" r="false">
+		<Branch num="0" name="">Kyat/Wow, this would be a discussion! Our first one, I think.
+			<Action>AddPortrait/Kyat,Kyat,left</Action>
+			<Action>AddPortrait/Nobeta,Nobeta,right</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Second Lesbian Dialogue" r="false">
+		<Branch num="0" name="">Nobeta/Isn't this our second conversation? Well then.
+			<Action>AddPortrait/Kyat,Kyat,left</Action>
+			<Action>AddPortrait/Nobeta,Nobeta,right</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Third Lesbian Dialogue" r="false">
+		<Branch num="0" name="">Kyat/This is our third conversation. Well, I guess that's it then.
+			<Action>AddPortrait/Kyat,Kyat,left</Action>
+			<Action>AddPortrait/Nobeta,Nobeta,right</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
 
 </Level>
