@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/11/2025 2:21:33 AM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/11/2025 2:36:23 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Army 1" color="Blue" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Army 2" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -169,6 +169,7 @@
 	<Unit>0,0,Nobeta/,17,10,Left,None</Unit>
 	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,1,1,Down,None</Unit>
 	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,3,2,Down,None</Unit>
+	<Unit>0,1,Clark/,4,3,Down,None</Unit>
 	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,4,5,Down,None</Unit>
 	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,5,1,Down,None</Unit>
 	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,6,7,Down,None</Unit>
@@ -180,16 +181,23 @@
 	<Script>Set Lesbian Talkable
 		<Action>AddStatus/Kyat,Talkable</Action>
 		<Action>AddStatus/Nobeta,Talkable</Action>
+		<Action>SetString/Nobeta Can Talk,Nobeta</Action>
 	</Script>
 
-	<Dialogue trigger="OnTalk/Kyat,Nobeta" convID="Lesbians Talk Dialogue" r="true">
+	<Script>Set Lesbian Not Talkable
+		<Action>RemoveStatus/Kyat,Talkable</Action>
+		<Action>RemoveStatus/Nobeta,Talkable</Action>
+		<Action>SetString/Nobeta Can Talk,INVALID</Action>
+	</Script>
+
+	<Dialogue trigger="OnTalk/Kyat,-STR:Nobeta Can Talk-" convID="Lesbians Talk Dialogue" r="true">
 		<Branch num="0" name="">/
-			<Action>RemoveStatus/Kyat,Talkable</Action>
-			<Action>RemoveStatus/Nobeta,Talkable</Action>
+			<Action>Run/Set Lesbian Not Talkable</Action>
 			<Action>SetVal/Lesbian Discussions Count,+:1</Action>
 			<Action>IfValGoTo/Lesbian Discussions Count,=,1,Go To First Lesbian Dialogue</Action>
 			<Action>IfValGoTo/Lesbian Discussions Count,=,2,Go To Second Lesbian Dialogue</Action>
 			<Action>IfValGoTo/Lesbian Discussions Count,=,3,Go To Third Lesbian Dialogue</Action>
+			<Action>EndConvImmediately/</Action>
 		</Branch>
 		<Branch num="1" name="Go To First Lesbian Dialogue">/
 			<Action>LoadConv/First Lesbian Dialogue</Action>
@@ -197,16 +205,15 @@
 		<Branch num="2" name="Go To Second Lesbian Dialogue">/
 			<Action>LoadConv/Second Lesbian Dialogue</Action>
 		</Branch>
-		<Branch num="3" name="Go To Third Lesbian Discussion">/
+		<Branch num="3" name="Go To Third Lesbian Dialogue">/
 			<Action>LoadConv/Third Lesbian Dialogue</Action>
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnTurn/-VAL:Next Turn-" convID="Round Start Dialogue" r="true">
+	<Dialogue trigger="OnTurn/-VAL:Turn Trigger-" convID="Round Start Dialogue" r="true">
 		<Branch num="0" name="">/
-			<Action>SetVal/Next Turn,+:1</Action>
-			<Action>IfValRun/Lesbian Discussions Count,l,2,Set Lesbian Talkable</Action>
-			<Action>AddTextOverlay/This is now turn -VAL:Next Turn-,3</Action>
+			<Action>SetVal/Turn Trigger,+:1</Action>
+			<Action>IfValRun/Lesbian Discussions Count,l,3,Set Lesbian Talkable</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
@@ -214,7 +221,9 @@
 	<Dialogue trigger="BeforeTurn/0" convID="Map Start Dialogue" r="false">
 		<Branch num="0" name="">/
 			<Action>SetVal/Lesbian Discussions Count,=:0</Action>
-			<Action>SetVal/Next Turn,=:0</Action>
+			<Action>SetVal/Turn Trigger,0</Action>
+			<Action>AddTagToArmy/1,Passive</Action>
+			<Action>Run/Set Lesbian Talkable</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
@@ -223,6 +232,8 @@
 		<Branch num="0" name="">Kyat/Wow, this would be a discussion! Our first one, I think.
 			<Action>AddPortrait/Kyat,Kyat,left</Action>
 			<Action>AddPortrait/Nobeta,Nobeta,right</Action>
+			<Action>SetStat/Kyat,Morale,+:2</Action>
+			<Action>SetStat/Nobeta,Morale,+:2</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -231,6 +242,8 @@
 		<Branch num="0" name="">Nobeta/Isn't this our second conversation? Well then.
 			<Action>AddPortrait/Kyat,Kyat,left</Action>
 			<Action>AddPortrait/Nobeta,Nobeta,right</Action>
+			<Action>SetStat/Kyat,Morale,+:2</Action>
+			<Action>SetStat/Nobeta,Morale,+:2</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -239,6 +252,40 @@
 		<Branch num="0" name="">Kyat/This is our third conversation. Well, I guess that's it then.
 			<Action>AddPortrait/Kyat,Kyat,left</Action>
 			<Action>AddPortrait/Nobeta,Nobeta,right</Action>
+			<Action>SetStat/Kyat,Morale,+:2</Action>
+			<Action>SetStat/Nobeta,Morale,+:2</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnTalk/Clark,Harrien" convID="Clark Dialogue" r="false">
+		<Branch num="0" name="">Clark/Man, I really don't wanna fight you. I was really hoping someone else would handle you... look at those arms! You could tear me apart!
+			<Action>AddPortrait/Clark,Clark,left</Action>
+			<Action>AddPortrait/Harrien,Harrien,right</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Harrien/...Well, that just sucks all the fun out of fighting you. What's someone so meek doing with this lot?
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="2" name="">Clark/I... really don't know. I've been trying to find where it went wrong, but all I can really conclude is that I made very dumb decisions.
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="3" name="">Harrien/Sounds like a lot of us, honestly.  ...Look, I can't undo the stuff you've been dealt, but I can offer you an out. C'mon and join us! If you're on the field, you must have some skill, right?
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="4" name="">Clark/W-w-what? Um, I... no, I'd really just weigh you down.
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="5" name="">Harrien/Hey, c'mon, look at these guns. A little extra weight won't bug me.
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="6" name="">Clark/...W-well, okay. ...Thank you.
+			<Action>SetStat/Clark,Army,=:0</Action>
+			<Action>RemoveConv/Clark Dialogue</Action>
+			<Action>RemoveStatus/Clark,Talkable</Action>
+			<Action>RemovePortrait/Clark</Action>
+			<Action>AddPortrait/Clark,Clark,left</Action>
+			<Action>SetStat/Clark,Morale,=4</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
