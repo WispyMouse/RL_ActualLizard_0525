@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/11/2025 9:39:15 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/11/2025 9:51:14 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Army 1" color="Blue" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Army 2" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -24,16 +24,17 @@
 	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,03.01</Row>
 	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,03.01</Row>
 	<Row>01.01,01.01,03.01,03.01,01.01,01.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
-	<Row>04.2Q,05.01,03.0n,03.01,05.3F,05.3Q,01.01,01.01,01.01,01.01,01.01,01.01,01.01,02.07,02.3C,02.3C,05.2R</Row>
-	<Row>04.02,04.06,03.0w,03.0o,05.01,05.2P,01.0f,01.01,01.01,01.01,01.01,01.01,01.01,02.3A,02.01,02.0c,05.01</Row>
-	<Row>04.2O,04.08,03.1h,03.0o,05.01,05.2P,01.0i,01.0m,01.01,01.01,01.01,01.01,01.0n,02.09,02.3z,02.05,05.01</Row>
-	<Row>06.01,06.01,01.01,01.01,05.0K,05.09,05.2O,01.01,01.01,01.01,01.01,01.01,01.01,05.2O,05.2O,05.09,05.07</Row>
-	<Row>06.01,06.01,01.01,01.01,06.01,05.0O,05.0K,05.0K,05.0P,06.01,06.01,06.01,05.0L,05.01,05.01,05.09,05.2P</Row>
-	<Row>06.01,06.01,03.1L,03.1M,06.01,06.01,06.01,06.01,06.01,06.01,06.01,04.0Q,04.0U,04.0d,04.0h,05.01,05.2P</Row>
-	<Row>06.01,06.01,03.1L,03.02,03.06,04.0N,04.0N,04.0N,03.07,03.1K,03.1K,03.1K,03.1K,03.1K,05.2R,05.2R,05.07</Row>
-	<Row>03.1c,03.1c,03.1L,03.01,03.02,03.1K,03.1K,03.1K,03.03,03.01,03.01,03.01,03.01,03.0o,05.01,05.07,05.03</Row>
-	<Row>03.0m,03.0m,03.1L,03.0u,03.01,03.01,03.01,03.01,03.0v,03.0m,03.0m,03.0u,03.01,03.0o,05.01,05.2P,05.01</Row>
-	<Row>05.01,05.01,05.2P,03.0q,03.0u,03.01,03.01,03.0v,03.0r,05.01,05.01,03.0n,03.01,03.0x,05.07,05.03,05.01</Row>
+	<Row>04.2Q,05.01,03.0n,03.01,05.3F,05.3Q,01.01,01.01,01.01,01.01,01.01,01.01,03.01,03.07,03.1K,03.1K,03.1K</Row>
+	<Row>04.02,04.06,03.0w,03.0o,05.01,05.2P,01.0f,01.01,01.01,01.01,01.01,01.01,03.01,03.1L,03.01,03.01,03.01</Row>
+	<Row>04.2O,04.08,03.1h,03.0o,05.01,05.2P,01.0i,01.0m,01.01,01.01,01.01,01.01,03.01,03.09,03.1J,03.05,03.0u</Row>
+	<Row>06.01,06.01,01.01,01.01,05.0K,05.2P,05.01,01.0f,01.01,01.01,01.01,01.01,03.01,05.01,05.01,05.2P,05.07</Row>
+	<Row>06.01,06.01,01.01,01.01,06.01,05.09,05.2O,03.1J,03.1J,03.1J,03.1J,03.1J,03.1J,05.2O,05.05,05.09,05.2P</Row>
+	<Row>06.01,06.01,01.01,01.01,06.01,05.0O,05.0K,05.0K,05.0P,06.01,06.01,05.0L,05.01,05.01,05.2P,05.01,05.2P</Row>
+	<Row>06.01,06.01,01.01,01.01,06.01,06.01,06.01,06.01,06.01,06.01,06.01,05.0L,04.0g,04.0d,05.2P,05.01,05.2P</Row>
+	<Row>06.01,06.01,03.1a,03.1k,03.1c,04.0N,04.0N,03.07,03.1K,03.1K,03.1K,03.1K,03.1K,03.1K,05.03,05.01,05.2P</Row>
+	<Row>03.1c,03.1c,03.1j,03.07,03.1K,03.1K,03.1K,03.03,03.0k,03.01,03.01,03.01,03.01,03.0o,05.01,05.07,05.03</Row>
+	<Row>03.0m,03.0m,03.0u,03.1L,03.01,03.01,03.01,03.01,03.0v,03.0m,03.0m,03.0u,03.01,03.0o,05.01,05.2P,05.01</Row>
+	<Row>05.01,05.01,05.07,03.03,03.0u,03.01,03.01,03.0v,03.0r,05.01,05.01,03.0n,03.01,03.0x,05.07,05.03,05.01</Row>
 	<Row>05.01,05.01,05.2P,05.01,03.0n,03.01,03.01,03.0o,05.01,05.01,05.01,03.0n,03.01,03.01,05.2P,05.01,05.01</Row>
 	
 	<RowElev>1,1,1,1,1,1,2,3,2,2,2,2,2,2,2,2,2</RowElev>
@@ -49,13 +50,14 @@
 	<RowElev>2,2,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3</RowElev>
 	<RowElev>2,2,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3</RowElev>
 	<RowElev>0,0,2,2,1,2,2,2,2,2,2,2,2,2,2,3,4</RowElev>
-	<RowElev>0,0,2,2,0,1,1,1,1,0,0,0,1,1,1,2,4</RowElev>
-	<RowElev>0,0,2,2,0,0,0,0,0,0,0,1,1,1,1,1,4</RowElev>
-	<RowElev>0,0,2,2,2,1,1,1,2,2,2,2,2,2,2,2,5</RowElev>
-	<RowElev>1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,5,5</RowElev>
-	<RowElev>1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,5,5</RowElev>
-	<RowElev>1,1,2,2,2,2,2,2,2,2,2,2,2,2,5,5,5</RowElev>
-	<RowElev>1,1,2,2,2,2,2,2,2,2,2,2,2,2,5,5,5</RowElev>
+	<RowElev>0,0,2,2,0,2,2,2,2,2,2,2,2,2,2,3,4</RowElev>
+	<RowElev>0,0,2,2,0,1,1,1,1,0,0,1,1,1,2,2,4</RowElev>
+	<RowElev>0,0,2,2,0,0,0,0,0,0,0,1,1,1,2,2,4</RowElev>
+	<RowElev>0,0,1,1,1,1,1,2,2,2,2,2,2,2,2,2,4</RowElev>
+	<RowElev>1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,4,4</RowElev>
+	<RowElev>1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,4,4</RowElev>
+	<RowElev>1,1,2,2,2,2,2,2,2,2,2,2,2,2,4,4,4</RowElev>
+	<RowElev>1,1,2,2,2,2,2,2,2,2,2,2,2,2,4,4,4</RowElev>
 	
 	<Unit>0,99,BookcaseFull,0,1,None,None</Unit>
 	<Unit>0,99,BookcaseFull,0,2,None,None</Unit>
@@ -89,7 +91,8 @@
 	<Unit>0,99,RugTurq9T,3,12,None,None</Unit>
 	<Unit>0,99,RugTurq9T,3,13,None,None</Unit>
 	<Unit>0,99,RugTurq9T,3,14,None,None</Unit>
-	<Unit>0,99,HouseWallVertical,3,16,None,None</Unit>
+	<Unit>0,99,RugTurq9T,3,15,None,None</Unit>
+	<Unit>0,99,RugTurq9T,3,16,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,4,4,None,None</Unit>
 	<Unit>0,99,Rug9L,4,5,None,None</Unit>
 	<Unit>0,99,Rug9C,4,6,None,None</Unit>
@@ -101,7 +104,8 @@
 	<Unit>0,99,RugTurq9B,4,12,None,None</Unit>
 	<Unit>0,99,RugTurq9B,4,13,None,None</Unit>
 	<Unit>0,99,RugTurq9B,4,14,None,None</Unit>
-	<Unit>0,99,HouseWallVertical,4,16,None,None</Unit>
+	<Unit>0,99,RugTurq9B,4,15,None,None</Unit>
+	<Unit>0,99,RugTurq9B,4,16,None,None</Unit>
 	<Unit>0,99,ClothingBin,5,3,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,5,4,None,None</Unit>
 	<Unit>0,99,Rug9L,5,5,None,None</Unit>
@@ -147,61 +151,72 @@
 	<Unit>0,99,HouseWallHorizontal,8,15,None,None</Unit>
 	<Unit>0,99,HouseWallSE,8,16,None,None</Unit>
 	<Unit>0,99,Bush,9,1,None,None</Unit>
+	<Unit>0,99,PlanterLilies,9,5,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,9,6,None,None</Unit>
 	<Unit>0,99,BookcaseFull,9,7,None,None</Unit>
 	<Unit>0,99,RackSparse,9,11,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,9,12,None,None</Unit>
 	<Unit>0,99,Barrel,9,13,None,None</Unit>
 	<Unit>0,99,Chair,9,14,None,None</Unit>
-	<Unit>0,99,Tree,9,16,None,None</Unit>
 	<Unit>0,99,Barrel,10,0,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,10,6,None,None</Unit>
 	<Unit>0,99,TableBeer,10,8,None,None</Unit>
 	<Unit>0,99,DoorWoodVertical,10,12,None,None</Unit>
 	<Unit>0,99,TableFood,10,14,None,None</Unit>
-	<Unit>0,99,ReedsFlower,10,16,None,None</Unit>
 	<Unit>0,99,FruitStandStriped_E,11,0,None,None</Unit>
 	<Unit>0,99,HouseWallSW,11,6,None,None</Unit>
 	<Unit>0,99,HouseWallNE,11,7,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,11,12,None,None</Unit>
-	<Unit>0,99,ReedsFlower,12,6,None,None</Unit>
-	<Unit>0,99,HouseWallSW,12,7,None,None</Unit>
-	<Unit>0,99,HouseWallHorizontal,12,8,None,None</Unit>
-	<Unit>0,99,HouseWallHorizontal,12,9,None,None</Unit>
-	<Unit>0,99,HouseWallHorizontal,12,10,None,None</Unit>
-	<Unit>0,99,HouseWallHorizontal,12,11,None,None</Unit>
-	<Unit>0,99,HouseWallSE,12,12,None,None</Unit>
-	<Unit>0,99,Wildflowers,12,15,None,None</Unit>
-	<Unit>0,99,Barrel,13,3,None,None</Unit>
-	<Unit>0,99,ReedsFlowerSmall,13,12,None,None</Unit>
-	<Unit>0,99,WildflowersAlt,13,14,None,None</Unit>
-	<Unit>0,99,Bush,14,14,None,None</Unit>
-	<Unit>0,99,Wildflowers,15,16,None,None</Unit>
-	<Unit>0,99,Birdbath,16,15,None,None</Unit>
-	<Unit>0,99,Reeds,17,14,None,None</Unit>
-	<Unit>0,99,Caravan_E,18,0,None,None</Unit>
-	<Unit>0,99,Reeds,18,9,None,None</Unit>
-	<Unit>0,99,Evergreen,18,10,None,None</Unit>
-	<Unit>0,99,Wildflowers,18,14,None,None</Unit>
-	<Unit>0,99,Bush,19,3,None,None</Unit>
-	<Unit>0,99,WildflowersAlt,19,8,None,None</Unit>
-	<Unit>0,99,TreeFruit,19,9,None,Apple/Apple/Apple</Unit>
-	<Unit>0,0,Arora/,15,12,Up,None</Unit>
-	<Unit>0,0,Drasan/Winterbloom,16,11,Left,None</Unit>
-	<Unit>0,0,Nobeta/,16,13,Left,None</Unit>
-	<Unit>0,0,Harrien/,17,10,Left,None</Unit>
-	<Unit>0,0,Kyat/,18,13,Left,None</Unit>
-	<Unit>0,1,Clark/,4,3,Down,None</Unit>
-	<Unit>0,1,Rabble Rouser Crossbowjock/,9,3,Down,None</Unit>
-	<Unit tag="Passive">0,1,Rubble Rouser Bruiser/,9,8,Down,None</Unit>
-	<Unit>0,1,Rubble Rouser Bruiser/,10,15,Left,None</Unit>
-	<Unit tag="Passive">0,1,Rabble Rouser Crossbowjock/,11,8,Up,None</Unit>
-	<Unit>0,1,Rubble Rouser Golem/,12,2,Down,None</Unit>
-	<Unit>0,1,Rubble Rouser Golem/,15,9,Right,None</Unit>
-	<Unit>0,1,Rubble Rouser Golem/,16,7,Right,None</Unit>
-	<Unit>0,1,Rubble Rouser Bruiser/,17,0,Down,None</Unit>
-	<Unit>0,1,Rubble Rouser Golem/,17,3,Right,None</Unit>
-	<Unit tag="Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,17,6,Right,None</Unit>
+	<Unit>0,99,HouseWallVertical,12,7,None,None</Unit>
+	<Unit>0,99,HouseWallVertical,12,12,None,None</Unit>
+	<Unit>0,99,Bush,12,13,None,None</Unit>
+	<Unit>0,99,Tree,12,16,None,None</Unit>
+	<Unit>0,99,ReedsFlower,13,6,None,None</Unit>
+	<Unit>0,99,HouseWallSW,13,7,None,None</Unit>
+	<Unit>0,99,HouseWallHorizontal,13,8,None,None</Unit>
+	<Unit>0,99,HouseWallHorizontal,13,9,None,None</Unit>
+	<Unit>0,99,HouseWallHorizontal,13,10,None,None</Unit>
+	<Unit>0,99,HouseWallHorizontal,13,11,None,None</Unit>
+	<Unit>0,99,HouseWallSE,13,12,None,None</Unit>
+	<Unit>0,99,Wildflowers,13,15,None,None</Unit>
+	<Unit>0,99,Barrel,14,3,None,None</Unit>
+	<Unit>0,99,ReedsFlowerSmall,14,12,None,None</Unit>
+	<Unit>0,99,WildflowersAlt,14,14,None,None</Unit>
+	<Unit>0,99,Bush,15,14,None,None</Unit>
+	<Unit>0,99,ReedsSmall,16,6,None,None</Unit>
+	<Unit>0,99,Wildflowers,16,16,None,None</Unit>
+	<Unit>0,99,Birdbath,17,15,None,None</Unit>
+	<Unit>0,99,Reeds,18,14,None,None</Unit>
+	<Unit>0,99,Caravan_E,19,0,None,None</Unit>
+	<Unit>0,99,Reeds,19,9,None,None</Unit>
+	<Unit>0,99,Evergreen,19,10,None,None</Unit>
+	<Unit>0,99,Wildflowers,19,14,None,None</Unit>
+	<Unit>0,99,Bush,20,3,None,None</Unit>
+	<Unit>0,99,WildflowersAlt,20,8,None,None</Unit>
+	<Unit>0,99,TreeFruit,20,9,None,Apple/Apple/Apple</Unit>
+	<Unit>0,0,Arora/,16,12,Up,None</Unit>
+	<Unit>0,0,Drasan/Winterbloom,17,11,Left,None</Unit>
+	<Unit>0,0,Nobeta/,17,13,Left,None</Unit>
+	<Unit>0,0,Harrien/,18,10,Left,None</Unit>
+	<Unit>0,0,Kyat/,19,13,Left,None</Unit>
+	<Unit>0,1,Rubble Rouser Golem/,0,12,Up,None</Unit>
+	<Unit tag="Passive/Add,LevelUp,4">0,1,Rabble Rouser Crossbowjock/,2,1,Down,None</Unit>
+	<Unit tag="Passive/Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,3,6,Down,None</Unit>
+	<Unit tag="Passive/Add,LevelUp,4">0,1,Rabble Rouser Crossbowjock/,3,11,Left,None</Unit>
+	<Unit tag="Passive">0,1,Clark/,4,3,Left,None</Unit>
+	<Unit>0,1,Rubble Rouser Golem/,6,3,Left,None</Unit>
+	<Unit tag="Passive/Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,6,6,Up,None</Unit>
+	<Unit>0,1,Rubble Rouser Golem/,7,1,Up,None</Unit>
+	<Unit tag="Passive">0,1,Rubble Rouser Golem/,7,15,Right,None</Unit>
+	<Unit tag="Passive/Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,9,8,Down,None</Unit>
+	<Unit tag="Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,10,15,Left,None</Unit>
+	<Unit tag="Passive/Add,LevelUp,4">0,1,Rabble Rouser Crossbowjock/,11,8,Up,None</Unit>
+	<Unit>0,1,Rubble Rouser Golem/,13,2,Down,None</Unit>
+	<Unit>0,1,Rubble Rouser Golem/,13,14,Down,None</Unit>
+	<Unit>0,1,Rubble Rouser Golem/,16,9,Right,None</Unit>
+	<Unit tag="Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,18,0,Down,None</Unit>
+	<Unit>0,1,Rubble Rouser Golem/,18,3,Right,None</Unit>
+	<Unit tag="Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,18,6,Right,None</Unit>
 
 	<Script>Set Lesbian Talkable
 		<Action>AddStatus/Nobeta,Talkable</Action>
