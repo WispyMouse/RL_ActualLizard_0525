@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/11/2025 9:51:14 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/12/2025 4:20:40 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Army 1" color="Blue" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Army 2" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -219,8 +219,8 @@
 	<Unit tag="Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,18,6,Right,None</Unit>
 
 	<Script>Set Lesbian Talkable
+		<Action>AddStatus/Kyat,Talkable</Action>
 		<Action>AddStatus/Nobeta,Talkable</Action>
-		<Action>SetString/Nobeta Can Talk,Nobeta</Action>
 		<Action>SetString/Nobeta Can Talk,Nobeta</Action>
 	</Script>
 
