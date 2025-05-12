@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/12/2025 4:20:40 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/12/2025 4:45:58 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Army 1" color="Blue" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Army 2" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -135,7 +135,7 @@
 	<Unit>0,99,HouseWallVertical,7,16,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,8,0,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,8,1,None,None</Unit>
-	<Unit tag="Open">0,99,DoorWood,8,2,None,None</Unit>
+	<Unit>0,99,DoorWood,8,2,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,8,3,None,None</Unit>
 	<Unit>0,99,HouseWallT_S,8,4,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,8,5,None,None</Unit>
@@ -199,18 +199,18 @@
 	<Unit>0,0,Nobeta/,17,13,Left,None</Unit>
 	<Unit>0,0,Harrien/,18,10,Left,None</Unit>
 	<Unit>0,0,Kyat/,19,13,Left,None</Unit>
-	<Unit>0,1,Rubble Rouser Golem/,0,12,Up,None</Unit>
-	<Unit tag="Passive/Add,LevelUp,4">0,1,Rabble Rouser Crossbowjock/,2,1,Down,None</Unit>
-	<Unit tag="Passive/Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,3,6,Down,None</Unit>
-	<Unit tag="Passive/Add,LevelUp,4">0,1,Rabble Rouser Crossbowjock/,3,11,Left,None</Unit>
-	<Unit tag="Passive">0,1,Clark/,4,3,Left,None</Unit>
-	<Unit>0,1,Rubble Rouser Golem/,6,3,Left,None</Unit>
-	<Unit tag="Passive/Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,6,6,Up,None</Unit>
-	<Unit>0,1,Rubble Rouser Golem/,7,1,Up,None</Unit>
-	<Unit tag="Passive">0,1,Rubble Rouser Golem/,7,15,Right,None</Unit>
-	<Unit tag="Passive/Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,9,8,Down,None</Unit>
+	<Unit tag="Passive/Pursue/AggroGroup,2">0,1,Rubble Rouser Golem/,0,12,Up,None</Unit>
+	<Unit tag="Passive/Pursue/Add,LevelUp,4">0,1,Rabble Rouser Crossbowjock/,2,1,Down,None</Unit>
+	<Unit tag="Passive/Add,LevelUp,4/Pursue/AggroGroup,2">0,1,Rubble Rouser Bruiser/,3,6,Down,None</Unit>
+	<Unit tag="Passive/Add,LevelUp,4/Pursue/AggroGroup,2">0,1,Rabble Rouser Crossbowjock/,3,11,Left,None</Unit>
+	<Unit tag="AggroGroup,1/Passive/Pursue">0,1,Clark/,4,3,Left,None</Unit>
+	<Unit tag="AggroGroup,1/Passive/Pursue">0,1,Rubble Rouser Golem/,6,3,Left,None</Unit>
+	<Unit tag="Passive/Add,LevelUp,4/Pursue/AggroGroup,2">0,1,Rubble Rouser Bruiser/,6,6,Up,None</Unit>
+	<Unit tag="AggroGroup,1/Passive/Pursue">0,1,Rubble Rouser Golem/,7,1,Up,None</Unit>
+	<Unit tag="Passive/Pursue/AggroGroup,2">0,1,Rubble Rouser Golem/,7,15,Right,None</Unit>
+	<Unit tag="Passive/Add,LevelUp,4/Pursue/AggroGroup,3">0,1,Rubble Rouser Bruiser/,9,8,Down,None</Unit>
 	<Unit tag="Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,10,15,Left,None</Unit>
-	<Unit tag="Passive/Add,LevelUp,4">0,1,Rabble Rouser Crossbowjock/,11,8,Up,None</Unit>
+	<Unit tag="Passive/Add,LevelUp,4/Pursue/AggroGroup,3">0,1,Rabble Rouser Crossbowjock/,11,8,Up,None</Unit>
 	<Unit>0,1,Rubble Rouser Golem/,13,2,Down,None</Unit>
 	<Unit>0,1,Rubble Rouser Golem/,13,14,Down,None</Unit>
 	<Unit>0,1,Rubble Rouser Golem/,16,9,Right,None</Unit>
@@ -298,14 +298,18 @@
 	<Dialogue trigger="BeforeTurn/0" convID="Map Start Dialogue" r="false">
 		<Branch num="0" name="">/
 			<Action>SetVal/Lesbian Discussions Count,=:0</Action>
-			<Action>SetVal/Turn Trigger,0</Action>
 			<Action>AddTagToArmy/1,Passive</Action>
 			<Action>Run/Set Lesbian Talkable</Action>
 			<Action>SetVal/Asandr Name Progress,0</Action>
 			<Action>SetString/Asandr Current Name,Drasan Winterbloom</Action>
 			<Action>SetArea/Clothing Zone,0,8,0,4</Action>
 			<Action>SetString/AndrasReadyToShave,INVALID</Action>
+			<Action>SetArea/West Approach,0,16,0,4</Action>
+			<Action>SetArea/Dressing Room Door,0,3,0,4</Action>
+			<Action>SetArea/Theater,0,8,4,16</Action>
+			<Action>SetArea/Outside Hut,8,13,6,12</Action>
 			<Action>EndConvImmediately/</Action>
+			<Action>/</Action>
 		</Branch>
 	</Dialogue>
 
@@ -367,6 +371,7 @@
 			<Action>RemovePortrait/Clark</Action>
 			<Action>AddPortrait/Clark,Clark,left</Action>
 			<Action>SetStat/Clark,Morale,=4</Action>
+			<Action>RemoveConv/West Approach Recognized</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -398,6 +403,27 @@
 			<Action>Run/Swap Out Unit,Prefix,Swap Out Name,Andras Winterbloom,Swap In Name,Rasand Winterbloom</Action>
 			<Action>AddPortrait/Rasand Winterbloom,Rasand Winterbloom,,Happy</Action>
 			<Action>PortraitParticles/Rasand Winterbloom,Heart</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnReachingArea/West Approach,,0" convID="West Approach Recognized" r="false">
+		<Branch num="0" name="">Clark/I think I heard something.
+			<Action>AddPortrait/Clark,Clark,left,,Worried</Action>
+			<Action>AddPortrait/Rubble Rouser Crossbowjock,Rubble Rouser Crossbowjock,right,,Mean</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Rubble Rouser Crossbowjock/Then do something about it!
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="2" name="">Clark/Uh... alright...
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="3" name="">Clark/I'm really not cut out for this job. [He sighs]
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Clark,Clark,right,,Sad</Action>
+			<Action>AddStatus/Clark,Talkable</Action>
+			<Action>RemoveTagFromGroup/1,Passive</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
