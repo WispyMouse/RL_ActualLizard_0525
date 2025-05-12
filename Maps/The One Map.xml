@@ -160,7 +160,7 @@
 	<Unit>0,99,HouseWallHorizontal,12,10,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,12,11,None,None</Unit>
 	<Unit>0,99,HouseWallSE,12,12,None,None</Unit>
-	<Unit>0,0,Andras/Winterbloom,9,2,Down,None</Unit>
+	<Unit>0,0,Drasan/Winterbloom,9,2,Down,None</Unit>
 	<Unit>0,0,Arora/,14,9,Left,None</Unit>
 	<Unit>0,0,Harrien/,16,8,Left,None</Unit>
 	<Unit>0,0,Kyat/,16,11,Left,None</Unit>
@@ -180,12 +180,12 @@
 		<Action>SetString/Nobeta Can Talk,INVALID</Action>
 	</Script>
 
-	<Script>Sandra Progresses Script
-		<Action>SetVal/Sandra Name Progress,+:1</Action>
-		<Action>IfValRun/Sandra Name Progress,=,4,Swap Out Unit,Swap Out Name,Asandr Winterbloom,Swap In Name,Sandra Winterbloom</Action>
-		<Action>IfValRun/Sandra Name Progress,=,3,Swap Out Unit,Swap Out Name,Rasand Winterbloom,Swap In Name,Asandr Winterbloom</Action>
-		<Action>IfValRun/Sandra Name Progress,=,2,Swap Out Unit,Swap Out Name,Drasan Winterbloom,Swap In Name,Rasand Winterbloom</Action>
-		<Action>IfValRun/Sandra Name Progress,=,1,Swap Out Unit,Swap Out Name,Andras Winterbloom,Swap In Name,Drasan Winterbloom</Action>
+	<Script>Asandr Progresses Script
+		<Action>SetVal/Asandr Name Progress,+:1</Action>
+		<Action>IfValRun/Asandr Name Progress,=,4,Swap Out Unit,Swap Out Name,Sandra Winterbloom,Swap In Name,Asandr Winterbloom</Action>
+		<Action>IfValRun/Asandr Name Progress,=,3,Swap Out Unit,Swap Out Name,Rasand Winterbloom,Swap In Name,Sandra Winterbloom</Action>
+		<Action>IfValRun/Asandr Name Progress,=,2,Swap Out Unit,Swap Out Name,Rasand Winterbloom,Swap In Name,Andras Winterbloom</Action>
+		<Action>IfValRun/Asandr Name Progress,=,1,Swap Out Unit,Swap Out Name,Drasan Winterbloom,Swap In Name,Andras Winterbloom</Action>
 	</Script>
 
 	<Script>Swap Out Unit
@@ -239,7 +239,7 @@
 		<Branch num="0" name="">/
 			<Action>SetVal/Turn Trigger,+:1</Action>
 			<Action>IfValRun/Lesbian Discussions Count,l,3,Set Lesbian Talkable</Action>
-			<Action>IfValRun/Sandra Name Progress,=,1,SetString,DrasanReadyToShave,Drasan Winterbloom</Action>
+			<Action>IfValRun/Asandr Name Progress,=,1,SetString,AndrasReadyToShave,Andras Winterbloom</Action>
 			<Action>EndConvImmediately/</Action>
 			<Action>/</Action>
 		</Branch>
@@ -251,10 +251,10 @@
 			<Action>SetVal/Turn Trigger,0</Action>
 			<Action>AddTagToArmy/1,Passive</Action>
 			<Action>Run/Set Lesbian Talkable</Action>
-			<Action>SetVal/Sandra Name Progress,0</Action>
-			<Action>SetString/Sandra Current Name,Andras Winterbloom</Action>
+			<Action>SetVal/Asandr Name Progress,0</Action>
+			<Action>SetString/Asandr Current Name,Drasan Winterbloom</Action>
 			<Action>SetArea/Clothing Zone,0,8,0,4</Action>
-			<Action>SetString/DrasanReadyToShave,INVALID</Action>
+			<Action>SetString/AndrasReadyToShave,INVALID</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
@@ -321,31 +321,31 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnReachingArea/Clothing Zone,Andras Winterbloom" convID="Sandra First Clothes" r="false">
-		<Branch num="0" name="">Andras Winterbloom/Oh, what do we have here? [Andras sees an open container of clothes for performers] This is...
-			<Action>AddPortrait/Andras Winterbloom,Andras Winterbloom,left,,Quizzical</Action>
+	<Dialogue trigger="OnReachingArea/Clothing Zone,Drasan Winterbloom" convID="Sandra First Clothes" r="false">
+		<Branch num="0" name="">Drasan Winterbloom/Oh, what do we have here? [Drasan sees an open container of clothes for performers] This is...
+			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,left,,Quizzical</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Andras Winterbloom/[Andras nervously grabs an outfit from the chest]
-			<Action>AddPortrait/Andras Winterbloom,Andras Winterbloom,left,,Concerned</Action>
+		<Branch num="1" name="">Drasan Winterbloom/[Drasan nervously grabs an outfit from the chest]
+			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,left,,Concerned</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">Drasan Winterbloom/I could... use a change.
-			<Action>Run/Sandra Progresses Script</Action>
-			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,left,,Happy</Action>
-			<Action>PortraitParticles/Drasan Winterbloom,Heart</Action>
+		<Branch num="2" name="">Andras Winterbloom/I could... use a change.
+			<Action>Run/Asandr Progresses Script</Action>
+			<Action>AddPortrait/Andras Winterbloom,Andras Winterbloom,left,,Happy</Action>
+			<Action>PortraitParticles/Andras Winterbloom,Heart</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharSelected/0,-STR:DrasanReadyToShave-" convID="Drasan Shaves" r="false">
-		<Branch num="0" name="">Drasan Winterbloom/If I can change anything, then... [Drasan carefully presses a sword to their lip]
-			<Action>SetString/DrasanReadyToShave,INVALID</Action>
-			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,left,,Nervous</Action>
+	<Dialogue trigger="OnCharSelected/0,-STR:AndrasReadyToShave-" convID="Andras Shaves" r="false">
+		<Branch num="0" name="">Andras Winterbloom/If I can change anything, then... [Andras carefully presses a sword to their lip]
+			<Action>SetString/AndrasReadyToShave,INVALID</Action>
+			<Action>AddPortrait/Andras Winterbloom,Andras Winterbloom,left,,Nervous</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Rasand Winterbloom/...that feels much better.
-			<Action>Run/Swap Out Unit,Prefix,Swap Out Name,Drasan Winterbloom,Swap In Name,Rasand Winterbloom</Action>
+			<Action>Run/Swap Out Unit,Prefix,Swap Out Name,Andras Winterbloom,Swap In Name,Rasand Winterbloom</Action>
 			<Action>AddPortrait/Rasand Winterbloom,Rasand Winterbloom,,Happy</Action>
 			<Action>PortraitParticles/Rasand Winterbloom,Heart</Action>
 			<Reply>Continue./NextBranch</Reply>
