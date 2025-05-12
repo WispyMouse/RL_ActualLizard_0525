@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/11/2025 2:36:23 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/11/2025 6:30:57 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Army 1" color="Blue" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Army 2" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -162,11 +162,13 @@
 	<Unit>0,99,HouseWallHorizontal,12,10,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,12,11,None,None</Unit>
 	<Unit>0,99,HouseWallSE,12,12,None,None</Unit>
+	<Unit>0,99,ItemSack,14,11,None,Apple</Unit>
+	<Unit trigger="Use,Drasan Progresses Script">0,99,Switch,15,10,None,None</Unit>
 	<Unit>0,0,Arora/,14,9,Left,None</Unit>
-	<Unit>0,0,Andras/,15,9,Left,None</Unit>
+	<Unit>0,0,Andras/Winterbloom,15,11,Left,None</Unit>
 	<Unit>0,0,Harrien/,16,8,Left,None</Unit>
 	<Unit>0,0,Kyat/,16,11,Left,None</Unit>
-	<Unit>0,0,Nobeta/,17,10,Left,None</Unit>
+	<Unit>0,0,Nobeta/,17,10,Up,None</Unit>
 	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,1,1,Down,None</Unit>
 	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,3,2,Down,None</Unit>
 	<Unit>0,1,Clark/,4,3,Down,None</Unit>
@@ -188,6 +190,36 @@
 		<Action>RemoveStatus/Kyat,Talkable</Action>
 		<Action>RemoveStatus/Nobeta,Talkable</Action>
 		<Action>SetString/Nobeta Can Talk,INVALID</Action>
+	</Script>
+
+	<Script>Drasan Progresses Script
+		<Action>LoadConv/Drasan Progresses</Action>
+	</Script>
+
+	<Script>Swap Out Unit
+		<Action>Run/Store Character Stats,Prefix,SwapOut,Character Name,-STR:Swap Out Name-</Action>
+		<Action>RemoveUnit/-STR:Swap Out Name-,false</Action>
+		<Action>SpawnUnit/0,-STR:Swap In Name-,-VAL:SwapOutY Coord-,-VAL:SwapOutX Coord-,-VAL:SwapOutFacing-,,-STR:SwapOutInventory-,false</Action>
+		<Action>Run/Load Character Stats,Character Name,-STR:Swap In Name-,Prefix,SwapOut</Action>
+	</Script>
+
+	<Script>Store Character Stats
+		<Action>SetList/Variables To List,Accuracy|Dodge|Counter Limit|Experience|Level|Morale|Perception|Psy|Reflexes|Slash Res.|Pierce Res.|Crush Res.|Mental Res.|Heat Res.|Cold Res.|Shadow Res.|Light Res.|Poison Res.|Speed|Strength|Health|Salary|Facing|X Coord|Y Coord|Drain|Damage</Action>
+		<Action>InvToList/-STR:Character Name-,-STR:Prefix-Inventory-STR:Suffix-</Action>
+		<Action>ForLoop/-ii-,0-LASTINLIST[Variables To List],1,SetValByStat,-STR:Prefix-LIST{Variables To List,-ii-}-STR:Suffix-,=,-STR:Swap Out Name-,LIST{Variables To List,-ii-}</Action>
+		<Action>Log/CURRENT LOOK AT -VAL:SwapOutHealth-</Action>
+	</Script>
+
+	<Script>Load Character Stats
+		<Action>SetList/Variables To List,Accuracy|Dodge|Counter Limit|Experience|Level|Morale|Perception|Psy|Reflexes|Slash Res.|Pierce Res.|Crush Res.|Mental Res.|Heat Res.|Cold Res.|Shadow Res.|Light Res.|Poison Res.|Speed|Strength|Health|Salary|Drain|Damage</Action>
+		<Action>ForLoop/-ii-,0-LASTINLIST[Variables To List],1,Run,Load Character Stat Subroutine,Prefix,-STR:Prefix-,Suffix,-STR:Suffix-,Character Name,-STR:Character Name-,Stat,LIST{Variables To List,-ii-}</Action>
+	</Script>
+
+	<Script>Load Character Stat Subroutine
+		<Action>SetValByVal/NextLoadedStatValue,=,-STR:Prefix--STR:Stat--STR:Suffix-</Action>
+		<Action>Log/Load Character Stat Subroutine Testing Log
+-VAL:NextLoadedStatValue- -STR:Character Name- -STR:Stat-</Action>
+		<Action>SetStatByVal/-STR:Character Name-,-STR:Stat-,=,NextLoadedStatValue</Action>
 	</Script>
 
 	<Dialogue trigger="OnTalk/Kyat,-STR:Nobeta Can Talk-" convID="Lesbians Talk Dialogue" r="true">
@@ -224,6 +256,8 @@
 			<Action>SetVal/Turn Trigger,0</Action>
 			<Action>AddTagToArmy/1,Passive</Action>
 			<Action>Run/Set Lesbian Talkable</Action>
+			<Action>SetVal/Drasan Name Progress,0</Action>
+			<Action>SetString/Drasan Current Name,Andras Winterbloom</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
@@ -287,6 +321,37 @@
 			<Action>AddPortrait/Clark,Clark,left</Action>
 			<Action>SetStat/Clark,Morale,=4</Action>
 			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Drasan Progresses" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/Drasan Name Progress,+:1</Action>
+			<Action>IfValGoTo/Drasan Name Progress,=,1,To Sandra</Action>
+			<Action>IfValGoTo/Drasan Name Progress,=,2,To Asandr</Action>
+			<Action>IfValGoTo/Drasan Name Progress,=,3,To Rasand</Action>
+			<Action>IfValGoTo/Drasan Name Progress,=,4,To Drasan</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="To Sandra">/
+			<Action>AddTextOverlay/To Sandra!,5</Action>
+			<Action>Run/Swap Out Unit,Swap Out Name,Andras Winterbloom,Swap In Name,Sandra Winterbloom</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+		<Branch num="2" name="To Asandr">/
+			<Action>AddTextOverlay/To Asandr!,5</Action>
+			<Action>Run/Swap Out Unit,Swap Out Name,Sandra Winterbloom,Swap In Name,Asandr Winterbloom</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+		<Branch num="3" name="To Rasand">/
+			<Action>AddTextOverlay/To Rasand!,5</Action>
+			<Action>Run/Swap Out Unit,Swap Out Name,Asandr Winterbloom,Swap In Name,Rasand Winterbloom</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+		<Branch num="4" name="To Drasan">/
+			<Action>AddTextOverlay/To Drasan!,5</Action>
+			<Action>Run/Swap Out Unit,Swap Out Name,Rasand Winterbloom,Swap In Name,Drasan Winterbloom</Action>
+			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
 
