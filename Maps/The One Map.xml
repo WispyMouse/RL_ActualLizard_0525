@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/11/2025 6:30:57 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/11/2025 8:20:13 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Army 1" color="Blue" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Army 2" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -57,7 +57,6 @@
 	
 	<Unit>0,99,BookcaseFull,0,1,None,None</Unit>
 	<Unit>0,99,BookcaseFull,0,2,None,None</Unit>
-	<Unit>0,99,RackFull,0,3,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,0,4,None,None</Unit>
 	<Unit>0,99,Chair,0,11,None,None</Unit>
 	<Unit>0,99,Chair,0,13,None,None</Unit>
@@ -66,8 +65,7 @@
 	<Unit>0,99,RugTurq9C,1,8,None,None</Unit>
 	<Unit>0,99,RugTurq9R,1,9,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,1,15,None,None</Unit>
-	<Unit>0,99,RackFull,2,0,None,None</Unit>
-	<Unit>0,99,RackFull,2,3,None,None</Unit>
+	<Unit>0,99,ClothingBin,2,0,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,2,4,None,None</Unit>
 	<Unit>0,99,Rug9TL,2,5,None,None</Unit>
 	<Unit>0,99,Rug9T,2,6,None,None</Unit>
@@ -77,8 +75,7 @@
 	<Unit>0,99,Chair,2,11,None,None</Unit>
 	<Unit>0,99,Chair,2,13,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,2,15,None,None</Unit>
-	<Unit>0,99,RackFull,3,0,None,None</Unit>
-	<Unit>0,99,RackFull,3,3,None,None</Unit>
+	<Unit>0,99,ClothingBin,3,0,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,3,4,None,None</Unit>
 	<Unit>0,99,Rug9L,3,5,None,None</Unit>
 	<Unit>0,99,Rug9C,3,6,None,None</Unit>
@@ -103,6 +100,7 @@
 	<Unit>0,99,RugTurq9B,4,13,None,None</Unit>
 	<Unit>0,99,RugTurq9B,4,14,None,None</Unit>
 	<Unit>0,99,DoorWoodVertical,4,15,None,None</Unit>
+	<Unit>0,99,ClothingBin,5,3,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,5,4,None,None</Unit>
 	<Unit>0,99,Rug9L,5,5,None,None</Unit>
 	<Unit>0,99,Rug9C,5,6,None,None</Unit>
@@ -111,7 +109,7 @@
 	<Unit>0,99,RugTurq9R,5,9,None,None</Unit>
 	<Unit>0,99,Chair,5,11,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,5,15,None,None</Unit>
-	<Unit>0,99,RackFull,6,3,None,None</Unit>
+	<Unit>0,99,ClothingBin,6,0,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,6,4,None,None</Unit>
 	<Unit>0,99,Rug9L,6,5,None,None</Unit>
 	<Unit>0,99,Rug9C,6,6,None,None</Unit>
@@ -119,7 +117,7 @@
 	<Unit>0,99,RugTurq9C,6,8,None,None</Unit>
 	<Unit>0,99,RugTurq9R,6,9,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,6,15,None,None</Unit>
-	<Unit>0,99,RackFull,7,3,None,None</Unit>
+	<Unit>0,99,ClothingBin,7,0,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,7,4,None,None</Unit>
 	<Unit>0,99,Rug9BL,7,5,None,None</Unit>
 	<Unit>0,99,Rug9B,7,6,None,None</Unit>
@@ -162,27 +160,17 @@
 	<Unit>0,99,HouseWallHorizontal,12,10,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,12,11,None,None</Unit>
 	<Unit>0,99,HouseWallSE,12,12,None,None</Unit>
-	<Unit>0,99,ItemSack,14,11,None,Apple</Unit>
-	<Unit trigger="Use,Drasan Progresses Script">0,99,Switch,15,10,None,None</Unit>
+	<Unit>0,0,Andras/Winterbloom,9,2,Down,None</Unit>
 	<Unit>0,0,Arora/,14,9,Left,None</Unit>
-	<Unit>0,0,Andras/Winterbloom,15,11,Left,None</Unit>
 	<Unit>0,0,Harrien/,16,8,Left,None</Unit>
 	<Unit>0,0,Kyat/,16,11,Left,None</Unit>
 	<Unit>0,0,Nobeta/,17,10,Up,None</Unit>
-	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,1,1,Down,None</Unit>
-	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,3,2,Down,None</Unit>
 	<Unit>0,1,Clark/,4,3,Down,None</Unit>
-	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,4,5,Down,None</Unit>
-	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,5,1,Down,None</Unit>
-	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,6,7,Down,None</Unit>
 	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,6,16,Down,None</Unit>
-	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,14,4,Right,None</Unit>
-	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,15,6,Right,None</Unit>
-	<Unit>0,1,Generate:Stone Golem/Trivial Initial Mook////1/true/0/0,17,5,Right,None</Unit>
 
 	<Script>Set Lesbian Talkable
-		<Action>AddStatus/Kyat,Talkable</Action>
 		<Action>AddStatus/Nobeta,Talkable</Action>
+		<Action>SetString/Nobeta Can Talk,Nobeta</Action>
 		<Action>SetString/Nobeta Can Talk,Nobeta</Action>
 	</Script>
 
@@ -192,22 +180,27 @@
 		<Action>SetString/Nobeta Can Talk,INVALID</Action>
 	</Script>
 
-	<Script>Drasan Progresses Script
-		<Action>LoadConv/Drasan Progresses</Action>
+	<Script>Sandra Progresses Script
+		<Action>SetVal/Sandra Name Progress,+:1</Action>
+		<Action>IfValRun/Sandra Name Progress,=,4,Swap Out Unit,Swap Out Name,Asandr Winterbloom,Swap In Name,Sandra Winterbloom</Action>
+		<Action>IfValRun/Sandra Name Progress,=,3,Swap Out Unit,Swap Out Name,Rasand Winterbloom,Swap In Name,Asandr Winterbloom</Action>
+		<Action>IfValRun/Sandra Name Progress,=,2,Swap Out Unit,Swap Out Name,Drasan Winterbloom,Swap In Name,Rasand Winterbloom</Action>
+		<Action>IfValRun/Sandra Name Progress,=,1,Swap Out Unit,Swap Out Name,Andras Winterbloom,Swap In Name,Drasan Winterbloom</Action>
 	</Script>
 
 	<Script>Swap Out Unit
 		<Action>Run/Store Character Stats,Prefix,SwapOut,Character Name,-STR:Swap Out Name-</Action>
 		<Action>RemoveUnit/-STR:Swap Out Name-,false</Action>
-		<Action>SpawnUnit/0,-STR:Swap In Name-,-VAL:SwapOutY Coord-,-VAL:SwapOutX Coord-,-VAL:SwapOutFacing-,,-STR:SwapOutInventory-,false</Action>
+		<Action>SpawnUnit/0,-STR:Swap In Name-,-VAL:SwapOutY Coord-,-VAL:SwapOutX Coord-,-VAL:SwapOutFacing-,,,-STR:SwapOutInventoryString-,false</Action>
 		<Action>Run/Load Character Stats,Character Name,-STR:Swap In Name-,Prefix,SwapOut</Action>
+		<Action>SpawnUnit/Army Number,Load ID (using : in lieu of /),Y coordinate,X coordinate,Facing (Up Down Left Right),Triggers (using : in lieu of , and :: in lieu of / -- optional),Tags (using : in lieu of , and :: in lieu of / -- optional),Inventory (delimit items with : -- optional),Drop Into Place (true or false -- optional)</Action>
 	</Script>
 
 	<Script>Store Character Stats
 		<Action>SetList/Variables To List,Accuracy|Dodge|Counter Limit|Experience|Level|Morale|Perception|Psy|Reflexes|Slash Res.|Pierce Res.|Crush Res.|Mental Res.|Heat Res.|Cold Res.|Shadow Res.|Light Res.|Poison Res.|Speed|Strength|Health|Salary|Facing|X Coord|Y Coord|Drain|Damage</Action>
 		<Action>InvToList/-STR:Character Name-,-STR:Prefix-Inventory-STR:Suffix-</Action>
+		<Action>ListToString/-STR:Prefix-Inventory-STR:Suffix-,:,-STR:Prefix-InventoryString-STR:Suffix-</Action>
 		<Action>ForLoop/-ii-,0-LASTINLIST[Variables To List],1,SetValByStat,-STR:Prefix-LIST{Variables To List,-ii-}-STR:Suffix-,=,-STR:Swap Out Name-,LIST{Variables To List,-ii-}</Action>
-		<Action>Log/CURRENT LOOK AT -VAL:SwapOutHealth-</Action>
 	</Script>
 
 	<Script>Load Character Stats
@@ -246,7 +239,9 @@
 		<Branch num="0" name="">/
 			<Action>SetVal/Turn Trigger,+:1</Action>
 			<Action>IfValRun/Lesbian Discussions Count,l,3,Set Lesbian Talkable</Action>
+			<Action>IfValRun/Sandra Name Progress,=,1,SetString,DrasanReadyToShave,Drasan Winterbloom</Action>
 			<Action>EndConvImmediately/</Action>
+			<Action>/</Action>
 		</Branch>
 	</Dialogue>
 
@@ -256,8 +251,10 @@
 			<Action>SetVal/Turn Trigger,0</Action>
 			<Action>AddTagToArmy/1,Passive</Action>
 			<Action>Run/Set Lesbian Talkable</Action>
-			<Action>SetVal/Drasan Name Progress,0</Action>
-			<Action>SetString/Drasan Current Name,Andras Winterbloom</Action>
+			<Action>SetVal/Sandra Name Progress,0</Action>
+			<Action>SetString/Sandra Current Name,Andras Winterbloom</Action>
+			<Action>SetArea/Clothing Zone,0,8,0,4</Action>
+			<Action>SetString/DrasanReadyToShave,INVALID</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
@@ -324,34 +321,34 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="None/" convID="Drasan Progresses" r="false">
-		<Branch num="0" name="">/
-			<Action>SetVal/Drasan Name Progress,+:1</Action>
-			<Action>IfValGoTo/Drasan Name Progress,=,1,To Sandra</Action>
-			<Action>IfValGoTo/Drasan Name Progress,=,2,To Asandr</Action>
-			<Action>IfValGoTo/Drasan Name Progress,=,3,To Rasand</Action>
-			<Action>IfValGoTo/Drasan Name Progress,=,4,To Drasan</Action>
+	<Dialogue trigger="OnReachingArea/Clothing Zone,Andras Winterbloom" convID="Sandra First Clothes" r="false">
+		<Branch num="0" name="">Andras Winterbloom/Oh, what do we have here? [Andras sees an open container of clothes for performers] This is...
+			<Action>AddPortrait/Andras Winterbloom,Andras Winterbloom,left,,Quizzical</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="To Sandra">/
-			<Action>AddTextOverlay/To Sandra!,5</Action>
-			<Action>Run/Swap Out Unit,Swap Out Name,Andras Winterbloom,Swap In Name,Sandra Winterbloom</Action>
-			<Action>EndConvImmediately/</Action>
+		<Branch num="1" name="">Andras Winterbloom/[Andras nervously grabs an outfit from the chest]
+			<Action>AddPortrait/Andras Winterbloom,Andras Winterbloom,left,,Concerned</Action>
+			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="To Asandr">/
-			<Action>AddTextOverlay/To Asandr!,5</Action>
-			<Action>Run/Swap Out Unit,Swap Out Name,Sandra Winterbloom,Swap In Name,Asandr Winterbloom</Action>
-			<Action>EndConvImmediately/</Action>
+		<Branch num="2" name="">Drasan Winterbloom/I could... use a change.
+			<Action>Run/Sandra Progresses Script</Action>
+			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,left,,Happy</Action>
+			<Action>PortraitParticles/Drasan Winterbloom,Heart</Action>
+			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="3" name="To Rasand">/
-			<Action>AddTextOverlay/To Rasand!,5</Action>
-			<Action>Run/Swap Out Unit,Swap Out Name,Asandr Winterbloom,Swap In Name,Rasand Winterbloom</Action>
-			<Action>EndConvImmediately/</Action>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharSelected/0,-STR:DrasanReadyToShave-" convID="Drasan Shaves" r="false">
+		<Branch num="0" name="">Drasan Winterbloom/If I can change anything, then... [Drasan carefully presses a sword to their lip]
+			<Action>SetString/DrasanReadyToShave,INVALID</Action>
+			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,left,,Nervous</Action>
+			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="4" name="To Drasan">/
-			<Action>AddTextOverlay/To Drasan!,5</Action>
-			<Action>Run/Swap Out Unit,Swap Out Name,Rasand Winterbloom,Swap In Name,Drasan Winterbloom</Action>
-			<Action>EndConvImmediately/</Action>
+		<Branch num="1" name="">Rasand Winterbloom/...that feels much better.
+			<Action>Run/Swap Out Unit,Prefix,Swap Out Name,Drasan Winterbloom,Swap In Name,Rasand Winterbloom</Action>
+			<Action>AddPortrait/Rasand Winterbloom,Rasand Winterbloom,,Happy</Action>
+			<Action>PortraitParticles/Rasand Winterbloom,Heart</Action>
+			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
