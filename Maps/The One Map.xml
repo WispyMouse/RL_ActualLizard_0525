@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/13/2025 7:39:49 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/13/2025 9:14:13 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -185,6 +185,7 @@
 	<Unit>0,99,Bush,20,3,None,None</Unit>
 	<Unit>0,99,WildflowersAlt,20,8,None,None</Unit>
 	<Unit>0,99,TreeFruit,20,9,None,Apple/Apple/Apple</Unit>
+	<Unit>0,0,Harrien/,0,10,Down,None</Unit>
 	<Unit>0,0,Arora/,16,12,Up,None</Unit>
 	<Unit>0,0,Drasan/Winterbloom,17,11,Left,None</Unit>
 	<Unit>0,0,Nobeta/,17,13,Left,None</Unit>
@@ -256,6 +257,10 @@
 		<Action>SetStatByVal/-STR:Character Name-,-STR:Stat-,=,NextLoadedStatValue</Action>
 	</Script>
 
+	<Script>BossSpawnProgress
+		<Action>SetVal/TurnsUntilBossAppears,-:1</Action>
+	</Script>
+
 	<Dialogue trigger="OnTalk/Kyat,-STR:Nobeta Can Talk-" convID="Lesbians Talk Dialogue" r="true">
 		<Branch num="0" name="">/
 			<Action>Run/Set Lesbian Not Talkable</Action>
@@ -281,15 +286,21 @@
 			<Action>SetVal/Turn Trigger,+:1</Action>
 			<Action>IfValRun/Lesbian Discussions Count,l,3,Set Lesbian Talkable</Action>
 			<Action>IfValRun/Asandr Name Progress,=,1,SetString,AndrasReadyToShave,Andras Winterbloom</Action>
+			<Action>Run/BossSpawnProgress</Action>
+			<Action>IfValGoTo/TurnsUntilBossAppears,=,0,1</Action>
 			<Action>EndConvImmediately/</Action>
-			<Action>/</Action>
+		</Branch>
+		<Branch num="1" name="Spawn Boss">Rubble Rouser Boss/Hey;; I'm rousing here! And this is a boss fight now.
+			<Action>SpawnUnit/1,Rubble Rouser Boss:,7,17,Left,,Add:LevelUp:9,,</Action>
+			<Action>SpawnUnit/1,Rubble Rouser Golem:,8,16,Left</Action>
+			<Action>AddPortrait/Rubble Rouser Boss,Rubble Rouser Boss,right,,Angry</Action>
+			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="BeforeTurn/0" convID="Map Start Dialogue" r="false">
 		<Branch num="0" name="">/
 			<Action>SetVal/Lesbian Discussions Count,=:0</Action>
-			<Action>AddTagToArmy/1,Passive</Action>
 			<Action>Run/Set Lesbian Talkable</Action>
 			<Action>SetVal/Asandr Name Progress,0</Action>
 			<Action>SetString/Asandr Current Name,Drasan Winterbloom</Action>
@@ -299,6 +310,8 @@
 			<Action>SetArea/Dressing Room Door,0,3,0,4</Action>
 			<Action>SetArea/Theater,0,8,4,16</Action>
 			<Action>SetArea/Outside Hut,8,13,6,12</Action>
+			<Action>SetVal/TurnsUntilBossAppears,=:-1</Action>
+			<Action>SetVal/Turn Trigger,=:0</Action>
 			<Action>EndConvImmediately/</Action>
 			<Action>/</Action>
 		</Branch>
@@ -416,6 +429,13 @@
 			<Action>AddStatus/Clark,Talkable</Action>
 			<Action>RemoveTagFromGroup/1,Passive</Action>
 			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnReachingArea/Theater,-ANY-,0" convID="Trigger Boss Spawn Start" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/TurnsUntilBossAppears,=:1</Action>
+			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
 
