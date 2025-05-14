@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level mapname="Ending Cut Scene" maptype="Cut Scene: Static" maxplayers="1" musictrack="Bazaar" winAura="0" nextbattle="Ending Cut Scene" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/13/2025 8:02:46 PM">
+
+	<Narration></Narration>
+
+	<Dialogue trigger="None/" convID="End" r="false">
+		<Branch num="0" name="">/This is an ending narration. You did it, you made it, you won it, congratulations!
+			<Reply>Thanks for playing!/NextScene</Reply>
+		</Branch>
+	</Dialogue>
+
+</Level>
