@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level mapname="Test Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 1:54:37 PM">
+
+	<Army num="0" AI="false" aiProfile="NOT FOUND" name="Army 1" color="Blue" alliedWith="" assignRoster="-1"></Army>
+	<Army num="1" AI="true" aiProfile="NOT FOUND" name="Army 2" color="Red" alliedWith="" assignRoster="-1"></Army>
+	
+	<Condition>Defeat Army,0,1</Condition>
+	
+	<Tileset>01,Grass</Tileset>
+	
+	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	
+	<Unit>0,0,Nobeta/,1,2,Down,None</Unit>
+	<Unit>0,1,Nobeta/,6,7,Down,None</Unit>
+
+	<Script>ComparisonScript_Equals
+		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
+		<Action>IfValRun/-STR:ValueName-,=,-VAL:CompareTo-,_SetVal,ValueName,-STR:Prefix-Answer,Value,1</Action>
+	</Script>
+
+	<Script>_SetVal
+		<Action>SetVal/-STR:ValueName-,=:-VAL:Value-</Action>
+	</Script>
+
+	<Script>IsAllTrue_2
+		<Action>Run/ComparisonScript_Equals,ValueName,-STR:ValueOneName-,CompareTo,-VAL:ValueOneCompareTo-,Prefix,ValueOne</Action>
+		<Action>Run/ComparisonScript_Equals,ValueName,-STR:ValueTwoName-,CompareTo,-VAL:ValueTwoCompareTo-,Prefix,ValueTwo</Action>
+		<Action>SetVal/AnswerComposite,=:-VAL:ValueOneAnswer-,*:-VAL:ValueTwoAnswer-</Action>
+	</Script>
+
+	<Dialogue trigger="OnTurn/0" convID="Start" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/CheckFoo,=:1</Action>
+			<Action>SetVal/CheckBar,=:5</Action>
+			<Action>Run/IsAllTrue_2,ValueOneName,CheckFoo,ValueOneCompareTo,1,ValueTwoName,CheckBar,ValueTwoCompareTo,5</Action>
+			<Action>AddTextOverlay/If this is one then all answers were true: -VAL:AnswerComposite-</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+</Level>

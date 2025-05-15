@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 2:26:19 AM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 11:28:33 AM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -314,15 +314,8 @@
 			<Action>GoTo/1</Action>
 		</Branch>
 		<Branch num="2" name="">/
-			<Action>IfValGoTo/TurnsUntilBossAppears,=,0,2</Action>
+			<Action>LoadConv/Round Start Dialogue Dispatch</Action>
 			<Action>EndConvImmediately/</Action>
-			<Reply>Continue./NextBranch</Reply>
-		</Branch>
-		<Branch num="1" name="Spawn Boss">Rubble Rouser Boss/Hey;; I'm rousing here! And this is a boss fight now.
-			<Action>SpawnUnit/1,Rubble Rouser Boss:,7,17,Left,,Add:LevelUp:9,,</Action>
-			<Action>SpawnUnit/1,Rubble Rouser Golem:,8,16,Left</Action>
-			<Action>AddPortrait/Rubble Rouser Boss,Rubble Rouser Boss,left,,Angry</Action>
-			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
 
@@ -342,6 +335,7 @@
 			<Action>SetVal/Turn Trigger,=:0</Action>
 			<Action>SetArea/Viewing Booth,0,3,13,15</Action>
 			<Action>IfValGoTo/Skip Dialogue,=,1,999</Action>
+			<Action>SetVal/WestApproachFlag,=:0</Action>
 			<Action>GoToNextBranch/</Action>
 		</Branch>
 		<Branch num="1" name="Intro Dialogue Start">Drasan Winterbloom/W--what? The theater!
@@ -460,7 +454,7 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnReachingArea/West Approach,,0" convID="West Approach Recognized" r="false">
+	<Dialogue trigger="None/" convID="West Approach Recognized" r="false">
 		<Branch num="0" name="">Clark/I mean;; maybe the author made a small mistake about the bolt-head manufacturer, but--
 			<Action>AddPortrait/Clark,Clark,left,,Worried</Action>
 			<Action>AddPortrait/Irate Crossbow Aficionado,Irate Crossbow Aficionado,right,,Sad</Action>
@@ -483,6 +477,7 @@
 			<Action>RemoveTagFromGroup/1,Passive</Action>
 			<Action>RemoveTagFromGroup/1,Inactive</Action>
 			<Action>AddStatus/Harrien,Talkable</Action>
+			<Action>SetVal/WestApproachFlag,=,2</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -517,6 +512,31 @@
 		</Branch>
 		<Branch num="4" name="">Asandr Winterbloom/Aaah, I love it! And should write different, better, or more dialogue here to express that! :D
 			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnReachingArea/West Approach,,0" convID="West Approach Recognized Trigger" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/WestApproachFlag,=:1</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Round Start Dialogue Dispatch" r="true">
+		<Branch num="0" name="">/
+			<Action>IfValGoTo/WestApproachFlag,=,1,1</Action>
+			<Action>IfValGoTo/TurnsUntilBossAppears,=,0,2</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+		<Branch num="1" name="">/
+			<Action>LoadConv/West Approach Recognized</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+		<Branch num="2" name="Spawn Boss">Rubble Rouser Boss/Hey;; I'm rousing here! And this is a boss fight now.
+			<Action>SpawnUnit/1,Rubble Rouser Boss:,7,17,Left,,Add:LevelUp:9,,</Action>
+			<Action>SpawnUnit/1,Rubble Rouser Golem:,8,16,Left</Action>
+			<Action>AddPortrait/Rubble Rouser Boss,Rubble Rouser Boss,left,,Angry</Action>
+			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
 

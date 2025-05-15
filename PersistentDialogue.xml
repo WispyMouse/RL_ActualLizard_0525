@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 3:03:24 AM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 11:13:07 AM">
 
 	<Dialogue trigger="OnLoaded/" convID="Set Root Relationships" r="false">
-		<Branch num="0" name="">/
-			<Action>SetRelationshipLabel/Nobeta,Harrien,Father,False</Action>
-			<Action>SetRelationshipLabel/Nobeta,Kyat,Good Friend,True</Action>
-			<Action>/</Action>
-			<Action>SetRelationshipLabel/Harrien,Arora,Theater Troupe Colleague,true</Action>
-			<Action>SetRelationshipLabel/Harrien,Nobeta,Daughter,False</Action>
+		<Branch num="0" name="Starting Relationships">/
+			<Action>SetRelationshipLabel/Harrien,Kyat,Troupe Member,true</Action>
+			<Action>SetRelationshipLabel/Harrien,Arora,Troupe Member,true</Action>
+			<Action>SetRelationshipLabel/Harrien,Drasan Winterbloom,Troupe Member,true</Action>
+			<Action>SetRelationshipLabel/Nobeta,Arora,Troupe Member,true</Action>
+			<Action>SetRelationshipLabel/Nobeta,Drasan Winterbloom,Troupe Member,true</Action>
+			<Action>SetRelationshipLabel/Kyat,Nobeta,Troupe Member,true</Action>
+			<Action>SetRelationshipLabel/Kyat,Arora,Troupe Member,true</Action>
+			<Action>SetRelationshipLabel/Kyat,Drasan Winterbloom,Childhood Friend</Action>
+			<Action>SetRelationshipLabel/Nobeta,Harrien,Father,false</Action>
+			<Action>SetRelationshipLabel/Harrien,Nobeta,Daughter,false</Action>
 			<Action>EndConvImmediately/</Action>
+			<Action>/</Action>
 		</Branch>
 	</Dialogue>
 
