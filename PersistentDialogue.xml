@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/13/2025 8:50:37 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 3:03:24 AM">
+
+	<Dialogue trigger="OnLoaded/" convID="Set Root Relationships" r="false">
+		<Branch num="0" name="">/
+			<Action>SetRelationshipLabel/Nobeta,Harrien,Father,False</Action>
+			<Action>SetRelationshipLabel/Nobeta,Kyat,Good Friend,True</Action>
+			<Action>/</Action>
+			<Action>SetRelationshipLabel/Harrien,Arora,Theater Troupe Colleague,true</Action>
+			<Action>SetRelationshipLabel/Harrien,Nobeta,Daughter,False</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
 
 </PersistentDialogue>

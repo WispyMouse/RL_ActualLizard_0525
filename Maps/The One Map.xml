@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 1:49:10 AM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 2:26:19 AM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -30,14 +30,14 @@
 	<Row>06.02,06.06,05.0Z,05.1L,06.01,06.07,01.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,01.01,01.01,01.01</Row>
 	<Row>06.3G,06.02,05.1K,05.03,06.3F,06.3Q,01.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,01.01,01.0m,01.01</Row>
 	<Row>07.01,07.01,01.01,01.01,06.0K,06.2P,06.01,06.01,06.04,06.08,07.01,07.01,06.2P,06.01,06.2P,06.07,06.2R</Row>
-	<Row>07.01,07.01,01.01,01.01,07.01,06.09,06.2O,06.2O,06.08,07.01,07.01,07.01,06.09,06.05,06.09,06.2P,06.01</Row>
-	<Row>07.01,07.01,01.01,01.01,07.01,06.0O,06.0K,06.0K,06.0P,07.01,07.01,07.01,06.0L,06.2P,06.01,06.2P,06.01</Row>
-	<Row>07.01,07.01,01.01,01.01,07.01,07.01,07.01,07.01,07.01,07.01,08.0Q,08.0N,08.0U,06.2P,06.01,06.2P,06.01</Row>
-	<Row>07.01,07.01,05.1a,05.1k,05.1c,08.0N,08.0N,05.07,05.1K,05.1K,05.1K,05.1K,05.1K,06.03,06.01,06.2P,06.01</Row>
-	<Row>05.1c,05.1c,05.1j,05.07,05.1K,05.1K,05.1K,05.03,05.01,05.01,05.01,05.01,05.0o,06.01,06.07,06.03,06.01</Row>
-	<Row>05.0m,05.0m,05.0u,05.1L,05.01,05.01,05.01,05.01,05.0v,05.0m,05.0m,05.0u,05.0o,06.01,06.2P,06.01,06.01</Row>
-	<Row>06.01,06.01,06.07,05.03,05.0u,05.01,05.01,05.0v,05.0r,06.01,06.01,05.0n,05.0x,06.07,06.03,06.01,06.01</Row>
-	<Row>06.01,06.01,06.2P,06.01,05.0n,05.01,05.01,05.0o,06.01,06.01,06.01,05.0n,05.01,06.2P,06.01,06.01,06.01</Row>
+	<Row>07.01,07.01,01.01,01.01,07.01,06.09,06.2O,06.2O,06.08,07.01,07.01,07.01,06.09,06.05,06.09,06.09,06.05</Row>
+	<Row>07.01,07.01,01.01,01.01,07.01,06.0O,06.0K,06.0K,06.0P,07.01,07.01,07.01,06.0L,06.2P,06.01,06.2P,06.2P</Row>
+	<Row>07.01,07.01,01.01,01.01,07.01,07.01,07.01,07.01,07.01,07.01,08.0Q,08.0N,08.0U,06.2P,06.01,06.2P,06.2P</Row>
+	<Row>07.01,07.01,05.1a,05.1k,05.1c,06.0N,06.0N,06.0N,06.0N,06.0N,05.07,05.1K,05.1K,06.03,06.07,06.07,06.03</Row>
+	<Row>05.1c,05.1c,05.1j,05.01,05.0x,05.0p,05.0p,05.0p,05.07,05.1K,05.03,05.01,05.0x,05.0p,06.2P,06.2P,06.01</Row>
+	<Row>05.0m,05.0m,05.0u,05.01,05.01,05.01,05.01,05.07,05.03,05.0v,05.0m,05.0u,05.01,05.01,06.07,06.03,06.01</Row>
+	<Row>06.01,06.01,06.3H,05.01,05.01,05.01,05.07,05.03,05.0m,05.0r,06.01,05.0n,05.01,05.01,06.2P,08.1w,08.1e</Row>
+	<Row>06.01,06.01,06.47,06.2R,05.1K,05.1K,05.03,05.0o,06.01,06.01,06.01,05.0n,05.01,05.01,06.2P,08.1f,06.01</Row>
 	
 	<Light type="Point Light" size="2" intensity="1.5" y="1" x="8" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
 	<Light type="Point Light" size="2" intensity="1.5" y="3" x="8" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
@@ -49,7 +49,7 @@
 	<RowElev>0,0,0,0,1,1,3,3,3,3,3,1,1,7,7,7,7</RowElev>
 	<RowElev>0,0,0,0,0,2,3,3,3,3,3,1,1,4,7,7,7</RowElev>
 	<RowElev>0,0,0,0,0,2,3,3,3,3,3,1,1,1,6,4,3</RowElev>
-	<RowElev>0,0,0,0,2,2,3,3,3,3,3,1,1,1,3,3,3</RowElev>
+	<RowElev>0,0,0,0,2,2,2,3,3,3,3,1,1,1,3,3,3</RowElev>
 	<RowElev>0,0,0,0,2,0,2,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>0,0,0,0,0,0,2,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>1,0,0,1,1,1,1,1,1,1,1,1,1,1,3,3,3</RowElev>
@@ -57,13 +57,13 @@
 	<RowElev>2,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3</RowElev>
 	<RowElev>0,0,2,2,1,2,2,2,2,2,0,0,2,2,3,4,4</RowElev>
 	<RowElev>0,0,2,2,0,2,2,2,2,0,0,0,2,2,3,4,4</RowElev>
-	<RowElev>0,0,2,2,0,1,1,1,1,0,0,0,1,2,2,4,4</RowElev>
-	<RowElev>0,0,2,2,0,0,0,0,0,0,1,1,1,2,2,4,4</RowElev>
-	<RowElev>0,0,1,1,1,1,1,2,2,2,2,2,2,2,2,4,4</RowElev>
-	<RowElev>1,1,1,2,2,2,2,2,2,2,2,2,2,2,4,4,4</RowElev>
-	<RowElev>1,1,1,2,2,2,2,2,2,2,2,2,2,2,4,4,4</RowElev>
-	<RowElev>1,1,2,2,2,2,2,2,2,2,2,2,2,4,4,4,4</RowElev>
-	<RowElev>1,1,2,2,2,2,2,2,2,2,2,2,2,4,4,4,4</RowElev>
+	<RowElev>0,0,2,2,0,1,1,1,1,0,0,0,1,2,2,3,4</RowElev>
+	<RowElev>0,0,2,2,0,0,0,0,0,0,1,1,1,2,2,3,4</RowElev>
+	<RowElev>0,0,1,1,1,1,1,1,1,1,2,2,2,2,3,4,4</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,4,4</RowElev>
+	<RowElev>1,1,1,1,1,1,1,2,2,2,2,2,2,2,4,4,4</RowElev>
+	<RowElev>1,1,2,1,1,1,2,2,2,2,2,2,2,2,4,4,4</RowElev>
+	<RowElev>1,1,2,2,2,2,2,2,2,2,2,2,2,2,4,4,4</RowElev>
 	
 	<Unit>0,99,HouseWallNW,0,1,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,0,2,None,None</Unit>
@@ -84,7 +84,7 @@
 	<Unit>0,99,Rug9T,1,8,None,None</Unit>
 	<Unit>0,99,Rug9T,1,9,None,None</Unit>
 	<Unit>0,99,Rug9TR,1,10,None,None</Unit>
-	<Unit>0,99,Poster,1,11,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,0">0,99,Poster,1,11,None,None</Unit>
 	<Unit>0,99,Barrel,1,12,None,None</Unit>
 	<Unit>0,99,RugTurq,1,14,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,1,16,None,None</Unit>
@@ -186,47 +186,49 @@
 	<Unit>0,99,HouseWallT_S,10,14,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,10,15,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,10,16,None,None</Unit>
-	<Unit>0,99,Poster,11,8,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,0">0,99,Poster,11,8,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,0">0,99,Poster,11,14,None,None</Unit>
 	<Unit>0,99,Tree,11,15,None,None</Unit>
 	<Unit>0,99,Wildflowers,12,14,None,None</Unit>
+	<Unit>0,99,ItemSack,12,15,None,Iron Bow</Unit>
 	<Unit>0,99,Barrel,13,3,None,None</Unit>
 	<Unit>0,99,ReedsFlowerSmall,13,12,None,None</Unit>
 	<Unit>0,99,WildflowersAlt,13,13,None,None</Unit>
 	<Unit>0,99,Bush,14,13,None,None</Unit>
 	<Unit>0,99,ReedsSmall,15,6,None,None</Unit>
 	<Unit>0,99,FruitStand_S,15,8,None,None</Unit>
-	<Unit>0,99,Wildflowers,15,15,None,None</Unit>
-	<Unit>0,99,Birdbath,16,14,None,None</Unit>
-	<Unit>0,99,Reeds,17,13,None,None</Unit>
+	<Unit>0,99,Reeds,15,13,None,None</Unit>
+	<Unit>0,99,Wildflowers,15,16,None,None</Unit>
+	<Unit>0,99,Birdbath,17,15,None,None</Unit>
 	<Unit>0,99,Caravan_E,18,0,None,None</Unit>
-	<Unit>0,99,Reeds,18,9,None,None</Unit>
 	<Unit>0,99,Evergreen,18,10,None,None</Unit>
-	<Unit>0,99,Wildflowers,18,13,None,None</Unit>
+	<Unit>0,99,Wildflowers,18,14,None,None</Unit>
 	<Unit>0,99,Bush,19,3,None,None</Unit>
-	<Unit>0,99,WildflowersAlt,19,8,None,None</Unit>
 	<Unit>0,99,TreeFruit,19,9,None,Apple/Apple/Apple</Unit>
+	<Unit>0,99,WildflowersAlt,19,10,None,None</Unit>
 	<Unit>0,0,Arora/,15,12,Up,None</Unit>
 	<Unit>0,0,Drasan/Winterbloom,16,11,Left,None</Unit>
 	<Unit>0,0,Nobeta/,16,12,Left,None</Unit>
 	<Unit>0,0,Harrien/,17,10,Up,None</Unit>
 	<Unit>0,0,Kyat/,18,12,Left,None</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Passive/Add,Pursue">0,1,Rubble Rouser Bruiser/,2,9,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Passive/Add,Pursue/Add,LevelUp,4">0,1,Rabble Rouser Crossbowjock/,3,3,Down,None</Unit>
+	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Bruiser/,2,9,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,3,3,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Passive/Add,Pursue">0,1,Rubble Rouser Golem/,3,9,Up,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Passive/Add,Pursue">0,1,Clark/,4,4,Left,None</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Passive/Add,Pursue">0,1,Rabble Rouser Crossbowjock/,4,7,Up,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Passive/Add,Pursue">0,1,Rubble Rouser Golem/,6,1,Up,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Passive/Add,Pursue">0,1,Rubble Rouser Golem/,6,3,Up,None</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Passive/Add,Pursue">0,1,Rubble Rouser Bruiser/,8,11,Left,None</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Passive/Add,Pursue">0,1,Rabble Rouser Crossbowjock/,9,10,Up,None</Unit>
-	<Unit>0,1,Rubble Rouser Golem/,12,2,Down,None</Unit>
-	<Unit tag="Add,LevelUp,4">0,1,Rabble Rouser Crossbowjock/,12,7,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Clark/,4,4,Left,None</Unit>
+	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,4,7,Up,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Golem/,6,1,Up,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Golem/,6,3,Up,None</Unit>
+	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Bruiser/,8,11,Left,None</Unit>
+	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,9,10,Up,None</Unit>
+	<Unit tag="Add,Passive/Add,Pursue">0,1,Rubble Rouser Golem/,12,2,Down,None</Unit>
+	<Unit tag="Add,LevelUp,3">0,1,Irate Crossbow Aficionado/,12,7,Down,None</Unit>
 	<Unit>0,1,Rubble Rouser Golem/,12,13,Down,None</Unit>
+	<Unit tag="Add,LevelUp,3">0,1,Irate Crossbow Aficionado/,13,15,Left,None</Unit>
 	<Unit>0,1,Rubble Rouser Golem/,15,9,Right,None</Unit>
+	<Unit>0,1,Rubble Rouser Golem/,16,4,Right,None</Unit>
 	<Unit tag="Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,17,0,Down,None</Unit>
-	<Unit>0,1,Rubble Rouser Golem/,17,3,Right,None</Unit>
 	<Unit tag="Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,17,6,Right,None</Unit>
-	<Unit tag="Add,Passive/Add,LevelUp,6">0,2,Save Me/,1,14,Down,None</Unit>
+	<Unit tag="Add,Passive/Add,LevelUp,6/Add,Patrol,Viewing Booth">0,2,Save Me/,1,14,Down,None</Unit>
 
 	<Script>Set Lesbian Talkable
 		<Action>AddStatus/Kyat,Talkable</Action>
@@ -253,7 +255,6 @@
 		<Action>RemoveUnit/-STR:Swap Out Name-,false</Action>
 		<Action>SpawnUnit/0,-STR:Swap In Name-,-VAL:SwapOutY Coord-,-VAL:SwapOutX Coord-,-STR:SwapOutFacing-,,,-STR:SwapOutInventory String-,false</Action>
 		<Action>Run/Load Character Stats,Character Name,-STR:Swap In Name-,Prefix,SwapOut</Action>
-		<Action>AddTextOverlay/Facing is '-STR:SwapOutFacing-'</Action>
 	</Script>
 
 	<Script>Store Character Stats
@@ -339,8 +340,29 @@
 			<Action>SetArea/Outside Hut,8,13,6,12</Action>
 			<Action>SetVal/TurnsUntilBossAppears,=:-1</Action>
 			<Action>SetVal/Turn Trigger,=:0</Action>
-			<Action>Run/Swap Out Unit,Swap Out Name,Drasan Winterbloom,Swap In Name,Andras Winterbloom</Action>
-			<Action>EndConvImmediately/</Action>
+			<Action>SetArea/Viewing Booth,0,3,13,15</Action>
+			<Action>IfValGoTo/Skip Dialogue,=,1,999</Action>
+			<Action>GoToNextBranch/</Action>
+		</Branch>
+		<Branch num="1" name="Intro Dialogue Start">Drasan Winterbloom/W--what? The theater!
+			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,right,,Shocked</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="3" name="">Irate Crossbow Aficionado/That Rubble Rouser guy is right! We don't have to stand for this! We can take matters in to our own hands! We can tear down this injust favoritism for over-hyped product line crossbows!
+			<Action>AddPortrait/Irate Crossbow Aficionado/,Irate Crossbow Aficionado,,Angry</Action>
+			<Action>SelectUnit/Irate Crossbow Aficionado</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="2" name="">Save Me/I do say, I'm a placeholder text for this character being shocked at the state of things!
+			<Action>ClearPortraits/</Action>
+			<Action>MoveCam/Save Me</Action>
+			<Action>AddPortrait/Save Me,Save Me,left,,Sad</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="4" name="">Harrien/Bwuh? Hey! You can't do that! I'm going to write text that will tell you to knock it off, and then we fight!
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Harrien/,Harrien/,left,,Yell</Action>
+			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
@@ -459,6 +481,8 @@
 			<Action>AddPortrait/Clark,Clark,right,,Sad</Action>
 			<Action>AddStatus/Clark,Talkable</Action>
 			<Action>RemoveTagFromGroup/1,Passive</Action>
+			<Action>RemoveTagFromGroup/1,Inactive</Action>
+			<Action>AddStatus/Harrien,Talkable</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -466,6 +490,9 @@
 	<Dialogue trigger="OnReachingArea/Theater,-ANY-,0" convID="Trigger Boss Spawn Start" r="false">
 		<Branch num="0" name="">/
 			<Action>SetVal/TurnsUntilBossAppears,=:1</Action>
+			<Action>RemoveTagFromArmy/1,Inactive</Action>
+			<Action>RemoveTagFromArmy/1,Passive</Action>
+			<Action>RemoveConv/West Approach Recognized</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
