@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/13/2025 8:00:10 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 1:32:19 AM">
 
 	<Narration>The sun shines upon the town square. A love of community theater has brought a few loosely connected friends together to support an upcoming show. The legendary "Bolt-Action Love" - the dramatic story of Lakshmi's love for Emma Strider, told from a crossbow afficionado's perspective - is gathering casting calls.  -PIC:Market_Dese- | -DIA:Intro-</Narration>
 	
-	<NewRoster num="0">Harrien/,Clark/,Kyat/,Nobeta/,Arora/,Rubble Rouser Golem/,Rabble Rouser Crossbowjock/,Rubble Rouser Bruiser/,Clark/,Save Me/</NewRoster>
+	<NewRoster num="0">Harrien/,Clark/,Kyat/,Nobeta/,Arora/,Rubble Rouser Golem/,Rabble Rouser Crossbowjock/,Rubble Rouser Bruiser/,Clark/,Save Me/,Asandr/Winterbloom,Sandra/Winterbloom,Rasand/Winterbloom,Andras/Winterbloom,Drasan/Winterbloom</NewRoster>
 
 	<Shop costMultiplier="100" baseSalePrice="50" itemQuality="3" qualityVariance="2" foodCostPercent="300">Default Store
 		<Stock type="Weapons" chance="100" num="1-5" materials="WeaponMaterials">GEN:Axe</Stock>
@@ -34,24 +34,24 @@
 
 	<Dialogue trigger="OnTurn/0" convID="Intro" r="true">
 		<Branch num="0" name="">Harrien/Thanks for meeting on such a short notice. Everyone here? Alright, grab your things or hand them to me, it's time to...
-			<Action>AddPortrait/Harrien,Harrien,right,,Happy</Action>
+			<Action>AddPortrait/Harrien,Harrien/,right,,Happy</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Nobeta/[A thud echoes from the north] Wait! What's that noise?
-			<Action>AddPortrait/Nobeta,Nobeta,left,,Quizzical</Action>
+			<Action>AddPortrait/Nobeta,Nobeta/,left,,Quizzical</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Arora/They're starting without me! The nerve!
 			<Action>RemovePortrait/Harrien</Action>
-			<Action>AddPortrait/Arora,Arora,right,,Angry</Action>
+			<Action>AddPortrait/Arora,Arora/,right,,Angry</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Nobeta/That didn't sound *planned*...
-			<Action>AddPortrait/Nobeta,Nobeta,left,,Worried</Action>
+			<Action>AddPortrait/Nobeta,Nobeta/,left,,Worried</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Kyat/Let's pick up the pace!
-			<Action>AddPortrait/Kyat,Kyat,left,,Neutral</Action>
+			<Action>AddPortrait/Kyat,Kyat/,left,,Neutral</Action>
 			<Action>RemovePortrait/Nobeta</Action>
 			<Reply>Continue./NextScene</Reply>
 		</Branch>
