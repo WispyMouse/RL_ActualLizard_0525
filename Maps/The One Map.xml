@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 3:07:59 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 4:18:31 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -11,55 +11,53 @@
 	
 	<Tileset>01,Wood</Tileset>
 	<Tileset>02,Cave</Tileset>
-	<Tileset>03,Castle</Tileset>
-	<Tileset>04,CastleSandstone</Tileset>
+	<Tileset>03,CastleSandstone</Tileset>
+	<Tileset>04,Castle</Tileset>
 	<Tileset>05,Street</Tileset>
 	<Tileset>06,Grass</Tileset>
 	<Tileset>07,Water</Tileset>
 	<Tileset>08,Dirt</Tileset>
 	
-	<Row>01.0X,01.0O,01.0O,01.0O,01.0T,02.01,02.01,02.3A,01.01,01.01,01.01,01.01,01.01,01.01,03.01,03.01,03.01</Row>
-	<Row>01.0Q,02.01,02.01,02.01,02.01,02.01,02.07,01.01,01.01,01.01,01.01,04.01,04.01,03.01,03.01,03.01,03.01</Row>
-	<Row>01.0Q,02.01,02.01,02.01,02.3F,02.45,01.01,01.01,01.01,01.01,01.01,01.01,04.01,03.01,03.01,03.01,03.01</Row>
-	<Row>01.0Q,02.01,02.01,02.01,02.01,02.07,01.01,01.01,01.01,01.01,01.01,04.01,04.01,04.01,03.01,03.01,03.01</Row>
-	<Row>01.0Q,02.01,02.01,02.01,02.01,02.3A,01.01,01.01,01.01,01.01,01.01,04.01,04.01,04.01,03.01,03.01,03.01</Row>
-	<Row>01.0Q,02.01,02.01,02.01,02.3V,02.46,01.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,05.1L,05.01,05.01</Row>
-	<Row>01.0Q,02.01,02.01,02.01,02.3E,02.01,02.3J,04.01,04.01,04.01,04.01,04.01,04.01,04.01,05.1L,05.01,05.01</Row>
-	<Row>01.0Q,02.01,02.01,02.01,02.01,02.01,02.3E,04.01,04.01,04.01,04.01,04.01,04.01,04.01,01.01,01.01,01.01</Row>
-	<Row>05.06,02.01,02.01,02.07,02.3C,02.3C,01.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,01.01,01.01,01.01</Row>
-	<Row>06.02,06.06,05.0Z,05.1L,06.01,06.07,01.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,01.01,01.01,01.01</Row>
-	<Row>06.3G,06.02,05.1K,05.03,06.3F,06.3Q,01.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,01.01,01.0m,01.01</Row>
-	<Row>07.01,07.01,01.01,01.01,06.0K,06.2P,06.01,06.01,06.04,06.08,07.01,07.01,06.2P,06.01,06.2P,06.07,06.2R</Row>
-	<Row>07.01,07.01,01.01,01.01,07.01,06.09,06.2O,06.2O,06.08,07.01,07.01,07.01,06.09,06.05,06.09,06.09,06.05</Row>
-	<Row>07.01,07.01,01.01,01.01,07.01,06.0O,06.0K,06.0K,06.0P,07.01,07.01,07.01,06.0L,06.2P,06.01,06.2P,06.2P</Row>
-	<Row>07.01,07.01,01.01,01.01,07.01,07.01,07.01,07.01,07.01,07.01,08.0Q,08.0N,08.0U,06.2P,06.01,06.2P,06.2P</Row>
-	<Row>07.01,07.01,05.1a,05.1k,05.1c,06.0N,06.0N,06.0N,06.0N,06.0N,05.07,05.1K,05.1K,06.03,06.07,06.07,06.03</Row>
-	<Row>05.1c,05.1c,05.1j,05.01,05.0x,05.0p,05.0p,05.0p,05.07,05.1K,05.03,05.01,05.0x,05.0p,06.2P,06.2P,06.01</Row>
-	<Row>05.0m,05.0m,05.0u,05.01,05.01,05.01,05.01,05.07,05.03,05.0v,05.0m,05.0u,05.01,05.01,06.07,06.03,06.01</Row>
-	<Row>06.01,06.01,06.3H,05.01,05.01,05.01,05.07,05.03,05.0m,05.0r,06.01,05.0n,05.01,05.01,06.2P,08.1w,08.1e</Row>
-	<Row>06.01,06.01,06.47,06.2R,05.1K,05.1K,05.03,05.0o,06.01,06.01,06.01,05.0n,05.01,05.01,06.2P,08.1f,06.01</Row>
+	<Row>01.0X,01.0O,01.0O,01.0O,01.0T,02.01,02.01,02.01,01.0P,02.3A,03.0P,03.01,01.01,01.01,04.01,04.01,04.01</Row>
+	<Row>01.0Q,02.01,02.01,02.01,02.01,02.01,02.07,01.01,01.01,01.01,01.01,03.01,03.01,01.01,04.01,04.01,04.01</Row>
+	<Row>01.0Q,02.01,02.01,02.01,02.3F,02.45,01.01,01.01,01.01,01.01,03.01,03.01,03.01,01.01,04.01,04.01,04.01</Row>
+	<Row>01.0Q,02.01,02.01,02.01,02.01,02.07,01.01,01.01,01.01,01.01,03.01,03.01,03.01,03.01,04.01,04.01,04.01</Row>
+	<Row>01.0Q,02.01,02.01,02.01,02.01,02.3A,01.01,01.01,01.01,01.01,03.01,03.01,03.01,03.01,04.01,04.01,04.01</Row>
+	<Row>01.0Q,02.01,02.01,02.01,02.3V,02.46,01.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,05.1L,05.01,05.01</Row>
+	<Row>01.0Q,02.01,02.01,02.01,02.3E,02.01,02.3J,03.01,03.01,03.01,03.01,03.01,03.01,03.01,05.1L,05.01,05.01</Row>
+	<Row>01.0Q,02.01,02.01,02.01,02.01,02.01,02.3E,03.01,03.01,03.01,03.01,03.01,03.01,03.01,01.01,01.01,01.01</Row>
+	<Row>05.06,02.01,02.01,02.07,02.3C,02.3C,01.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,01.01,01.01,01.01</Row>
+	<Row>06.02,06.06,05.0Z,05.1L,06.01,06.07,01.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,01.01,01.01,01.01</Row>
+	<Row>06.3G,06.02,05.1K,05.03,06.07,06.03,01.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,01.01,01.0m,01.01</Row>
+	<Row>07.01,07.01,07.01,01.01,01.01,06.2O,06.05,06.04,06.2O,06.08,07.01,07.01,06.09,06.05,06.09,06.3F,06.45</Row>
+	<Row>07.01,07.01,07.01,01.01,01.01,06.0K,06.09,06.08,06.0P,07.01,07.01,07.01,06.0L,06.2P,06.01,06.2P,06.2P</Row>
+	<Row>07.01,07.01,07.01,01.01,01.01,07.01,07.01,07.01,07.01,07.01,08.0Q,08.0N,08.0U,06.2P,06.01,06.2P,06.2P</Row>
+	<Row>07.01,07.01,07.01,01.01,01.01,06.0N,06.0N,06.0N,08.0N,08.0N,05.07,05.1K,05.1K,06.03,06.07,06.07,06.03</Row>
+	<Row>05.1c,05.1c,05.1c,05.1j,05.0x,05.0p,05.0p,05.0p,05.07,05.1K,05.03,05.01,05.0x,05.0p,06.2P,06.2P,06.01</Row>
+	<Row>05.0a,05.0a,05.0i,05.01,05.01,05.01,05.01,05.07,05.03,05.0v,05.0m,05.0u,05.01,05.01,06.07,06.03,06.01</Row>
+	<Row>08.01,08.01,06.3H,05.01,05.01,05.01,05.07,05.03,05.0v,05.0r,06.01,05.0n,05.01,05.01,06.2P,08.1w,08.1e</Row>
+	<Row>06.01,06.01,06.47,06.2R,05.1K,05.1K,05.03,05.01,05.0o,06.01,06.01,05.0n,05.01,05.01,06.2P,08.1f,06.01</Row>
 	
 	<Light type="Point Light" size="2" intensity="1.5" y="1" x="8" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
 	<Light type="Point Light" size="2" intensity="1.5" y="3" x="8" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
 	<Light type="Point Light" size="2" intensity="1.5" y="5" x="7" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
-	<Light type="Point Light" size="2" intensity="1.5" y="5" x="10" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
+	<Light type="Point Light" size="2" intensity="1.5" y="5" x="9" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
 	
-	<RowElev>0,0,0,0,0,0,0,1,2,3,3,5,5,7,7,7,7</RowElev>
-	<RowElev>0,0,0,0,0,0,2,3,3,3,3,2,2,7,7,7,7</RowElev>
-	<RowElev>0,0,0,0,1,1,3,3,3,3,3,1,1,7,7,7,7</RowElev>
-	<RowElev>0,0,0,0,0,2,3,3,3,3,3,1,1,4,7,7,7</RowElev>
-	<RowElev>0,0,0,0,0,2,3,3,3,3,3,1,1,1,6,4,3</RowElev>
-	<RowElev>0,0,0,0,2,2,3,3,3,3,3,1,1,1,3,3,3</RowElev>
+	<RowElev>0,0,0,0,0,0,0,0,0,1,1,1,3,4,4,6,6</RowElev>
+	<RowElev>0,0,0,0,0,0,2,3,3,3,1,1,1,3,6,6,6</RowElev>
+	<RowElev>0,0,0,0,1,1,3,3,3,3,1,1,1,3,6,6,6</RowElev>
+	<RowElev>0,0,0,0,0,2,3,3,3,3,1,1,1,1,6,6,6</RowElev>
+	<RowElev>0,0,0,0,0,2,3,3,3,3,1,1,1,1,6,4,3</RowElev>
+	<RowElev>0,0,0,0,2,2,3,3,3,3,1,1,1,1,3,3,3</RowElev>
 	<RowElev>0,0,0,0,2,0,2,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>0,0,0,0,0,0,2,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>1,0,0,1,1,1,1,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>1,1,0,1,1,2,2,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>2,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3</RowElev>
-	<RowElev>0,0,2,2,1,2,2,2,2,2,0,0,2,2,3,4,4</RowElev>
-	<RowElev>0,0,2,2,0,2,2,2,2,0,0,0,2,2,3,4,4</RowElev>
-	<RowElev>0,0,2,2,0,1,1,1,1,0,0,0,1,2,2,3,4</RowElev>
-	<RowElev>0,0,2,2,0,0,0,0,0,0,1,1,1,2,2,3,4</RowElev>
-	<RowElev>0,0,1,1,1,1,1,1,1,1,2,2,2,2,3,4,4</RowElev>
+	<RowElev>0,0,0,2,2,2,2,2,2,2,0,0,2,2,3,4,4</RowElev>
+	<RowElev>0,0,0,2,2,1,2,2,1,0,0,0,1,2,2,3,4</RowElev>
+	<RowElev>0,0,0,2,2,0,0,0,0,0,1,1,1,2,2,3,4</RowElev>
+	<RowElev>0,0,0,2,2,1,1,1,1,1,2,2,2,2,3,4,4</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,4,4</RowElev>
 	<RowElev>1,1,1,1,1,1,1,2,2,2,2,2,2,2,4,4,4</RowElev>
 	<RowElev>1,1,2,1,1,1,2,2,2,2,2,2,2,2,4,4,4</RowElev>
@@ -70,11 +68,11 @@
 	<Unit>0,99,HouseWallHorizontal,0,3,None,None</Unit>
 	<Unit>0,99,HouseWallT_E,0,4,None,None</Unit>
 	<Unit>0,99,StairsCave_S,0,6,None,None</Unit>
-	<Unit>0,99,StairsWood_E,0,10,None,None</Unit>
-	<Unit>0,99,StairsWood_E,0,12,None,None</Unit>
-	<Unit>0,99,Chair,0,14,None,None</Unit>
-	<Unit>0,99,CandelabraLit,0,15,None,None</Unit>
-	<Unit>0,99,HouseWallVertical,0,16,None,None</Unit>
+	<Unit>0,99,StairsCave_S,0,7,None,None</Unit>
+	<Unit>0,99,StairsCave_S,0,8,None,None</Unit>
+	<Unit>0,99,StairsWood_E,0,11,None,None</Unit>
+	<Unit>0,99,StairsWood_E,0,14,None,None</Unit>
+	<Unit>0,99,CandelabraLit,0,16,None,None</Unit>
 	<Unit>0,99,HouseWallT_N,1,0,None,None</Unit>
 	<Unit>0,99,HouseWallSE,1,1,None,None</Unit>
 	<Unit>0,99,BookcaseFull,1,2,None,None</Unit>
@@ -82,12 +80,12 @@
 	<Unit>0,99,StairsCave_E,1,5,None,None</Unit>
 	<Unit>0,99,Rug9TL,1,7,None,None</Unit>
 	<Unit>0,99,Rug9T,1,8,None,None</Unit>
-	<Unit>0,99,Rug9T,1,9,None,None</Unit>
-	<Unit>0,99,Rug9TR,1,10,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,0">0,99,Poster,1,11,None,None</Unit>
-	<Unit>0,99,Barrel,1,12,None,None</Unit>
-	<Unit>0,99,RugTurq,1,14,None,None</Unit>
-	<Unit>0,99,HouseWallVertical,1,16,None,None</Unit>
+	<Unit>0,99,Rug9TR,1,9,None,None</Unit>
+	<Unit>0,99,StairsWood_W,1,10,None,None</Unit>
+	<Unit>0,99,Poster,1,12,None,None</Unit>
+	<Unit>0,99,StairsWood_N,1,13,None,None</Unit>
+	<Unit>0,99,RugTurq,1,15,None,None</Unit>
+	<Unit>0,99,Chair,1,16,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,2,0,None,None</Unit>
 	<Unit>0,99,IronJaw,2,1,None,None</Unit>
 	<Unit>0,99,HouseWallSW,2,4,None,None</Unit>
@@ -95,11 +93,10 @@
 	<Unit>0,99,Rug9TL,2,6,None,None</Unit>
 	<Unit>0,99,Rug9TipTL,2,7,None,None</Unit>
 	<Unit>0,99,Rug9C,2,8,None,None</Unit>
-	<Unit>0,99,Rug9C,2,9,None,None</Unit>
-	<Unit>0,99,Rug9R,2,10,None,None</Unit>
-	<Unit>0,99,StairsWood_W,2,11,None,None</Unit>
-	<Unit>0,99,TableFood,2,14,None,None</Unit>
-	<Unit>0,99,HouseWallVertical,2,16,None,None</Unit>
+	<Unit>0,99,Rug9R,2,9,None,None</Unit>
+	<Unit>0,99,StairsWood_W,2,10,None,None</Unit>
+	<Unit>0,99,Chair,2,12,None,None</Unit>
+	<Unit>0,99,TableFood,2,15,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,3,0,None,None</Unit>
 	<Unit>0,99,ClothingBin,3,1,None,None</Unit>
 	<Unit>0,99,ClothingRack,3,4,None,None</Unit>
@@ -107,21 +104,20 @@
 	<Unit>0,99,Rug9L,3,6,None,None</Unit>
 	<Unit>0,99,Rug9C,3,7,None,None</Unit>
 	<Unit>0,99,Rug9C,3,8,None,None</Unit>
-	<Unit>0,99,Rug9C,3,9,None,None</Unit>
-	<Unit>0,99,Rug9R,3,10,None,None</Unit>
-	<Unit>0,99,StairsWood_W,3,11,None,None</Unit>
+	<Unit>0,99,Rug9R,3,9,None,None</Unit>
+	<Unit>0,99,StairsWood_W,3,10,None,None</Unit>
+	<Unit>0,99,StairsWood_N,3,13,None,None</Unit>
 	<Unit>0,99,HouseWallNW,3,14,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,3,15,None,None</Unit>
-	<Unit>0,99,HouseWallSE,3,16,None,None</Unit>
+	<Unit>0,99,HouseWallHorizontal,3,16,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,4,0,None,None</Unit>
 	<Unit>0,99,BookcaseSparse,4,1,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,4,5,None,None</Unit>
 	<Unit>0,99,Rug9L,4,6,None,None</Unit>
 	<Unit>0,99,Rug9C,4,7,None,None</Unit>
 	<Unit>0,99,Rug9C,4,8,None,None</Unit>
-	<Unit>0,99,Rug9C,4,9,None,None</Unit>
-	<Unit>0,99,Rug9R,4,10,None,None</Unit>
-	<Unit>0,99,StairsWood_W,4,11,None,None</Unit>
+	<Unit>0,99,Rug9R,4,9,None,None</Unit>
+	<Unit>0,99,StairsWood_W,4,10,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,4,14,None,None</Unit>
 	<Unit>0,99,Barrel,4,15,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,5,0,None,None</Unit>
@@ -132,9 +128,8 @@
 	<Unit>0,99,Rug9BL,5,6,None,None</Unit>
 	<Unit>0,99,Rug9B,5,7,None,None</Unit>
 	<Unit>0,99,Rug9B,5,8,None,None</Unit>
-	<Unit>0,99,Rug9B,5,9,None,None</Unit>
-	<Unit>0,99,Rug9BR,5,10,None,None</Unit>
-	<Unit>0,99,StairsWood_W,5,11,None,None</Unit>
+	<Unit>0,99,Rug9BR,5,9,None,None</Unit>
+	<Unit>0,99,StairsWood_W,5,10,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,5,14,None,None</Unit>
 	<Unit>0,99,Barrel,5,15,None,None</Unit>
 	<Unit>0,99,FruitStandStriped_S,5,16,None,None</Unit>
@@ -144,7 +139,6 @@
 	<Unit>0,99,StairsWood_N,6,7,None,None</Unit>
 	<Unit>0,99,StairsWood_N,6,8,None,None</Unit>
 	<Unit>0,99,StairsWood_N,6,9,None,None</Unit>
-	<Unit>0,99,StairsWood_N,6,10,None,None</Unit>
 	<Unit>0,99,TableFood,6,12,None,None</Unit>
 	<Unit>0,99,Chair,6,13,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,6,14,None,None</Unit>
@@ -189,28 +183,28 @@
 	<Unit tag="Add,TreatAsArmy,0">0,99,Poster,11,8,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,0">0,99,Poster,11,14,None,None</Unit>
 	<Unit>0,99,Tree,11,15,None,None</Unit>
-	<Unit>0,99,Wildflowers,12,14,None,None</Unit>
-	<Unit>0,99,ItemSack,12,15,None,Iron Bow</Unit>
-	<Unit>0,99,Barrel,13,3,None,None</Unit>
-	<Unit>0,99,ReedsFlowerSmall,13,12,None,None</Unit>
-	<Unit>0,99,WildflowersAlt,13,13,None,None</Unit>
-	<Unit>0,99,Bush,14,13,None,None</Unit>
-	<Unit>0,99,ReedsSmall,15,6,None,None</Unit>
-	<Unit>0,99,FruitStand_S,15,8,None,None</Unit>
-	<Unit>0,99,Reeds,15,13,None,None</Unit>
-	<Unit>0,99,Wildflowers,15,16,None,None</Unit>
-	<Unit>0,99,Birdbath,17,15,None,None</Unit>
-	<Unit>0,99,Caravan_E,18,0,None,None</Unit>
-	<Unit>0,99,Evergreen,18,10,None,None</Unit>
-	<Unit>0,99,Wildflowers,18,14,None,None</Unit>
-	<Unit>0,99,Bush,19,3,None,None</Unit>
-	<Unit>0,99,TreeFruit,19,9,None,Apple/Apple/Apple</Unit>
-	<Unit>0,99,WildflowersAlt,19,10,None,None</Unit>
-	<Unit>0,0,Arora/,15,12,Up,None</Unit>
-	<Unit>0,0,Drasan/Winterbloom,16,11,Left,None</Unit>
-	<Unit>0,0,Nobeta/,16,12,Left,None</Unit>
-	<Unit>0,0,Harrien/,17,10,Up,None</Unit>
-	<Unit>0,0,Kyat/,18,12,Left,None</Unit>
+	<Unit>0,99,Wildflowers,11,16,None,None</Unit>
+	<Unit>0,99,Barrel,12,4,None,None</Unit>
+	<Unit>0,99,ReedsFlowerSmall,12,12,None,None</Unit>
+	<Unit>0,99,WildflowersAlt,12,13,None,None</Unit>
+	<Unit>0,99,Bush,13,13,None,None</Unit>
+	<Unit>0,99,FruitStand_S,14,5,None,None</Unit>
+	<Unit>0,99,ReedsSmall,14,6,None,None</Unit>
+	<Unit>0,99,Reeds,14,13,None,None</Unit>
+	<Unit>0,99,Wildflowers,14,16,None,None</Unit>
+	<Unit>0,99,Birdbath,16,15,None,None</Unit>
+	<Unit>0,99,Caravan_E,17,0,None,None</Unit>
+	<Unit>0,99,RubbleCastle,17,7,None,None</Unit>
+	<Unit>0,99,Evergreen,17,10,None,None</Unit>
+	<Unit>0,99,Wildflowers,17,14,None,None</Unit>
+	<Unit>0,99,Bush,18,3,None,None</Unit>
+	<Unit>0,99,TreeFruit,18,9,None,Apple/Apple/Apple</Unit>
+	<Unit>0,99,WildflowersAlt,18,10,None,None</Unit>
+	<Unit>0,0,Arora/,14,12,Up,None</Unit>
+	<Unit>0,0,Drasan/Winterbloom,15,11,Left,None</Unit>
+	<Unit>0,0,Nobeta/,15,13,Left,None</Unit>
+	<Unit>0,0,Harrien/,16,10,Up,None</Unit>
+	<Unit>0,0,Kyat/,17,12,Left,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Bruiser/,2,9,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,3,3,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Passive/Add,Pursue">0,1,Rubble Rouser Golem/,3,9,Up,None</Unit>
@@ -220,15 +214,16 @@
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Golem/,6,3,Up,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Bruiser/,8,11,Left,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,9,10,Up,None</Unit>
-	<Unit tag="Add,Passive/Add,Pursue">0,1,Rubble Rouser Golem/,12,2,Down,None</Unit>
+	<Unit tag="Add,Passive/Add,Pursue">0,1,Rubble Rouser Golem/,11,4,Down,None</Unit>
+	<Unit>0,1,Rubble Rouser Golem/,11,13,Down,None</Unit>
+	<Unit tag="Add,Passive/Add,Pursue">0,1,Rubble Rouser Golem/,12,3,Down,None</Unit>
 	<Unit tag="Add,LevelUp,3">0,1,Irate Crossbow Aficionado/,12,7,Down,None</Unit>
-	<Unit>0,1,Rubble Rouser Golem/,12,13,Down,None</Unit>
-	<Unit tag="Add,LevelUp,3">0,1,Irate Crossbow Aficionado/,13,15,Left,None</Unit>
-	<Unit>0,1,Rubble Rouser Golem/,15,9,Right,None</Unit>
-	<Unit>0,1,Rubble Rouser Golem/,16,4,Right,None</Unit>
-	<Unit tag="Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,17,0,Down,None</Unit>
-	<Unit tag="Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,17,6,Right,None</Unit>
-	<Unit tag="Add,Passive/Add,LevelUp,6/Add,Patrol,Viewing Booth">0,2,Save Me/,1,14,Down,None</Unit>
+	<Unit tag="Add,LevelUp,3">0,1,Irate Crossbow Aficionado/,12,15,Left,None</Unit>
+	<Unit>0,1,Rubble Rouser Golem/,14,9,Right,None</Unit>
+	<Unit>0,1,Rubble Rouser Golem/,15,4,Right,None</Unit>
+	<Unit tag="Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,16,0,Down,None</Unit>
+	<Unit tag="Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,16,6,Right,None</Unit>
+	<Unit tag="Add,Passive/Add,LevelUp,6/Add,Patrol,Viewing Booth">0,2,Save Me/,1,15,Down,None</Unit>
 
 	<Script>Set Lesbian Talkable
 		<Action>AddStatus/Kyat,Talkable</Action>
@@ -240,37 +235,6 @@
 		<Action>RemoveStatus/Kyat,Talkable</Action>
 		<Action>RemoveStatus/Nobeta,Talkable</Action>
 		<Action>SetString/Nobeta Can Talk,INVALID</Action>
-	</Script>
-
-	<Script>Swap Out Unit
-		<Action>Run/Store Character Stats,Prefix,SwapOut,Character Name,-STR:Swap Out Name-</Action>
-		<Action>RemoveUnit/-STR:Swap Out Name-,false</Action>
-		<Action>SpawnUnit/0,-STR:Swap In Name-,-VAL:SwapOutY Coord-,-VAL:SwapOutX Coord-,-STR:SwapOutFacing-,,,-STR:SwapOutInventory String-,false</Action>
-		<Action>Run/Load Character Stats,Character Name,-STR:Swap In Name-,Prefix,SwapOut</Action>
-	</Script>
-
-	<Script>Store Character Stats
-		<Action>SetList/Variables To List,Accuracy|Dodge|Counter Limit|Experience|Level|Morale|Perception|Psy|Reflexes|Slash Res.|Pierce Res.|Crush Res.|Mental Res.|Heat Res.|Cold Res.|Shadow Res.|Light Res.|Poison Res.|Speed|Strength|Health|Salary|X Coord|Y Coord|Drain|Damage|Turn Ended</Action>
-		<Action>InvToList/-STR:Character Name-,-STR:Prefix-Inventory List</Action>
-		<Action>ForLoop/-ii-,0-LASTINLIST[-STR:Prefix-Inventory List],1,SetListEntry,-STR:Prefix-Inventory List,-ii-,LIST{-STR:Prefix-Inventory List,-ii-}[E]</Action>
-		<Action>ListToString/-STR:Prefix-Inventory List,:,-STR:Prefix-Inventory String</Action>
-		<Action>ForLoop/-ii-,0-LASTINLIST[Variables To List],1,SetValByStat,-STR:Prefix-LIST{Variables To List,-ii-},=,-STR:Swap Out Name-,LIST{Variables To List,-ii-}</Action>
-		<Action>SetStringByStat/-STR:Prefix-Sprite Set,-STR:Character Name-,Sprite Set</Action>
-		<Action>SetStringByStat/-STR:Prefix-Facing,-STR:Character Name-,Facing</Action>
-	</Script>
-
-	<Script>Load Character Stats
-		<Action>SetList/Variables To List,Accuracy|Dodge|Counter Limit|Experience|Level|Morale|Perception|Psy|Reflexes|Slash Res.|Pierce Res.|Crush Res.|Mental Res.|Heat Res.|Cold Res.|Shadow Res.|Light Res.|Poison Res.|Speed|Strength|Health|Salary|Drain|Damage|Turn Ended</Action>
-		<Action>ForLoop/-ii-,0-LASTINLIST[Variables To List],1,Run,Load Character Stat Subroutine,Prefix,-STR:Prefix-,Character Name,-STR:Character Name-,Stat,LIST{Variables To List,-ii-}</Action>
-		<Action>SetStatByString/-STR:Character Name-,-STR:Prefix-Sprite Set
-</Action>
-		<Action>SetStatByString/-STR:Character Name-,-STR:Prefix-Facing
-</Action>
-	</Script>
-
-	<Script>Load Character Stat Subroutine
-		<Action>SetValByVal/NextLoadedStatValue,=,-STR:Prefix--STR:Stat-</Action>
-		<Action>SetStatByVal/-STR:Character Name-,-STR:Stat-,=,NextLoadedStatValue</Action>
 	</Script>
 
 	<Script>BossSpawnProgress

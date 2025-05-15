@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ItemClasses>
-  <Custom></Custom>
   <Consumable>
     <Item loadID="Adrenaline Pills" name="Adrenaline Pills" useableWith="Consumable" addsStatus="Move Bonus" consumedAfter="3" itemValue="25" statPlus="Damage,3" commonality="12" image="Pills Red" description="Grants a movement bonus, but hurts the user a bit."></Item>
     <Item loadID="Apple" name="Apple" useableWith="Consumable" consumedAfter="1" itemValue="10" statPlus="Damage,-10/Drain,-4" runsScripts="Play Chomp Sound" commonality="24" image="Apple" description="Restores health and energy."></Item>
@@ -140,4 +139,7 @@
     <Item loadID="400 Coins" name="400 Coins" useableWith="automatic" consumedAfter="1" itemValue="400" runsScripts="Gain400Coins" commonality="0" image="Coins" description="Contains 300 aura."></Item>
     <Item loadID="500 Coins" name="500 Coins" useableWith="automatic" consumedAfter="1" itemValue="500" runsScripts="Gain500Coins" commonality="0" image="Coins" description="Contains 500 aura."></Item>
   </Misc>
+  <Custom>
+    <Item name="Axe of the Bear" useableWith="Weapon Hand" personalItem="false" sellable="true" addsStatus="" endsStatus="" addsTags="IgnoreStatFXRes,100/TargetValue,1.2" grantsSkills="Axe" runsScripts="" masteriesReq="Axe" consumedAfter="45" maxUses="45" itemValue="100" commonality="0" altersEquipment="" statPlus="Strength,5" image="Axe Iron" description="A flashy axe wielded by a very burly man. Attracts more attention on the battlefield."></Item>
+  </Custom>
 </ItemClasses>

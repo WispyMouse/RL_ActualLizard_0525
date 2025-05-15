@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 2:16:53 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 3:33:58 PM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
@@ -34,6 +34,35 @@
 		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Clark</Action>
 	</Script>
 
+	<Script>Swap Out Unit
+		<Action>Run/Store Character Stats,Prefix,SwapOut,Character Name,-STR:Swap Out Name-</Action>
+		<Action>RemoveUnit/-STR:Swap Out Name-,false</Action>
+		<Action>SpawnUnit/0,-STR:Swap In Name-,-VAL:SwapOutY Coord-,-VAL:SwapOutX Coord-,-STR:SwapOutFacing-,,,-STR:SwapOutInventory String-,false</Action>
+		<Action>Run/Load Character Stats,Character Name,-STR:Swap In Name-,Prefix,SwapOut</Action>
+	</Script>
+
+	<Script>Store Character Stats
+		<Action>SetList/Variables To List,Accuracy|Dodge|Counter Limit|Experience|Level|Morale|Perception|Psy|Reflexes|Slash Res.|Pierce Res.|Crush Res.|Mental Res.|Heat Res.|Cold Res.|Shadow Res.|Light Res.|Poison Res.|Speed|Strength|Health|Salary|X Coord|Y Coord|Drain|Damage|Turn Ended</Action>
+		<Action>InvToList/-STR:Character Name-,-STR:Prefix-Inventory List</Action>
+		<Action>ForLoop/-ii-,0-LASTINLIST[-STR:Prefix-Inventory List],1,SetListEntry,-STR:Prefix-Inventory List,-ii-,LIST{-STR:Prefix-Inventory List,-ii-}[E]</Action>
+		<Action>ListToString/-STR:Prefix-Inventory List,:,-STR:Prefix-Inventory String</Action>
+		<Action>ForLoop/-ii-,0-LASTINLIST[Variables To List],1,SetValByStat,-STR:Prefix-LIST{Variables To List,-ii-},=,-STR:Swap Out Name-,LIST{Variables To List,-ii-}</Action>
+		<Action>SetStringByStat/-STR:Prefix-Sprite Set,-STR:Character Name-,Sprite Set</Action>
+		<Action>SetStringByStat/-STR:Prefix-Facing,-STR:Character Name-,Facing</Action>
+	</Script>
+
+	<Script>Load Character Stats
+		<Action>SetList/Variables To List,Accuracy|Dodge|Counter Limit|Experience|Level|Morale|Perception|Psy|Reflexes|Slash Res.|Pierce Res.|Crush Res.|Mental Res.|Heat Res.|Cold Res.|Shadow Res.|Light Res.|Poison Res.|Speed|Strength|Health|Salary|Drain|Damage|Turn Ended</Action>
+		<Action>ForLoop/-ii-,0-LASTINLIST[Variables To List],1,Run,Load Character Stat Subroutine,Prefix,-STR:Prefix-,Character Name,-STR:Character Name-,Stat,LIST{Variables To List,-ii-}</Action>
+		<Action>SetStatByString/-STR:Character Name-,-STR:Prefix-Sprite Set</Action>
+		<Action>SetStatByString/-STR:Character Name-,-STR:Prefix-Facing</Action>
+	</Script>
+
+	<Script>Load Character Stat Subroutine
+		<Action>SetValByVal/NextLoadedStatValue,=,-STR:Prefix--STR:Stat-</Action>
+		<Action>SetStatByVal/-STR:Character Name-,-STR:Stat-,=,NextLoadedStatValue</Action>
+	</Script>
+
 	<Dialogue trigger="OnLoaded/" convID="Set Root Relationships" r="false">
 		<Branch num="0" name="Starting Relationships">/
 			<Action>SetRelationshipLabel/Harrien,Kyat,Troupe Member,true</Action>
@@ -46,7 +75,6 @@
 			<Action>SetRelationshipLabel/Harrien,Nobeta,Daughter,false</Action>
 			<Action>Run/Set Asandr Default Relationships,New Name,Drasan Winterbloom</Action>
 			<Action>EndConvImmediately/</Action>
-			<Action>/</Action>
 		</Branch>
 	</Dialogue>
 
