@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 11:28:33 AM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 3:07:59 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -18,8 +18,8 @@
 	<Tileset>07,Water</Tileset>
 	<Tileset>08,Dirt</Tileset>
 	
-	<Row>01.0X,01.0O,01.0O,01.0O,01.0T,02.01,02.01,01.0P,01.01,01.01,01.01,01.01,01.01,01.01,03.01,03.01,03.01</Row>
-	<Row>01.0Q,02.01,02.01,02.01,02.01,02.01,02.3H,01.01,01.01,01.01,01.01,04.01,04.01,03.01,03.01,03.01,03.01</Row>
+	<Row>01.0X,01.0O,01.0O,01.0O,01.0T,02.01,02.01,02.3A,01.01,01.01,01.01,01.01,01.01,01.01,03.01,03.01,03.01</Row>
+	<Row>01.0Q,02.01,02.01,02.01,02.01,02.01,02.07,01.01,01.01,01.01,01.01,04.01,04.01,03.01,03.01,03.01,03.01</Row>
 	<Row>01.0Q,02.01,02.01,02.01,02.3F,02.45,01.01,01.01,01.01,01.01,01.01,01.01,04.01,03.01,03.01,03.01,03.01</Row>
 	<Row>01.0Q,02.01,02.01,02.01,02.01,02.07,01.01,01.01,01.01,01.01,01.01,04.01,04.01,04.01,03.01,03.01,03.01</Row>
 	<Row>01.0Q,02.01,02.01,02.01,02.01,02.3A,01.01,01.01,01.01,01.01,01.01,04.01,04.01,04.01,03.01,03.01,03.01</Row>
@@ -44,12 +44,12 @@
 	<Light type="Point Light" size="2" intensity="1.5" y="5" x="7" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
 	<Light type="Point Light" size="2" intensity="1.5" y="5" x="10" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
 	
-	<RowElev>0,0,0,0,0,0,0,0,2,3,3,5,5,7,7,7,7</RowElev>
-	<RowElev>0,0,0,0,0,0,3,2,3,3,3,2,2,7,7,7,7</RowElev>
+	<RowElev>0,0,0,0,0,0,0,1,2,3,3,5,5,7,7,7,7</RowElev>
+	<RowElev>0,0,0,0,0,0,2,3,3,3,3,2,2,7,7,7,7</RowElev>
 	<RowElev>0,0,0,0,1,1,3,3,3,3,3,1,1,7,7,7,7</RowElev>
 	<RowElev>0,0,0,0,0,2,3,3,3,3,3,1,1,4,7,7,7</RowElev>
 	<RowElev>0,0,0,0,0,2,3,3,3,3,3,1,1,1,6,4,3</RowElev>
-	<RowElev>0,0,0,0,2,2,2,3,3,3,3,1,1,1,3,3,3</RowElev>
+	<RowElev>0,0,0,0,2,2,3,3,3,3,3,1,1,1,3,3,3</RowElev>
 	<RowElev>0,0,0,0,2,0,2,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>0,0,0,0,0,0,2,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>1,0,0,1,1,1,1,1,1,1,1,1,1,1,3,3,3</RowElev>
@@ -69,7 +69,7 @@
 	<Unit>0,99,HouseWallHorizontal,0,2,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,0,3,None,None</Unit>
 	<Unit>0,99,HouseWallT_E,0,4,None,None</Unit>
-	<Unit>0,99,StairsCave_S,0,7,None,None</Unit>
+	<Unit>0,99,StairsCave_S,0,6,None,None</Unit>
 	<Unit>0,99,StairsWood_E,0,10,None,None</Unit>
 	<Unit>0,99,StairsWood_E,0,12,None,None</Unit>
 	<Unit>0,99,Chair,0,14,None,None</Unit>
@@ -79,7 +79,7 @@
 	<Unit>0,99,HouseWallSE,1,1,None,None</Unit>
 	<Unit>0,99,BookcaseFull,1,2,None,None</Unit>
 	<Unit>0,99,DoorWoodVertical,1,4,None,None</Unit>
-	<Unit>0,99,CavePillar,1,6,None,None</Unit>
+	<Unit>0,99,StairsCave_E,1,5,None,None</Unit>
 	<Unit>0,99,Rug9TL,1,7,None,None</Unit>
 	<Unit>0,99,Rug9T,1,8,None,None</Unit>
 	<Unit>0,99,Rug9T,1,9,None,None</Unit>
@@ -242,14 +242,6 @@
 		<Action>SetString/Nobeta Can Talk,INVALID</Action>
 	</Script>
 
-	<Script>Asandr Progresses Script
-		<Action>SetVal/Asandr Name Progress,+:1</Action>
-		<Action>IfValRun/Asandr Name Progress,=,4,Swap Out Unit,Swap Out Name,Sandra Winterbloom,Swap In Name,Asandr Winterbloom/</Action>
-		<Action>IfValRun/Asandr Name Progress,=,3,Swap Out Unit,Swap Out Name,Rasand Winterbloom,Swap In Name,Sandra Winterbloom/</Action>
-		<Action>IfValRun/Asandr Name Progress,=,2,Swap Out Unit,Swap Out Name,Rasand Winterbloom,Swap In Name,Andras Winterbloom/</Action>
-		<Action>IfValRun/Asandr Name Progress,=,1,Swap Out Unit,Swap Out Name,Drasan Winterbloom,Swap In Name,Andras Winterbloom/</Action>
-	</Script>
-
 	<Script>Swap Out Unit
 		<Action>Run/Store Character Stats,Prefix,SwapOut,Character Name,-STR:Swap Out Name-</Action>
 		<Action>RemoveUnit/-STR:Swap Out Name-,false</Action>
@@ -336,20 +328,22 @@
 			<Action>SetArea/Viewing Booth,0,3,13,15</Action>
 			<Action>IfValGoTo/Skip Dialogue,=,1,999</Action>
 			<Action>SetVal/WestApproachFlag,=:0</Action>
+			<Action>SetVal/Sandra Attacks,=:0</Action>
 			<Action>GoToNextBranch/</Action>
 		</Branch>
 		<Branch num="1" name="Intro Dialogue Start">Drasan Winterbloom/W--what? The theater!
 			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,right,,Shocked</Action>
+			<Action>MoveCam/,,Drasan Winterbloom</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Irate Crossbow Aficionado/That Rubble Rouser guy is right! We don't have to stand for this! We can take matters in to our own hands! We can tear down this injust favoritism for over-hyped product line crossbows!
 			<Action>AddPortrait/Irate Crossbow Aficionado/,Irate Crossbow Aficionado,,Angry</Action>
-			<Action>SelectUnit/Irate Crossbow Aficionado</Action>
+			<Action>MoveCam/,,Irate Crossbow Aficionado</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Save Me/I do say, I'm a placeholder text for this character being shocked at the state of things!
 			<Action>ClearPortraits/</Action>
-			<Action>MoveCam/Save Me</Action>
+			<Action>MoveCam/,,Save Me</Action>
 			<Action>AddPortrait/Save Me,Save Me,left,,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -419,11 +413,13 @@
 			<Action>AddPortrait/Clark,Clark,left</Action>
 			<Action>SetStat/Clark,Morale,=4</Action>
 			<Action>RemoveConv/West Approach Recognized</Action>
+			<Action>SetVal/WestApproachFlag,3</Action>
+			<Action>RemoveStatus/Harrien,Talkable</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnReachingArea/Clothing Zone,Drasan Winterbloom" convID="Sandra First Clothes" r="false">
+	<Dialogue trigger="OnReachingArea/Clothing Zone,Drasan Winterbloom" convID="Asandr First Clothes" r="false">
 		<Branch num="0" name="">Drasan Winterbloom/Oh, what do we have here? [Drasan sees an open container of clothes for performers] This is...
 			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,left,,Quizzical</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -433,23 +429,31 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Andras Winterbloom/I could... use a change.
+			<Action>SetVal/Asandr Name Progress,+:1</Action>
 			<Action>Run/Asandr Progresses Script</Action>
 			<Action>AddPortrait/Andras Winterbloom,Andras Winterbloom,left,,Happy</Action>
 			<Action>PortraitParticles/Andras Winterbloom,Heart</Action>
+			<Action>Swap Out Unit/Swap Out Name,Drasan Winterbloom,Swap In Name,Andras Winterbloom</Action>
+			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Andras Winterbloom</Action>
+			<Action>SetStat/Andras Winterbloom,Morale,+:3</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharSelected/0,-STR:AndrasReadyToShave-" convID="Andras Shaves" r="false">
+	<Dialogue trigger="OnCharSelected/0,-STR:AndrasReadyToShave-" convID="Asandr Shaves" r="false">
 		<Branch num="0" name="">Andras Winterbloom/If I can change anything, then... [Andras carefully presses a sword to their lip]
 			<Action>SetString/AndrasReadyToShave,INVALID</Action>
 			<Action>AddPortrait/Andras Winterbloom,Andras Winterbloom,left,,Nervous</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Rasand Winterbloom/...that feels much better.
-			<Action>Run/Asandr Progresses Script</Action>
 			<Action>AddPortrait/Rasand Winterbloom,Rasand Winterbloom,,Happy</Action>
 			<Action>PortraitParticles/Rasand Winterbloom,Heart</Action>
+			<Action>SetVal/Asandr Name Progress,+:1</Action>
+			<Action>Swap Out Unit/Swap Out Name,Asandr Winterbloom,Swap In Name,Rasand Winterbloom/</Action>
+			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Rasand Winterbloom</Action>
+			<Action>AddStatus/Asandr Winterbloom,Talkable</Action>
+			<Action>SetStat/Rasand Winterbloom,Morale,+:3</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -465,6 +469,7 @@
 		</Branch>
 		<Branch num="2" name="">Irate Crossbow Aficionado/Argh;; there's never enough time to educate arbalest-ignorants! Let's teach them proper technique!
 			<Action>AddPortrait/Irate Crossbow Aficionado,Irate Crossbow Aficionado,right,,Mean</Action>
+			<Action>FlipPortrait/Irate Crossbow Aficionado</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Clark/Uh... alright...
@@ -478,7 +483,7 @@
 			<Action>RemoveTagFromGroup/1,Inactive</Action>
 			<Action>AddStatus/Harrien,Talkable</Action>
 			<Action>SetVal/WestApproachFlag,=,2</Action>
-			<Reply>Continue./NextBranch</Reply>
+			<Reply>Continue./LoadConv/Round Start Dialogue Dispatch</Reply>
 		</Branch>
 	</Dialogue>
 
@@ -508,6 +513,8 @@
 			<Action>Run/Asandr Progresses Script</Action>
 			<Action>PortraitParticles/Asandr Winterbloom,Sparkles</Action>
 			<Action>AddPortrait/Asandr Winterbloom/,Asandr Winterbloom/,right,,Happy</Action>
+			<Action>SetStat/Asandr Winterbloom,Morale,+:2</Action>
+			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Asandr Winterbloom</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Asandr Winterbloom/Aaah, I love it! And should write different, better, or more dialogue here to express that! :D
@@ -530,13 +537,42 @@
 		</Branch>
 		<Branch num="1" name="">/
 			<Action>LoadConv/West Approach Recognized</Action>
-			<Action>EndConvImmediately/</Action>
+			<Action>GoTo/0</Action>
 		</Branch>
 		<Branch num="2" name="Spawn Boss">Rubble Rouser Boss/Hey;; I'm rousing here! And this is a boss fight now.
 			<Action>SpawnUnit/1,Rubble Rouser Boss:,7,17,Left,,Add:LevelUp:9,,</Action>
 			<Action>SpawnUnit/1,Rubble Rouser Golem:,8,16,Left</Action>
 			<Action>AddPortrait/Rubble Rouser Boss,Rubble Rouser Boss,left,,Angry</Action>
-			<Reply>Continue./EndConv</Reply>
+			<Action>SetVal/TurnsUntilBossAppears,-1</Action>
+			<Reply>Continue./NewBranch/0</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="PostCharAttacked/1,-ANY,-ANY,0,Sandra Winterbloom" convID="Asandr Strikes" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/SandraAttacks,+:1</Action>
+			<Action>IfValGoTo/SandraAttacks,g=,2,1</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+		<Branch num="1" name="">Rasand Winterbloom/Ah-hah! Hyah! [She shows a renewed energy in her motions, and keeps her eye on her target with confidence]
+			<Action>RemoveConv/Asandr Strikes</Action>
+			<Action>AddPortrait/Rasand Winterbloom,Sandra Winterbloom,left,,Happy</Action>
+			<Action>AddPortrait/-Char2Name-,-Char2Name-,right,Sad</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="2" name="">Rasand Winterbloom/Hoo... Yes, this feels much better. Maybe, I could make just...
+			<Action>RemovePortrait/-Char2Name-</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="3" name="">Sandra Winterbloom/...just a couple more changes.
+			<Action>SetVal/AsandrNameProgress,+:1</Action>
+			<Action>Run/Swap Out Name,Rasand Winterbloom,Swap In Name,Sandra Winterbloom/</Action>
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Sandra Winterbloom,Sandra Winterbloom,left,,Happy</Action>
+			<Action>PortraitParticles/Sandra Winterbloom,Hearts</Action>
+			<Action>SetStat/Sandra Winterbloom,Morale,+:2</Action>
+			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Sandra Winterbloom</Action>
+			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 

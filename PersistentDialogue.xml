@@ -1,18 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 11:13:07 AM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 2:16:53 PM">
+
+	<Script>ComparisonScript_Equals
+		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
+		<Action>IfValRun/-STR:ValueName-,=,-VAL:CompareTo-,_SetVal,ValueName,-STR:Prefix-Answer,Value,1</Action>
+	</Script>
+
+	<Script>_SetVal
+		<Action>SetVal/-STR:ValueName-,=:-VAL:Value-</Action>
+	</Script>
+
+	<Script>IsAllTrue_2
+		<Action>Run/ComparisonScript_Equals,ValueName,-STR:ValueOneName-,CompareTo,-VAL:ValueOneCompareTo-,Prefix,ValueOne</Action>
+		<Action>Run/ComparisonScript_Equals,ValueName,-STR:ValueTwoName-,CompareTo,-VAL:ValueTwoCompareTo-,Prefix,ValueTwo</Action>
+		<Action>SetVal/AnswerComposite,=:-VAL:ValueOneAnswer-,*:-VAL:ValueTwoAnswer-</Action>
+	</Script>
+
+	<Script>Set Asandr Default Relationships And Change Name
+		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Nobeta</Action>
+		<Action>SetString/Asandr Current Name,-STR:New Name-</Action>
+		<Action>SetRelationshipLabel/Kyat,-STR:Asandr Current Name-,Childhood Friend</Action>
+		<Action>SetRelationshipLabel/Nobeta,-STR:Asandr Current Name-,Troupe Member,true</Action>
+		<Action>SetRelationshipLabel/Harrien,-STR:Asandr Current Name-,Troupe Member,true</Action>
+		<Action>SetRelationshipLabel/Arora,-STR:Asandr Current Name-,Troupe Member,true</Action>
+		<Action>RemoveRelationshipLabel/Nobeta,-STR:Asandr Current Name-</Action>
+		<Action>RemoveRelationshipLabel/Kyat,-STR:Asandr Current Name-</Action>
+		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Kyat</Action>
+		<Action>RemoveRelationshipLabel/Harrien,-STR:Asandr Current Name-</Action>
+		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Harrien</Action>
+		<Action>RemoveRelationshipLabel/Arora,-STR:Asandr Current Name-</Action>
+		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Arora</Action>
+		<Action>RemoveRelationshipLabel/Clark,-STR:Asandr Current Name-</Action>
+		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Clark</Action>
+	</Script>
 
 	<Dialogue trigger="OnLoaded/" convID="Set Root Relationships" r="false">
 		<Branch num="0" name="Starting Relationships">/
 			<Action>SetRelationshipLabel/Harrien,Kyat,Troupe Member,true</Action>
 			<Action>SetRelationshipLabel/Harrien,Arora,Troupe Member,true</Action>
-			<Action>SetRelationshipLabel/Harrien,Drasan Winterbloom,Troupe Member,true</Action>
+			<Action>SetString/Asandr Current Name,Drasan Winterbloom</Action>
 			<Action>SetRelationshipLabel/Nobeta,Arora,Troupe Member,true</Action>
-			<Action>SetRelationshipLabel/Nobeta,Drasan Winterbloom,Troupe Member,true</Action>
 			<Action>SetRelationshipLabel/Kyat,Nobeta,Troupe Member,true</Action>
 			<Action>SetRelationshipLabel/Kyat,Arora,Troupe Member,true</Action>
-			<Action>SetRelationshipLabel/Kyat,Drasan Winterbloom,Childhood Friend</Action>
 			<Action>SetRelationshipLabel/Nobeta,Harrien,Father,false</Action>
 			<Action>SetRelationshipLabel/Harrien,Nobeta,Daughter,false</Action>
+			<Action>Run/Set Asandr Default Relationships,New Name,Drasan Winterbloom</Action>
 			<Action>EndConvImmediately/</Action>
 			<Action>/</Action>
 		</Branch>
