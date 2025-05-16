@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 8:34:08 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 8:39:56 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -29,7 +29,7 @@
 	<Row>05.06,02.01,02.01,02.07,02.3C,02.3C,01.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,01.01,01.01,01.01</Row>
 	<Row>06.02,06.06,05.0Z,05.1L,06.01,06.07,01.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,01.01,01.01,01.01</Row>
 	<Row>06.3G,06.02,05.1K,05.03,06.07,06.03,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.0m,01.01</Row>
-	<Row>07.01,07.01,07.01,01.01,01.01,06.2O,06.05,06.04,06.2O,06.08,07.01,07.01,06.0O,06.0S,06.3F,06.3Q,06.07,06.2R</Row>
+	<Row>07.01,06.0O,06.0K,01.01,01.01,06.2O,06.05,06.04,06.2O,06.08,07.01,07.01,06.0O,06.0S,06.3F,06.3Q,06.07,06.2R</Row>
 	<Row>07.01,07.01,07.01,01.01,01.01,06.0K,06.09,06.08,06.0P,07.01,07.01,07.01,07.01,06.0L,06.2P,06.09,06.2P,06.01</Row>
 	<Row>07.01,07.01,07.01,01.01,01.01,07.01,07.01,07.01,07.01,07.01,08.0Q,08.0N,08.0N,06.0U,06.2P,06.01,06.09,06.05</Row>
 	<Row>07.01,07.01,07.01,01.01,01.01,06.0N,06.0N,06.0N,08.0N,08.0N,06.07,06.2R,06.2R,06.2R,06.03,06.07,06.03,06.2P</Row>
@@ -53,7 +53,7 @@
 	<RowElev>1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>1,1,0,1,1,2,2,1,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>2,1,1,1,2,2,2,2,2,2,2,2,2,2,2,3,3,3</RowElev>
-	<RowElev>0,0,0,2,2,2,2,2,2,2,0,0,1,1,3,3,4,4</RowElev>
+	<RowElev>0,1,1,2,2,2,2,2,2,2,0,0,1,1,3,3,4,4</RowElev>
 	<RowElev>0,0,0,2,2,1,2,2,1,0,0,0,0,1,2,3,4,4</RowElev>
 	<RowElev>0,0,0,2,2,0,0,0,0,0,1,1,1,1,2,2,4,4</RowElev>
 	<RowElev>0,0,0,2,2,1,1,1,1,1,2,2,2,2,2,3,3,4</RowElev>
@@ -213,16 +213,17 @@
 	<Unit>0,0,Kyat/,17,12,Left,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Bruiser/,2,9,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,3,3,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Passive/Add,Pursue">0,1,Rubble Rouser Golem/,3,13,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Golem/,3,13,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Clark/,4,4,Left,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,4,7,Up,None</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Passive/Add,Pursue">0,1,Rubble Rouser Golem/,5,10,Up,None</Unit>
+	<Unit tag="Add,AggroGroup,2/Add,Pursue/Patrol,Theater">0,1,Rubble Rouser Golem/,5,10,Up,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Golem/,6,1,Up,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Golem/,6,3,Up,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,Patrol,StartingArea">0,1,Rubble Rouser Golem/,6,3,Up,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Bruiser/,8,11,Left,None</Unit>
+	<Unit tag="Add,LevelUp,3/Add,AreaPreference,StartingArea,1.5/Add,AggroGroup,3/Add,Passive">0,1,Rubble Rouser Bruiser/,9,0,Up,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,9,10,Up,None</Unit>
-	<Unit tag="Add,Passive/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Golem/,11,4,Down,None</Unit>
-	<Unit tag="Add,Passive/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Golem/,12,3,Down,None</Unit>
+	<Unit tag="Add,Passive/Add,Pursue/Add,AggroGroup,3/Add,Patrol,StartingArea">0,1,Rubble Rouser Golem/,11,4,Down,None</Unit>
+	<Unit tag="Add,Passive/Add,Pursue/Add,AggroGroup,3/Add,Patrol,StartingArea">0,1,Rubble Rouser Golem/,12,3,Down,None</Unit>
 	<Unit tag="Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,12,7,Down,None</Unit>
 	<Unit>0,1,Rubble Rouser Golem/,12,13,Down,None</Unit>
 	<Unit tag="Add,LevelUp,3">0,1,Rubble Rouser Bruiser/,13,16,Left,None</Unit>
