@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 1:32:19 AM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 5:53:36 PM">
 
-	<Narration>The sun shines upon the town square. A love of community theater has brought a few loosely connected friends together to support an upcoming show. The legendary "Bolt-Action Love" - the dramatic story of Lakshmi's love for Emma Strider, told from a crossbow afficionado's perspective - is gathering casting calls.  -PIC:Market_Dese- | -DIA:Intro-</Narration>
+	<Narration>The sun shines upon the town square. In just a few weeks, there would be a showing of "Bolt-Action Love"--the dramatic story of Lakshmi Bana and Emma Strider's sapphic love--and pre-screening is beginning. A few friends and colleagues gather together to support the show. -PIC:Market_Dese-|  -DIA:Intro-</Narration>
 	
 	<NewRoster num="0">Harrien/,Clark/,Kyat/,Nobeta/,Arora/,Rubble Rouser Golem/,Rabble Rouser Crossbowjock/,Rubble Rouser Bruiser/,Clark/,Save Me/,Asandr/Winterbloom,Sandra/Winterbloom,Rasand/Winterbloom,Andras/Winterbloom,Drasan/Winterbloom</NewRoster>
 
@@ -34,25 +34,36 @@
 
 	<Dialogue trigger="OnTurn/0" convID="Intro" r="true">
 		<Branch num="0" name="">Harrien/Thanks for meeting on such a short notice. Everyone here? Alright, grab your things or hand them to me, it's time to...
-			<Action>AddPortrait/Harrien,Harrien/,right,,Happy</Action>
+			<Action>AddPortrait/Harrien,Harrien,right,,Nice</Action>
+			<Action>AddPortrait/Arora,Arora,left,,Happy,13,1</Action>
+			<Action>AddPortrait/Kyat,Kyat,left,,Happy,16,1</Action>
+			<Action>AddPortrait/Nobeta,Nobeta,left,,Excited</Action>
+			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,left,,Concerned,23,1</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Nobeta/[A thud echoes from the north] Wait! What's that noise?
+			<Action>ClearPortraits/</Action>
 			<Action>AddPortrait/Nobeta,Nobeta/,left,,Quizzical</Action>
+			<Action>AddPortrait/Harrien,Harrien/,right,,Blank</Action>
+			<Action>FadeMusic/0,2</Action>
+			<Action>PlaySound/Build</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">Arora/They're starting without me! The nerve!
+		<Branch num="2" name="">Arora/Ach, would they really start without *me*?
 			<Action>RemovePortrait/Harrien</Action>
-			<Action>AddPortrait/Arora,Arora/,right,,Angry</Action>
+			<Action>AddPortrait/Arora,Arora/,right,,Concerned</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="3" name="">Nobeta/That didn't sound *planned*...
-			<Action>AddPortrait/Nobeta,Nobeta/,left,,Worried</Action>
+		<Branch num="3" name="">Nobeta/That wasn't a "preparing for the play" kind of sound...
+			<Action>AddPortrait/Nobeta,Nobeta/,left,,Concerned</Action>
+			<Action>AddPortrait/Arora,Arora,right,,Quizzical</Action>
+			<Action>PlayMusic/City of the Empire</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="4" name="">Kyat/Let's pick up the pace!
-			<Action>AddPortrait/Kyat,Kyat/,left,,Neutral</Action>
-			<Action>RemovePortrait/Nobeta</Action>
+		<Branch num="4" name="">Kyat/Time for picking up the pace, yes?
+			<Action>AddPortrait/Kyat,Kyat/,right,,Amused</Action>
+			<Action>RemovePortrait/Arora</Action>
+			<Action>AddPortrait/Nobeta,Nobeta,left,,Sad</Action>
 			<Reply>Continue./NextScene</Reply>
 		</Branch>
 	</Dialogue>
