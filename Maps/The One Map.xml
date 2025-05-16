@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 8:39:56 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 11:20:31 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -28,11 +28,11 @@
 	<Row>01.0Q,02.01,02.01,02.01,02.01,02.01,02.3D,03.0Y,03.01,03.01,03.01,03.01,03.01,03.01,03.01,01.01,01.01,01.01</Row>
 	<Row>05.06,02.01,02.01,02.07,02.3C,02.3C,01.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,01.01,01.01,01.01</Row>
 	<Row>06.02,06.06,05.0Z,05.1L,06.01,06.07,01.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,01.01,01.01,01.01</Row>
-	<Row>06.3G,06.02,05.1K,05.03,06.07,06.03,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.0m,01.01</Row>
-	<Row>07.01,06.0O,06.0K,01.01,01.01,06.2O,06.05,06.04,06.2O,06.08,07.01,07.01,06.0O,06.0S,06.3F,06.3Q,06.07,06.2R</Row>
-	<Row>07.01,07.01,07.01,01.01,01.01,06.0K,06.09,06.08,06.0P,07.01,07.01,07.01,07.01,06.0L,06.2P,06.09,06.2P,06.01</Row>
-	<Row>07.01,07.01,07.01,01.01,01.01,07.01,07.01,07.01,07.01,07.01,08.0Q,08.0N,08.0N,06.0U,06.2P,06.01,06.09,06.05</Row>
-	<Row>07.01,07.01,07.01,01.01,01.01,06.0N,06.0N,06.0N,08.0N,08.0N,06.07,06.2R,06.2R,06.2R,06.03,06.07,06.03,06.2P</Row>
+	<Row>06.3G,06.02,05.1K,05.03,06.07,06.03,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>07.01,06.0O,06.0K,01.01,01.01,06.2O,06.05,06.04,06.2O,06.08,07.01,07.01,06.0O,06.0S,06.07,06.3F,06.45,06.2R</Row>
+	<Row>07.01,07.01,07.01,01.01,01.01,06.0K,06.09,06.08,06.0P,07.01,07.01,07.01,07.01,06.0L,06.2P,06.01,06.2P,06.01</Row>
+	<Row>07.01,07.01,07.01,01.01,01.01,07.01,07.01,07.01,07.01,07.01,08.0Q,08.0N,08.0N,06.0U,06.09,06.05,06.09,06.05</Row>
+	<Row>07.01,07.01,07.01,01.01,01.01,06.0N,06.0N,06.0N,08.0N,08.0N,06.07,06.2R,06.2R,06.2R,06.03,06.2P,06.01,06.2P</Row>
 	<Row>05.1c,05.1c,05.1c,05.1j,05.0x,05.0p,05.0p,05.0p,05.07,05.1K,05.03,05.01,05.01,05.0t,06.01,06.2P,06.07,06.03</Row>
 	<Row>05.0a,05.0a,05.0i,05.01,05.01,05.01,05.01,05.07,05.03,05.0m,05.0m,05.0u,05.01,05.0o,06.01,06.07,06.03,06.01</Row>
 	<Row>08.01,08.01,06.3H,05.01,05.01,05.01,06.07,06.03,06.01,06.01,06.01,05.0n,05.01,05.0o,06.01,08.07,08.2R,08.2R</Row>
@@ -53,9 +53,9 @@
 	<RowElev>1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>1,1,0,1,1,2,2,1,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>2,1,1,1,2,2,2,2,2,2,2,2,2,2,2,3,3,3</RowElev>
-	<RowElev>0,1,1,2,2,2,2,2,2,2,0,0,1,1,3,3,4,4</RowElev>
-	<RowElev>0,0,0,2,2,1,2,2,1,0,0,0,0,1,2,3,4,4</RowElev>
-	<RowElev>0,0,0,2,2,0,0,0,0,0,1,1,1,1,2,2,4,4</RowElev>
+	<RowElev>0,1,1,2,2,2,2,2,2,2,0,0,1,1,3,4,4,4</RowElev>
+	<RowElev>0,0,0,2,2,1,2,2,1,0,0,0,0,1,3,3,4,4</RowElev>
+	<RowElev>0,0,0,2,2,0,0,0,0,0,1,1,1,1,3,3,4,4</RowElev>
 	<RowElev>0,0,0,2,2,1,1,1,1,1,2,2,2,2,2,3,3,4</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,4,4</RowElev>
 	<RowElev>1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,4,4,4</RowElev>
@@ -197,6 +197,7 @@
 	<Unit>0,99,Bush,13,14,None,None</Unit>
 	<Unit>0,99,FruitStand_S,14,5,None,None</Unit>
 	<Unit>0,99,ReedsSmall,14,6,None,None</Unit>
+	<Unit>0,99,Boulder,14,8,None,None</Unit>
 	<Unit>0,99,Reeds,14,14,None,None</Unit>
 	<Unit>0,99,Wildflowers,15,16,None,None</Unit>
 	<Unit>0,99,Caravan_E,17,0,None,None</Unit>
@@ -207,15 +208,16 @@
 	<Unit>0,99,Evergreen,17,10,None,None</Unit>
 	<Unit>0,99,Birdbath,17,17,None,None</Unit>
 	<Unit>0,0,Arora/,14,12,Up,None</Unit>
-	<Unit>0,0,Harrien/,15,11,Up,None</Unit>
-	<Unit>0,0,Drasan/Winterbloom,15,13,Left,None</Unit>
-	<Unit>0,0,Nobeta/,15,14,Left,None</Unit>
+	<Unit>0,0,Harrien Lifts/,15,11,Up,None</Unit>
+	<Unit>0,0,Nobeta Lifts/,15,13,Left,None</Unit>
+	<Unit>0,0,Drasan/Winterbloom,16,13,Left,None</Unit>
 	<Unit>0,0,Kyat/,17,12,Left,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Slighted Playwright/,1,3,Left,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Bruiser/,2,9,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,3,3,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,3,3,Down,Limited-Issue Bayonet Only Crossbow</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Golem/,3,13,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Clark/,4,4,Left,None</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,4,7,Up,None</Unit>
+	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,4,7,Up,Obviously Stolen Crossbow</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Pursue/Patrol,Theater">0,1,Rubble Rouser Golem/,5,10,Up,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Golem/,6,1,Up,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,Patrol,StartingArea">0,1,Rubble Rouser Golem/,6,3,Up,None</Unit>
@@ -224,7 +226,7 @@
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,9,10,Up,None</Unit>
 	<Unit tag="Add,Passive/Add,Pursue/Add,AggroGroup,3/Add,Patrol,StartingArea">0,1,Rubble Rouser Golem/,11,4,Down,None</Unit>
 	<Unit tag="Add,Passive/Add,Pursue/Add,AggroGroup,3/Add,Patrol,StartingArea">0,1,Rubble Rouser Golem/,12,3,Down,None</Unit>
-	<Unit tag="Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,12,7,Down,None</Unit>
+	<Unit tag="Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,12,7,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
 	<Unit>0,1,Rubble Rouser Golem/,12,13,Down,None</Unit>
 	<Unit tag="Add,LevelUp,3">0,1,Rubble Rouser Bruiser/,13,16,Left,None</Unit>
 	<Unit tag="Add,AreaPreference,StartingArea,1.5">0,1,Rubble Rouser Golem/,14,9,Right,None</Unit>
@@ -236,18 +238,18 @@
 
 	<Script>Set Lesbian Talkable
 		<Action>AddStatus/Kyat,Talkable</Action>
-		<Action>AddStatus/Nobeta,Talkable</Action>
-		<Action>SetString/Nobeta Can Talk,Nobeta</Action>
+		<Action>AddStatus/Nobeta Lifts,Talkable</Action>
+		<Action>SetString/Nobeta Lifts Can Talk,Nobeta Lifts</Action>
 	</Script>
 
 	<Script>Set Lesbian Not Talkable
 		<Action>RemoveStatus/Kyat,Talkable</Action>
-		<Action>RemoveStatus/Nobeta,Talkable</Action>
-		<Action>SetString/Nobeta Can Talk,INVALID</Action>
+		<Action>RemoveStatus/Nobeta Lifts,Talkable</Action>
+		<Action>SetString/Nobeta Lifts Can Talk,INVALID</Action>
 		<Action>IfPresentRun/Sandra Winterbloom,_AddStatus,StatusName,Talkable,CharacterName,Kyat</Action>
 	</Script>
 
-	<Dialogue trigger="OnTalk/Kyat,-STR:Nobeta Can Talk-" convID="Lesbians Talk Dialogue" r="true">
+	<Dialogue trigger="OnTalk/Kyat,-STR:Nobeta Lifts Can Talk-" convID="Lesbians Talk Dialogue" r="true">
 		<Branch num="0" name="">/
 			<Action>Run/Set Lesbian Not Talkable</Action>
 			<Action>SetVal/Lesbian Discussions Count,+:1</Action>
@@ -338,41 +340,41 @@
 			<Action>AddPortrait/Rubble Rouser Bruiser,Rubble Rouser Bruiser,right,,Quizzical</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="4" name="">Harrien/Bwuh?! Hey! You can't do that! Everyone, get your community mutual defense face on, time to wrangle.
+		<Branch num="4" name="">Harrien Lifts/Bwuh?! Hey! You can't do that! Everyone, get your community mutual defense face on, time to wrangle.
 			<Action>ClearPortraits/</Action>
-			<Action>AddPortrait/Harrien/,Harrien/,left,,Yell</Action>
+			<Action>AddPortrait/Harrien Lifts/,Harrien Lifts/,left,,Yell</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="8" name="">Harrien/
-			<Action>MoveCam/,,Harrien</Action>
+		<Branch num="8" name="">Harrien Lifts/
+			<Action>MoveCam/,,Harrien Lifts</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="First Lesbian Dialogue" r="false">
-		<Branch num="0" name="">Nobeta/This isn't how I wanted to spend today! I wanted to spend the day...
-			<Action>AddPortrait/Nobeta,Nobeta,right,,Concerned</Action>
+		<Branch num="0" name="">Nobeta Lifts/This isn't how I wanted to spend today! I wanted to spend the day...
+			<Action>AddPortrait/Nobeta Lifts,Nobeta Lifts,right,,Concerned</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Nobeta/...with ah... [She stammers quietly to herself] ...with friends. Hey, Kyat!
+		<Branch num="1" name="">Nobeta Lifts/...with ah... [She stammers quietly to herself] ...with friends. Hey, Kyat!
 			<Action>AddPortrait/Kyat,Kyat,left,,Blank</Action>
 			<Action>FlipPortrait/Kyat</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">Kyat/Oh, Nobeta. Odd, it is time to fight strange bad people, hmm? Do not worry, I will be there if you are ever harmed.
+		<Branch num="2" name="">Kyat/Oh, Nobeta Lifts. Odd, it is time to fight strange bad people, hmm? Do not worry, I will be there if you are ever harmed.
 			<Action>FlipPortrait/Kyat</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="3" name="">Nobeta/I should worry about you! You are a littler girl than I. Get behind me, and we will chase these goons out.
+		<Branch num="3" name="">Nobeta Lifts/I should worry about you! You are a littler girl than I. Get behind me, and we will chase these goons out.
 			<Action>WaitForDialogue/</Action>
-			<Action>MovePortrait/Nobeta,10,0,100,false</Action>
-			<Action>FlipPortrait/Nobeta</Action>
+			<Action>MovePortrait/Nobeta Lifts,10,0,100,false</Action>
+			<Action>FlipPortrait/Nobeta Lifts</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="4" name="">Kyat/It can be as you say. [She watches Nobeta wiggle in the anticipation of combats] It can be time to... get behind you.
+		<Branch num="4" name="">Kyat/It can be as you say. [She watches Nobeta Lifts wiggle in the anticipation of combats] It can be time to... get behind you.
 			<Action>AddPortrait/Kyat,Kyat,right,,Happy</Action>
 			<Action>SetStat/Kyat,Morale,+:2</Action>
-			<Action>SetStat/Nobeta,Morale,+:2</Action>
+			<Action>SetStat/Nobeta Lifts,Morale,+:2</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -382,85 +384,85 @@
 			<Action>AddPortrait/Kyat,Kyat,left,,Winking</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Kyat/...ah, Nobeta. [She looks up at her] Behind you, yes?
-			<Action>AddPortrait/Nobeta,Nobeta,left,,Concerned</Action>
+		<Branch num="1" name="">Kyat/...ah, Nobeta Lifts. [She looks up at her] Behind you, yes?
+			<Action>AddPortrait/Nobeta Lifts,Nobeta Lifts,left,,Concerned</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">Nobeta/Of course! Dad always said to me, "these muscles are for protecting you, little girl."
+		<Branch num="2" name="">Nobeta Lifts/Of course! Dad always said to me, "these muscles are for protecting you, little girl."
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Kyat/O--oh. [She pauses] Yes.
 			<Action>PortraitParticles/Kyat,Hearts</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="4" name="">Nobeta/Well, let's go! [Nobeta leads Kyat towards her next firing position]
+		<Branch num="4" name="">Nobeta Lifts/Well, let's go! [Nobeta Lifts leads Kyat towards her next firing position]
 			<Action>WaitForDialogue/</Action>
-			<Action>MovePortrait/Nobeta,-5,0,100</Action>
+			<Action>MovePortrait/Nobeta Lifts,-5,0,100</Action>
 			<Action>MovePortrait/Kyat,5,0,100</Action>
 			<Action>FlipPortrait/Kyat</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="5" name="">Kyat/O--oh. [She stumbles along, easily moved by Nobeta] Yes.
+		<Branch num="5" name="">Kyat/O--oh. [She stumbles along, easily moved by Nobeta Lifts] Yes.
 			<Action>PortraitParticles/Kyat,Hearts</Action>
 			<Action>SetStat/Kyat,Morale,+:3</Action>
-			<Action>SetStat/Nobeta,Morale,+:1</Action>
+			<Action>SetStat/Nobeta Lifts,Morale,+:1</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Third Lesbian Dialogue" r="false">
-		<Branch num="0" name="">Kyat/Hey, Nobeta, when it is... time after the battle, would you--?
+		<Branch num="0" name="">Kyat/Hey, Nobeta Lifts, when it is... time after the battle, would you--?
 			<Action>AddPortrait/Kyat,Kyat,left</Action>
-			<Action>AddPortrait/Nobeta,Nobeta,right</Action>
-			<Action>FlipPortrait/Nobeta</Action>
+			<Action>AddPortrait/Nobeta Lifts,Nobeta Lifts,right</Action>
+			<Action>FlipPortrait/Nobeta Lifts</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Nobeta/[Nobeta releases tension on her bow, and turns to speak] Ah, what was that?
-			<Action>FlipPortrait/Nobeta</Action>
+		<Branch num="1" name="">Nobeta Lifts/[Nobeta Lifts releases tension on her bow, and turns to speak] Ah, what was that?
+			<Action>FlipPortrait/Nobeta Lifts</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Kyat/Goodness alright calm down.
 			<Action>PortraitParticles/Kyat,Hearts</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="3" name="">Nobeta/Hmm? Ah, what? Something about after this battle?
-			<Action>AddPortrait/Nobeta,Nobeta,left,,Quizzical</Action>
+		<Branch num="3" name="">Nobeta Lifts/Hmm? Ah, what? Something about after this battle?
+			<Action>AddPortrait/Nobeta Lifts,Nobeta Lifts,left,,Quizzical</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Kyat/After this battle, would you have time for... a date?
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="5" name="">Nobeta/Oh! Oh! [She pauses and stares in to middle-space] Oh. Yes, actually. Plenty of time. Oh, but now, I need to...
-			<Action>AddPortrait/Nobeta,Nobeta,left,,Happy</Action>
-			<Action>SetStat/Nobeta,Morale,+:3</Action>
+		<Branch num="5" name="">Nobeta Lifts/Oh! Oh! [She pauses and stares in to middle-space] Oh. Yes, actually. Plenty of time. Oh, but now, I need to...
+			<Action>AddPortrait/Nobeta Lifts,Nobeta Lifts,left,,Happy</Action>
+			<Action>SetStat/Nobeta Lifts,Morale,+:3</Action>
 			<Action>SetStat/Kyat,Kyat,+:3</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="6" name="">Kyat/[Nobeta gets in to position and flexes to draw her bow] Yes. For this time, please keep doing... the things you are doing.
-			<Action>RemovePortrait/Nobeta</Action>
+		<Branch num="6" name="">Kyat/[Nobeta Lifts gets in to position and flexes to draw her bow] Yes. For this time, please keep doing... the things you are doing.
+			<Action>RemovePortrait/Nobeta Lifts</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnTalk/Clark,Harrien" convID="Clark Dialogue" r="false">
+	<Dialogue trigger="OnTalk/Clark,Harrien Lifts" convID="Clark Dialogue" r="false">
 		<Branch num="0" name="">Clark/Man, I really don't wanna fight you. I was really hoping someone else would handle you... look at those arms! You could tear me apart!
 			<Action>AddPortrait/Clark,Clark,left</Action>
-			<Action>AddPortrait/Harrien,Harrien,right</Action>
+			<Action>AddPortrait/Harrien Lifts,Harrien Lifts,right</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Harrien/...Well, that just sucks all the fun out of fighting you. What's someone so meek doing with this lot?
+		<Branch num="1" name="">Harrien Lifts/...Well, that just sucks all the fun out of fighting you. What's someone so meek doing with this lot?
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Clark/I... really don't know. I've been trying to find where it went wrong, but all I can really conclude is that I made very dumb decisions.
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="3" name="">Harrien/Sounds like a lot of us, honestly.  ...Look, I can't undo the stuff you've been dealt;; but I can offer you an out. C'mon and join us! If you're on the field, you must have some skill, right?
+		<Branch num="3" name="">Harrien Lifts/Sounds like a lot of us, honestly.  ...Look, I can't undo the stuff you've been dealt;; but I can offer you an out. C'mon and join us! If you're on the field, you must have some skill, right?
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Clark/W-w-what? Um, I... no;; I'd really just weigh you down.
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="5" name="">Harrien/Hey, c'mon;; look at these guns. A little extra weight won't bug me.
+		<Branch num="5" name="">Harrien Lifts/Hey, c'mon;; look at these guns. A little extra weight won't bug me.
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="6" name="">Clark/...W-well;; okay. ...Thank you.
@@ -472,7 +474,7 @@
 			<Action>SetStat/Clark,Morale,=4</Action>
 			<Action>RemoveConv/West Approach Recognized</Action>
 			<Action>SetVal/WestApproachFlag,3</Action>
-			<Action>RemoveStatus/Harrien,Talkable</Action>
+			<Action>RemoveStatus/Harrien Lifts,Talkable</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -539,7 +541,7 @@
 			<Action>AddStatus/Clark,Talkable</Action>
 			<Action>RemoveTagFromGroup/1,Passive</Action>
 			<Action>RemoveTagFromGroup/1,Inactive</Action>
-			<Action>AddStatus/Harrien,Talkable</Action>
+			<Action>AddStatus/Harrien Lifts,Talkable</Action>
 			<Action>SetVal/WestApproachFlag,=,2</Action>
 			<Reply>Continue./LoadConv/Round Start Dialogue Dispatch</Reply>
 		</Branch>
@@ -560,7 +562,7 @@
 			<Action>AddPortrait/Kyat,Kyat,left,,Happy</Action>
 			<Action>AddPortrait/Sandra Winterbloom,Sandra Winterbloom,right,,Happy</Action>
 			<Action>RemoveStatus/Kyat,Talkable</Action>
-			<Action>IfValRun/Nobeta Can Talk,=,Nobeta,Run,_AddStatus,Kyat,Talkable</Action>
+			<Action>IfValRun/Nobeta Lifts Can Talk,=,Nobeta Lifts,Run,_AddStatus,Kyat,Talkable</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Sandra Winterbloom/Ahah, yea, this... felt more fitting. Just wish I could do something more with my hair.
@@ -671,23 +673,23 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharAttacked/-ANY-,Harrien,,,Coderick Gutterson" convID="Coderick and Harrien" r="false">
+	<Dialogue trigger="OnCharAttacked/-ANY-,Harrien Lifts,,,Coderick Gutterson" convID="Coderick and Harrien Lifts" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Bah, what are you supposed to be? Put those muscles away, you're embarassing yourself. And geez, get freakishly tall and big why don't you?
-			<Action>AddPortrait/Harrien,Harrien,left,,Mad</Action>
+			<Action>AddPortrait/Harrien Lifts,Harrien Lifts,left,,Mad</Action>
 			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Harrien/If you speak to my friends or I that way, I will break you.
+		<Branch num="1" name="">Harrien Lifts/If you speak to my friends or I that way, I will break you.
 			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharAttacked/-ANY-,Nobeta,,,Coderick Gutterson" convID="Coderick and Nobeta" r="false">
+	<Dialogue trigger="OnCharAttacked/-ANY-,Nobeta Lifts,,,Coderick Gutterson" convID="Coderick and Nobeta Lifts" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Well look who inherited her father's stubby nose! Grah, bet you think that haircut will attract guys. You've got a mop like vinegar!
 			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,left,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Nobeta/W--well, maybe I don't want to attract guys! Get your own face, loser!
+		<Branch num="1" name="">Nobeta Lifts/W--well, maybe I don't want to attract guys! Get your own face, loser!
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -727,6 +729,13 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY,Clark,,,Coderick Gutterson" convID="Clark and Coderick" r="false">
 		<Branch num="0" name="">/[Good job finding this dialogue! You recruited Clark *before* fighting that guy? Way to go.]
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,Loud Theater Enjoyer" convID="LoudTheaterEnjoyerAttacked" r="false">
+		<Branch num="0" name="">Loud Theater Enjoyer/I may have been... somewhat vocal.
+			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,right,,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 6:16:58 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 11:28:26 PM">
 
 	<Narration>The sun shines upon the town square. In just a few weeks, there would be a showing of "Bolt-Action Love"--the dramatic story of Lakshmi Bana and Emma Strider's sapphic love--and pre-screening is beginning. A few friends and colleagues gather together to support the show. -PIC:Market_Dese-|  -DIA:Intro-</Narration>
 	
@@ -34,28 +34,29 @@
 
 	<Dialogue trigger="OnTurn/0" convID="Intro" r="true">
 		<Branch num="0" name="">Harrien/Thanks for meeting on such a short notice. Everyone here? Alright, grab your things or hand them to me, it's time to...
-			<Action>AddPortrait/Harrien,Harrien,right,,Nice</Action>
-			<Action>AddPortrait/Arora,Arora,left,,Winking,13,1</Action>
-			<Action>AddPortrait/Kyat,Kyat,left,,Happy,16,1</Action>
-			<Action>AddPortrait/Nobeta,Nobeta,left,,Excited</Action>
-			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,left,,Concerned,23,1</Action>
+			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,right,,Nice</Action>
+			<Action>AddPortrait/Arora,Arora/,left,,Winking,13,0</Action>
+			<Action>AddPortrait/Kyat,Kyat/,left,,Happy,16,1</Action>
+			<Action>AddPortrait/Nobeta Lifts,Nobeta Lifts/,left,,Excited</Action>
+			<Action>AddPortrait/Drasan Winterbloom,Drasan/Winterbloom,left,,Concerned,23,0</Action>
+			<Action>/</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Nobeta/[A thud echoes from the north] Wait! What's that noise?
+		<Branch num="1" name="">Nobeta Lifts/[A thud echoes from the north] Wait! What's that noise?
 			<Action>ClearPortraits/</Action>
-			<Action>AddPortrait/Nobeta,Nobeta/,left,,Quizzical</Action>
-			<Action>AddPortrait/Harrien,Harrien/,right,,Blank</Action>
+			<Action>AddPortrait/Nobeta Lifts,Nobeta Lifts/,left,,Quizzical</Action>
+			<Action>AddPortrait/Harrien Lifts,Harrien Lifts/,right,,Blank</Action>
 			<Action>FadeMusic/0,2</Action>
 			<Action>PlaySound/Build</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Arora/Ach, would they really start without *me*?
-			<Action>RemovePortrait/Harrien</Action>
+			<Action>RemovePortrait/Harrien Lifts</Action>
 			<Action>AddPortrait/Arora,Arora/,right,,Shocked</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Nobeta/That wasn't a "preparing for the play" kind of sound...
-			<Action>AddPortrait/Nobeta,Nobeta/,left,,Concerned</Action>
+			<Action>AddPortrait/Nobeta Lifts,Nobeta Lifts/,left,,Concerned</Action>
 			<Action>AddPortrait/Arora,Arora,right,,Quizzical</Action>
 			<Action>PlayMusic/City of the Empire</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -63,7 +64,7 @@
 		<Branch num="4" name="">Kyat/Time for picking up the pace, yes?
 			<Action>AddPortrait/Kyat,Kyat/,right,,Amused</Action>
 			<Action>RemovePortrait/Arora</Action>
-			<Action>AddPortrait/Nobeta,Nobeta,left,,Sad</Action>
+			<Action>AddPortrait/Nobeta Lifts,Nobeta Lifts,left,,Sad</Action>
 			<Reply>Continue./NextScene</Reply>
 		</Branch>
 		<Branch num="5" name="">/
