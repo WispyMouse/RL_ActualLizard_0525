@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 6:00:19 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 6:19:49 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -305,7 +305,7 @@
 			<Action>GoToNextBranch/</Action>
 			<Action>AddTagToArmy/1,IgnoreArmy,2</Action>
 		</Branch>
-		<Branch num="1" name="Intro Dialogue Start">Drasan Winterbloom/W--what? The theater!
+		<Branch num="1" name="Intro Dialogue Start">Drasan Winterbloom/W--what? The theater! People are--?
 			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,right,,Shocked</Action>
 			<Action>MoveCam/,,Drasan Winterbloom</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -316,7 +316,7 @@
 			<Action>AddPortrait/Rubble Rouser Bruiser,Rubble Rouser Bruiser,left,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">Loud Theater Enjoyer/Are you daft? This play is *the* essential crossbowpunk love story.
+		<Branch num="2" name="">Loud Theater Enjoyer/Are you daft? Strider's efforts were only truly given life through *this* play. Bolt-Action Love is *the* essential crossbowpunk love story.
 			<Action>ClearPortraits/</Action>
 			<Action>MoveCam/,,Loud Theater Enjoyer</Action>
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,right,,Sad</Action>
@@ -335,14 +335,14 @@
 			<Action>AddPortrait/Rubble Rouser Bruiser,Rubble Rouser Bruiser,right,,Quizzical</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="4" name="">Harrien/Bwuh? Hey! You can't do that! I'm going to write text that will tell you to knock it off, and then we fight!
+		<Branch num="4" name="">Harrien/Bwuh?! Hey! You can't do that! Everyone, get your community mutual defense face on, time to wrangle.
 			<Action>ClearPortraits/</Action>
 			<Action>AddPortrait/Harrien/,Harrien/,left,,Yell</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="8" name="">/
+		<Branch num="8" name="">Harrien/
 			<Action>MoveCam/,,Harrien</Action>
-			<Reply>Continue./NextBranch</Reply>
+			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
 
