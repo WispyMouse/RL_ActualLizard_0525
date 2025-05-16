@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 4:51:17 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 5:00:26 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -216,6 +216,7 @@
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Bruiser/,2,9,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,3,3,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Passive/Add,Pursue">0,1,Rubble Rouser Golem/,3,9,Up,None</Unit>
+	<Unit tag="Add,AggroGroup,2/Add,Passive/Add,Pursue">0,1,Rubble Rouser Golem/,3,13,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Clark/,4,4,Left,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,4,7,Up,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Golem/,6,1,Up,None</Unit>
@@ -231,7 +232,7 @@
 	<Unit>0,1,Rubble Rouser Golem/,15,4,Right,None</Unit>
 	<Unit tag="Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,16,0,Down,None</Unit>
 	<Unit tag="Add,LevelUp,4">0,1,Rubble Rouser Bruiser/,16,6,Right,None</Unit>
-	<Unit tag="Add,Passive/Add,LevelUp,8/Add,Patrol,Viewing Booth">0,2,Save Me/,1,15,Down,None</Unit>
+	<Unit tag="Add,Passive/Add,LevelUp,8/Add,Patrol,Viewing Booth/Add,TargetValue,1.3">0,2,Loud Theater Enjoyer/,1,15,Down,None</Unit>
 
 	<Script>Set Lesbian Talkable
 		<Action>AddStatus/Kyat,Talkable</Action>
@@ -314,10 +315,10 @@
 			<Action>MoveCam/,,Irate Crossbow Aficionado</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">Save Me/I do say, I'm a placeholder text for this character being shocked at the state of things!
+		<Branch num="2" name="">Loud Theater Enjoyer/I do say, I'm a placeholder text for this character being shocked at the state of things!
 			<Action>ClearPortraits/</Action>
-			<Action>MoveCam/,,Save Me</Action>
-			<Action>AddPortrait/Save Me,Save Me,left,,Sad</Action>
+			<Action>MoveCam/,,Loud Theater Enjoyer</Action>
+			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Harrien/Bwuh? Hey! You can't do that! I'm going to write text that will tell you to knock it off, and then we fight!
@@ -550,8 +551,8 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnTurn/8" convID="Greek Chorus Heckles 1" r="false">
-		<Branch num="0" name="">Save Me/Rubble Rousers, entitled critics, bah. You clearly don't see the metaphors for bittersweet sorrow in the choice of Lakshmi's bolts.
-			<Action>AddPortrait/Save Me,Save Me,left,,Amused</Action>
+		<Branch num="0" name="">Loud Theater Enjoyer/Rubble Rousers, entitled critics, bah. You clearly don't see the metaphors for bittersweet sorrow in the choice of Lakshmi's bolts.
+			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Amused</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Rubble Rouser Golem/WRONG DETECTED.
@@ -561,7 +562,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnTurn/11" convID="Greek Chorus Heckles 2" r="false">
-		<Branch num="0" name="">Save Me/And what even *is* "over centralization" of such a crucial crossbow. Everyone knows the 20DV changed the world. Fools!
+		<Branch num="0" name="">Loud Theater Enjoyer/And what even *is* "over centralization" of such a crucial crossbow. Everyone knows the 20DV changed the world. Fools!
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Rubble Rouser Bruiser/Ey keep it down up there! We're busy!
@@ -571,13 +572,15 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnTurn/14" convID="Greek Chorus Heckles" r="false">
-		<Branch num="0" name="">Save Me/Did you even pick up on *any* of the subthemes about recoil representing revolution? And you dare say you know this craft!
-			<Action>AddPortrait/Save Me,Save Me,left,,Amused</Action>
+		<Branch num="0" name="">Loud Theater Enjoyer/Did you even pick up on *any* of the subthemes about recoil representing revolution? And you dare say you know this craft!
+			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Amused</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Crossbow Aficionado/You dare?! That's it, this gas blob is getting it, too! [They hurrumph and start towards the stairs]
 			<Action>AddPortrait/Crossbow Aficionado,Crossbow Aficionado,right,,YellMad</Action>
 			<Action>RemoveTagFromArmy/1,IgnoreArmy,2</Action>
+			<Action>RemoveTagFromGroup/2,Inactive</Action>
+			<Action>RemoveTagFromGroup/2,Passive</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
