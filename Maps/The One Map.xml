@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 11:20:31 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 11:48:57 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -208,8 +208,7 @@
 	<Unit>0,99,Evergreen,17,10,None,None</Unit>
 	<Unit>0,99,Birdbath,17,17,None,None</Unit>
 	<Unit>0,0,Arora/,14,12,Up,None</Unit>
-	<Unit>0,0,Harrien Lifts/,15,11,Up,None</Unit>
-	<Unit>0,0,Nobeta Lifts/,15,13,Left,None</Unit>
+	<Unit>0,0,Nobeta/Lifts,15,13,Left,None</Unit>
 	<Unit>0,0,Drasan/Winterbloom,16,13,Left,None</Unit>
 	<Unit>0,0,Kyat/,17,12,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Slighted Playwright/,1,3,Left,None</Unit>
@@ -601,10 +600,10 @@
 			<Action>LoadConv/West Approach Recognized</Action>
 			<Action>GoTo/0</Action>
 		</Branch>
-		<Branch num="2" name="Spawn Boss">Rubble Rouser Boss/Hey;; I'm rousing here! And this is a boss fight now.
-			<Action>SpawnUnit/1,Rubble Rouser Boss:,7,17,Left,,Add:LevelUp:9,,</Action>
+		<Branch num="2" name="Spawn Boss">Deckhardt Lordland/Hey;; I'm rousing here! And this is a boss fight now.
+			<Action>SpawnUnit/1,Deckhardt:Lordland:,7,17,Left,,Add:LevelUp:9,,</Action>
 			<Action>SpawnUnit/1,Rubble Rouser Golem:,8,16,Left</Action>
-			<Action>AddPortrait/Rubble Rouser Boss,Rubble Rouser Boss,left,,Angry</Action>
+			<Action>AddPortrait/Deckhardt Lordland,Deckhardt Lordland,left,,Angry</Action>
 			<Action>SetVal/TurnsUntilBossAppears,-1</Action>
 			<Reply>Continue./NewBranch/0</Reply>
 		</Branch>

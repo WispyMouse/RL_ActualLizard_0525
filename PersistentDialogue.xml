@@ -20,13 +20,13 @@
 		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Nobeta</Action>
 		<Action>SetString/Asandr Current Name,-STR:New Name-</Action>
 		<Action>SetRelationshipLabel/Kyat,-STR:Asandr Current Name-,Childhood Friend</Action>
-		<Action>SetRelationshipLabel/Nobeta,-STR:Asandr Current Name-,Troupe Member,true</Action>
-		<Action>SetRelationshipLabel/Harrien,-STR:Asandr Current Name-,Troupe Member,true</Action>
+		<Action>SetRelationshipLabel/Nobeta:Lifts,-STR:Asandr Current Name-,Troupe Member,true</Action>
+		<Action>SetRelationshipLabel/Harrien:Lifts,-STR:Asandr Current Name-,Troupe Member,true</Action>
 		<Action>SetRelationshipLabel/Arora,-STR:Asandr Current Name-,Troupe Member,true</Action>
-		<Action>RemoveRelationshipLabel/Nobeta,-STR:Asandr Current Name-</Action>
+		<Action>RemoveRelationshipLabel/Nobeta:Lifts,-STR:Asandr Current Name-</Action>
 		<Action>RemoveRelationshipLabel/Kyat,-STR:Asandr Current Name-</Action>
 		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Kyat</Action>
-		<Action>RemoveRelationshipLabel/Harrien,-STR:Asandr Current Name-</Action>
+		<Action>RemoveRelationshipLabel/Harrien:Lifts,-STR:Asandr Current Name-</Action>
 		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Harrien</Action>
 		<Action>RemoveRelationshipLabel/Arora,-STR:Asandr Current Name-</Action>
 		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Arora</Action>
@@ -73,14 +73,14 @@
 
 	<Dialogue trigger="OnLoaded/" convID="Set Root Relationships" r="false">
 		<Branch num="0" name="Starting Relationships">/
-			<Action>SetRelationshipLabel/Harrien,Kyat,Troupe Member,true</Action>
-			<Action>SetRelationshipLabel/Harrien,Arora,Troupe Member,true</Action>
+			<Action>SetRelationshipLabel/Harrien:Lifts,Kyat,Troupe Member,true</Action>
+			<Action>SetRelationshipLabel/Harrien:Lifts,Arora,Troupe Member,true</Action>
 			<Action>SetString/Asandr Current Name,Drasan Winterbloom</Action>
-			<Action>SetRelationshipLabel/Nobeta,Arora,Troupe Member,true</Action>
-			<Action>SetRelationshipLabel/Kyat,Nobeta,Troupe Member,true</Action>
+			<Action>SetRelationshipLabel/Nobeta:Lifts,Arora,Troupe Member,true</Action>
+			<Action>SetRelationshipLabel/Kyat,Nobeta:Lifts,Troupe Member,true</Action>
 			<Action>SetRelationshipLabel/Kyat,Arora,Troupe Member,true</Action>
-			<Action>SetRelationshipLabel/Nobeta,Harrien,Father,false</Action>
-			<Action>SetRelationshipLabel/Harrien,Nobeta,Daughter,false</Action>
+			<Action>SetRelationshipLabel/Nobeta:Lifts,Harrien:Lifts,Father,false</Action>
+			<Action>SetRelationshipLabel/Harrien:Lifts,Nobeta:Lifts,Daughter,false</Action>
 			<Action>Run/Set Asandr Default Relationships,New Name,Drasan Winterbloom</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
