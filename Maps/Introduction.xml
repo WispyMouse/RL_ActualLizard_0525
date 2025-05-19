@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 11:50:05 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/18/2025 7:18:03 PM">
 
 	<Narration>The sun shines upon the town square. In just a few weeks, there would be a showing of "Bolt-Action Love"--the dramatic story of Lakshmi Bana and Emma Strider's sapphic love--and pre-screening is beginning. A few friends and colleagues gather together to support the show. -PIC:Market_Dese-|  -DIA:Intro-</Narration>
 	
@@ -33,7 +33,7 @@
 	</Menu>
 
 	<Dialogue trigger="OnTurn/0" convID="Intro" r="true">
-		<Branch num="0" name="">Harrien/Thanks for meeting on such a short notice. Everyone here? Alright, grab your things or hand them to me, it's time to...
+		<Branch num="0" name="">Harrien Lifts/Thanks for meeting on such short notice. Everyone here? Alright, grab your things or hand them to me, it's time to...
 			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,right,,Nice</Action>
 			<Action>AddPortrait/Arora,Arora/,left,,Winking,13,0</Action>
 			<Action>AddPortrait/Kyat,Kyat/,left,,Happy,16,1</Action>
@@ -51,11 +51,11 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Arora/Ach, would they really start without *me*?
-			<Action>RemovePortrait/Harrien/Lifts</Action>
+			<Action>RemovePortrait/Harrien Lifts</Action>
 			<Action>AddPortrait/Arora,Arora/,right,,Shocked</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="3" name="">Nobeta/That wasn't a "preparing for the play" kind of sound...
+		<Branch num="3" name="">Nobeta Lifts/That wasn't a "preparing for the play" kind of sound...
 			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,left,,Concerned</Action>
 			<Action>AddPortrait/Arora,Arora,right,,Quizzical</Action>
 			<Action>PlayMusic/City of the Empire</Action>
