@@ -19,13 +19,13 @@
 	<Script>Set Asandr Default Relationships And Change Name
 		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Nobeta</Action>
 		<Action>SetString/Asandr Current Name,-STR:New Name-</Action>
-		<Action>SetRelationshipLabel/Kyat,-STR:Asandr Current Name-,Childhood Friend</Action>
+		<Action>SetRelationshipLabel/Mary O Nette,-STR:Asandr Current Name-,Childhood Friend</Action>
 		<Action>SetRelationshipLabel/Nobeta:Lifts,-STR:Asandr Current Name-,Troupe Member,true</Action>
 		<Action>SetRelationshipLabel/Harrien:Lifts,-STR:Asandr Current Name-,Troupe Member,true</Action>
 		<Action>SetRelationshipLabel/Arora,-STR:Asandr Current Name-,Troupe Member,true</Action>
 		<Action>RemoveRelationshipLabel/Nobeta:Lifts,-STR:Asandr Current Name-</Action>
-		<Action>RemoveRelationshipLabel/Kyat,-STR:Asandr Current Name-</Action>
-		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Kyat</Action>
+		<Action>RemoveRelationshipLabel/Mary O Nette,-STR:Asandr Current Name-</Action>
+		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Mary O Nette</Action>
 		<Action>RemoveRelationshipLabel/Harrien:Lifts,-STR:Asandr Current Name-</Action>
 		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Harrien</Action>
 		<Action>RemoveRelationshipLabel/Arora,-STR:Asandr Current Name-</Action>
@@ -101,12 +101,12 @@
 
 	<Dialogue trigger="OnLoaded/" convID="Set Root Relationships" r="false">
 		<Branch num="0" name="Starting Relationships">/
-			<Action>SetRelationshipLabel/Harrien:Lifts,Kyat,Troupe Member,true</Action>
+			<Action>SetRelationshipLabel/Harrien:Lifts,Mary O Nette,Troupe Member,true</Action>
 			<Action>SetRelationshipLabel/Harrien:Lifts,Arora,Troupe Member,true</Action>
 			<Action>SetString/Asandr Current Name,Drasan Winterbloom</Action>
 			<Action>SetRelationshipLabel/Nobeta:Lifts,Arora,Troupe Member,true</Action>
-			<Action>SetRelationshipLabel/Kyat,Nobeta:Lifts,Troupe Member,true</Action>
-			<Action>SetRelationshipLabel/Kyat,Arora,Troupe Member,true</Action>
+			<Action>SetRelationshipLabel/Mary O Nette,Nobeta:Lifts,Troupe Member,true</Action>
+			<Action>SetRelationshipLabel/Mary O Nette,Arora,Troupe Member,true</Action>
 			<Action>SetRelationshipLabel/Nobeta:Lifts,Harrien:Lifts,Father,false</Action>
 			<Action>SetRelationshipLabel/Harrien:Lifts,Nobeta:Lifts,Daughter,false</Action>
 			<Action>Run/Set Asandr Default Relationships,New Name,Drasan Winterbloom</Action>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/18/2025 7:18:03 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 11:37:42 AM">
 
-	<Narration>The sun shines upon the town square. In just a few weeks, there would be a showing of "Bolt-Action Love"--the dramatic story of Lakshmi Bana and Emma Strider's sapphic love--and pre-screening is beginning. A few friends and colleagues gather together to support the show. -PIC:Market_Dese-|  -DIA:Intro-</Narration>
+	<Narration>The sun shines upon the town square. In just a few weeks, there will be a showing of "Bolt-Action Love"--the dramatic story of Lakshmi Bana and Emma Strider's sapphic love--and pre-screening is beginning. A few friends and colleagues gather together to support the show. -PIC:Market_Dese-|  -DIA:Intro-</Narration>
 	
 	<NewRoster num="0">Harrien/,Clark/,Kyat/,Nobeta/,Arora/,Rubble Rouser Golem/,Rabble Rouser Crossbowjock/,Rubble Rouser Bruiser/,Clark/,Save Me/,Asandr/Winterbloom,Sandra/Winterbloom,Rasand/Winterbloom,Andras/Winterbloom,Drasan/Winterbloom</NewRoster>
 
@@ -34,25 +34,27 @@
 
 	<Dialogue trigger="OnTurn/0" convID="Intro" r="true">
 		<Branch num="0" name="">Harrien Lifts/Thanks for meeting on such short notice. Everyone here? Alright, grab your things or hand them to me, it's time to...
-			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,right,,Nice</Action>
-			<Action>AddPortrait/Arora,Arora/Feminine,left,,Winking,13,0</Action>
-			<Action>AddPortrait/Kyat,Kyat/,left,,Happy,16,1</Action>
-			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,left,,Excited</Action>
-			<Action>AddPortrait/Drasan Winterbloom,Drasan/Winterbloom,left,,Concerned,23,0</Action>
-			<Action>/</Action>
+			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Happy,5,0</Action>
+			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,right,,Kind</Action>
+			<Action>AddPortrait/Arora,Arora/Feminine,left,,Winking,26,0</Action>
+			<Action>AddPortrait/Mary O Nette,Mary O Nette/,left,,Happy,24,0</Action>
+			<Action>AddPortrait/Drasan Winterbloom,Drasan/Winterbloom,left,,Concerned,29,0</Action>
+			<Action>MovePortrait/Mary O Nette,19,0,80</Action>
+			<Action>MovePortrait/Arora,16,0,120</Action>
+			<Action>MovePortrait/Drasan Winterbloom,22,0,100</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Nobeta Lifts/[A thud echoes from the north] Wait! What's that noise?
 			<Action>ClearPortraits/</Action>
-			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,left,,Quizzical</Action>
-			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,right,,Blank</Action>
+			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Quizzical</Action>
+			<Action>/</Action>
 			<Action>FadeMusic/0,2</Action>
 			<Action>PlaySound/Build</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Arora/Ach, would they really start without *me*?
-			<Action>RemovePortrait/Harrien Lifts</Action>
-			<Action>AddPortrait/Arora,Arora/Feminine,right,,Shocked</Action>
+			<Action>/</Action>
+			<Action>AddPortrait/Arora,Arora/Feminine,left,,Shocked</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Nobeta Lifts/That wasn't a "preparing for the play" kind of sound...
