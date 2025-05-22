@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/18/2025 7:27:01 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/18/2025 7:28:49 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -214,16 +214,16 @@
 	<Unit>0,0,Kyat/,17,12,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Slighted Playwright/,1,3,Left,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Bruiser/,2,9,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,3,3,Down,Limited-Issue Bayonet Only Crossbow</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,3,3,Down,Limited-Issue Bayonet Only Crossbow[E]</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Golem/,3,13,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Clark/,4,4,Left,None</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,4,7,Up,Obviously Stolen Crossbow</Unit>
+	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,4,7,Up,Obviously Stolen Crossbow[E]</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Pursue/Patrol,Theater">0,1,Rubble Rouser Golem/,5,10,Up,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Golem/,6,1,Up,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,Patrol,StartingArea">0,1,Rubble Rouser Golem/,6,3,Up,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Bruiser/,8,11,Left,None</Unit>
 	<Unit tag="Add,LevelUp,3/Add,AreaPreference,StartingArea,1.5/Add,AggroGroup,3/Add,Passive">0,1,Rubble Rouser Bruiser/,9,0,Up,None</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,9,10,Up,Screw-Firing Crossbow</Unit>
+	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,9,10,Up,Screw-Firing Crossbow[E]</Unit>
 	<Unit tag="Add,Passive/Add,Pursue/Add,AggroGroup,3/Add,Patrol,StartingArea">0,1,Rubble Rouser Golem/,11,4,Down,None</Unit>
 	<Unit tag="Add,Passive/Add,Pursue/Add,AggroGroup,3/Add,Patrol,StartingArea">0,1,Rubble Rouser Golem/,12,3,Down,None</Unit>
 	<Unit tag="Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,12,7,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
@@ -679,17 +679,17 @@
 			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Harrien Lifts/If you speak to my friends or I that way, I will break you.
+		<Branch num="1" name="">Harrien Lifts/If you speak to my friends or me that way, I will break you.
 			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Nobeta Lifts,,,Coderick Gutterson" convID="Coderick and Nobeta Lifts" r="false">
-		<Branch num="0" name="">Coderick Gutterson/Well look who inherited her father's stubby nose! Grah, bet you think that haircut will attract guys. You've got a mop like vinegar!
+		<Branch num="0" name="">Coderick Gutterson/Well look who inherited her father's huge body! Grah, bet you think that haircut will attract real men like me.
 			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,left,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Nobeta Lifts/W--well, maybe I don't want to attract guys! Get your own face, loser!
+		<Branch num="1" name="">Nobeta Lifts/W--well, good! I don't want to attract men like you!
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -711,7 +711,7 @@
 			<Action>AddPortrait/Arora,Arora,right,,Winking</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Arora/Ouch! My turn, how about... "Your parents named you Coderick, and you kept that name." I think mine's better.
+		<Branch num="1" name="">Arora/Ouch! My turn, how about... "Your parents named you Coderick, and you kept that name."
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -722,7 +722,7 @@
 			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,right,,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Drasan Winterbloom/[Drasan absently ponders] You're **so** wrong, that I think I just learned something about change.
+		<Branch num="1" name="">Drasan Winterbloom/[Drasan absently ponders] You're **so** wrong, that I think I just learned something. Thanks?
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
