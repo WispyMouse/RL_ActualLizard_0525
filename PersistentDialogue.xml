@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 12:25:51 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 1:18:52 PM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
@@ -19,9 +19,9 @@
 	<Script>Set Asandr Default Relationships And Change Name
 		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Nobeta</Action>
 		<Action>SetString/Asandr Current Name,-STR:New Name-</Action>
-		<Action>SetRelationshipLabel/Mary O Nette,-STR:Asandr Current Name-,Childhood Friend</Action>
-		<Action>SetRelationshipLabel/Nobeta:Lifts,-STR:Asandr Current Name-,Troupe Member,true</Action>
 		<Action>SetRelationshipLabel/Harrien:Lifts,-STR:Asandr Current Name-,Troupe Member,true</Action>
+		<Action>SetRelationshipLabel/Nobeta:Lifts,-STR:Asandr Current Name-,Troupe Member,true</Action>
+		<Action>SetRelationshipLabel/Mary O Nette,-STR:Asandr Current Name-,Childhood Friend</Action>
 		<Action>SetRelationshipLabel/Arora,-STR:Asandr Current Name-,Troupe Member,true</Action>
 		<Action>RemoveRelationshipLabel/Nobeta:Lifts,-STR:Asandr Current Name-</Action>
 		<Action>RemoveRelationshipLabel/Mary O Nette,-STR:Asandr Current Name-</Action>
@@ -36,9 +36,12 @@
 
 	<Script>Swap Out Unit
 		<Action>Run/Store Character Stats,Prefix,SwapOut,Character Name,-STR:Swap Out Name-</Action>
+		<Action>StripItemsFromUnit/-STR:Swap Out Unit-,0</Action>
 		<Action>RemoveUnit/-STR:Swap Out Name-,false</Action>
 		<Action>SpawnUnit/0,-STR:Swap In Name-,-VAL:SwapOutY Coord-,-VAL:SwapOutX Coord-,-STR:SwapOutFacing-,,,-STR:SwapOutInventory String-,false</Action>
 		<Action>Run/Load Character Stats,Character Name,-STR:Swap In Name-,Prefix,SwapOut</Action>
+		<Action>StripItemsFromUnit/-STR:Swap In Name-,1</Action>
+		<Action>TransferReserveSupplies/0,-STR:Swap In Name-</Action>
 	</Script>
 
 	<Script>Store Character Stats
@@ -91,8 +94,8 @@
 	<Script>ShowTalkabilityFor
 		<Action>SetVal/TalkCount,=:0</Action>
 		<Action>ForLoop/-ii-,0-LASTINLIST[-STR:Speaker-Talkable],1,IfPresentRun,LIST{-STR:Speaker-Talkable,-ii-},_AddVal,ValueName,TalkCount,Value,1</Action>
-		<Action>IfValRun/TalkCount,=,0,RemoveStatus,Talkable</Action>
-		<Action>IfValRun/TalkCount,g,0,AddStatus,Talkable</Action>
+		<Action>IfValRun/TalkCount,=,0,_RemoveStatus,Character Name,-STR:Speaker-,Status Name,Talkable</Action>
+		<Action>IfValRun/TalkCount,g,0,AddStatus,Character Name,-STR:Speaker-,Status Name,Talkable</Action>
 	</Script>
 
 	<Script>RemoveTalkability
@@ -103,6 +106,10 @@
 
 	<Script>_AddVal
 		<Action>SetVal/-STR:ValueName-,+:-VAL:Value-</Action>
+	</Script>
+
+	<Script>_RemoveStatus
+		<Action>RemoveStatus/-STR:Character Name-,-STR:Status Name-</Action>
 	</Script>
 
 	<Dialogue trigger="OnLoaded/" convID="Set Root Relationships" r="false">
