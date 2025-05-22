@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 7:51:43 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/21/2025 10:14:29 PM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
@@ -69,6 +69,11 @@
 
 	<Script>_LoadConv
 		<Action>LoadConv/-STR:Conv ID-</Action>
+	</Script>
+
+	<Script>Pacify Enemies
+		<Action>RemoveTagFromArmy/1,Pursue</Action>
+		<Action>AddTagToArmy/1,Inactive</Action>
 	</Script>
 
 	<Dialogue trigger="OnLoaded/" convID="Set Root Relationships" r="false">

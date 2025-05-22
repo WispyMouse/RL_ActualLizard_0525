@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/21/2025 10:02:08 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/21/2025 10:19:48 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -29,9 +29,9 @@
 	<Row>05.06,02.01,02.01,02.07,02.3C,02.3C,01.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,01.01,01.01,01.01</Row>
 	<Row>06.02,06.06,05.0Z,05.1L,06.01,06.07,01.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,01.01,01.01,01.01</Row>
 	<Row>06.3G,06.02,05.1K,05.03,06.07,06.03,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>07.01,06.0O,06.0K,01.01,01.01,06.2O,06.05,06.04,06.2O,06.08,07.01,07.01,06.0O,06.0S,06.07,06.3F,06.45,06.2R</Row>
-	<Row>07.01,07.01,07.01,01.01,01.01,06.0K,06.09,06.08,06.0P,07.01,07.01,07.01,07.01,06.0L,06.2P,06.01,06.2P,06.01</Row>
-	<Row>07.01,07.01,07.01,01.01,01.01,07.01,07.01,07.01,07.01,07.01,08.0Q,08.0N,08.0N,06.0U,06.09,06.05,06.09,06.05</Row>
+	<Row>07.01,06.0O,06.0K,01.01,01.01,06.2O,06.05,06.04,06.2O,06.08,07.01,07.01,06.0O,06.0S,06.3F,06.3F,06.45,06.2R</Row>
+	<Row>07.01,07.01,07.01,01.01,01.01,06.0K,06.09,06.08,06.0P,07.01,07.01,07.01,07.01,06.0L,06.2P,06.2P,06.2P,06.01</Row>
+	<Row>07.01,07.01,07.01,01.01,01.01,07.01,07.01,07.01,07.01,07.01,08.0Q,08.0N,08.0N,06.0U,06.2P,06.2P,06.09,06.05</Row>
 	<Row>07.01,07.01,07.01,01.01,01.01,06.0N,06.0N,06.0N,08.0N,08.0N,06.07,06.2R,06.2R,06.2R,06.03,06.2P,06.01,06.2P</Row>
 	<Row>05.1c,05.1c,05.1c,05.1j,05.0x,05.0p,05.0p,05.0p,05.07,05.1K,05.03,05.01,05.01,05.0t,06.01,06.2P,06.07,06.03</Row>
 	<Row>05.0a,05.0a,05.0i,05.01,05.01,05.01,05.01,05.07,05.03,05.0m,05.0m,05.0u,05.01,05.0o,06.01,06.07,06.03,06.01</Row>
@@ -54,8 +54,8 @@
 	<RowElev>1,1,0,1,1,2,2,1,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>2,1,1,1,2,2,2,2,2,2,2,2,2,2,2,3,3,3</RowElev>
 	<RowElev>0,1,1,2,2,2,2,2,2,2,0,0,1,1,3,4,4,4</RowElev>
-	<RowElev>0,0,0,2,2,1,2,2,1,0,0,0,0,1,3,3,4,4</RowElev>
-	<RowElev>0,0,0,2,2,0,0,0,0,0,1,1,1,1,3,3,4,4</RowElev>
+	<RowElev>0,0,0,2,2,1,2,2,1,0,0,0,0,1,2,3,4,4</RowElev>
+	<RowElev>0,0,0,2,2,0,0,0,0,0,1,1,1,1,2,3,4,4</RowElev>
 	<RowElev>0,0,0,2,2,1,1,1,1,1,2,2,2,2,2,3,3,4</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,4,4</RowElev>
 	<RowElev>1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,4,4,4</RowElev>
@@ -165,6 +165,7 @@
 	<Unit tag="Open">0,99,DoorWoodVerticalAlt,8,15,None,None</Unit>
 	<Unit>0,99,RugTurq9B,8,16,None,None</Unit>
 	<Unit>0,99,RugTurq9B,8,17,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,0/Add,TargetValue,.8">0,99,Poster,9,5,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,9,6,None,None</Unit>
 	<Unit>0,99,Chair,9,7,None,None</Unit>
 	<Unit>0,99,Chair,9,8,None,None</Unit>
@@ -184,10 +185,10 @@
 	<Unit>0,99,HouseWallT_S,10,15,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,10,16,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,10,17,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,0,Add,TargetValue,.8">0,99,Poster,11,8,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,0,Add,TargetValue,.8">0,99,Poster,11,12,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,0/Add,TargetValue,.8">0,99,Poster,11,8,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,0/Add,TargetValue,.8">0,99,Poster,11,12,None,None</Unit>
 	<Unit>0,99,ItemSack,11,13,None,Rejuvenation Orb</Unit>
-	<Unit tag="Add,TreatAsArmy,0,Add,TargetValue,.8">0,99,Poster,11,15,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,0/Add,TargetValue,.8">0,99,Poster,11,15,None,None</Unit>
 	<Unit>0,99,Tree,11,16,None,None</Unit>
 	<Unit>0,99,Wildflowers,11,17,None,None</Unit>
 	<Unit>0,99,Barrel,12,4,None,None</Unit>
@@ -197,12 +198,13 @@
 	<Unit>0,99,Bush,13,14,None,None</Unit>
 	<Unit>0,99,FruitStand_S,14,5,None,None</Unit>
 	<Unit>0,99,ReedsSmall,14,6,None,None</Unit>
+	<Unit>0,99,LampLit,14,7,None,None</Unit>
 	<Unit>0,99,Boulder,14,8,None,None</Unit>
 	<Unit>0,99,Reeds,14,14,None,None</Unit>
 	<Unit>0,99,Wildflowers,15,16,None,None</Unit>
+	<Unit>0,99,RubbleCave,16,3,None,None</Unit>
 	<Unit>0,99,Caravan_E,17,0,None,None</Unit>
 	<Unit>0,99,ItemSack,17,1,None,Bandages/Focus Pills</Unit>
-	<Unit>0,99,Bush,17,4,None,None</Unit>
 	<Unit>0,99,RubbleCastle,17,7,None,None</Unit>
 	<Unit>0,99,TreeFruit,17,9,None,Apple/Apple/Apple</Unit>
 	<Unit>0,99,Evergreen,17,10,None,None</Unit>
@@ -223,16 +225,16 @@
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,Patrol,StartingArea">0,1,Rubble Rouser Golem/,6,3,Up,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Bruiser/,8,11,Left,None</Unit>
 	<Unit tag="Add,LevelUp,3/Add,AreaPreference,StartingArea,1.5/Add,AggroGroup,3/Add,Passive">0,1,Rubble Rouser Bruiser/,9,0,Up,None</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,9,10,Up,Screw-Firing Crossbow[E]</Unit>
+	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,9,10,Right,Screw-Firing Crossbow[E]</Unit>
 	<Unit tag="Add,Passive/Add,Pursue/Add,AggroGroup,3/Add,Patrol,StartingArea">0,1,Rubble Rouser Golem/,11,4,Down,None</Unit>
 	<Unit tag="Add,Passive/Add,Pursue/Add,AggroGroup,3/Add,Patrol,StartingArea">0,1,Rubble Rouser Golem/,12,3,Down,None</Unit>
 	<Unit tag="Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,12,7,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
 	<Unit>0,1,Rubble Rouser Golem/,12,13,Down,None</Unit>
 	<Unit tag="Add,LevelUp,3">0,1,Rubble Rouser Bruiser/,13,16,Left,None</Unit>
-	<Unit tag="Add,AreaPreference,StartingArea,1.5">0,1,Rubble Rouser Golem/,14,9,Right,None</Unit>
-	<Unit tag="Add,AreaPreference,StartingArea,1.5">0,1,Rubble Rouser Golem/,15,4,Right,None</Unit>
+	<Unit tag="Add,AreaPreference,StartingArea,=:1.5">0,1,Rubble Rouser Golem/,14,9,Right,None</Unit>
+	<Unit tag="Add,AreaPreference,StartingArea,=:1.5">0,1,Rubble Rouser Golem/,15,4,Right,None</Unit>
 	<Unit tag="Add,LevelUp,3/Add,AreaPreference,StartingArea,1.5">0,1,Rubble Rouser Bruiser/,16,0,Down,None</Unit>
-	<Unit tag="Add,LevelUp,3/Add,AreaPreference,StartingArea,1.5">0,1,Rubble Rouser Bruiser/,16,6,Right,None</Unit>
+	<Unit tag="Add,LevelUp,3/Add,AreaPreference,StartingArea,=:1.5">0,1,Rubble Rouser Bruiser/,16,6,Right,None</Unit>
 	<Unit>0,1,Coderick/Gutterson,17,2,Left,None</Unit>
 	<Unit tag="Add,Passive/Add,LevelUp,8/Add,Patrol,Viewing Booth/Add,TargetValue,1.3">0,2,Loud Theater Enjoyer/,1,15,Down,None</Unit>
 
@@ -247,6 +249,22 @@
 		<Action>RemoveStatus/Nobeta Lifts,Talkable</Action>
 		<Action>SetString/Nobeta Lifts Can Talk,INVALID</Action>
 		<Action>IfPresentRun/Sandra Winterbloom,_AddStatus,StatusName,Talkable,CharacterName,Kyat</Action>
+	</Script>
+
+	<Script>Arora Shift Roll
+		<Action>SetVal/Random,r:2</Action>
+		<Action>IfValRun/Random,=,0,Try Replace Arora Feminine</Action>
+		<Action>IfValRun/Random,=,1,Try Replace Arora Masculine</Action>
+	</Script>
+
+	<Script>Try Replace Arora Masculine
+		<Action>IfValRun/AroraGender,=,0,Swap Out Unit,Swap Out Name,Arora,Swap In Name,Arora/Masculine</Action>
+		<Action>SetVal/AroraGender,=:1</Action>
+	</Script>
+
+	<Script>Try Replace Arora Feminine
+		<Action>IfValRun/AroraGender,=,1,Swap Out Unit,Swap Out Name,Arora,Swap In Name,Arora/Feminine</Action>
+		<Action>SetVal/AroraGender,=:0</Action>
 	</Script>
 
 	<Dialogue trigger="OnTalk/Kyat,-STR:Nobeta Lifts Can Talk-" convID="Lesbians Talk Dialogue" r="true">
@@ -279,6 +297,7 @@
 			<Action>IfValRun/Lesbian Discussions,l,3,_SetVal,ValueName,MoreLesbianDiscussions,Value,1</Action>
 			<Action>Run/IfAllTrue_2,ValueOneName,MoreLesbianDiscussions,ValueOneCompareTo,1,ValueTwoName,TurnsSinceLastLesbianConvo,ValueTwoCompareTo,6</Action>
 			<Action>IfValRun/AnswerComposite,=,1,SetLesbianTalkable</Action>
+			<Action>Run/Arora Shift Roll</Action>
 			<Action>GoTo/1</Action>
 		</Branch>
 		<Branch num="2" name="">/
@@ -308,6 +327,7 @@
 			<Action>AddTagToArmy/1,IgnoreArmy,2</Action>
 			<Action>SetVal/TurnsSinceLastLesbianConvo,=:0</Action>
 			<Action>SetArea/StartingArea,14,17,10,14</Action>
+			<Action>SetVal/AroraGender,=:0</Action>
 			<Action>GoToNextBranch/</Action>
 		</Branch>
 		<Branch num="1" name="Intro Dialogue Start">Drasan Winterbloom/W--what? The theater! People are--?
