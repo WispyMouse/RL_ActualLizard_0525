@@ -389,7 +389,7 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Mary O Nette/It can be as you say. [She watches Nobeta Lifts wiggle in the anticipation of combats] It can be time to... get behind you.
-			<Action>AddPortrait/Mary O Nette,Mary O Nette,right,,Happy</Action>
+			<Action>ChangeExpression/Mary O Nette,Happy</Action>
 			<Action>SetStat/Mary O Nette,Morale,+:2</Action>
 			<Action>SetStat/Nobeta Lifts,Morale,+:2</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -402,7 +402,7 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Mary O Nette/...ah, Nobeta Lifts. [She looks up at her] Behind you, yes?
-			<Action>AddPortrait/Nobeta Lifts,Nobeta Lifts,left,,Concerned</Action>
+			<Action>ChangeExpression/Nobeta Lifts,Concerned</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Nobeta Lifts/Of course! Dad always said to me, "these muscles are for protecting you, little girl."
@@ -443,14 +443,14 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Nobeta Lifts/Hmm? Ah, what? Something about after this battle?
-			<Action>AddPortrait/Nobeta Lifts,Nobeta Lifts,left,,Quizzical</Action>
+			<Action>ChangeExpression/Nobeta Lifts,Quizzical</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Mary O Nette/After this battle, would you have time for... a date?
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="5" name="">Nobeta Lifts/Oh! Oh! [She pauses and stares in to middle-space] Oh. Yes, actually. Plenty of time. Oh, but now, I need to...
-			<Action>AddPortrait/Nobeta Lifts,Nobeta Lifts,left,,Happy</Action>
+			<Action>ChangeExpression/Nobeta Lifts,Happy</Action>
 			<Action>SetStat/Nobeta Lifts,Morale,+:3</Action>
 			<Action>SetStat/Mary O Nette,Mary O Nette,+:3</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -486,7 +486,6 @@
 			<Action>SetStat/Clark,Army,=:0</Action>
 			<Action>RemoveConv/Clark Dialogue</Action>
 			<Action>RemovePortrait/Clark</Action>
-			<Action>AddPortrait/Clark,Clark,left</Action>
 			<Action>SetStat/Clark,Morale,=4</Action>
 			<Action>RemoveConv/West Approach Recognized</Action>
 			<Action>SetVal/WestApproachFlag,3</Action>
@@ -501,7 +500,7 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Drasan Winterbloom/[Drasan nervously grabs an outfit from the chest]
-			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,left,,Concerned</Action>
+			<Action>ChangeExpression/Drasan Winterbloom,Concerned</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Andras Winterbloom/I could... use a change.
@@ -550,7 +549,7 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Irate Crossbow Aficionado/Argh;; there's never enough time to educate arbalest-ignorants! Let's teach them proper technique!
-			<Action>AddPortrait/Irate Crossbow Aficionado,Irate Crossbow Aficionado,right,,Mean</Action>
+			<Action>ChangeExpression/Irate Crossbow Aficionado,Mean</Action>
 			<Action>FlipPortrait/Irate Crossbow Aficionado</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -559,7 +558,7 @@
 		</Branch>
 		<Branch num="4" name="">Clark/[He sighs] I thought that boss guy was cute enough to spend a weekend with his pals, but... Second thoughts.
 			<Action>ClearPortraits/</Action>
-			<Action>AddPortrait/Clark,Clark,right,,Sad</Action>
+			<Action>ChangeExpression/Clark,Sad</Action>
 			<Action>AddStatus/Clark,Talkable</Action>
 			<Action>RemoveTagFromGroup/1,Passive</Action>
 			<Action>RemoveTagFromGroup/1,Inactive</Action>
