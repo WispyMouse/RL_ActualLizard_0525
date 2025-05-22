@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 10:58:19 AM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 11:46:39 AM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -339,30 +339,30 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Loud Theater Enjoyer/Are you daft? Strider's efforts were only truly given life through *this* play. Bolt-Action Love is *the* essential crossbowpunk love story.
-			<Action>ClearPortraits/</Action>
 			<Action>MoveCam/,,Loud Theater Enjoyer</Action>
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,right,,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="7" name="">Rubble Rouser Bruiser/Crossbowwhatsit? Look, anything Strider, it's gotta go. Ain't she done enough damage?
-			<Action>AddPortrait/Rubble Rouser Bruiser,Rubble Rouser Bruiser,right,,Mad</Action>
+			<Action>ChangeExpression/Rubble Rouser Bruiser,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Irate Crossbow Aficionado/That Rubble Rouser guy is right! We don't have to stand for this! We can take matters in to our own hands! We can tear down this injust favoritism for over-hyped product line crossbows!
-			<Action>AddPortrait/Irate Crossbow Aficionado,Irate Crossbow Aficionado,left,,Angry</Action>
+			<Action>RemovePortrait/Loud Theater Enjoyer</Action>
+			<Action>AddPortrait/Irate Crossbow Aficionado,Irate Crossbow Aficionado,right,,Angry</Action>
 			<Action>MoveCam/,,Irate Crossbow Aficionado</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="6" name="">Rubble Rouser Bruiser/Uh, yeah. Yeah! Whatever gets your engine going, get smashing.
-			<Action>AddPortrait/Rubble Rouser Bruiser,Rubble Rouser Bruiser,right,,Quizzical</Action>
+			<Action>ChangeExpression/Rubble Rouser Bruiser,Quizzical</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Harrien Lifts/Bwuh?! Hey! You can't do that! Everyone, get your community mutual defense face on, time to wrangle.
 			<Action>ClearPortraits/</Action>
-			<Action>AddPortrait/Harrien Lifts/,Harrien Lifts/,left,,Yell</Action>
+			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,left,,Yell</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="8" name="">Harrien Lifts/
+		<Branch num="8" name="">/
 			<Action>MoveCam/,,Harrien Lifts</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
