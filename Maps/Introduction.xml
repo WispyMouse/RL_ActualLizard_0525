@@ -35,7 +35,7 @@
 	<Dialogue trigger="OnTurn/0" convID="Intro" r="true">
 		<Branch num="0" name="">Harrien Lifts/Thanks for meeting on such short notice. Everyone here? Alright, grab your things or hand them to me, it's time to...
 			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,right,,Nice</Action>
-			<Action>AddPortrait/Arora,Arora/,left,,Winking,13,0</Action>
+			<Action>AddPortrait/Arora,Arora/Feminine,left,,Winking,13,0</Action>
 			<Action>AddPortrait/Kyat,Kyat/,left,,Happy,16,1</Action>
 			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,left,,Excited</Action>
 			<Action>AddPortrait/Drasan Winterbloom,Drasan/Winterbloom,left,,Concerned,23,0</Action>
@@ -52,7 +52,7 @@
 		</Branch>
 		<Branch num="2" name="">Arora/Ach, would they really start without *me*?
 			<Action>RemovePortrait/Harrien Lifts</Action>
-			<Action>AddPortrait/Arora,Arora/,right,,Shocked</Action>
+			<Action>AddPortrait/Arora,Arora/Feminine,right,,Shocked</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Nobeta Lifts/That wasn't a "preparing for the play" kind of sound...
