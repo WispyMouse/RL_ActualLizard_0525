@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 11:51:10 AM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 12:21:20 PM">
 
 	<Narration>The sun shines upon the town square. In just a few weeks, there will be a showing of "Bolt-Action Love"--the dramatic story of Lakshmi Bana and Emma Strider's sapphic love--and pre-screening is beginning. A few friends and colleagues gather together to support the show. -PIC:Market_Dese-|  -DIA:Intro-</Narration>
 	
@@ -49,6 +49,7 @@
 			<Action>ChangeExpression/Nobeta Lifts,Quizzical</Action>
 			<Action>FadeMusic/0,2</Action>
 			<Action>PlaySound/Build</Action>
+			<Action>PlaySound/Breath Dark</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Arora/Ach, would they really start without [b]me[/b]?
@@ -62,9 +63,8 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Mary O Nette/Time for picking up the pace, yes?
-			<Action>ClearPortraits/</Action>
-			<Action>AddPortrait/Mary O Nette,Mary O Nette/,right,,Amused</Action>
-			<Reply>Continue./NextScene</Reply>
+			<Action>AddPortrait/Mary O Nette,Mary O Nette/,left,,Amused,15,0</Action>
+			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="5" name="">/
 			<Action>PlaySound/FootstepsFading_Outdoors</Action>
