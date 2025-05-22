@@ -216,7 +216,7 @@
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,">0,1,Rubble Rouser Bruiser/,2,9,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,3,3,Down,Limited-Issue Bayonet Only Crossbow[E]</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Golem/,3,13,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Clark/,4,4,Left,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Clark/Sad,4,4,Left,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,">0,1,Irate Crossbow Aficionado/,4,7,Up,Obviously Stolen Crossbow[E]</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Pursue/Patrol,Theater,=,1.5/Add,IgnoreArmy,2">0,1,Rubble Rouser Golem/,5,10,Up,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Golem/,6,1,Up,None</Unit>
@@ -497,7 +497,7 @@
 		</Branch>
 		<Branch num="6" name="">Clark/...W-well;; okay. ...Thank you.
 			<Action>SetStat/Clark,Army,=:0</Action>
-			<Action>/</Action>
+			<Action>Run/Swap Out Unit,Swap Out Name,Clark,Swap In Name,Clark/Happy</Action>
 			<Action>ChangeExpression/Clark,Happy</Action>
 			<Action>SetStat/Clark,Morale,=4</Action>
 			<Action>RemoveConv/West Approach Recognized</Action>
