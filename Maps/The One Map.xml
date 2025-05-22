@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 11:46:39 AM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 12:04:29 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -314,10 +314,10 @@
 			<Action>SetArea/West Approach,0,16,0,4</Action>
 			<Action>SetArea/Dressing Room Door,0,3,0,4</Action>
 			<Action>SetArea/Theater,0,8,4,16</Action>
-			<Action>SetArea/Outside Hut,8,13,6,12</Action>
+			<Action>/</Action>
 			<Action>SetVal/TurnsUntilBossAppears,=:-1</Action>
 			<Action>SetVal/Turn Trigger,=:0</Action>
-			<Action>SetArea/Viewing Booth,0,3,13,15</Action>
+			<Action>SetArea/Viewing Booth,0,2,14,16</Action>
 			<Action>IfValGoTo/Skip Dialogue,=,1,999</Action>
 			<Action>SetVal/WestApproachFlag,=:0</Action>
 			<Action>SetVal/Sandra Attacks,=:0</Action>
@@ -332,13 +332,13 @@
 			<Action>MoveCam/,,Drasan Winterbloom</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="5" name="">Rubble Rouser Bruiser/The boss says this place has got to go! No one supporting these shmucks has a place in *our* town!
+		<Branch num="5" name="">Rubble Rouser Bruiser/The boss says this place has got to go! No one supporting these shmucks has a place in [b]our[/b] town!
 			<Action>ClearPortraits/</Action>
 			<Action>MoveCam/,,Rubble Rouser Bruiser</Action>
 			<Action>AddPortrait/Rubble Rouser Bruiser,Rubble Rouser Bruiser,left,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">Loud Theater Enjoyer/Are you daft? Strider's efforts were only truly given life through *this* play. Bolt-Action Love is *the* essential crossbowpunk love story.
+		<Branch num="2" name="">Loud Theater Enjoyer/Are you daft? Strider's efforts were only truly given life through *this* play. Bolt-Action Love is [b]the[/b] essential crossbowpunk love story.
 			<Action>MoveCam/,,Loud Theater Enjoyer</Action>
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,right,,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -397,7 +397,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Second Lesbian Dialogue" r="false">
-		<Branch num="0" name="">Mary O Nette/Perhaps *she* can call me little girl. That would be acceptable.
+		<Branch num="0" name="">Mary O Nette/Perhaps [b]she[/b] can call me little girl. That would be acceptable.
 			<Action>AddPortrait/Mary O Nette,Mary O Nette,left,,Winking</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -679,7 +679,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnTurn/14" convID="Greek Chorus Heckles 2" r="false">
-		<Branch num="0" name="">Loud Theater Enjoyer/And what even *is* "over centralization" of such a crucial crossbow. Everyone knows the 20DV changed the world. Fools!
+		<Branch num="0" name="">Loud Theater Enjoyer/And what even [b]is[/b] "over centralization" of such a crucial crossbow. Everyone knows the 20DV changed the world. Fools!
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Rubble Rouser Bruiser/Ey keep it down up there! We're busy!
@@ -689,7 +689,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnTurn/20" convID="Greek Chorus Heckles" r="false">
-		<Branch num="0" name="">Loud Theater Enjoyer/Did you even pick up on *any* of the subthemes about recoil representing revolution? And you dare say you know this craft!
+		<Branch num="0" name="">Loud Theater Enjoyer/Did you even pick up on [b]any[/b] of the subthemes about recoil representing revolution? And you dare say you know this craft!
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Amused</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -729,13 +729,13 @@
 			<Action>AddPortrait/Mary O Nette,Mary O Nette,right,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Mary O Nette/**You** do not get to call me a little girl. Show respect, creep.
+		<Branch num="1" name="">Mary O Nette/[b]You[/b] do not get to call me a little girl. Show respect, creep.
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Arora/Feminine,,,Coderick Gutterson" convID="Coderick and Arora" r="false">
-		<Branch num="0" name="">Coderick Gutterson/Ech, what are you even going for? Make up your mind! I, Coderick Gutterson, and the rest of **civil** society need to know if you're a man or not!
+		<Branch num="0" name="">Coderick Gutterson/Ech, what are you even going for? Make up your mind! I, Coderick Gutterson, and the rest of [b]civil[/b] society need to know if you're a man or not!
 			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,left,,Mad</Action>
 			<Action>AddPortrait/Arora,Arora/Feminine,right,,Winking</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -746,18 +746,18 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Drasan Winterbloom,,,Coderick Gutterson" convID="Coderick and Drasan" r="false">
-		<Branch num="0" name="">Coderick Gutterson/Now doesn't **someone** look entirely uncomfortable. It's your skin, buddy, get used to it! None of us can change what we are, and what I am is a **champion among vermin**.
+		<Branch num="0" name="">Coderick Gutterson/Now doesn't [b]someone[/b] look entirely uncomfortable. It's your skin, buddy, get used to it! None of us can change what we are, and what I am is a [b]champion among vermin[/b].
 			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,left,,Mad</Action>
 			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,right,,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Drasan Winterbloom/[Drasan absently ponders] You're **so** wrong, that I think I just learned something. Thanks?
+		<Branch num="1" name="">Drasan Winterbloom/[Drasan absently ponders] You're [b]so[/b] wrong, that I think I just learned something. Thanks?
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Clark,,,Coderick Gutterson" convID="Clark and Coderick" r="false">
-		<Branch num="0" name="">/[Good job finding this dialogue! You recruited Clark *before* fighting that guy? Way to go.]
+		<Branch num="0" name="">/[Good job finding this dialogue! You recruited Clark [b]before[/b] fighting that guy? Way to go.]
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -917,7 +917,7 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 			<Action>AddPortrait/Clark,Clark,right,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Clark/Oh don't worry, it's not *your* men I want to *smash*.
+		<Branch num="1" name="">Clark/Oh don't worry, it's not [b]your[/b] men I want to [b]smash[/b].
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>

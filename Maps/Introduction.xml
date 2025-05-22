@@ -51,7 +51,7 @@
 			<Action>PlaySound/Build</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">Arora/Ach, would they really start without *me*?
+		<Branch num="2" name="">Arora/Ach, would they really start without [b]me[/b]?
 			<Action>AddPortrait/Arora,Arora/Feminine,left,,Shocked</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
