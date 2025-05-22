@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 2:21:19 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 4:09:28 PM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
@@ -38,10 +38,9 @@
 		<Action>Run/Store Character Stats,Prefix,SwapOut,Character Name,-STR:Swap Out Name-</Action>
 		<Action>StripItemsFromUnit/-STR:Swap Out Unit-,0</Action>
 		<Action>RemoveUnit/-STR:Swap Out Name-,false</Action>
-		<Action>SpawnUnit/0,-STR:Swap In Name-,-VAL:SwapOutY Coord-,-VAL:SwapOutX Coord-,-STR:SwapOutFacing-,,,-STR:SwapOutInventory String-,false</Action>
+		<Action>SpawnUnit/0,-STR:Swap In ID-,-VAL:SwapOutY Coord-,-VAL:SwapOutX Coord-,-STR:SwapOutFacing-,,,-STR:SwapOutInventory String-,false</Action>
 		<Action>Run/Load Character Stats,Character Name,-STR:Swap In Name-,Prefix,SwapOut</Action>
 		<Action>StripItemsFromUnit/-STR:Swap In Name-,1</Action>
-		<Action>TransferReserveSupplies/0,-STR:Swap In Name-</Action>
 	</Script>
 
 	<Script>Store Character Stats
