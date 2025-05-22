@@ -618,10 +618,10 @@
 			<Action>LoadConv/West Approach Recognized</Action>
 			<Action>GoTo/0</Action>
 		</Branch>
-		<Branch num="2" name="Spawn Boss">Deckhardt Lordland/Hey;; I'm rousing here! And this is a boss fight now.
-			<Action>SpawnUnit/1,Deckhardt:Lordland:,7,17,Left,,Add:LevelUp:9,,</Action>
+		<Branch num="2" name="Spawn Boss">Xander Bilt/Hey;; I'm rousing here! And this is a boss fight now.
+			<Action>SpawnUnit/1,Xander:Bilt:,7,17,Left,,Add:LevelUp:9,,</Action>
 			<Action>SpawnUnit/1,Rubble Rouser Golem:,8,16,Left</Action>
-			<Action>AddPortrait/Deckhardt Lordland,Deckhardt Lordland,left,,Angry</Action>
+			<Action>AddPortrait/Xander Bilt,Xander Bilt,left,,Angry</Action>
 			<Action>SetVal/TurnsUntilBossAppears,-1</Action>
 			<Reply>Continue./NewBranch/0</Reply>
 		</Branch>
