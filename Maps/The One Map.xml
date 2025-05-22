@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/21/2025 11:01:41 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 10:48:39 AM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -215,7 +215,7 @@
 	<Unit>0,0,Drasan/Winterbloom,16,13,Left,None</Unit>
 	<Unit>0,0,Mary O Nette/,17,12,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Slighted Playwright/,1,3,Left,None</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Bruiser/,2,9,Down,None</Unit>
+	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Bruiser/,2,9,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,3,3,Down,Limited-Issue Bayonet Only Crossbow[E]</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Golem/,3,13,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Clark/,4,4,Left,None</Unit>
@@ -618,7 +618,7 @@
 			<Action>LoadConv/West Approach Recognized</Action>
 			<Action>GoTo/0</Action>
 		</Branch>
-		<Branch num="2" name="Spawn Boss">Xander Bilt/Hey;; I'm rousing here! And this is a boss fight now.
+		<Branch num="2" name="Spawn Boss">Xander Bilt/I don't get it! It's a THEATER! How can you be failing this bad? I'll have to do this myself!
 			<Action>SpawnUnit/1,Xander:Bilt:,7,17,Left,,Add:LevelUp:9,,</Action>
 			<Action>SpawnUnit/1,Rubble Rouser Golem:,8,16,Left</Action>
 			<Action>AddPortrait/Xander Bilt,Xander Bilt,left,,Angry</Action>
@@ -796,6 +796,127 @@
 	<Dialogue trigger="OnCharAttacked/1,Coderick Gutterson,,,Clark" convID="Coderick and Clark Offense" r="false">
 		<Branch num="0" name="">/
 			<Action>LoadConv/Coderick and Drasan</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,Xander Bilt,,Harrien Lifts" convID="Xander and Harrien" r="false">
+		<Branch num="0" name="">Xander Bilt/So you're the leader of this pro-Strider propaganda affair! Do you understand how much she has ruined my financial affairs!?
+
+			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,YellMad</Action>
+			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,right,,Mad</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Harrien Lifts/I can only think of so many reasons for that, and all of them are worth breaking a chair over your head.
+
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="2" name="">Xander Bilt/It doesn't matter. If I get through you, the theater is as good as destroyed. Take this!
+
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,Harrien Lifts,,Xander Bilt" convID="Xander and Harrien Offense" r="false">
+		<Branch num="0" name="">/
+			<Action>LoadConv/Xander and Harrien</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,Xander Bilt,,,Nobeta Lifts" convID="Xander and Nobeta" r="false">
+		<Branch num="0" name="">Xander Bilt/If I were you, young lady, I wouldn't follow in your father's foolish footsteps.
+			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,YellMad
+Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial Expression (optional),X Position (optional),Y Position (optional),Force Skin Palette (integer -- optional)</Action>
+			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Mad</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Nobeta Lifts/Oh that does it. I'm absolutely beating you up now.
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,Nobeta Lifts,,,Xander Bilt" convID="Xander and Nobeta Offense" r="false">
+		<Branch num="0" name="">/
+			<Action>LoadConv/Xander and Nobeta</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,Asandr Winterbloom,,,Xander Bilt" convID="Xander and Asandr" r="false">
+		<Branch num="0" name="">Xander Bilt/Young man, surely I can provide you a better opportunity than working with this motley crew.
+			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,YellMad</Action>
+			<Action>AddPortrait/Asandr Winterbloom,Xander/Bilt,right,,Mad</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Asandr Winterbloom/It's...well it's young woman now.
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="2" name="">Xander Bilt/Oh, my apologies. Offer still stands.
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="3" name="">Asandr Winterbloom/Absolutely not. Who would want to work with someone like you?
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,Xander Bilt,,,Asandr Winterbloom" convID="Xander and Asandr Offense" r="false">
+		<Branch num="0" name="">/
+			<Action>LoadConv/Xander and Asandr</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,Mary O Nette,,,Xander Bilt" convID="Xander and Mary" r="false">
+		<Branch num="0" name="">Xander Bilt/...This isn't what I want to be doing with my time. Run away young lady, and I promise on my family name you won't be harmed.
+			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,YellMad</Action>
+			<Action>AddPortrait/Mary O Nette,Mary O Nette,right,,Mad</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Mary O Nette/I'm not going to abandon my friends!
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,Xander Bilt,,,Mary O Nette" convID="Xander and Mary Offense" r="false">
+		<Branch num="0" name="">/
+			<Action>LoadConv/Xander and Mary</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,Arora,,,Xander Bilt" convID="Xander and Arora" r="false">
+		<Branch num="0" name="">Xander Bilt/My my, what rare talents. You're truly wasted here.
+			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,YellMad</Action>
+			<Action>AddPortrait/Arora,Arora,right,,Mad</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Arora/Thanks, but no thanks. Let's just move onto the scene where I beat you, shall we?
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,Xander Bilt,,,Arora" convID="Xander and Arora Offense" r="false">
+		<Branch num="0" name="">/
+			<Action>LoadConv/Xander and Arora</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,Xander Bilt,,,Clark" convID="Xander and Clark" r="false">
+		<Branch num="0" name="">Xander Bilt/Clark! Lad, what are you doing? Get back to being obedient and smash the theater, not me and my men!
+			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,YellMad</Action>
+			<Action>AddPortrait/Clark,Clark,right,,Mad</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Clark/Oh don't worry, it's not *your* men I want to *smash*.
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,Clark,,,Xander Bilt" convID="Xander and Clark Offense" r="false">
+		<Branch num="0" name="">/
+			<Action>LoadConv/Xander and Clark</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
