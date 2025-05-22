@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/21/2025 9:40:33 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/21/2025 10:02:08 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -727,16 +727,58 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharAttacked/-ANY,Clark,,,Coderick Gutterson" convID="Clark and Coderick" r="false">
+	<Dialogue trigger="OnCharAttacked/-ANY-,Clark,,,Coderick Gutterson" convID="Clark and Coderick" r="false">
 		<Branch num="0" name="">/[Good job finding this dialogue! You recruited Clark *before* fighting that guy? Way to go.]
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Loud Theater Enjoyer" convID="LoudTheaterEnjoyerAttacked" r="false">
-		<Branch num="0" name="">Loud Theater Enjoyer/I may have been... somewhat vocal.
+		<Branch num="0" name="">Loud Theater Enjoyer/I may have been... somewhat overly vocal.
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,right,,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/1,Coderick Gutterson,,,Harrien Lifts" convID="Coderick and Harrien Offense" r="false">
+		<Branch num="0" name="">/
+			<Action>LoadConv/Coderick and Harrien Lifts</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/1,Coderick Gutterson,,,Nobeta Lifts" convID="Coderick and Nobeta Offense" r="false">
+		<Branch num="0" name="">/
+			<Action>LoadConv/Coderick and Nobeta Lifts</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/1,Coderick Gutterson,,,Kyat" convID="Coderick and Kyat Offense" r="false">
+		<Branch num="0" name="">/
+			<Action>LoadConv/Coderick and Kyat</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/1,Coderick Gutterson,,,Arora" convID="Codercik and Arora Offense" r="false">
+		<Branch num="0" name="">/
+			<Action>LoadConv/Coderick and Arora</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/1,Coderick Gutterson,,,Drasan Winterbloom" convID="Coderick and Drasan Offense" r="false">
+		<Branch num="0" name="">/
+			<Action>LoadConv/Coderick and Drasan</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/1,Coderick Gutterson,,,Clark" convID="Coderick and Clark Offense" r="false">
+		<Branch num="0" name="">/
+			<Action>LoadConv/Coderick and Drasan</Action>
+			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
 
