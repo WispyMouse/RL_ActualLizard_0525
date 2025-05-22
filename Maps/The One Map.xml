@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 1:35:05 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 1:46:27 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -232,7 +232,6 @@
 	<Unit tag="Add,Passive/Add,Pursue/Add,AggroGroup,3/Add,Patrol,StartingArea/Add,Patrol,StartingChoke">0,1,Rubble Rouser Golem/,12,3,Down,None</Unit>
 	<Unit tag="Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,12,7,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
 	<Unit>0,1,Rubble Rouser Golem/,12,13,Down,None</Unit>
-	<Unit>0,1,lava,13,16,Left,None</Unit>
 	<Unit tag="Add,AreaPreference,StartingArea,=:1.5">0,1,Rubble Rouser Golem/,14,9,Right,None</Unit>
 	<Unit tag="Add,AreaPreference,StartingArea,=:1.5/Add,Patrol,StartingChoke">0,1,Rubble Rouser Golem/,15,4,Right,None</Unit>
 	<Unit tag="Add,LevelUp,3/Add,AreaPreference,StartingArea,1.5">0,1,Rubble Rouser Bruiser/,16,0,Down,None</Unit>
@@ -555,11 +554,12 @@
 
 	<Dialogue trigger="None/" convID="West Approach Recognized" r="false">
 		<Branch num="0" name="">Clark/I mean;; maybe the author made a small mistake about the bolt-head manufacturer, but--
-			<Action>AddPortrait/Clark,Clark,left,,Worried</Action>
+			<Action>AddPortrait/Clark,Clark,left,,Concerned</Action>
 			<Action>AddPortrait/Irate Crossbow Aficionado,Irate Crossbow Aficionado,right,,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Irate Crossbow Aficiando/A small mistake! Lakshmi would never be caught dead wi- [The scuffle outside rattles the windows]
+			<Action>ChangeExpression/Clark,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Irate Crossbow Aficionado/Argh;; there's never enough time to educate arbalest-ignorants! Let's teach them proper technique!
@@ -568,11 +568,12 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Clark/Uh... alright...
+			<Action>ChangeExpression/Clark,Neutral</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Clark/[He sighs] I thought that boss guy was cute enough to spend a weekend with his pals, but... Second thoughts.
-			<Action>ClearPortraits/</Action>
-			<Action>ChangeExpression/Clark,Sad</Action>
+			<Action>ClearPortraits/Clark</Action>
+			<Action>ChangeExpression/Clark,Headache</Action>
 			<Action>/</Action>
 			<Action>RemoveTagFromGroup/1,Passive</Action>
 			<Action>RemoveTagFromGroup/1,Inactive</Action>
@@ -694,6 +695,7 @@
 
 	<Dialogue trigger="OnTurn/14" convID="Greek Chorus Heckles 2" r="false">
 		<Branch num="0" name="">Loud Theater Enjoyer/And what even [b]is[/b] "over centralization" of such a crucial crossbow. Everyone knows the 20DV changed the world. Fools!
+			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Quizzical</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Rubble Rouser Bruiser/Ey keep it down up there! We're busy!
@@ -723,6 +725,8 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Harrien Lifts/If you speak to my friends or me that way, I will break you.
+			<Action>ChangeExpression/Harrien Lifts,Yell</Action>
+			<Action>ChangeExpression/Coderick Gutterson,Irritated</Action>
 			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
@@ -730,9 +734,12 @@
 	<Dialogue trigger="OnCharAttacked/-ANY-,Nobeta Lifts,,,Coderick Gutterson" convID="Coderick and Nobeta Lifts" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Well look who inherited her father's huge body! Grah, bet you think that haircut will attract real men like me.
 			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,left,,Mad</Action>
+			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Shocked</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Nobeta Lifts/W--well, good! I don't want to attract men like you!
+			<Action>ChangeExpression/Nobeta Lifts,Irritated</Action>
+			<Action>ChangeExpression/Coderick Gutterson,Irritated</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -766,6 +773,7 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Drasan Winterbloom/[Drasan absently ponders] You're [b]so[/b] wrong, that I think I just learned something. Thanks?
+			<Action>ChangeExpression/Drasan Winterbloom,Quizzical</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -939,6 +947,13 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 	<Dialogue trigger="OnCharAttacked/-ANY-,Clark,,,Xander Bilt" convID="Xander and Clark Offense" r="false">
 		<Branch num="0" name="">/
 			<Action>LoadConv/Xander and Clark</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="BeforeTurn/3" convID="Save Reminder" r="false">
+		<Branch num="0" name="">/
+			<Action>AddTextOverlay/You can save at the start of your turn, using the button on the bottom left of the pop up.</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
