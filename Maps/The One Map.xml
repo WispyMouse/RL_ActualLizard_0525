@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 10:48:39 AM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 10:58:19 AM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -512,6 +512,9 @@
 			<Action>Swap Out Unit/Swap Out Name,Drasan Winterbloom,Swap In Name,Andras Winterbloom</Action>
 			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Andras Winterbloom</Action>
 			<Action>SetStat/Andras Winterbloom,Morale,+:3</Action>
+			<Action>SetStat/Andras Winterbloom,Psy,+:1</Action>
+			<Action>SetStat/Andras Winterbloom,Dodge,+:3</Action>
+			<Action>SetStat/Andras Winterbloom,Accuracy,+:5</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -530,6 +533,9 @@
 			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Rasand Winterbloom</Action>
 			<Action>AddStatus/Asandr Winterbloom,Talkable</Action>
 			<Action>SetStat/Rasand Winterbloom,Morale,+:3</Action>
+			<Action>SetStat/Rasand Winterbloom,Psy,+:1</Action>
+			<Action>SetStat/Rasand Winterbloom,Dodge,+:3</Action>
+			<Action>SetStat/Rasand Winterbloom,Accuracy,+:5</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -594,6 +600,9 @@
 			<Action>AddPortrait/Asandr Winterbloom/,Asandr Winterbloom/,right,,Happy</Action>
 			<Action>SetStat/Asandr Winterbloom,Morale,+:2</Action>
 			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Asandr Winterbloom</Action>
+			<Action>SetStat/Asandr Winterbloom,Psy,+:1</Action>
+			<Action>SetStat/Asandr Winterbloom,Dodge,+:3</Action>
+			<Action>SetStat/Asandr Winterbloom,Accuracy,+:5</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Asandr Winterbloom/Aaah, I love it! And should write different, better, or more dialogue here to express that! :D
@@ -652,6 +661,9 @@
 			<Action>SetStat/Sandra Winterbloom,Morale,+:2</Action>
 			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Sandra Winterbloom</Action>
 			<Action>Run/AddTalkability,Sandra Winterbloom,Mary O Nette</Action>
+			<Action>SetStat/Sandra Winterbloom,Psy,+:1</Action>
+			<Action>SetStat/Sandra Winterbloom,Dodge,+:3</Action>
+			<Action>SetStat/Sandra Winterbloom,Accuracy,+:5</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -802,17 +814,14 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Xander Bilt,,Harrien Lifts" convID="Xander and Harrien" r="false">
 		<Branch num="0" name="">Xander Bilt/So you're the leader of this pro-Strider propaganda affair! Do you understand how much she has ruined my financial affairs!?
-
 			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,YellMad</Action>
 			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,right,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Harrien Lifts/I can only think of so many reasons for that, and all of them are worth breaking a chair over your head.
-
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Xander Bilt/It doesn't matter. If I get through you, the theater is as good as destroyed. Take this!
-
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
