@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 12:05:38 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 12:25:51 PM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
@@ -89,14 +89,20 @@
 	</Script>
 
 	<Script>ShowTalkabilityFor
-		<Action>IfValRun/LASTINLIST[-STR:Speaker-Talkable],=,0,RemoveStatus,Talkable</Action>
-		<Action>IfValRun/LASTINLIST[-STR:Speaker-Talkable],g,0,AddStatus,Talkable</Action>
+		<Action>SetVal/TalkCount,=:0</Action>
+		<Action>ForLoop/-ii-,0-LASTINLIST[-STR:Speaker-Talkable],1,IfPresentRun,LIST{-STR:Speaker-Talkable,-ii-},_AddVal,ValueName,TalkCount,Value,1</Action>
+		<Action>IfValRun/TalkCount,=,0,RemoveStatus,Talkable</Action>
+		<Action>IfValRun/TalkCount,g,0,AddStatus,Talkable</Action>
 	</Script>
 
 	<Script>RemoveTalkability
 		<Action>RemoveFromList/-STR:Speaker One-Talkable,-STR:Speaker Two-</Action>
 		<Action>RemoveFromList/-STR:Speaker Two-Talkable,-STR:Speaker One-</Action>
 		<Action>Run/ShowTalkability</Action>
+	</Script>
+
+	<Script>_AddVal
+		<Action>SetVal/-STR:ValueName-,+:-VAL:Value-</Action>
 	</Script>
 
 	<Dialogue trigger="OnLoaded/" convID="Set Root Relationships" r="false">
