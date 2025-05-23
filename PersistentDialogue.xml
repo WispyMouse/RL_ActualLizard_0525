@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 7:48:18 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 9:12:44 PM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>

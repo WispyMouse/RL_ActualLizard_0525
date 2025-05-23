@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 9:03:20 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 9:12:28 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -21,11 +21,11 @@
 	<Row>01.01,01.01,01.01,01.3E,01.01,01.01,02.01,01.01,03.0P,03.01,03.01,04.01,04.01,04.01,04.01</Row>
 	<Row>01.01,01.01,01.01,01.01,01.07,02.01,02.01,02.01,02.01,03.01,03.01,04.01,04.01,04.01,04.01</Row>
 	<Row>01.01,01.01,01.01,01.07,02.01,02.01,02.01,02.01,03.01,03.01,03.01,04.01,04.01,04.01,04.01</Row>
-	<Row>01.01,01.01,01.01,01.07,02.01,02.01,02.01,02.01,03.01,03.01,03.01,04.01,04.01,04.01,04.01</Row>
+	<Row>01.01,01.01,01.01,01.3A,02.01,02.01,02.01,02.01,03.01,03.01,03.01,04.01,04.01,04.01,04.01</Row>
 	<Row>01.01,01.01,01.01,01.43,02.01,02.01,02.01,02.01,03.01,03.01,03.01,03.01,04.01,04.01,04.01</Row>
 	<Row>01.01,01.01,01.01,01.3E,02.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,05.01,05.01,05.01</Row>
-	<Row>01.01,01.01,01.01,01.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,02.01,02.01,02.01</Row>
-	<Row>01.01,01.01,01.07,01.3C,02.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,02.01,02.01,02.01</Row>
+	<Row>01.01,01.01,01.01,01.3A,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,02.01,02.01,02.01</Row>
+	<Row>01.01,01.01,01.07,01.03,02.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,02.01,02.01,02.01</Row>
 	<Row>05.0Z,05.07,05.03,06.07,02.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,02.01,02.01,02.01</Row>
 	<Row>05.06,05.03,05.07,06.03,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.02,02.02</Row>
 	<Row>07.42,02.01,02.01,06.2O,06.2O,06.2O,06.2O,06.08,06.0P,08.01,06.09,06.3F,06.3Q,07.0e,07.01</Row>
@@ -39,13 +39,13 @@
 	<Light type="Point Light" size="2" intensity="1.5" y="3" x="6" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
 	<Light type="Point Light" size="2" intensity="1.5" y="5" x="7" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
 	
-	<RowElev>0,0,0,1,0,0,0,0,0,0,0,5,5,5,5</RowElev>
+	<RowElev>0,0,0,2,0,0,0,0,0,0,0,5,5,5,5</RowElev>
 	<RowElev>0,0,0,0,2,3,3,3,3,1,1,5,5,5,5</RowElev>
-	<RowElev>0,0,0,1,3,3,3,3,3,1,1,5,5,5,5</RowElev>
+	<RowElev>0,0,0,2,3,3,3,3,3,1,1,5,5,5,5</RowElev>
 	<RowElev>0,0,0,2,3,3,3,3,3,1,1,3,3,5,5</RowElev>
 	<RowElev>0,0,0,2,3,3,3,3,3,1,1,1,5,5,5</RowElev>
 	<RowElev>0,0,0,2,1,3,3,3,3,1,1,1,4,3,3</RowElev>
-	<RowElev>0,0,0,0,1,1,1,1,1,1,1,1,3,3,3</RowElev>
+	<RowElev>0,0,0,1,1,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>0,0,1,1,1,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>0,1,1,2,2,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>2,1,2,2,2,2,2,2,2,2,2,2,3,3,3</RowElev>
@@ -513,17 +513,17 @@
 			<Action>AddPortrait/Andras Winterbloom,Andras Winterbloom,left,,Nervous</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Rasand Winterbloom/...that feels much better.
-			<Action>AddPortrait/Rasand Winterbloom,Rasand Winterbloom,,Happy</Action>
-			<Action>PortraitParticles/Rasand Winterbloom,Heart</Action>
+		<Branch num="1" name="">Sandra Winterbloom/...that feels much better.
+			<Action>AddPortrait/Sandra Winterbloom,Sandra Winterbloom,,Happy</Action>
+			<Action>PortraitParticles/Sandra Winterbloom,Heart</Action>
 			<Action>SetVal/Asandr Name Progress,+:1</Action>
-			<Action>Run/Swap Out Unit,Swap Out Name,Asandr Winterbloom,Swap In Name,Rasand Winterbloom,Swap In ID,Rasand Winterbloom</Action>
-			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Rasand Winterbloom</Action>
+			<Action>Run/Swap Out Unit,Swap Out Name,Asandr Winterbloom,Swap In Name,Sandra Winterbloom,Swap In ID,Sandra Winterbloom</Action>
+			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Sandra Winterbloom</Action>
 			<Action>AddStatus/Asandr Winterbloom,Talkable</Action>
-			<Action>SetStat/Rasand Winterbloom,Morale,+:3</Action>
-			<Action>SetStat/Rasand Winterbloom,Psy,+:1</Action>
-			<Action>SetStat/Rasand Winterbloom,Dodge,+:3</Action>
-			<Action>SetStat/Rasand Winterbloom,Accuracy,+:5</Action>
+			<Action>SetStat/Sandra Winterbloom,Morale,+:3</Action>
+			<Action>SetStat/Sandra Winterbloom,Psy,+:1</Action>
+			<Action>SetStat/Sandra Winterbloom,Dodge,+:3</Action>
+			<Action>SetStat/Sandra Winterbloom,Accuracy,+:5</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
