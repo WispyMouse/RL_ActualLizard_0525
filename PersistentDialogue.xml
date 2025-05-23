@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 2:11:01 AM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 2:16:22 PM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
@@ -118,6 +118,18 @@
 
 	<Script>_ModifyListEntryString
 		<Action>SetListEntry/-STR:Prefix-Inventory List,-VAL:List Index-,LIST{-STR:Prefix-Inventory List,-VAL:List Index-}-STR:Add Text-</Action>
+	</Script>
+
+	<Script>_SetStat
+		<Action>SetStat/-STR:Character Name-,-STR:Stat Name-,=:-STR:Value-</Action>
+	</Script>
+
+	<Script>_AddTextOverlay
+		<Action>AddTextOverlay/-STR:Text-</Action>
+	</Script>
+
+	<Script>_SetStatString
+		<Action>SetStat/-STR:Character Name-,-STR:Stat Name-,-STR:Value-</Action>
 	</Script>
 
 	<Dialogue trigger="OnLoaded/" convID="Set Root Relationships" r="false">
