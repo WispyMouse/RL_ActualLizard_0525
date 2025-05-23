@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 7:21:26 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 7:48:18 PM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
@@ -63,7 +63,7 @@
 	</Script>
 
 	<Script>_AddStatus
-		<Action>AddStatus/-STR:CharacterName-,-STR:StatusName-</Action>
+		<Action>AddStatus/-STR:Character Name-,-STR:Status Name-</Action>
 	</Script>
 
 	<Script>_LoadConv
@@ -81,17 +81,21 @@
 		<Action>AddToList/Watch Speakers,-STR:Speaker One-</Action>
 		<Action>AddToList/Watch Speakers,-STR:Speaker Two-</Action>
 		<Action>Run/ShowTalkability</Action>
+		<Action>ListToString/Watch Speakers,:,Watch Speakers String</Action>
+		<Action>Log/Speakers: -STR:Watch Speakers String-</Action>
 	</Script>
 
 	<Script>ShowTalkability
-		<Action>ForLoop/-ii-,0-LASTINLIST[Watch Speakers],1,ShowTalkabilityFor,Speaker,LIST{Watch Speakers,-ii-}</Action>
+		<Action>AddTextOverlay/'LASTINLIST[Watch Speakers]'</Action>
+		<Action>ForLoop/-ii-,0-LASTINLIST[Watch Speakers],1,Run,ShowTalkabilityFor,Speaker,LIST{Watch Speakers,-ii-}</Action>
 	</Script>
 
 	<Script>ShowTalkabilityFor
 		<Action>SetVal/TalkCount,=:0</Action>
-		<Action>ForLoop/-ii-,0-LASTINLIST[-STR:Speaker-Talkable],1,IfPresentRun,LIST{-STR:Speaker-Talkable,-ii-},_AddVal,ValueName,TalkCount,Value,1</Action>
+		<Action>ForLoop/-jj-,0-LASTINLIST[-STR:Speaker-Talkable],1,IfPresentRun,LIST{-STR:Speaker-Talkable,-jj-},_AddVal,ValueName,TalkCount,Value,1</Action>
 		<Action>IfValRun/TalkCount,=,0,_RemoveStatus,Character Name,-STR:Speaker-,Status Name,Talkable</Action>
-		<Action>IfValRun/TalkCount,g,0,AddStatus,Character Name,-STR:Speaker-,Status Name,Talkable</Action>
+		<Action>IfValRun/TalkCount,g,0,_AddStatus,Character Name,-STR:Speaker-,Status Name,Talkable</Action>
+		<Action>AddTextOverlay/'-VAL:TalkCount-' '-STR:Speaker-'</Action>
 	</Script>
 
 	<Script>RemoveTalkability
@@ -128,6 +132,8 @@
 			<Action>SetRelationshipLabel/Harrien:Lifts,Nobeta:Lifts,Daughter,false</Action>
 			<Action>Run/Set Asandr Default Relationships,New Name,Drasan Winterbloom</Action>
 			<Action>EndConvImmediately/</Action>
+			<Action>/</Action>
+			<Action>/</Action>
 		</Branch>
 	</Dialogue>
 
