@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 9:12:28 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 2:14:14 AM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -270,9 +270,10 @@
 			<Action>SetVal/TurnsUntilBossAppears,-:1</Action>
 			<Action>SetVal/MoreLesbianDiscussions,=:0</Action>
 			<Action>IfValRun/Lesbian Discussions,l,3,_SetVal,ValueName,MoreLesbianDiscussions,Value,1</Action>
-			<Action>Run/IfAllTrue_2,ValueOneName,MoreLesbianDiscussions,ValueOneCompareTo,1,ValueTwoName,TurnsSinceLastLesbianConvo,ValueTwoCompareTo,6</Action>
-			<Action>IfValRun/AnswerComposite,=,1,SetLesbianTalkable</Action>
+			<Action>Run/IsAllTrue_2,ValueOneName,MoreLesbianDiscussions,ValueOneCompareTo,1,ValueTwoName,TurnsSinceLastLesbianConvo,ValueTwoCompareTo,6</Action>
+			<Action>IfValRun/AnswerComposite,g=,1,Set Lesbian Talkable</Action>
 			<Action>Run/Arora Shift Roll</Action>
+			<Action>Log/'-VAL:TurnsSinceLastLesbianConvo-' '-VAL:Lesbian Discussions-' '-VAL:MoreLesbianDiscussions-' '-VAL:AnswerComposite-'</Action>
 			<Action>GoTo/1</Action>
 		</Branch>
 		<Branch num="2" name="">/
@@ -296,9 +297,9 @@
 			<Action>SetVal/Sandra Attacks,=:0</Action>
 			<Action>AddTagToArmy/1,IgnoreArmy,2</Action>
 			<Action>SetVal/TurnsSinceLastLesbianConvo,=:0</Action>
-			<Action>IfValGoTo/SkipIntro,=,1,9</Action>
-			<Action>SetArea/Stage,1,5,6,10</Action>
 			<Action>Run/SetAreas</Action>
+			<Action>IfValGoTo/SkipIntro,=,1,9</Action>
+			<Action>/</Action>
 			<Action>GoToNextBranch/</Action>
 		</Branch>
 		<Branch num="1" name="Intro Dialogue Start">Drasan Winterbloom/W--what? The theater! People are--?
@@ -349,8 +350,9 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="First Lesbian Dialogue" r="false">
-		<Branch num="1" name="">Nobeta Lifts/This is wild. Gotta get a grip... Oh, hey, Mary!
+		<Branch num="1" name="">Nobeta Lifts/This is wild. Gotta get a grip... [Nobeta shakes her head] Oh, hey, Mary!
 			<Action>AddPortrait/Mary O Nette,Mary O Nette,left,,Blank</Action>
+			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Happy</Action>
 			<Action>FlipPortrait/Mary O Nette</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -371,6 +373,7 @@
 			<Action>SetStat/Mary O Nette,Psy,+:1</Action>
 			<Action>MovePortrait/Mary O Nette,15,0,80</Action>
 			<Action>Run/RemoveTalkability,Speaker One,Mary O Nette,Speaker Two,Nobeta Lifts</Action>
+			<Action>SetVal/Lesbian Discussions,+:1</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -381,6 +384,7 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Mary O Nette/...ah, Nobeta Lifts. [She looks up at her] Behind you, yes?
+			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Concerned</Action>
 			<Action>ChangeExpression/Nobeta Lifts,Concerned</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -404,6 +408,7 @@
 			<Action>SetStat/Nobeta Lifts,Morale,+:1</Action>
 			<Action>SetStat/Mary O Nette,Psy,+:1</Action>
 			<Action>Run/RemoveTalkability,Speaker One,Mary O Nette,Speaker Two,Nobeta Lifts</Action>
+			<Action>SetVal/Lesbian Discussions,+:1</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -441,6 +446,7 @@
 		<Branch num="6" name="">Mary O Nette/[Nobeta gets in to position and flexes to draw her bow string] Yes. For this time, please keep doing... the things you are doing.
 			<Action>RemovePortrait/Nobeta Lifts</Action>
 			<Action>Run/RemoveTalkability,Speaker One,Mary O Nette,Speaker Two,Nobeta Lifts</Action>
+			<Action>SetVal/Lesbian Discussions,+:1</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>

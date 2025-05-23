@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 9:12:44 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 2:11:01 AM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
@@ -14,6 +14,7 @@
 		<Action>Run/ComparisonScript_Equals,ValueName,-STR:ValueOneName-,CompareTo,-VAL:ValueOneCompareTo-,Prefix,ValueOne</Action>
 		<Action>Run/ComparisonScript_Equals,ValueName,-STR:ValueTwoName-,CompareTo,-VAL:ValueTwoCompareTo-,Prefix,ValueTwo</Action>
 		<Action>SetVal/AnswerComposite,=:-VAL:ValueOneAnswer-,*:-VAL:ValueTwoAnswer-</Action>
+		<Action>#AddTextOverlay/-VAL:AnswerComposite- -VAL:ValueOneAnswer- -VAL:ValueTwoAnswer-</Action>
 	</Script>
 
 	<Script>Set Asandr Default Relationships And Change Name
@@ -86,7 +87,6 @@
 	</Script>
 
 	<Script>ShowTalkability
-		<Action>AddTextOverlay/'LASTINLIST[Watch Speakers]'</Action>
 		<Action>ForLoop/-ii-,0-LASTINLIST[Watch Speakers],1,Run,ShowTalkabilityFor,Speaker,LIST{Watch Speakers,-ii-}</Action>
 	</Script>
 
@@ -95,7 +95,7 @@
 		<Action>ForLoop/-jj-,0-LASTINLIST[-STR:Speaker-Talkable],1,IfPresentRun,LIST{-STR:Speaker-Talkable,-jj-},_AddVal,ValueName,TalkCount,Value,1</Action>
 		<Action>IfValRun/TalkCount,=,0,_RemoveStatus,Character Name,-STR:Speaker-,Status Name,Talkable</Action>
 		<Action>IfValRun/TalkCount,g,0,_AddStatus,Character Name,-STR:Speaker-,Status Name,Talkable</Action>
-		<Action>AddTextOverlay/'-VAL:TalkCount-' '-STR:Speaker-'</Action>
+		<Action>Log/'-VAL:TalkCount-' '-STR:Speaker-'</Action>
 	</Script>
 
 	<Script>RemoveTalkability
