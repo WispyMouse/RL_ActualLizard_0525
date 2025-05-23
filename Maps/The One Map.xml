@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 8:19:21 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 8:26:45 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -213,15 +213,15 @@
 	<Unit>0,0,Mary O Nette/,16,12,Left,None</Unit>
 	<Unit>0,0,Nobeta/Lifts,16,13,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Slighted Playwright/,1,3,Left,None</Unit>
-	<Unit tag="Add,LevelUp,6/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Bruiser/,2,9,Left,None</Unit>
+	<Unit tag="Add,LevelUp,6/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.5">0,1,Rubble Rouser Bruiser/,2,9,Left,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,">0,1,Irate Crossbow Aficionado/,3,3,Down,Obviously Stolen Crossbow[E]</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Bowhuckin/Chuckerslass,3,7,Right,None</Unit>
+	<Unit tag="Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.5">0,1,Bowhuckin/Chuckerslass,3,7,Right,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Golem/,3,13,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Clark/Sad,4,4,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Pursue/Patrol,Theater,=,1.5/Add,IgnoreArmy,2">0,1,Rubble Rouser Golem/,5,11,Up,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Rubble Rouser Golem/,6,1,Up,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Breaker/,6,13,Left,None</Unit>
-	<Unit tag="Add,Inactive">0,1,Xander/Bilt,7,17,Left,None</Unit>
+	<Unit tag="Add,Patrol,Stage,=:1.5">0,1,Xander/Bilt,7,17,Left,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Bruiser/,8,11,Left,None</Unit>
 	<Unit tag="Add,LevelUp,3/Add,AreaPreference,StartingArea,1.5/Add,AggroGroup,3/Add,Passive">0,1,Rubble Rouser Bruiser/,9,0,Up,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Irate Crossbow Aficionado/,9,10,Right,Screw-Firing Crossbow[E]</Unit>
@@ -326,6 +326,7 @@
 			<Action>SetArea/Early Choke,15,16,7,8</Action>
 			<Action>SetArea/ThrowerPerch,11,12,0,1</Action>
 			<Action>IfValGoTo/SkipIntro,=,1,9</Action>
+			<Action>SetArea/Stage,1,5,6,10</Action>
 			<Action>GoToNextBranch/</Action>
 		</Branch>
 		<Branch num="1" name="Intro Dialogue Start">Drasan Winterbloom/W--what? The theater! People are--?
