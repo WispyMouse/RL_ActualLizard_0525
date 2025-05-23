@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 7:01:17 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 7:21:26 PM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
@@ -37,11 +37,10 @@
 	<Script>Swap Out Unit
 		<Action>Run/Store Character Stats,Prefix,SwapOut,Character Name,-STR:Swap Out Name-</Action>
 		<Action>RemoveUnit/-STR:Swap Out Name-,false</Action>
-		<Action>ForLoop/-ii-,0-LASTINLIST[-STR:Prefix-Inventory List],1,IfListHasRun,-STR:Prefix-Equipped,LIST{-STR:Prefix-Inventory List,-ii-},_ModifyListEntryString,,,List Name,-STR:Prefix-Inventory List,List Index,-ii-,Add Text,[E]</Action>
-		<Action>ListToString/-STR:Prefix-Inventory List,/,Inventory String</Action>
+		<Action>ForLoop/-ii-,0-LASTINLIST[SwapOutInventory List],1,IfListHasRun,SwapOutEquipped,LIST{SwapOutInventory List,-ii-},_ModifyListEntryString,,,List Name,SwapOutInventory List,List Index,-ii-,Add Text,[E]</Action>
+		<Action>ListToString/SwapOutInventory List,/,Inventory String</Action>
 		<Action>SpawnUnit/0,-STR:Swap In ID-,-VAL:SwapOutY Coord-,-VAL:SwapOutX Coord-,-STR:SwapOutFacing-,,,-STR:Inventory String-,false</Action>
 		<Action>Run/Load Character Stats,Character Name,-STR:Swap In Name-,Prefix,SwapOut</Action>
-		<Action>AddTextOverlay/-STR:Inventory String-</Action>
 	</Script>
 
 	<Script>Store Character Stats
