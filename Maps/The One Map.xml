@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 4:09:33 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 7:07:22 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -87,7 +87,7 @@
 	<Unit>0,99,HouseWallVertical,1,17,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,2,0,None,None</Unit>
 	<Unit>0,99,IronJaw,2,1,None,None</Unit>
-	<Unit>0,99,ItemSack,2,2,None,Bandages/Apple/Cake</Unit>
+	<Unit>0,99,ItemSack,2,2,None,Apple/Cake</Unit>
 	<Unit>0,99,HouseWallSW,2,4,None,None</Unit>
 	<Unit>0,99,HouseWallNE,2,5,None,None</Unit>
 	<Unit>0,99,Rug9L,2,6,None,None</Unit>
@@ -201,13 +201,13 @@
 	<Unit>0,99,RubbleCave,16,3,None,None</Unit>
 	<Unit>0,99,Barrel,16,9,None,None</Unit>
 	<Unit>0,99,Caravan_E,17,0,None,None</Unit>
-	<Unit>0,99,ItemSack,17,1,None,Bandages/Focus Pills</Unit>
+	<Unit>0,99,ItemSack,17,1,None,Focus Pills</Unit>
 	<Unit>0,99,RubbleCastle,17,6,None,None</Unit>
 	<Unit>0,99,FruitStand_N,17,7,None,None</Unit>
 	<Unit>0,99,TreeFruit,17,9,None,Apple/Apple/Apple</Unit>
 	<Unit>0,99,Evergreen,17,10,None,None</Unit>
 	<Unit>0,99,Birdbath,17,17,None,None</Unit>
-	<Unit>0,0,Arora/Feminine,14,12,Up,None</Unit>
+	<Unit>0,0,Arora/Feminine,14,12,Up,Grapple Chain[E]/Mango/Indestructible Whalloper[E]</Unit>
 	<Unit>0,0,Harrien/Lifts,15,10,Left,None</Unit>
 	<Unit>0,0,Drasan/Winterbloom,15,12,Left,None</Unit>
 	<Unit>0,0,Mary O Nette/,16,12,Left,None</Unit>
@@ -258,7 +258,7 @@
 	</Script>
 
 	<Script>Try Replace Arora Feminine
-		<Action>IfValRun/AroraGender,=,0,Swap Out Unit,Swap Out Name,Arora,Swap In Name,Arora,Swap In ID,Arora:Feminine</Action>
+		<Action>IfValRun/AroraGender,=,1,Swap Out Unit,Swap Out Name,Arora,Swap In Name,Arora,Swap In ID,Arora:Feminine</Action>
 		<Action>SetVal/AroraGender,=:0</Action>
 	</Script>
 
@@ -303,7 +303,7 @@
 
 	<Dialogue trigger="BeforeTurn/0" convID="Map Start Dialogue" r="false">
 		<Branch num="0" name="">/
-			<Action>Run/Try Replace Arora Masculine</Action>
+			<Action>SetVal/AroraGender,=:0</Action>
 			<Action>SetVal/Lesbian Discussions Count,=:0</Action>
 			<Action>Run/Set Lesbian Talkable</Action>
 			<Action>SetVal/Asandr Name Progress,0</Action>
@@ -322,9 +322,9 @@
 			<Action>AddTagToArmy/1,IgnoreArmy,2</Action>
 			<Action>SetVal/TurnsSinceLastLesbianConvo,=:0</Action>
 			<Action>SetArea/StartingArea,14,17,10,14</Action>
-			<Action>SetVal/AroraGender,=:0</Action>
 			<Action>SetArea/Early Choke,15,16,7,8</Action>
 			<Action>SetArea/ThrowerPerch,11,12,0,1</Action>
+			<Action>IfValGoTo/SkipIntro,=,1,8</Action>
 			<Action>GoToNextBranch/</Action>
 		</Branch>
 		<Branch num="1" name="Intro Dialogue Start">Drasan Winterbloom/W--what? The theater! People are--?
