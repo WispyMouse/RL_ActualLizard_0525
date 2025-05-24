@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 1:48:54 AM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 1:56:11 AM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -318,12 +318,12 @@
 			<Action>AddPortrait/Mary O Nette,Mary O Nette,left,,Blank</Action>
 			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Happy</Action>
 			<Action>FlipPortrait/Mary O Nette</Action>
-			<Action>MovePortrait/Nobeta Lifts,5,0,</Action>
+			<Action>MovePortrait/Nobeta Lifts,5,0,100</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Mary O Nette/Oh, Nobeta Lifts. It is time to fight strange bad people, hmm? Do not worry, I will be there if you are ever harmed.
 			<Action>FlipPortrait/Mary O Nette</Action>
-			<Action>MovePortrait/Mary O Nette,18,0</Action>
+			<Action>MovePortrait/Mary O Nette,18,0,80</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Nobeta Lifts/I should worry about you! Get behind me, and we will chase these goons out.
@@ -358,10 +358,12 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Nobeta Lifts/Of course! Dad always said to me, "these muscles are for protecting you, little girl."
+			<Action>ChangeExpression/Nobeta Lifts,Kind</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Mary O Nette/O--oh. [She pauses] Yes.
 			<Action>PortraitParticles/Mary O Nette,Hearts</Action>
+			<Action>ChangeExpression/Mary O Nette,Blank</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Nobeta Lifts/Well, let's go! [Nobeta grabs Mary's arm and leads towards her next firing position]
