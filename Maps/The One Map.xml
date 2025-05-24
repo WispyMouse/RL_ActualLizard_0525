@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 8:41:24 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 9:50:02 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -15,73 +15,154 @@
 	<Tileset>03,CastleSandstone</Tileset>
 	<Tileset>04,Castle</Tileset>
 	<Tileset>05,Street</Tileset>
+	<Tileset>06,Grass</Tileset>
+	<Tileset>07,Dirt</Tileset>
+	<Tileset>08,Water</Tileset>
 	
-	<Row>01.01,01.01,02.0P,03.01,03.01,03.01,03.01,04.01,04.01</Row>
-	<Row>01.3C,02.01,02.01,02.01,03.01,03.01,03.01,04.01,04.01</Row>
-	<Row>02.01,02.01,02.01,03.01,03.01,03.01,03.01,04.01,04.01</Row>
-	<Row>02.01,02.01,02.01,03.01,03.01,03.01,04.01,04.01,04.01</Row>
-	<Row>02.01,03.01,03.01,03.01,03.01,03.01,03.01,05.01,05.01</Row>
-	<Row>03.01,03.01,03.01,03.01,03.01,03.01,03.01,02.01,02.01</Row>
-	<Row>02.01,03.01,03.01,03.01,03.01,03.01,03.01,02.01,02.01</Row>
+	<Row>01.01,01.01,01.01,01.3E,01.01,01.01,02.0P,03.01,03.01,03.01,03.01,04.01,04.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.07,02.01,02.01,02.01,03.01,03.01,03.01,04.01,04.01</Row>
+	<Row>01.01,01.01,01.01,01.07,02.01,02.01,02.01,03.01,03.01,03.01,03.01,04.01,04.01</Row>
+	<Row>01.01,01.01,01.01,01.43,02.01,02.01,02.01,03.01,03.01,03.01,04.01,04.01,04.01</Row>
+	<Row>01.01,01.01,01.01,01.3E,02.01,03.01,03.01,03.01,03.01,03.01,03.01,05.01,05.01</Row>
+	<Row>01.01,01.01,01.01,01.3A,03.01,03.01,03.01,03.01,03.01,03.01,03.01,02.01,02.01</Row>
+	<Row>01.01,01.01,01.07,01.03,02.01,03.01,03.01,03.01,03.01,03.01,03.01,02.01,02.01</Row>
+	<Row>05.06,05.1K,05.07,06.06,02.0Y,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01</Row>
+	<Row>07.42,02.01,02.01,06.42,06.3G,06.0K,06.0K,06.0P,08.01,06.3F,06.3F,06.3F,07.3I</Row>
+	<Row>08.01,02.01,02.01,08.01,08.01,08.01,08.01,08.01,07.0Q,07.0U,06.2P,06.2P,06.01</Row>
+	<Row>08.01,02.01,02.01,05.1c,05.1c,05.1c,05.1c,05.07,05.1K,05.1K,06.03,06.2P,06.01</Row>
+	<Row>06.0N,05.1j,05.01,05.0v,05.0m,05.0u,05.07,05.03,05.0u,05.0o,06.01,06.2P,06.01</Row>
+	<Row>06.01,05.0n,05.01,05.0o,06.01,06.07,06.03,06.01,05.0n,05.0o,06.01,05.07,05.1K</Row>
 	
-	<Light type="Point Light" size="2" intensity="1.5" y="1" x="3" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
+	<Light type="Point Light" size="2" intensity="1.5" y="1" x="7" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
+	<Light type="Point Light" size="2" intensity="1.5" y="4" x="5" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
+	<Light type="Point Light" size="2" intensity="1.5" y="4" x="7" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
 	
-	<RowElev>0,0,0,0,1,1,1,5,5</RowElev>
-	<RowElev>2,3,3,3,1,1,1,5,5</RowElev>
-	<RowElev>3,3,3,3,1,1,1,5,5</RowElev>
-	<RowElev>3,3,3,3,1,1,3,3,5</RowElev>
-	<RowElev>1,3,3,3,1,1,1,4,4</RowElev>
-	<RowElev>1,1,1,1,1,1,1,3,3</RowElev>
-	<RowElev>1,1,1,1,1,1,1,3,3</RowElev>
+	<RowElev>0,0,0,2,0,0,0,0,1,1,1,5,5</RowElev>
+	<RowElev>0,0,0,0,2,3,3,3,1,1,1,5,5</RowElev>
+	<RowElev>0,0,0,2,3,3,3,3,1,1,1,5,5</RowElev>
+	<RowElev>0,0,0,2,3,3,3,3,1,1,3,3,5</RowElev>
+	<RowElev>0,0,0,2,1,3,3,3,1,1,1,4,4</RowElev>
+	<RowElev>0,0,0,1,1,1,1,1,1,1,1,3,3</RowElev>
+	<RowElev>0,0,1,1,1,1,1,1,1,1,1,3,3</RowElev>
+	<RowElev>2,1,2,2,1,1,1,1,1,1,2,3,3</RowElev>
+	<RowElev>2,2,2,2,2,1,1,1,0,2,3,4,4</RowElev>
+	<RowElev>0,2,2,0,0,0,0,0,1,1,2,3,3</RowElev>
+	<RowElev>0,2,2,1,1,1,1,2,2,2,2,3,3</RowElev>
+	<RowElev>1,1,1,1,1,1,2,2,2,2,2,3,3</RowElev>
+	<RowElev>1,1,1,1,1,2,2,2,2,2,2,4,4</RowElev>
 	
-	<Unit>0,99,StairsCave_S,0,0,None,None</Unit>
-	<Unit>0,99,StairsCave_S,0,1,None,None</Unit>
-	<Unit>0,99,StairsCave_S,0,2,None,None</Unit>
-	<Unit>0,99,StairsWood_S,0,3,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Barrel,0,5,None,None</Unit>
-	<Unit>0,99,Chair,0,7,None,None</Unit>
-	<Unit>0,99,CandelabraLit,0,8,None,None</Unit>
-	<Unit>0,99,Rug9TL,1,0,None,None</Unit>
-	<Unit>0,99,Rug9T,1,1,None,None</Unit>
-	<Unit>0,99,Rug9T,1,2,None,None</Unit>
-	<Unit>0,99,Rug9TR,1,3,None,None</Unit>
-	<Unit>0,99,RugTurq,1,7,None,None</Unit>
-	<Unit>0,99,Rug9L,2,0,None,None</Unit>
-	<Unit>0,99,Rug9C,2,1,None,None</Unit>
-	<Unit>0,99,Rug9C,2,2,None,None</Unit>
-	<Unit>0,99,Rug9R,2,3,None,None</Unit>
-	<Unit>0,99,StairsWood_S,2,6,None,None</Unit>
-	<Unit>0,99,TableFood,2,7,None,None</Unit>
-	<Unit>0,99,Rug9L,3,0,None,None</Unit>
-	<Unit>0,99,Rug9C,3,1,None,None</Unit>
-	<Unit>0,99,Rug9C,3,2,None,None</Unit>
-	<Unit>0,99,Rug9R,3,3,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Chair,3,5,None,None</Unit>
-	<Unit>0,99,StairsWood_E,3,7,None,None</Unit>
-	<Unit>0,99,StairsWood_N,4,0,None,None</Unit>
-	<Unit>0,99,Rug9B,4,1,None,None</Unit>
-	<Unit>0,99,Rug9B,4,2,None,None</Unit>
-	<Unit>0,99,Rug9BR,4,3,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,1">0,99,TableFood,4,5,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Chair,4,6,None,None</Unit>
-	<Unit>0,99,HouseWallNW,4,7,None,None</Unit>
-	<Unit>0,99,HouseWallHorizontal,4,8,None,None</Unit>
-	<Unit>0,99,StairsWood_E,5,6,None,None</Unit>
-	<Unit>0,99,RugTurq9T,5,7,None,None</Unit>
-	<Unit>0,99,RugTurq9T,5,8,None,None</Unit>
-	<Unit>0,99,HouseWallNE,6,0,None,None</Unit>
-	<Unit>0,99,Chair,6,2,None,None</Unit>
-	<Unit>0,99,TableBeerAlt,6,3,None,None</Unit>
-	<Unit>0,99,StairsWood_E,6,6,None,None</Unit>
-	<Unit>0,99,RugTurq9B,6,7,None,None</Unit>
-	<Unit>0,99,RugTurq9B,6,8,None,None</Unit>
-	<Unit tag="Add,LevelUp,6/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Irate Crossbow Aficionado/,1,2,Down,Screw-Firing Crossbow[E]</Unit>
-	<Unit tag="Add,LevelUp,6/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.5">0,1,Rubble Rouser Bruiser/,2,2,Left,None</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Golem/,2,5,Down,None</Unit>
-	<Unit tag="Add,LevelUp,2/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.5">0,1,Bowhuckin/Chuckerslass,3,1,Right,None</Unit>
-	<Unit tag="Add,Patrol,Stage,=:1.5/Add,IgnoreArmy,3">0,1,Xander/Bilt,5,7,Left,None</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Bruiser/,6,4,Left,None</Unit>
-	<Unit tag="Add,Passive/Add,LevelUp,8/Add,Patrol,ViewingBooth,=,5/Add,TargetValue,1.3">0,2,Loud Theater Enjoyer/,1,7,Down,None</Unit>
+	<Unit>0,99,BookcaseFull,0,0,None,None</Unit>
+	<Unit>0,99,Snare,0,1,None,None</Unit>
+	<Unit>0,99,CavePillar,0,3,None,None</Unit>
+	<Unit>0,99,StairsCave_S,0,4,None,None</Unit>
+	<Unit>0,99,StairsCave_S,0,5,None,None</Unit>
+	<Unit>0,99,StairsCave_S,0,6,None,None</Unit>
+	<Unit>0,99,StairsWood_S,0,7,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Barrel,0,9,None,None</Unit>
+	<Unit>0,99,Chair,0,11,None,None</Unit>
+	<Unit>0,99,CandelabraLit,0,12,None,None</Unit>
+	<Unit>0,99,IronJaw,1,0,None,None</Unit>
+	<Unit>0,99,StairsCave_E,1,3,None,None</Unit>
+	<Unit>0,99,Rug9TL,1,4,None,None</Unit>
+	<Unit>0,99,Rug9T,1,5,None,None</Unit>
+	<Unit>0,99,Rug9T,1,6,None,None</Unit>
+	<Unit>0,99,Rug9TR,1,7,None,None</Unit>
+	<Unit>0,99,RugTurq,1,11,None,None</Unit>
+	<Unit trigger="UseOnce,Lever Flipped">0,99,Switch,2,0,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,ClothingRack,2,2,None,None</Unit>
+	<Unit>0,99,HouseWallVertical,2,3,None,None</Unit>
+	<Unit>0,99,Rug9L,2,4,None,None</Unit>
+	<Unit>0,99,Rug9C,2,5,None,None</Unit>
+	<Unit>0,99,Rug9C,2,6,None,None</Unit>
+	<Unit>0,99,Rug9R,2,7,None,None</Unit>
+	<Unit>0,99,StairsWood_S,2,10,None,None</Unit>
+	<Unit>0,99,TableFood,2,11,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,BookcaseSparse,3,0,None,None</Unit>
+	<Unit>0,99,HouseWallVertical,3,3,None,None</Unit>
+	<Unit>0,99,Rug9L,3,4,None,None</Unit>
+	<Unit>0,99,Rug9C,3,5,None,None</Unit>
+	<Unit>0,99,Rug9C,3,6,None,None</Unit>
+	<Unit>0,99,Rug9R,3,7,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Chair,3,9,None,None</Unit>
+	<Unit>0,99,StairsWood_E,3,11,None,None</Unit>
+	<Unit>0,99,RubbleCastle,4,0,None,None</Unit>
+	<Unit>0,99,ClothingRackWithClothes,4,1,None,None</Unit>
+	<Unit>0,99,HouseWallVertical,4,3,None,None</Unit>
+	<Unit>0,99,StairsWood_N,4,4,None,None</Unit>
+	<Unit>0,99,Rug9B,4,5,None,None</Unit>
+	<Unit>0,99,Rug9B,4,6,None,None</Unit>
+	<Unit>0,99,Rug9BR,4,7,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,1">0,99,TableFood,4,9,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Chair,4,10,None,None</Unit>
+	<Unit>0,99,HouseWallNW,4,11,None,None</Unit>
+	<Unit>0,99,HouseWallHorizontal,4,12,None,None</Unit>
+	<Unit>0,99,ClothingBin,5,3,None,None</Unit>
+	<Unit>0,99,StairsWood_E,5,10,None,None</Unit>
+	<Unit>0,99,RugTurq9T,5,11,None,None</Unit>
+	<Unit>0,99,RugTurq9T,5,12,None,None</Unit>
+	<Unit>0,99,DoorWood,6,0,None,None</Unit>
+	<Unit>0,99,DoorWood,6,1,None,None</Unit>
+	<Unit>0,99,HouseWallHorizontal,6,2,None,None</Unit>
+	<Unit>0,99,HouseWallT_S,6,3,None,None</Unit>
+	<Unit>0,99,HouseWallNE,6,4,None,None</Unit>
+	<Unit>0,99,Chair,6,6,None,None</Unit>
+	<Unit>0,99,TableBeerAlt,6,7,None,None</Unit>
+	<Unit>0,99,StairsWood_E,6,10,None,None</Unit>
+	<Unit>0,99,RugTurq9B,6,11,None,None</Unit>
+	<Unit>0,99,RugTurq9B,6,12,None,None</Unit>
+	<Unit>0,99,RubbleCastle,7,0,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Barrel,7,2,None,None</Unit>
+	<Unit>0,99,HouseWallSW,7,4,None,None</Unit>
+	<Unit>0,99,HouseWallWindowHorizontal,7,5,None,None</Unit>
+	<Unit>0,99,HouseWallHorizontal,7,6,None,None</Unit>
+	<Unit>0,99,HouseWallHorizontal,7,7,None,None</Unit>
+	<Unit>0,99,HouseWallHorizontal,7,8,None,None</Unit>
+	<Unit>0,99,HouseWallHorizontal,7,9,None,None</Unit>
+	<Unit>0,99,HouseWallHorizontal,7,10,None,None</Unit>
+	<Unit>0,99,HouseWallT_S,7,11,None,None</Unit>
+	<Unit>0,99,HouseWallHorizontal,7,12,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Poster,8,6,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Poster,8,9,None,None</Unit>
+	<Unit>0,99,ReedsFlowerSmall,8,10,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Poster,8,11,None,None</Unit>
+	<Unit>0,99,ItemSack,8,12,None,Rejuvenation Orb</Unit>
+	<Unit>0,99,Bush,9,10,None,None</Unit>
+	<Unit>0,99,WildflowersAlt,9,11,None,None</Unit>
+	<Unit>0,99,TreeFruit,9,12,None,Apple/Apple/Apple</Unit>
+	<Unit>0,99,Barrel,10,2,None,None</Unit>
+	<Unit>0,99,Reeds,10,10,None,None</Unit>
+	<Unit>0,99,Wildflowers,10,11,None,None</Unit>
+	<Unit>0,99,RubbleCastle,11,5,None,None</Unit>
+	<Unit>0,99,ItemSack,12,0,None,Focus Pills</Unit>
+	<Unit>0,99,RubbleCave,12,1,None,None</Unit>
+	<Unit>0,99,FruitStand_N,12,4,None,None</Unit>
+	<Unit>0,99,Barrel,12,6,None,None</Unit>
+	<Unit>0,99,LampLit,12,11,None,None</Unit>
+	<Unit>0,99,Birdbath,12,12,None,None</Unit>
+	<Unit>0,0,Arora/Feminine,10,9,Up,Grapple Chain[E]/Mango/Indestructible Whalloper[E]</Unit>
+	<Unit>0,0,Harrien/Lifts,11,7,Left,None</Unit>
+	<Unit>0,0,Drasan/Winterbloom,11,8,Left,None</Unit>
+	<Unit>0,0,Nobeta/Lifts,11,10,Left,None</Unit>
+	<Unit>0,0,Mary O Nette/,12,9,Left,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Slighted Playwright/,1,2,Left,None</Unit>
+	<Unit tag="Add,LevelUp,6/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Irate Crossbow Aficionado/,1,6,Down,Screw-Firing Crossbow[E]</Unit>
+	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,">0,1,Irate Crossbow Aficionado/,2,1,Down,Obviously Stolen Crossbow[E]</Unit>
+	<Unit tag="Add,LevelUp,6/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.5">0,1,Rubble Rouser Bruiser/,2,6,Left,None</Unit>
+	<Unit tag="Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Golem/,2,9,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,IgnoreArmy,3">0,1,Clark/Sad,3,2,Left,None</Unit>
+	<Unit tag="Add,LevelUp,2/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.5">0,1,Bowhuckin/Chuckerslass,3,5,Right,None</Unit>
+	<Unit tag="Add,Patrol,Stage,=:1.5/Add,IgnoreArmy,3">0,1,Xander/Bilt,5,11,Left,None</Unit>
+	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Bruiser/,6,8,Left,None</Unit>
+	<Unit tag="Add,LevelUp,5/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Breaker/,8,3,Down,None</Unit>
+	<Unit tag="Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,8,5,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
+	<Unit>0,1,Rubble Rouser Golem/,8,9,Down,None</Unit>
+	<Unit tag="Add,Passive/Add,Pursue/Add,AggroGroup,3/Add,Patrol,StartingArea,=,1.5/Add,Patrol,StartingChoke,=,1.2">0,1,Rubble Rouser Golem/,9,1,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,10,4,Right,Limited-Issue Bayonet Only Crossbow[E]</Unit>
+	<Unit tag="Add,AreaPreference,StartingArea,=:1.5">0,1,Rubble Rouser Golem/,10,6,Right,None</Unit>
+	<Unit tag="Add,LevelUp,2/Add,AreaPreference,StartingArea,=:1.5">0,1,Rubble Rouser Bruiser/,10,12,Left,None</Unit>
+	<Unit tag="Add,IgnoreArmy,3">0,1,Coderick/Gutterson,11,1,Down,None</Unit>
+	<Unit tag="Add,AreaPreference,StartingArea,=:1.5/Add,Patrol,StartingChoke,=,1.2">0,1,Rubble Rouser Golem/,12,2,Right,None</Unit>
+	<Unit tag="Add,Passive/Add,LevelUp,8/Add,Patrol,ViewingBooth,=,5/Add,TargetValue,1.3">0,2,Loud Theater Enjoyer/,1,11,Down,None</Unit>
 
 	<Script>Set Lesbian Talkable
 		<Action>Run/AddTalkability,Speaker One,Mary O Nette,Speaker Two,Nobeta Lifts</Action>
@@ -154,7 +235,7 @@
 			<Action>IfValRun/Lesbian Discussions,l,3,_SetVal,ValueName,MoreLesbianDiscussions,Value,1</Action>
 			<Action>Run/IsAllTrue_2,ValueOneName,MoreLesbianDiscussions,ValueOneCompareTo,1,ValueTwoName,TurnsSinceLastLesbianConvo,ValueTwoCompareTo,6</Action>
 			<Action>IfValRun/AnswerComposite,g=,1,Set Lesbian Talkable</Action>
-			<Action>Run/Arora Shift Roll</Action>
+			<Action>IfValRun/Arora Alive,=,0,Arora Shift Roll</Action>
 			<Action>Log/'-VAL:TurnsSinceLastLesbianConvo-' '-VAL:Lesbian Discussions-' '-VAL:MoreLesbianDiscussions-' '-VAL:AnswerComposite-'</Action>
 			<Action>GoTo/1</Action>
 		</Branch>
