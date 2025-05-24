@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Victory Celebration Scene" maptype="Single Player" maxplayers="4" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="false" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 3:02:25 PM">
+<Level mapname="Victory Celebration Scene" maptype="Single Player" maxplayers="4" battleBG="" musictrack="A Hero's Triumph" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="false" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 5:43:25 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Player Characters" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Custom" name="Audience" color="Green" alliedWith="" assignRoster="-1"></Army>
 	<Army num="2" AI="true" aiProfile="Custom" name="Playright" color="Yellow" alliedWith="" assignRoster="-1"></Army>
-	<Army num="3" AI="true" aiProfile="Custom" name="Player" color="White" alliedWith="" assignRoster="-1"></Army>
+	<Army num="3" AI="true" aiProfile="Custom" name="Unused" color="White" alliedWith="" assignRoster="-1"></Army>
 	<Army num="4" AI="true" aiProfile="Custom" name="Player Puppets" color="Blue" alliedWith="" assignRoster="-1"></Army>
 	
+	<Condition>Bar Skills,</Condition>
+	<Condition>Defeat Army,0,4</Condition>
 	<Condition>Exploration Mode,true</Condition>
 	
 	<Tileset>01,Cave</Tileset>
@@ -98,7 +100,6 @@
 	<Unit>0,99,ClothingBin,6,0,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,0/Add,TargetValue,.8">0,99,Chair,6,7,None,None</Unit>
 	<Unit>0,99,StairsWood_E,6,8,None,None</Unit>
-	<Unit tag="Add,Open">0,99,DoorWoodVerticalAlt,6,9,None,None</Unit>
 	<Unit>0,99,RugTurq9T,6,9,None,None</Unit>
 	<Unit>0,99,RugTurq9T,6,10,None,None</Unit>
 	<Unit>0,99,RugTurq9T,6,11,None,None</Unit>
@@ -106,7 +107,6 @@
 	<Unit>0,99,HouseWallNE,7,1,None,None</Unit>
 	<Unit>0,99,TableBeerAlt,7,5,None,None</Unit>
 	<Unit>0,99,StairsWood_E,7,8,None,None</Unit>
-	<Unit tag="Add,Open">0,99,DoorWoodVerticalAlt,7,9,None,None</Unit>
 	<Unit>0,99,RugTurq9B,7,9,None,None</Unit>
 	<Unit>0,99,RugTurq9B,7,10,None,None</Unit>
 	<Unit>0,99,RugTurq9B,7,11,None,None</Unit>
@@ -167,5 +167,82 @@
 		<Action>SetVal/Random Index,r:LASTINLIST[Villager Spritesets]</Action>
 		<Action>SetStat/Villager-VAL:Villager Index-,Sprite Set,LIST{Villager Spritesets,-VAL:Random Index-}</Action>
 	</Script>
+
+	<Dialogue trigger="OnTurn/0" convID="Ending Celebration Dispatch" r="true">
+		<Branch num="0" name="">/a
+			<Action>HideDialogueBox/</Action>
+			<Action>ZoomCam/8</Action>
+			<Action>Run/Randomize Villagers</Action>
+			<Action>MoveCam/5,5,,1</Action>
+			<Action>GoToNextBranch/</Action>
+			<Action>/</Action>
+			<Reply>.../NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Announcer/This is the end slate! Now for our actors to...
+			<Action>ShowDialogueBox/</Action>
+			<Reply>Conintue./NextBranch</Reply>
+		</Branch>
+		<Branch num="2" name="">/b
+			<Action>HideDialogueBox/</Action>
+			<Action>MoveUnitBy/Harrien Lifts,0,1,</Action>
+			<Action>MoveUnitBy/Nobeta Lifts,0,1</Action>
+			<Action>MoveUnitBy/Mary O Nette,0,1</Action>
+			<Action>MoveUnitBy/Arora,0,1</Action>
+			<Action>MoveUnitBy/Asandr Winterbloom,0,1,</Action>
+			<Action>MoveUnitBy/Clark,0,1,</Action>
+			<Action>AddTextOverlay/End of MoveUnitBy</Action>
+			<Action>GoToNextBranch/</Action>
+			<Action>/</Action>
+			<Action>/</Action>
+			<Action>/</Action>
+			<Action>/</Action>
+			<Action>/</Action>
+			<Reply>.../NextBranch</Reply>
+		</Branch>
+		<Branch num="5" name="">/c
+			<Action>HideDialogueBox/</Action>
+			<Action>AddTextOverlay/Before wait</Action>
+			<Action>WaitForDialogue/</Action>
+			<Action>Wait/2</Action>
+			<Action>AddTextOverlay/After wait</Action>
+			<Action>GoToNextBranch/</Action>
+			<Action>/</Action>
+			<Reply>.../NextBranch</Reply>
+		</Branch>
+		<Branch num="3" name="">/d
+			<Action>HideDialogueBox/</Action>
+			<Action>AddTextOverlay/Before cast</Action>
+			<Action>PlayAnim/Harrien,Cast</Action>
+			<Action>PlayAnim/Nobeta Lifts,Cast</Action>
+			<Action>PlayAnim/Clark,Cast</Action>
+			<Action>PlayAnim/Mary O Nette,Cast</Action>
+			<Action>PlayAnim/Arora,Cast</Action>
+			<Action>PlayAnim/Asandr Winterbloom,Cast</Action>
+			<Action>AddTextOverlay/After cast</Action>
+			<Action>GoToNextBranch/</Action>
+			<Reply>.../NextBranch</Reply>
+		</Branch>
+		<Branch num="7" name="">/e
+			<Action>HideDialogueBox/</Action>
+			<Action>AddTextOverlay/Before second wait</Action>
+			<Action>WaitForDialogue/</Action>
+			<Action>Wait/2</Action>
+			<Action>AddTextOverlay/After second wait</Action>
+			<Action>GoToNextBranch/</Action>
+			<Reply>.../NextBranch</Reply>
+		</Branch>
+		<Branch num="7" name="">Announcer/...take a bow.
+			<Action>ShowDialogueBox/</Action>
+			<Action>AddTextOverlay/Reached End Slate</Action>
+			<Reply>You Win!/NextScene</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="BeforeTurn/0" convID="Pre-Turn Dispatch" r="true">
+		<Branch num="0" name="">/It appears as though we need a BeforeTurn 0 for OnTurn 0 to work consistently
+			<Action>EndConvImmediately/</Action>
+			<Reply>.../NextBranch</Reply>
+		</Branch>
+	</Dialogue>
 
 </Level>
