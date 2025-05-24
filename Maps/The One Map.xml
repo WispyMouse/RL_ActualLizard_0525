@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 3:12:55 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 3:14:26 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -7,7 +7,7 @@
 	<Army num="3" AI="true" aiProfile="Custom" name="Destroy These Props" color="Yellow" alliedWith="" assignRoster="-1"></Army>
 	
 	<Condition>Defeat Army,0,1</Condition>
-	<Condition>Global Lighting,Indoors</Condition>
+	<Condition>Global Lighting,Overcast</Condition>
 	
 	<Objective>Reclaim the theater and cast out all enemies!</Objective>
 	
@@ -37,8 +37,8 @@
 	
 	<Light type="Directional Light" size="2" intensity="1.5" y="2" x="5" A="1" R="1" G="1" B="1" animType="Static" direction="Down"></Light>
 	<Light type="Directional Light" size="2" intensity="1.5" y="3" x="4" A="1" R="1" G="1" B="1" animType="Static" direction="Right"></Light>
-	<Light type="Point Light" size="5" intensity="0.5" y="12" x="0" A="1" R="1" G="1" B="0" animType="Static" direction="Up"></Light>
-	<Light type="Point Light" size="10" intensity="1" y="13" x="10" A="1" R="1" G="1" B="0" animType="Pulse" direction="Up"></Light>
+	<Light type="Point Light" size="5" intensity="0.2" y="12" x="0" A="1" R="1" G="1" B="0" animType="Pulse" direction="Up"></Light>
+	<Light type="Point Light" size="10" intensity="0.2" y="13" x="10" A="1" R="1" G="1" B="0" animType="Pulse" direction="Up"></Light>
 	
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,5,5</RowElev>
 	<RowElev>0,0,0,0,0,0,0,0,1,1,1,5,5</RowElev>
@@ -128,8 +128,8 @@
 	<Unit>0,99,StairsWood_E,7,10,None,None</Unit>
 	<Unit>0,99,RugTurq9B,7,11,None,None</Unit>
 	<Unit>0,99,RugTurq9B,7,12,None,None</Unit>
-	<Unit>0,99,RubbleCastle,8,0,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Barrel,8,2,None,None</Unit>
+	<Unit>0,99,Poster,8,3,None,None</Unit>
 	<Unit>0,99,HouseWallSW,8,4,None,None</Unit>
 	<Unit>0,99,HouseWallWindowHorizontal,8,5,None,None</Unit>
 	<Unit>0,99,HouseWallWindowHorizontal,8,6,None,None</Unit>
@@ -139,6 +139,7 @@
 	<Unit>0,99,HouseWallHorizontal,8,10,None,None</Unit>
 	<Unit>0,99,HouseWallT_S,8,11,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,8,12,None,None</Unit>
+	<Unit>0,99,RubbleCastle,9,0,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Poster,9,9,None,None</Unit>
 	<Unit>0,99,ReedsFlowerSmall,9,10,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Poster,9,11,None,None</Unit>
