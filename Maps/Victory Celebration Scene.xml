@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Victory Celebration Scene" maptype="Single Player" maxplayers="3" battleBG="" musictrack="A Hero's Triumph" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="false" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 8:44:25 PM">
+<Level mapname="Victory Celebration Scene" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Dance of the Isles" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="false" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 1:23:35 AM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Player Characters" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Custom" name="Audience" color="Green" alliedWith="" assignRoster="-1"></Army>
@@ -77,14 +77,16 @@
 	<Unit>0,99,RugTurq9B,6,7,None,None</Unit>
 	<Unit>0,99,RugTurq9B,6,8,None,None</Unit>
 	<Unit>0,0,Rubble Rouser Golem/,5,8,Left,None</Unit>
-	<Unit>0,2,Rubble Rouser Golem/,1,7,Left,None</Unit>
+	<Unit>0,1,Loud Theater Enjoyer/,1,7,Left,None</Unit>
+	<Unit>0,2,Rubble Rouser Golem/,1,6,Left,None</Unit>
 	<Unit>0,2,Rubble Rouser Golem/,3,6,Left,None</Unit>
+	<Unit>0,2,Rubble Rouser Golem/,5,4,Up,None</Unit>
 	<Unit>0,2,Rubble Rouser Golem/,6,2,Up,None</Unit>
 	<Unit>0,2,Rubble Rouser Golem/,6,7,Up,None</Unit>
-	<Unit>0,4,Drasan/Winterbloom,1,0,Right,None</Unit>
-	<Unit>0,4,Andras/Winterbloom,1,0,Right,None</Unit>
 	<Unit>0,4,Sandra/Winterbloom,1,2,Right,None</Unit>
 	<Unit>0,4,Asandr/Winterbloom,1,2,Right,None</Unit>
+	<Unit>0,4,Drasan/Winterbloom,1,2,Right,None</Unit>
+	<Unit>0,4,Andras/Winterbloom,1,2,Right,None</Unit>
 	<Unit>0,4,Mary O Nette/,2,0,Right,None</Unit>
 	<Unit>0,4,Arora/Masculine,2,2,Right,None</Unit>
 	<Unit>0,4,Nobeta/Lifts,3,0,Right,None</Unit>
@@ -140,10 +142,62 @@
 			<Action>Run/Set Alive Unit,Character Name,Sandra Winterbloom</Action>
 			<Action>Run/Set Alive Unit,Character Name,Asandr Winterbloom</Action>
 			<Action>Run/Set Alive Unit,Character Name,Loud Theater Enjoyer</Action>
-			<Action>GoTo/1</Action>
+			<Action>GoToNextBranch/</Action>
 			<Reply>/None</Reply>
 		</Branch>
-		<Branch num="1" name="">Announcer/This is the end slate! Now for our actors to...
+		<Branch num="7" name="">Announcer/And thus, the theater was not [i]entirely[/i] broken apart. "Bolt-Action Love" would show as planned, undeterred by neither ruffians nor confused critics.
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="8" name="Harrien and Clark">Announcer/[Clark is more than happy to distance himself from the Rubble Rousers. Harrien takes Clark under his wing, and massive arms.]
+			<Action>ClearPortraits/</Action>
+			<Action>IfValGoTo/Harrien Lifts Alive,=,0,BRANCH[Nobeta and Mary]</Action>
+			<Action>IfValGoTo/Clark Alive,=,0,5,BRANCH[Nobeta and Mary]</Action>
+			<Action>AddPortrait/Harrien Lifts,Harrien Lifts,left,,Excited</Action>
+			<Action>AddPortrait/Clark,Clark,right,,Kind</Action>
+			<Action>MoveCam/Harrien Lifts</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="9" name="Nobeta and Mary">Announcer/[Nobeta and Mary have a pleasant date scheduled. They plan on bonding over a mutual appreciation for Nobeta's muscles.]
+			<Action>ClearPortraits/</Action>
+			<Action>IfValGoTo/Nobeta Lifts Alive,=,0,BRANCH[Sandra Winterbloom]</Action>
+			<Action>IfValGoTo/Mary O Nette Alive,=,0,5,BRANCH[Sandra Winterbloom]</Action>
+			<Action>IfValGoTo/Lesbian Discussions Count,l,3,BRANCH[Sandra Winterbloom]</Action>
+			<Action>AddPortrait/Nobeta Lifts,Nobeta Lifts,left,,Excited,5,0</Action>
+			<Action>AddPortrait/Mary O Nette,Mary O Nette,right,,Kind,10,0</Action>
+			<Action>MoveCam/Nobeta Lifts</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="12" name="Sandra Winterbloom">Announcer/[Sandra got a lot [b]lot[/b] out of this experience, apparently! She's excited to learn what it all means.]
+			<Action>ClearPortraits/</Action>
+			<Action>IfValGoTo/Sandra Winterbloom Alive,=,0,BRANCH[Asandr Winterbloom]</Action>
+			<Action>AddPortrait/Sandra Winterbloom,Sandra/Winterbloom,left,,Winking</Action>
+			<Action>MoveCam/,,Sandra Winterbloom</Action>
+			<Action>/</Action>
+			<Action>/</Action>
+			<Action>/</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="10" name="Asandr Winterbloom">Announcer/[Arora had a good time with the experience, and continues vibing. It's hard to get a good bigender lizard down.]
+			<Action>ClearPortraits/</Action>
+			<Action>IfValGoTo/Arora Alive,=,0,BRANCH[Asandr]</Action>
+			<Action>AddPortrait/Arora,Arora,left,,Winking</Action>
+			<Action>MoveCam/,,Arora</Action>
+			<Action>/</Action>
+			<Action>/</Action>
+			<Action>/</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="11" name="Arora">Announcer/[Asandr got a lot [b]lot[/b] out of this experience, apparently! She's excited to learn what it all means.]
+			<Action>ClearPortraits/</Action>
+			<Action>IfValGoTo/Asandr Winterbloom Alive,=,0,BRANCH[End Slate]</Action>
+			<Action>AddPortrait/Asandr Winterbloom,Asandr/Winterbloom,left,,Winking</Action>
+			<Action>MoveCam/,,Asandr Winterbloom</Action>
+			<Action>/</Action>
+			<Action>/</Action>
+			<Action>/</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="End Slate">Announcer/This is the end slate! Now for our actors to...
 			<Action>ShowDialogueBox/</Action>
 			<Reply>Conintue./NextBranch</Reply>
 		</Branch>
@@ -158,7 +212,7 @@
 			<Action>MoveUnitBy/Andras Winterbloom,0,1,</Action>
 			<Action>MoveUnitBy/Drasan Winterbloom,0,1,</Action>
 			<Action>MoveUnitBy/Sandra Winterbloom,0,1</Action>
-			<Action>GoTo/3</Action>
+			<Action>GoToNextBranch/</Action>
 			<Action>/</Action>
 			<Action>/</Action>
 			<Action>/</Action>
@@ -167,7 +221,7 @@
 		<Branch num="5" name="">/
 			<Action>HideDialogueBox/</Action>
 			<Action>WaitForDialogue/</Action>
-			<Action>GoTo/4</Action>
+			<Action>GoToNextBranch/</Action>
 			<Action>/</Action>
 			<Action>/</Action>
 			<Action>/</Action>
@@ -191,7 +245,7 @@
 		<Branch num="7" name="">/
 			<Action>HideDialogueBox/</Action>
 			<Action>Wait/2</Action>
-			<Action>GoTo/6</Action>
+			<Action>GoToNextBranch/</Action>
 			<Action>/</Action>
 			<Action>/</Action>
 			<Action>/</Action>
