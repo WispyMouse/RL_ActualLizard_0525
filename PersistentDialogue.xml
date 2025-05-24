@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 6:20:41 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 1:50:58 AM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
@@ -132,6 +132,18 @@
 		<Action>SetStat/-STR:Character Name-,-STR:Stat Name-,-STR:Value-</Action>
 	</Script>
 
+	<Script>Perfect Ending
+		<Action>SetVal/Clark Alive,=:1</Action>
+		<Action>SetVal/Harrien Lifts Alive,=:1</Action>
+		<Action>SetVal/Nobeta Alive,=:1</Action>
+		<Action>SetVal/Arora Alive,=:1</Action>
+		<Action>SetVal/Asandr Winterbloom Alive,=:1</Action>
+		<Action>SetVal/Drasan Winterbloom Alive,=:0</Action>
+		<Action>SetVal/Mary O Nette Alive,=:1</Action>
+		<Action>SetVal/Lesbian Discussions Count,=:3</Action>
+		<Action>SetVal/Perfect Ending,=:1</Action>
+	</Script>
+
 	<Dialogue trigger="OnLoaded/" convID="Set Root Relationships" r="false">
 		<Branch num="0" name="Starting Relationships">/
 			<Action>SetRelationshipLabel/Harrien:Lifts,Mary O Nette,Troupe Member,true</Action>
@@ -142,18 +154,19 @@
 			<Action>SetRelationshipLabel/Mary O Nette,Arora,Troupe Member,true</Action>
 			<Action>SetRelationshipLabel/Nobeta:Lifts,Harrien:Lifts,Father,false</Action>
 			<Action>SetRelationshipLabel/Harrien:Lifts,Nobeta:Lifts,Daughter,false</Action>
-			<Action>Run/Set Asandr Default Relationships,New Name,Drasan Winterbloom</Action>
+			<Action>/</Action>
 			<Action>SetVal/Harrien Lifts Alive,=:1</Action>
 			<Action>SetVal/Nobeta Lifts Alive,=:1</Action>
 			<Action>SetVal/Mary O Nette Alive,=:1</Action>
 			<Action>SetVal/Arora Alive,=:1</Action>
-			<Action>SetVal/Clark Alive,=:1</Action>
+			<Action>SetVal/Clark Alive,=:0</Action>
 			<Action>SetVal/Loud Theater Enjoyer Alive,=:1
 </Action>
 			<Action>SetVal/Drasan Winterbloom Alive,=:1</Action>
 			<Action>SetVal/Andras Winterbloom Alive,=:0</Action>
 			<Action>SetVal/Sandra Winterbloom Alive,=:0</Action>
 			<Action>SetVal/Asandr Winterbloom Alive,=:0</Action>
+			<Action>IfValRun/Perfect Ending,=,1,Perfect Ending</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
