@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 2:14:14 AM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 6:37:20 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -299,7 +299,7 @@
 			<Action>SetVal/TurnsSinceLastLesbianConvo,=:0</Action>
 			<Action>Run/SetAreas</Action>
 			<Action>IfValGoTo/SkipIntro,=,1,9</Action>
-			<Action>/</Action>
+			<Action>SetVal/Clark Alive,=:0</Action>
 			<Action>GoToNextBranch/</Action>
 		</Branch>
 		<Branch num="1" name="Intro Dialogue Start">Drasan Winterbloom/W--what? The theater! People are--?
@@ -509,6 +509,8 @@
 			<Action>SetStat/Andras Winterbloom,Psy,+:1</Action>
 			<Action>SetStat/Andras Winterbloom,Dodge,+:3</Action>
 			<Action>SetStat/Andras Winterbloom,Accuracy,+:5</Action>
+			<Action>SetVal/Drasan Winterbloom Alive,=:0</Action>
+			<Action>SetVal/Andras Winterbloom Alive,=:1</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -530,6 +532,8 @@
 			<Action>SetStat/Sandra Winterbloom,Psy,+:1</Action>
 			<Action>SetStat/Sandra Winterbloom,Dodge,+:3</Action>
 			<Action>SetStat/Sandra Winterbloom,Accuracy,+:5</Action>
+			<Action>SetVal/Andras Winterbloom Alive,=:0</Action>
+			<Action>SetVal/Sandra Winterbloom Alive,=:0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -595,12 +599,14 @@
 			<Action>/</Action>
 			<Action>PortraitParticles/Asandr Winterbloom,Sparkles</Action>
 			<Action>AddPortrait/Asandr Winterbloom/,Asandr Winterbloom/,right,,Happy</Action>
-			<Action>SetStat/Asandr Winterbloom,Morale,+:2</Action>
 			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Asandr Winterbloom</Action>
-			<Action>SetStat/Asandr Winterbloom,Psy,+:1</Action>
+			<Action>Run/Swap Out Unit,Swap Out Name,Sandra Winterbloom,Swap In Name,Asandr Winterbloom,Swap In ID,Asandr Winterbloom</Action>
+			<Action>SetStat/Asandr Winterbloom,Morale,+:2</Action>
 			<Action>SetStat/Asandr Winterbloom,Dodge,+:3</Action>
 			<Action>SetStat/Asandr Winterbloom,Accuracy,+:5</Action>
-			<Action>Run/Swap Out Unit,Swap Out Name,Sandra Winterbloom,Swap In Name,Asandr Winterbloom,Swap In ID,Asandr Winterbloom</Action>
+			<Action>SetStat/Asandr Winterbloom,Psy,+:1</Action>
+			<Action>SetVal/Sandra Winterbloom Alive,=:0</Action>
+			<Action>SetVal/Asandr Winterbloom Alive,=:1</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Asandr Winterbloom/Aaah, I love it! And should write different, better, or more dialogue here to express that! :D
@@ -945,6 +951,69 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 			<Action>SetVal/TurnsUntilBossAppears,-1</Action>
 			<Action>RemoveTag/Xander Bilt,Inactive</Action>
 			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharDeath/-ANY-,Harrien Lifts" convID="Harrien KO" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/Harrien Lifts Alive,=:0</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharDeath/-ANY-,Nobeta Lifts" convID="Nobeta KO" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/Nobeta Lifts Alive,=:0</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharDeath/-ANY-,Mary O Nette" convID="Mary KO" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/Mary O Nette Alive,=:0</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharDeath/-ANY-,Clark" convID="Clark KO" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/Clark Alive,=:0</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharDeath/-ANY-,Arora" convID="Arora KO" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/Arora Alive,=:0</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharDeath/-ANY-,Drasan Winterbloom" convID="Drasan KO" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/Drasan Winterbloom Alive,=:0</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharDeath/-ANY-,Andras Winterbloom" convID="Andras KO" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/Andras Winterbloom Alive,=:0</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharDeath/-ANY-,Sandra Winterbloom" convID="Sandra KO" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/Sandra Winterbloom Alive,=:0</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharDeath/-ANY-,Asandr Winterbloom" convID="Asandr KO" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/Asandr Winterbloom Alive,=:0</Action>
+			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
 
