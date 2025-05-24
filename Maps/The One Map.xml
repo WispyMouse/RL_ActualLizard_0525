@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 3:14:26 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 3:34:32 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -28,17 +28,22 @@
 	<Row>01.01,01.01,01.01,01.3E,03.01,03.01,03.01,03.01,04.01,04.01,04.01,02.01,02.01</Row>
 	<Row>01.01,01.01,01.01,01.3A,04.01,04.01,04.01,04.01,04.01,04.01,04.01,03.01,03.01</Row>
 	<Row>01.01,01.01,01.07,01.03,03.01,04.01,04.01,04.01,04.01,04.01,04.01,03.01,03.01</Row>
-	<Row>05.06,05.1K,05.07,06.06,03.0Y,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
-	<Row>07.42,03.01,03.01,06.42,06.3G,06.0K,06.0P,08.01,08.01,06.3F,06.3F,06.3F,07.3I</Row>
-	<Row>08.01,03.01,03.01,08.01,08.01,08.01,08.01,07.0Q,07.0N,07.0U,06.2P,06.2P,06.01</Row>
-	<Row>08.01,03.01,03.01,05.1c,05.1c,05.1c,05.1c,05.07,05.1K,05.1K,06.03,06.2P,06.01</Row>
-	<Row>06.0N,05.1j,05.01,05.0v,05.0m,05.0u,05.07,05.03,05.0u,05.0o,06.01,06.2P,06.01</Row>
-	<Row>06.01,05.0n,05.01,05.0o,06.01,06.07,06.03,06.01,05.0n,05.0x,05.07,05.1K,05.1K</Row>
+	<Row>05.06,05.1K,05.07,06.06,03.0Y,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.02</Row>
+	<Row>07.42,03.01,03.01,06.42,06.3G,06.0K,06.0P,08.01,06.3F,06.45,06.07,06.03,07.0e</Row>
+	<Row>08.01,03.01,03.01,08.01,08.01,08.01,08.01,07.0Q,07.0U,06.2P,06.2P,06.01,06.01</Row>
+	<Row>08.01,03.01,03.01,05.1c,05.1c,05.1c,05.1c,05.07,05.1K,05.03,06.09,06.05,06.01</Row>
+	<Row>06.0N,05.1j,05.01,05.0v,05.0m,05.0u,05.07,05.03,05.01,05.0o,06.01,06.2P,06.01</Row>
+	<Row>06.01,05.0n,05.01,05.0o,06.01,06.07,06.03,05.0n,05.01,05.0x,05.07,05.1K,05.1K</Row>
 	
+	<Light type="Point Light" size="4" intensity="0.7" y="0" x="12" A="1" R="1" G="0.5" B="0" animType="Static" direction="Up"></Light>
+	<Light type="Point Light" size="5" intensity="0.5" y="1" x="1" A="1" R="1" G="0.5" B="0" animType="Static" direction="Up"></Light>
 	<Light type="Directional Light" size="2" intensity="1.5" y="2" x="5" A="1" R="1" G="1" B="1" animType="Static" direction="Down"></Light>
 	<Light type="Directional Light" size="2" intensity="1.5" y="3" x="4" A="1" R="1" G="1" B="1" animType="Static" direction="Right"></Light>
-	<Light type="Point Light" size="5" intensity="0.2" y="12" x="0" A="1" R="1" G="1" B="0" animType="Pulse" direction="Up"></Light>
-	<Light type="Point Light" size="10" intensity="0.2" y="13" x="10" A="1" R="1" G="1" B="0" animType="Pulse" direction="Up"></Light>
+	<Light type="Point Light" size="10" intensity="0.2" y="4" x="10" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
+	<Light type="Point Light" size="10" intensity="0.3" y="5" x="12" A="1" R="1" G="1" B="0" animType="Static" direction="Up"></Light>
+	<Light type="Point Light" size="5" intensity="0.4" y="10" x="10" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
+	<Light type="Point Light" size="20" intensity="0.4" y="12" x="0" A="1" R="1" G="1" B="0" animType="Pulse" direction="Up"></Light>
+	<Light type="Point Light" size="20" intensity="0.4" y="13" x="10" A="1" R="1" G="1" B="0" animType="Pulse" direction="Up"></Light>
 	
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,5,5</RowElev>
 	<RowElev>0,0,0,0,0,0,0,0,1,1,1,5,5</RowElev>
@@ -49,9 +54,9 @@
 	<RowElev>0,0,0,1,1,1,1,1,1,1,1,3,3</RowElev>
 	<RowElev>0,0,1,1,1,1,1,1,1,1,1,3,3</RowElev>
 	<RowElev>2,1,2,2,1,1,1,1,1,1,2,3,3</RowElev>
-	<RowElev>2,2,2,2,2,1,1,0,0,2,3,4,4</RowElev>
-	<RowElev>0,2,2,0,0,0,0,1,1,1,2,3,3</RowElev>
-	<RowElev>0,2,2,1,1,1,1,2,2,2,2,3,3</RowElev>
+	<RowElev>2,2,2,2,2,1,1,0,2,2,3,3,3</RowElev>
+	<RowElev>0,2,2,0,0,0,0,1,1,2,3,3,3</RowElev>
+	<RowElev>0,2,2,1,1,1,1,2,2,2,3,3,3</RowElev>
 	<RowElev>1,1,1,1,1,1,2,2,2,2,2,3,3</RowElev>
 	<RowElev>1,1,1,1,1,2,2,2,2,2,4,4,4</RowElev>
 	
@@ -144,9 +149,10 @@
 	<Unit>0,99,ReedsFlowerSmall,9,10,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Poster,9,11,None,None</Unit>
 	<Unit>0,99,ItemSack,9,12,None,Rejuvenation Orb</Unit>
-	<Unit>0,99,Bush,10,10,None,None</Unit>
+	<Unit>0,99,Bush,10,9,None,None</Unit>
+	<Unit>0,99,LampLitAlt,10,10,None,None</Unit>
 	<Unit>0,99,WildflowersAlt,10,11,None,None</Unit>
-	<Unit>0,99,Barrel,11,2,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Barrel,11,2,None,None</Unit>
 	<Unit>0,99,Reeds,11,10,None,None</Unit>
 	<Unit>0,99,Wildflowers,11,11,None,None</Unit>
 	<Unit>0,99,LampLitAlt,12,0,None,None</Unit>
@@ -156,12 +162,11 @@
 	<Unit>0,99,Barrel,13,5,None,None</Unit>
 	<Unit>0,99,LampLit,13,10,None,None</Unit>
 	<Unit>0,99,Birdbath,13,11,None,None</Unit>
+	<Unit>0,0,Arora/Feminine,11,8,Up,Grapple Chain[E]/Mango/Indestructible Whalloper[E]</Unit>
 	<Unit>0,0,Harrien/Lifts,12,7,Left,None</Unit>
 	<Unit>0,0,Drasan/Winterbloom,12,8,Left,None</Unit>
-	<Unit>0,0,Arora/Feminine,12,9,Up,Grapple Chain[E]/Mango/Indestructible Whalloper[E]</Unit>
-	<Unit>0,0,Nobeta/Lifts,12,10,Left,None</Unit>
-	<Unit>0,0,Mary O Nette/,13,9,Left,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Slighted Playwright/,2,2,Left,None</Unit>
+	<Unit>0,0,Mary O Nette/,13,8,Left,None</Unit>
+	<Unit>0,0,Nobeta/Lifts,13,9,Left,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,">0,1,Irate Crossbow Aficionado/,3,1,Down,Obviously Stolen Crossbow[E]</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,3,6,Left,Limited-Issue Bayonet Only Crossbow[E]</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Golem/,3,9,Down,None</Unit>
@@ -170,14 +175,14 @@
 	<Unit tag="Add,Patrol,Stage,=:5/Add,IgnoreArmy,3">0,1,Xander/Bilt,6,11,Left,None</Unit>
 	<Unit tag="Add,LevelUp,6/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Passive">0,1,Irate Crossbow Aficionado/,7,5,Down,Screw-Firing Crossbow[E]</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Bruiser/,7,8,Left,None</Unit>
-	<Unit tag="Add,LevelUp,5/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Breaker/,9,3,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Slighted Playwright/,9,2,Down,None</Unit>
 	<Unit tag="Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,9,5,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
-	<Unit>0,1,Rubble Rouser Golem/,9,9,Down,None</Unit>
+	<Unit>0,1,Rubble Rouser Golem/,9,8,Down,None</Unit>
 	<Unit tag="Add,Passive/Add,Pursue/Add,AggroGroup,3/Add,Patrol,StartingArea,=,1.5/Add,Patrol,StartingChoke,=,1.2">0,1,Rubble Rouser Golem/,10,1,Down,None</Unit>
 	<Unit tag="Add,LevelUp,2/Add,AreaPreference,StartingArea,=:1.5">0,1,Rubble Rouser Bruiser/,10,12,Left,None</Unit>
-	<Unit tag="Add,AreaPreference,StartingArea,=:1.5">0,1,Rubble Rouser Golem/,11,5,Right,None</Unit>
+	<Unit tag="Add,AreaPreference,StartingArea,=:1.5">0,1,Rubble Rouser Golem/,11,6,Right,None</Unit>
 	<Unit tag="Add,IgnoreArmy,3">0,1,Coderick/Gutterson,12,1,Down,None</Unit>
-	<Unit tag="Add,AreaPreference,StartingArea,=:1.5/Add,Patrol,StartingChoke,=,1.2">0,1,Rubble Rouser Golem/,13,2,Right,None</Unit>
+	<Unit tag="Add,LevelUp,5/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Breaker/,13,3,Left,None</Unit>
 	<Unit tag="Add,Passive/Add,LevelUp,8/Add,Patrol,ViewingBooth,=,5/Add,TargetValue,1.3">0,2,Loud Theater Enjoyer/,1,11,Down,None</Unit>
 
 	<Script>Set Lesbian Talkable
@@ -373,28 +378,34 @@
 
 	<Dialogue trigger="None/" convID="Second Lesbian Dialogue" r="false">
 		<Branch num="0" name="">Mary O Nette/Perhaps [b]she[/b] can call me little girl. That would be acceptable.
-			<Action>AddPortrait/Mary O Nette,Mary O Nette,left,,Winking</Action>
+			<Action>AddPortrait/Mary O Nette,Mary O Nette,left,,Winking,15,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Mary O Nette/...ah, Nobeta Lifts. [She looks up at her] Behind you, yes?
-			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Concerned</Action>
+			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Concerned,5,0</Action>
+			<Action>FlipPortrait/Nobeta Lifts</Action>
 			<Action>ChangeExpression/Nobeta Lifts,Concerned</Action>
+			<Action>MovePortrait/Mary O Nette,12,0,80</Action>
+			<Action>Wait/.5</Action>
+			<Action>FlipPortrait/Nobeta Lifts</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">Nobeta Lifts/Of course! Dad always said to me, "these muscles are for protecting you, little girl."
+		<Branch num="2" name="">Nobeta Lifts/Of course! Dad is always saying to me, "these muscles are for protecting you, little girl."
 			<Action>ChangeExpression/Nobeta Lifts,Kind</Action>
+			<Action>MovePortrait/Nobeta Lifts,8,0,60</Action>
+			<Action>PortraitParticles/Nobeta Lifts,Heart</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="3" name="">Mary O Nette/O--oh. [She pauses] Yes.
+		<Branch num="3" name="">Mary O Nette/O--oh.
 			<Action>PortraitParticles/Mary O Nette,Hearts</Action>
 			<Action>ChangeExpression/Mary O Nette,Blank</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="4" name="">Nobeta Lifts/Well, let's go! [Nobeta grabs Mary's arm and leads towards her next firing position]
-			<Action>WaitForDialogue/</Action>
-			<Action>MovePortrait/Nobeta Lifts,-5,0,100</Action>
-			<Action>MovePortrait/Mary O Nette,5,0,100</Action>
-			<Action>FlipPortrait/Mary O Nette</Action>
+		<Branch num="4" name="">Nobeta Lifts/So [i]these[/i] muscles -- [Nobeta flexes briefly] -- are for [b]you[/b], little girl! Well, let's go! [Nobeta grabs Mary's arm and leads towards her next firing position]
+			<Action>Wait/.5</Action>
+			<Action>MovePortrait/Nobeta Lifts,-5,0,140</Action>
+			<Action>MovePortrait/Mary O Nette,6,0,130</Action>
+			<Action>FlipPortrait/Nobeta Lifts</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="5" name="">Mary O Nette/O--oh. [She stumbles along, easily moved by Nobeta Lifts] Yes.
@@ -696,6 +707,7 @@
 		<Branch num="0" name="">Coderick Gutterson/Bah, what are you supposed to be? You're so freakishly tall! Put those muscles away, you're embarassing yourself.
 			<Action>AddPortrait/Harrien Lifts,Harrien Lifts,left,,Mean,5,0</Action>
 			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Mad</Action>
+			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Harrien Lifts/You cannot hurt me with your words. [He grunts] I will hurt you with my axe.
@@ -710,8 +722,9 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Nobeta Lifts,,,Coderick Gutterson" convID="Coderick and Nobeta Lifts" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Well look who inherited her father's huge body! Grah, you can't attract men like me with [b]that[/b] hair cut.
-			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,left,,Mad</Action>
+			<Action>AddPortrait/Coderick Gutterson,Coderick/Gutterson,left,,Mad</Action>
 			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Shocked</Action>
+			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Nobeta Lifts/W--well, good! [She grunts] I don't want to attract men like you!
@@ -725,6 +738,7 @@
 		<Branch num="0" name="">Coderick Gutterson/Huh, I can barely see you. You must not be important! Do everyone a favor and grow up, you little girl!
 			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,left,,YellMad</Action>
 			<Action>AddPortrait/Mary O Nette,Mary O Nette,right,,Quizzical,5,0</Action>
+			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Mary O Nette/[b]You[/b] do not get to call me a little girl. Show respect, creep.
@@ -739,6 +753,7 @@
 		<Branch num="0" name="">Coderick Gutterson/Ech, what are you even going for? Make up your mind! I, Coderick Gutterson, and the rest of [b]civil[/b] society need to know if you're a man or not!
 			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,left,,Mad</Action>
 			<Action>AddPortrait/Arora,Arora/Feminine,right,,Winking</Action>
+			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Arora/Ouch! My turn, how about... Your parents named you Coderick, and you kept that name.
@@ -755,14 +770,18 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Drasan Winterbloom,,,Coderick Gutterson" convID="Coderick and Drasan" r="false">
-		<Branch num="0" name="">Coderick Gutterson/Now doesn't [b]this guy[/b] look entirely uncomfortable. It's your skin, buddy, get used to it! None of us can change what we are, and what I am is a [b]champion among vermin[/b].
+		<Branch num="0" name="">Coderick Gutterson/Now doesn't [b]this guy[/b] look entirely uncomfortable. It's your skin, buddy, get used to it! Nothing ever changes about the body we are given!
 			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,left,,Mad</Action>
 			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,right,,Sad</Action>
+			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Drasan Winterbloom/[Drasan absently ponders] You're [b]so[/b] wrong, that I think I just learned something. Thanks?
+		<Branch num="1" name="">Drasan Winterbloom/You're [b]so[/b] wrong, that I think I just learned something. Thanks?
 			<Action>ChangeExpression/Drasan Winterbloom,Quizzical</Action>
 			<Action>ChangeExpression/Coderick Gutterson,Irritated</Action>
+			<Action>FlipPortrait/Drasan Winterbloom</Action>
+			<Action>Wait/1</Action>
+			<Action>FlipPortrait/Drasan Winterbloom</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
