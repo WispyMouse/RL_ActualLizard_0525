@@ -334,8 +334,11 @@
 		<Branch num="4" name="">Mary O Nette/It can be as you say. It can be time to... get behind you.
 			<Action>ChangeExpression/Mary O Nette,Happy</Action>
 			<Action>SetStat/Mary O Nette,Morale,+:3</Action>
+			<Action>SpawnFloatingText/Morale + 3,Mary O Nette,Yellow</Action>
 			<Action>SetStat/Nobeta Lifts,Morale,+:1</Action>
+			<Action>SpawnFloatingText/Morale + 1,Nobeta Lifts,Yellow</Action>
 			<Action>SetStat/Mary O Nette,Psy,+:1</Action>
+			<Action>SpawnFloatingText/Psy + 1,Mary O Nette,Yellow</Action>
 			<Action>MovePortrait/Mary O Nette,15,0,80</Action>
 			<Action>Run/RemoveTalkability,Speaker One,Mary O Nette,Speaker Two,Nobeta Lifts</Action>
 			<Action>SetVal/Lesbian Discussions,+:1</Action>
@@ -369,9 +372,12 @@
 		</Branch>
 		<Branch num="5" name="">Mary O Nette/O--oh. [She stumbles along, easily moved by Nobeta Lifts] Yes.
 			<Action>PortraitParticles/Mary O Nette,Hearts</Action>
-			<Action>SetStat/Mary O Nette,Morale,+:3</Action>
+			<Action>SetStat/Mary O Nette,Morale,+:2</Action>
+			<Action>SpawnFloatingText/Morale + 2,Mary O Nette,Yellow</Action>
 			<Action>SetStat/Nobeta Lifts,Morale,+:1</Action>
+			<Action>SpawnFloatingText/Morale + 1,Nobeta Lifts,Yellow</Action>
 			<Action>SetStat/Mary O Nette,Psy,+:1</Action>
+			<Action>SpawnFloatingText/Psy + 1,Mary O Nette,Yellow</Action>
 			<Action>Run/RemoveTalkability,Speaker One,Mary O Nette,Speaker Two,Nobeta Lifts</Action>
 			<Action>SetVal/Lesbian Discussions,+:1</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -402,9 +408,12 @@
 		</Branch>
 		<Branch num="5" name="">Nobeta Lifts/Oh! Oh! [She pauses and stares in to middle-space] Oh. Yes, actually. Plenty of time. Oh, but now, I need to...
 			<Action>ChangeExpression/Nobeta Lifts,Happy</Action>
-			<Action>SetStat/Nobeta Lifts,Morale,+:4</Action>
-			<Action>SetStat/Mary O Nette,Mary O Nette,+:3</Action>
+			<Action>SetStat/Nobeta Lifts,Morale,+:3</Action>
+			<Action>SpawnFloatingText/Morale + 3,Nobeta Lifts,Yellow</Action>
+			<Action>SetStat/Mary O Nette,Morale,+:3</Action>
+			<Action>SpawnFloatingText/Morale + 3,Mary O Nette,Yellow</Action>
 			<Action>SetVal/Mary O Nette,Psy,+:1</Action>
+			<Action>SpawnFloatingText/Psy + 1,Mary O Nette,Yellow</Action>
 			<Action>/</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -446,7 +455,8 @@
 			<Action>SetStat/Clark,Army,=:0</Action>
 			<Action>Run/Swap Out Unit,Swap Out Name,Clark,Swap In Name,Clark,Swap In ID,Clark:Happy</Action>
 			<Action>ChangeExpression/Clark,Happy</Action>
-			<Action>SetStat/Clark,Morale,=4</Action>
+			<Action>SetStat/Clark,Morale,+:4</Action>
+			<Action>SpawnFloatingText/Morale + 4,Clark,Yellow</Action>
 			<Action>RemoveConv/West Approach Recognized</Action>
 			<Action>SetVal/WestApproachFlag,3</Action>
 			<Action>Run/RemoveTalkability,Speaker One,Clark,Speaker Two,Harrien Lifts</Action>
@@ -471,9 +481,13 @@
 			<Action>Run/Swap Out Unit,Swap Out Name,Drasan Winterbloom,Swap In Name,Andras Winterbloom,Swap In ID,Andras Winterbloom</Action>
 			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Andras Winterbloom</Action>
 			<Action>SetStat/Andras Winterbloom,Morale,+:3</Action>
+			<Action>SpawnFloatingText/Morale + 3,Andras Winterbloom,Yellow</Action>
 			<Action>SetStat/Andras Winterbloom,Psy,+:1</Action>
+			<Action>SpawnFloatingText/Psy + 1,Andras Winterbloom,Yellow</Action>
 			<Action>SetStat/Andras Winterbloom,Dodge,+:3</Action>
+			<Action>SpawnFloatingText/Dodge + 3,Andras Winterbloom,Yellow</Action>
 			<Action>SetStat/Andras Winterbloom,Accuracy,+:5</Action>
+			<Action>SpawnFloatingText/Accuracy + 5,Andras Winterbloom,Yellow</Action>
 			<Action>SetVal/Drasan Winterbloom Alive,=:0</Action>
 			<Action>SetVal/Andras Winterbloom Alive,=:1</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -494,11 +508,15 @@
 			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Sandra Winterbloom</Action>
 			<Action>AddStatus/Asandr Winterbloom,Talkable</Action>
 			<Action>SetStat/Sandra Winterbloom,Morale,+:3</Action>
+			<Action>SpawnFloatingText/Morale + 3,Sandra Winterbloom,Yellow</Action>
 			<Action>SetStat/Sandra Winterbloom,Psy,+:1</Action>
+			<Action>SpawnFloatingText/Psy + 1,Sandra Winterbloom,Yellow</Action>
 			<Action>SetStat/Sandra Winterbloom,Dodge,+:3</Action>
+			<Action>SpawnFloatingText/Dodge + 3,Sandra Winterbloom,Yellow</Action>
 			<Action>SetStat/Sandra Winterbloom,Accuracy,+:5</Action>
+			<Action>SpawnFloatingText/Accuracy + 5,Sandra Winterbloom,Yellow</Action>
 			<Action>SetVal/Andras Winterbloom Alive,=:0</Action>
-			<Action>SetVal/Sandra Winterbloom Alive,=:0</Action>
+			<Action>SetVal/Sandra Winterbloom Alive,=:1</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -569,9 +587,13 @@
 			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Asandr Winterbloom</Action>
 			<Action>Run/Swap Out Unit,Swap Out Name,Sandra Winterbloom,Swap In Name,Asandr Winterbloom,Swap In ID,Asandr Winterbloom</Action>
 			<Action>SetStat/Asandr Winterbloom,Morale,+:2</Action>
+			<Action>SpawnFloatingText/Morale + 2,Asandr Winterbloom,Yellow</Action>
 			<Action>SetStat/Asandr Winterbloom,Dodge,+:3</Action>
+			<Action>SpawnFloatingText/Dodge + 3,Asandr Winterbloom,Yellow</Action>
 			<Action>SetStat/Asandr Winterbloom,Accuracy,+:5</Action>
+			<Action>SpawnFloatingText/Accuracy + 5,Asandr Winterbloom,Yellow</Action>
 			<Action>SetStat/Asandr Winterbloom,Psy,+:1</Action>
+			<Action>SpawnFloatingText/Psy + 1,Asandr Winterbloom,Yellow</Action>
 			<Action>SetVal/Sandra Winterbloom Alive,=:0</Action>
 			<Action>SetVal/Asandr Winterbloom Alive,=:1</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -602,38 +624,6 @@
 			<Action>LoadConv/Boss Spawn</Action>
 			<Action>SetVal/TurnsUntilBossAppears,=:-1</Action>
 			<Action>GoTo/0</Action>
-		</Branch>
-	</Dialogue>
-
-	<Dialogue trigger="PostCharAttacked/1,-ANY,-ANY,0,Sandra Winterbloom" convID="Asandr Strikes" r="false">
-		<Branch num="0" name="">/
-			<Action>SetVal/SandraAttacks,+:1</Action>
-			<Action>IfValGoTo/SandraAttacks,g=,2,1</Action>
-			<Action>EndConvImmediately/</Action>
-		</Branch>
-		<Branch num="1" name="">Rasand Winterbloom/Ah-hah! Hyah! [She shows a renewed energy in her motions, and keeps her eye on her target with confidence]
-			<Action>RemoveConv/Asandr Strikes</Action>
-			<Action>AddPortrait/Rasand Winterbloom,Sandra Winterbloom,left,,Happy</Action>
-			<Action>AddPortrait/-Char2Name-,-Char2Name-,right,Sad</Action>
-			<Reply>Continue./NextBranch</Reply>
-		</Branch>
-		<Branch num="2" name="">Rasand Winterbloom/Hoo... Yes, this feels much better. Maybe, I could make just...
-			<Action>RemovePortrait/-Char2Name-</Action>
-			<Reply>Continue./NextBranch</Reply>
-		</Branch>
-		<Branch num="3" name="">Sandra Winterbloom/...just a couple more changes.
-			<Action>SetVal/AsandrNameProgress,+:1</Action>
-			<Action>Run/Swap Out Name,Rasand Winterbloom,Swap In Name,Sandra Winterbloom/</Action>
-			<Action>ClearPortraits/</Action>
-			<Action>AddPortrait/Sandra Winterbloom,Sandra Winterbloom,left,,Happy</Action>
-			<Action>PortraitParticles/Sandra Winterbloom,Hearts</Action>
-			<Action>SetStat/Sandra Winterbloom,Morale,+:2</Action>
-			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Sandra Winterbloom</Action>
-			<Action>Run/AddTalkability,Sandra Winterbloom,Mary O Nette</Action>
-			<Action>SetStat/Sandra Winterbloom,Psy,+:1</Action>
-			<Action>SetStat/Sandra Winterbloom,Dodge,+:3</Action>
-			<Action>SetStat/Sandra Winterbloom,Accuracy,+:5</Action>
-			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
