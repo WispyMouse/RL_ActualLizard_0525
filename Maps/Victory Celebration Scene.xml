@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Victory Celebration Scene" maptype="Single Player" maxplayers="4" battleBG="" musictrack="A Hero's Triumph" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="false" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 6:12:47 PM">
+<Level mapname="Victory Celebration Scene" maptype="Single Player" maxplayers="4" battleBG="" musictrack="A Hero's Triumph" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="false" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 6:29:15 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Player Characters" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Custom" name="Audience" color="Green" alliedWith="" assignRoster="-1"></Army>
@@ -136,6 +136,9 @@
 	<Unit>0,2,Rubble Rouser Golem/,8,3,Up,None</Unit>
 	<Unit>0,2,Rubble Rouser Golem/,8,5,Up,None</Unit>
 	<Unit>0,2,Rubble Rouser Golem/,8,7,Left,None</Unit>
+	<Unit>0,4,Drasan/Winterbloom,1,1,Right,None</Unit>
+	<Unit>0,4,Andras/Winterbloom,1,2,Right,None</Unit>
+	<Unit>0,4,Sandra/Winterbloom,1,3,Right,None</Unit>
 	<Unit>0,4,Asandr/Winterbloom,1,4,Right,None</Unit>
 	<Unit>0,4,Mary O Nette/,2,2,Right,None</Unit>
 	<Unit>0,4,Arora/Masculine,2,4,Right,None</Unit>
@@ -168,21 +171,38 @@
 		<Action>SetStat/Villager-VAL:Villager Index-,Sprite Set,LIST{Villager Spritesets,-VAL:Random Index-}</Action>
 	</Script>
 
+	<Script>Set Alive Unit
+		<Action>IfValRun/-STR:Character Name- Alive,=,0,_RemoveUnit,Character Name,-STR:Character Name-</Action>
+	</Script>
+
+	<Script>_RemoveUnit
+		<Action>RemoveUnit/-STR:Character Name-,false</Action>
+	</Script>
+
 	<Dialogue trigger="OnTurn/0" convID="Ending Celebration Dispatch" r="true">
 		<Branch num="0" name="">/
 			<Action>HideDialogueBox/</Action>
 			<Action>ZoomCam/8</Action>
 			<Action>Run/Randomize Villagers</Action>
 			<Action>MoveCam/5,5,,1</Action>
+			<Action>Run/Set Alive Unit,Character Name,Harrien Lifts</Action>
+			<Action>Run/Set Alive Unit,Character Name,Nobeta Lifts</Action>
+			<Action>Run/Set Alive Unit,Character Name,Arora</Action>
+			<Action>Run/Set Alive Unit,Character Name,Mary O Nette</Action>
+			<Action>Run/Set Alive Unit,Character Name,Clark</Action>
+			<Action>Run/Set Alive Unit,Character Name,Drasan Winterbloom</Action>
+			<Action>Run/Set Alive Unit,Character Name,Andras Winterbloom</Action>
+			<Action>Run/Set Alive Unit,Character Name,Sandra Winterbloom</Action>
+			<Action>Run/Set Alive Unit,Character Name,Asandr Winterbloom</Action>
+			<Action>Run/Set Alive Unit,Character Name,Loud Theater Enjoyer</Action>
 			<Action>GoTo/1</Action>
-			<Action>/</Action>
 			<Reply>/None</Reply>
 		</Branch>
 		<Branch num="1" name="">Announcer/This is the end slate! Now for our actors to...
 			<Action>ShowDialogueBox/</Action>
 			<Reply>Conintue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">/222
+		<Branch num="2" name="">/
 			<Action>HideDialogueBox/</Action>
 			<Action>MoveUnitBy/Harrien Lifts,0,1,</Action>
 			<Action>MoveUnitBy/Nobeta Lifts,0,1</Action>
@@ -190,10 +210,10 @@
 			<Action>MoveUnitBy/Arora,0,1</Action>
 			<Action>MoveUnitBy/Asandr Winterbloom,0,1,</Action>
 			<Action>MoveUnitBy/Clark,0,1,</Action>
-			<Action>AddTextOverlay/End of MoveUnitBy</Action>
+			<Action>MoveUnitBy/Andras Winterbloom,0,1,</Action>
+			<Action>MoveUnitBy/Drasan Winterbloom,0,1,</Action>
+			<Action>MoveUnitBy/Sandra Winterbloom,0,1</Action>
 			<Action>GoTo/3</Action>
-			<Action>/</Action>
-			<Action>/</Action>
 			<Action>/</Action>
 			<Action>/</Action>
 			<Action>/</Action>
@@ -209,31 +229,32 @@
 			<Action>/</Action>
 			<Reply>/None</Reply>
 		</Branch>
-		<Branch num="3" name="">/444
+		<Branch num="3" name="">/
 			<Action>HideDialogueBox/</Action>
-			<Action>AddTextOverlay/Before cast</Action>
-			<Action>PlayAnim/Harrien,Cast</Action>
+			<Action>PlayAnim/Harrien Lifts,Cast</Action>
 			<Action>PlayAnim/Nobeta Lifts,Cast</Action>
-			<Action>PlayAnim/Clark,Cast</Action>
+			<Action>PlayAnim/Clark,Ability</Action>
 			<Action>PlayAnim/Mary O Nette,Cast</Action>
 			<Action>PlayAnim/Arora,Cast</Action>
 			<Action>PlayAnim/Asandr Winterbloom,Cast</Action>
-			<Action>AddTextOverlay/After cast</Action>
+			<Action>PlayAnim/Sandra Winterbloom,Cast</Action>
+			<Action>PlayAnim/Andras Winterbloom,Cast</Action>
+			<Action>PlayAnim/Drasan Winterbloom,Cast</Action>
 			<Action>GoTo/5</Action>
 			<Reply>/None</Reply>
 		</Branch>
-		<Branch num="7" name="">/555
+		<Branch num="7" name="">/
 			<Action>HideDialogueBox/</Action>
-			<Action>AddTextOverlay/Before second wait</Action>
-			<Action>/</Action>
 			<Action>Wait/2</Action>
-			<Action>AddTextOverlay/After second wait</Action>
 			<Action>GoTo/6</Action>
+			<Action>/</Action>
+			<Action>/</Action>
+			<Action>/</Action>
 			<Reply>/None</Reply>
 		</Branch>
 		<Branch num="7" name="">Announcer/...take a bow.
 			<Action>ShowDialogueBox/</Action>
-			<Action>AddTextOverlay/Reached End Slate</Action>
+			<Action>/</Action>
 			<Reply>You Win!/NextScene</Reply>
 		</Branch>
 	</Dialogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 2:16:22 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/23/2025 6:20:41 PM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
@@ -143,9 +143,18 @@
 			<Action>SetRelationshipLabel/Nobeta:Lifts,Harrien:Lifts,Father,false</Action>
 			<Action>SetRelationshipLabel/Harrien:Lifts,Nobeta:Lifts,Daughter,false</Action>
 			<Action>Run/Set Asandr Default Relationships,New Name,Drasan Winterbloom</Action>
+			<Action>SetVal/Harrien Lifts Alive,=:1</Action>
+			<Action>SetVal/Nobeta Lifts Alive,=:1</Action>
+			<Action>SetVal/Mary O Nette Alive,=:1</Action>
+			<Action>SetVal/Arora Alive,=:1</Action>
+			<Action>SetVal/Clark Alive,=:1</Action>
+			<Action>SetVal/Loud Theater Enjoyer Alive,=:1
+</Action>
+			<Action>SetVal/Drasan Winterbloom Alive,=:1</Action>
+			<Action>SetVal/Andras Winterbloom Alive,=:0</Action>
+			<Action>SetVal/Sandra Winterbloom Alive,=:0</Action>
+			<Action>SetVal/Asandr Winterbloom Alive,=:0</Action>
 			<Action>EndConvImmediately/</Action>
-			<Action>/</Action>
-			<Action>/</Action>
 		</Branch>
 	</Dialogue>
 
