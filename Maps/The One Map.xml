@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 2:12:16 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 2:16:52 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -204,14 +204,14 @@
 	</Script>
 
 	<Script>SetAreas
-		<Action>SetArea/StartingArea,10,12,6,12</Action>
-		<Action>SetArea/Choke,10,12,4,8
+		<Action>SetArea/StartingArea,11,13,6,12</Action>
+		<Action>SetArea/Choke,11,13,4,8
 </Action>
-		<Action>SetArea/WestApproach,6,12,0,5</Action>
-		<Action>SetArea/ViewingBooth,0,2,11,12</Action>
-		<Action>SetArea/Stage,1,4,4,7</Action>
-		<Action>SetArea/Theater,0,7,0,12</Action>
-		<Action>SetArea/ClothingZone,0,6,0,3</Action>
+		<Action>SetArea/WestApproach,6,13,0,5</Action>
+		<Action>SetArea/ViewingBooth,0,3,11,12</Action>
+		<Action>SetArea/Stage,1,5,4,7</Action>
+		<Action>SetArea/Theater,0,8,0,12</Action>
+		<Action>SetArea/ClothingZone,0,7,0,3</Action>
 	</Script>
 
 	<Script>Lever Flipped
@@ -568,8 +568,8 @@
 			<Action>ChangeExpression/Clark,Headache</Action>
 			<Action>RemoveTagFromGroup/1,Passive</Action>
 			<Action>RemoveTagFromGroup/1,Inactive</Action>
-			<Action>SpawnUnit/1,Rubble Rouser Golem,5,0,Down,,Add:ID:901</Action>
-			<Action>SpawnUnit/1,Rubble Rouser Bruiser,5,1,Down,,Add:LevelUp:4::Add:ID:902</Action>
+			<Action>SpawnUnit/1,Rubble Rouser Golem,6,0,Down,,Add:ID:901</Action>
+			<Action>SpawnUnit/1,Rubble Rouser Bruiser,6,1,Down,,Add:LevelUp:4::Add:ID:902</Action>
 			<Action>SetVal/WestApproachFlag,=,2</Action>
 			<Action>Run/AddTalkability,Speaker One,Clark,Speaker Two,Harrien Lifts</Action>
 			<Action>SetStat/ID[901],Turn Ended,true</Action>
@@ -682,7 +682,7 @@
 			<Action>RemoveTagFromArmy/1,IgnoreArmy,2</Action>
 			<Action>RemoveTagFromGroup/2,Inactive</Action>
 			<Action>RemoveTagFromGroup/2,Passive</Action>
-			<Action>SpawnUnit/Irate Crossbow Aficionado,Irate Crossbow Aficionado,0,8,Right,,Add:LevelUp:3::Add:TargetPreference:Loud Theater Enjoyer:=::9,Sorrow-Less Recoil Crossbow[E]</Action>
+			<Action>SpawnUnit/Irate Crossbow Aficionado,Irate Crossbow Aficionado,1,8,Right,,Add:LevelUp:3::Add:TargetPreference:Loud Theater Enjoyer:=::9,Sorrow-Less Recoil Crossbow[E]</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -936,8 +936,8 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 			<Action>SetVal/TurnsUntilBossAppears,-1</Action>
 			<Action>RemoveTag/Xander Bilt,Inactive</Action>
 			<Action>RemoveTag/Xander Bilt,IgnoreArmy,3</Action>
-			<Action>SpawnUnit/1,Rubble Rouser Breaker,5,12,Left,,Add:LevelUp:5::Add:ID:904</Action>
-			<Action>SpawnUnit/1,Rubble Rouser Breaker,6,12,Left,,Add:LevelUp:5::Add:ID:905</Action>
+			<Action>SpawnUnit/1,Rubble Rouser Breaker,6,12,Left,,Add:LevelUp:5::Add:ID:904</Action>
+			<Action>SpawnUnit/1,Rubble Rouser Breaker,7,12,Left,,Add:LevelUp:5::Add:ID:905</Action>
 			<Action>SetStat/ID[904],Turn Ended,true</Action>
 			<Action>SetStat/ID[905],Turn Ended,true</Action>
 			<Reply>Continue./NextBranch</Reply>

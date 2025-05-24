@@ -40,7 +40,7 @@
 		<Action>RemoveUnit/-STR:Swap Out Name-,false</Action>
 		<Action>ForLoop/-ii-,0-LASTINLIST[SwapOutInventory List],1,IfListHasRun,SwapOutEquipped,LIST{SwapOutInventory List,-ii-},_ModifyListEntryString,,,List Name,SwapOutInventory List,List Index,-ii-,Add Text,[E]</Action>
 		<Action>ListToString/SwapOutInventory List,/,Inventory String</Action>
-		<Action>SpawnUnit/0,-STR:Swap In ID-,-VAL:SwapOutY Coord-,-VAL:SwapOutX Coord-,-STR:SwapOutFacing-,,,-STR:Inventory String-,false</Action>
+		<Action>SpawnUnit/0,-STR:Swap In ID-,-VAL:SwapOutY Coord-,-VAL:SwapOutX Coord-,-STR:SwapOutFacing-,,Add:LevelTo:-VAL:Swap OutLevel-,-STR:Inventory String-,false</Action>
 		<Action>Run/Load Character Stats,Character Name,-STR:Swap In Name-,Prefix,SwapOut</Action>
 	</Script>
 
