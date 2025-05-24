@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/22/2025 12:21:20 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 12:37:05 PM">
 
-	<Narration>The sun shines upon the town square. In just a few weeks, there will be a showing of "Bolt-Action Love"--the dramatic story of Lakshmi Bana and Emma Strider's sapphic love--and pre-screening is beginning. A few friends and colleagues gather together to support the show. -PIC:Market_Dese-|  -DIA:Intro-</Narration>
+	<Narration>In just a few weeks, the local theater would be showing "Bolt-Action Love", a beloved dramatic retelling of Lakshmi Bana and Emma Strider's sapphic love, told from the perspective of a crossbow connoisseur. Five friends join together at the town square, eager to support the show. -PIC:Market_Dese-|  -DIA:Intro-</Narration>
 	
 	<NewRoster num="0">Harrien/,Clark/,Mary O Nette/,Nobeta/,Arora/,Rubble Rouser Golem/,Rabble Rouser Crossbowjock/,Rubble Rouser Bruiser/,Clark/,Save Me/,Asandr/Winterbloom,Sandra/Winterbloom,Rasand/Winterbloom,Andras/Winterbloom,Drasan/Winterbloom</NewRoster>
 
@@ -34,41 +34,50 @@
 
 	<Dialogue trigger="OnTurn/0" convID="Intro" r="true">
 		<Branch num="0" name="">Harrien Lifts/Thanks for meeting on such short notice. Everyone here? Alright, grab your things or hand them to me, it's time to...
-			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Happy,5,0</Action>
-			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,right,,Kind</Action>
+			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Happy,2,0</Action>
+			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,right,,Kind,-2,0</Action>
 			<Action>AddPortrait/Arora,Arora/Feminine,left,,Winking,26,0</Action>
 			<Action>AddPortrait/Mary O Nette,Mary O Nette/,left,,Happy,24,0</Action>
 			<Action>AddPortrait/Drasan Winterbloom,Drasan/Winterbloom,left,,Concerned,29,0</Action>
 			<Action>MovePortrait/Mary O Nette,19,0,80</Action>
-			<Action>MovePortrait/Arora,16,0,120</Action>
-			<Action>MovePortrait/Drasan Winterbloom,22,0,100</Action>
+			<Action>MovePortrait/Arora,17,0,130</Action>
+			<Action>MovePortrait/Drasan Winterbloom,23,0,65</Action>
+			<Action>MovePortrait/Harrien Lifts,-1,0,80</Action>
+			<Action>MovePortrait/Nobeta Lifts,4,0,80</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Nobeta Lifts/[A thud echoes from the north] Wait! What's that noise?
+		<Branch num="1" name="">Nobeta Lifts/[A thud echoes from the north] Bwuh? What was that sound?
 			<Action>ClearPortraits/Nobeta Lifts</Action>
 			<Action>ChangeExpression/Nobeta Lifts,Quizzical</Action>
 			<Action>FadeMusic/0,2</Action>
 			<Action>PlaySound/Build</Action>
 			<Action>PlaySound/Breath Dark</Action>
+			<Action>MovePortrait/Nobeta Lifts,5,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">Arora/Ach, would they really start without [b]me[/b]?
-			<Action>AddPortrait/Arora,Arora/Feminine,left,,Shocked</Action>
-			<Reply>Continue./NextBranch</Reply>
-		</Branch>
-		<Branch num="3" name="">Nobeta Lifts/That wasn't a "preparing for the play" kind of sound...
+		<Branch num="2" name="">Arora/It's coming from the theater! Ach, would they really start without [b]me[/b]?
+			<Action>AddPortrait/Arora,Arora/Feminine,left,,Shocked,18,0</Action>
 			<Action>ChangeExpression/Nobeta Lifts,Concerned</Action>
-			<Action>ChangeExpression/Arora,Quizzical</Action>
-			<Action>PlayMusic/City of the Empire</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="4" name="">Mary O Nette/Time for picking up the pace, yes?
-			<Action>AddPortrait/Mary O Nette,Mary O Nette/,left,,Amused,15,0</Action>
+		<Branch num="4" name="">Mary O Nette/To the stage, now. Time for picking up the pace, yes?
+			<Action>AddPortrait/Mary O Nette,Mary O Nette/,left,,Amused,23,0</Action>
+			<Action>ChangeExpression/Arora,Quizzical</Action>
+			<Action>MovePortrait/Mary O Nette,23,0,120</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="5" name="">/
+			<Action>HideDialogueBox/</Action>
 			<Action>PlaySound/FootstepsFading_Outdoors</Action>
-			<Action>GoToNextBranch/</Action>
+			<Action>FlipPortrait/Arora</Action>
+			<Action>MovePortrait/Arora,30,0,120</Action>
+			<Action>Wait/.25</Action>
+			<Action>MovePortrait/Mary O Nette,30,0,140</Action>
+			<Action>FlipPortrait/Mary O Nette</Action>
+			<Action>Wait/.25</Action>
+			<Action>MovePortrait/Nobeta Lifts,30,0,90</Action>
+			<Action>Wait/1</Action>
+			<Action>NextScene/</Action>
 		</Branch>
 	</Dialogue>
 
