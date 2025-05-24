@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 2:51:24 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Ending Cut Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 3:12:55 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Theater Rescue Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -25,27 +25,32 @@
 	<Row>01.01,01.01,01.01,01.01,03.01,03.01,02.01,03.01,04.01,04.01,02.01,02.01,02.01</Row>
 	<Row>01.01,01.01,01.01,01.07,03.01,03.01,03.01,03.01,04.01,04.01,02.01,02.01,02.01</Row>
 	<Row>01.01,01.01,01.01,01.43,03.01,03.01,03.01,03.01,04.01,04.01,04.01,02.01,02.01</Row>
-	<Row>01.01,01.01,01.01,01.3E,03.01,03.01,03.01,03.01,04.01,04.01,04.01,05.01,05.1J</Row>
+	<Row>01.01,01.01,01.01,01.3E,03.01,03.01,03.01,03.01,04.01,04.01,04.01,02.01,02.01</Row>
 	<Row>01.01,01.01,01.01,01.3A,04.01,04.01,04.01,04.01,04.01,04.01,04.01,03.01,03.01</Row>
 	<Row>01.01,01.01,01.07,01.03,03.01,04.01,04.01,04.01,04.01,04.01,04.01,03.01,03.01</Row>
 	<Row>05.06,05.1K,05.07,06.06,03.0Y,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
-	<Row>07.42,03.01,03.01,06.42,06.3G,06.0K,06.0K,06.0P,08.01,06.3F,06.3F,06.3F,07.3I</Row>
-	<Row>08.01,03.01,03.01,08.01,08.01,08.01,08.01,08.01,07.0Q,07.0U,06.2P,06.2P,06.01</Row>
+	<Row>07.42,03.01,03.01,06.42,06.3G,06.0K,06.0P,08.01,08.01,06.3F,06.3F,06.3F,07.3I</Row>
+	<Row>08.01,03.01,03.01,08.01,08.01,08.01,08.01,07.0Q,07.0N,07.0U,06.2P,06.2P,06.01</Row>
 	<Row>08.01,03.01,03.01,05.1c,05.1c,05.1c,05.1c,05.07,05.1K,05.1K,06.03,06.2P,06.01</Row>
 	<Row>06.0N,05.1j,05.01,05.0v,05.0m,05.0u,05.07,05.03,05.0u,05.0o,06.01,06.2P,06.01</Row>
 	<Row>06.01,05.0n,05.01,05.0o,06.01,06.07,06.03,06.01,05.0n,05.0x,05.07,05.1K,05.1K</Row>
+	
+	<Light type="Directional Light" size="2" intensity="1.5" y="2" x="5" A="1" R="1" G="1" B="1" animType="Static" direction="Down"></Light>
+	<Light type="Directional Light" size="2" intensity="1.5" y="3" x="4" A="1" R="1" G="1" B="1" animType="Static" direction="Right"></Light>
+	<Light type="Point Light" size="5" intensity="0.5" y="12" x="0" A="1" R="1" G="1" B="0" animType="Static" direction="Up"></Light>
+	<Light type="Point Light" size="10" intensity="1" y="13" x="10" A="1" R="1" G="1" B="0" animType="Pulse" direction="Up"></Light>
 	
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,5,5</RowElev>
 	<RowElev>0,0,0,0,0,0,0,0,1,1,1,5,5</RowElev>
 	<RowElev>0,0,0,0,2,3,3,3,1,1,1,5,5</RowElev>
 	<RowElev>0,0,0,2,3,3,3,3,1,1,3,3,5</RowElev>
 	<RowElev>0,0,0,2,3,3,3,3,1,1,1,5,5</RowElev>
-	<RowElev>0,0,0,2,1,3,3,3,1,1,1,6,4</RowElev>
+	<RowElev>0,0,0,2,1,3,3,3,1,1,1,5,4</RowElev>
 	<RowElev>0,0,0,1,1,1,1,1,1,1,1,3,3</RowElev>
 	<RowElev>0,0,1,1,1,1,1,1,1,1,1,3,3</RowElev>
 	<RowElev>2,1,2,2,1,1,1,1,1,1,2,3,3</RowElev>
-	<RowElev>2,2,2,2,2,1,1,1,0,2,3,4,4</RowElev>
-	<RowElev>0,2,2,0,0,0,0,0,1,1,2,3,3</RowElev>
+	<RowElev>2,2,2,2,2,1,1,0,0,2,3,4,4</RowElev>
+	<RowElev>0,2,2,0,0,0,0,1,1,1,2,3,3</RowElev>
 	<RowElev>0,2,2,1,1,1,1,2,2,2,2,3,3</RowElev>
 	<RowElev>1,1,1,1,1,1,2,2,2,2,2,3,3</RowElev>
 	<RowElev>1,1,1,1,1,2,2,2,2,2,4,4,4</RowElev>
@@ -63,8 +68,9 @@
 	<Unit>0,99,CastleWallHorizontal,0,10,None,None</Unit>
 	<Unit>0,99,Chair,0,11,None,None</Unit>
 	<Unit>0,99,CandelabraLit,0,12,None,None</Unit>
-	<Unit>0,99,BookcaseFull,1,0,None,None</Unit>
-	<Unit>0,99,CandelabraLit,1,1,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,=,.8">0,99,BookcaseFull,1,0,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,=,.8">0,99,CandelabraLit,1,1,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,=,2">0,99,ChinaCabinet,1,2,None,None</Unit>
 	<Unit>0,99,StairsCave_S,1,4,None,None</Unit>
 	<Unit>0,99,StairsCave_S,1,5,None,None</Unit>
 	<Unit>0,99,StairsCave_S,1,6,None,None</Unit>
@@ -92,23 +98,24 @@
 	<Unit>0,99,Rug9L,4,4,None,None</Unit>
 	<Unit>0,99,Rug9C,4,5,None,None</Unit>
 	<Unit>0,99,Rug9C,4,6,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,=,1.5">0,99,Barrel,4,6,None,None</Unit>
 	<Unit>0,99,Rug9R,4,7,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Chair,4,9,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,=,1.5">0,99,CandelabraLit,4,10,None,None</Unit>
 	<Unit>0,99,HouseWallNW,4,11,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,4,12,None,None</Unit>
 	<Unit>0,99,RubbleCastle,5,0,None,None</Unit>
-	<Unit>0,99,ClothingRackWithClothes,5,1,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,=,.8">0,99,ClothingRackWithClothes,5,1,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,5,3,None,None</Unit>
 	<Unit>0,99,StairsWood_N,5,4,None,None</Unit>
 	<Unit>0,99,Rug9B,5,5,None,None</Unit>
 	<Unit>0,99,Rug9B,5,6,None,None</Unit>
 	<Unit>0,99,Rug9BR,5,7,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,=,1.2">0,99,TableFood,5,9,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Chair,5,10,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,5,10,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,5,11,None,None</Unit>
-	<Unit>0,99,CandelabraLit,5,12,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,=,1.2">0,99,CandelabraLit,5,12,None,None</Unit>
 	<Unit>0,99,ClothingBin,6,3,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,=,1.5">0,99,CandelabraLit,6,9,None,None</Unit>
 	<Unit>0,99,StairsWood_E,6,10,None,None</Unit>
 	<Unit>0,99,RugTurq9T,6,11,None,None</Unit>
 	<Unit>0,99,RugTurq9T,6,12,None,None</Unit>
@@ -117,8 +124,7 @@
 	<Unit>0,99,HouseWallHorizontal,7,2,None,None</Unit>
 	<Unit>0,99,HouseWallT_S,7,3,None,None</Unit>
 	<Unit>0,99,HouseWallNE,7,4,None,None</Unit>
-	<Unit>0,99,Chair,7,6,None,None</Unit>
-	<Unit>0,99,TableBeerAlt,7,7,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,=,1.2">0,99,TableBeerAlt,7,7,None,None</Unit>
 	<Unit>0,99,StairsWood_E,7,10,None,None</Unit>
 	<Unit>0,99,RugTurq9B,7,11,None,None</Unit>
 	<Unit>0,99,RugTurq9B,7,12,None,None</Unit>
@@ -126,14 +132,13 @@
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Barrel,8,2,None,None</Unit>
 	<Unit>0,99,HouseWallSW,8,4,None,None</Unit>
 	<Unit>0,99,HouseWallWindowHorizontal,8,5,None,None</Unit>
-	<Unit>0,99,HouseWallHorizontal,8,6,None,None</Unit>
+	<Unit>0,99,HouseWallWindowHorizontal,8,6,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,8,7,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,8,8,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,8,9,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,8,10,None,None</Unit>
 	<Unit>0,99,HouseWallT_S,8,11,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,8,12,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Poster,9,6,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Poster,9,9,None,None</Unit>
 	<Unit>0,99,ReedsFlowerSmall,9,10,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Poster,9,11,None,None</Unit>
@@ -144,12 +149,10 @@
 	<Unit>0,99,Reeds,11,10,None,None</Unit>
 	<Unit>0,99,Wildflowers,11,11,None,None</Unit>
 	<Unit>0,99,LampLitAlt,12,0,None,None</Unit>
-	<Unit>0,99,RubbleCastle,12,5,None,None</Unit>
+	<Unit>0,99,RubbleCastle,12,4,None,None</Unit>
 	<Unit>0,99,ItemSack,13,0,None,Focus Pills</Unit>
-	<Unit>0,99,RubbleCave,13,1,None,None</Unit>
 	<Unit>0,99,FruitStand_N,13,4,None,None</Unit>
-	<Unit>0,99,Barrel,13,6,None,None</Unit>
-	<Unit trigger="Use Once,Lever Flipped">0,99,Switch,13,8,None,None</Unit>
+	<Unit>0,99,Barrel,13,5,None,None</Unit>
 	<Unit>0,99,LampLit,13,10,None,None</Unit>
 	<Unit>0,99,Birdbath,13,11,None,None</Unit>
 	<Unit>0,0,Harrien/Lifts,12,7,Left,None</Unit>
@@ -159,20 +162,19 @@
 	<Unit>0,0,Mary O Nette/,13,9,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Slighted Playwright/,2,2,Left,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,">0,1,Irate Crossbow Aficionado/,3,1,Down,Obviously Stolen Crossbow[E]</Unit>
-	<Unit tag="Add,LevelUp,6/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.5">0,1,Rubble Rouser Bruiser/,3,6,Left,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,3,6,Left,Limited-Issue Bayonet Only Crossbow[E]</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Golem/,3,9,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,IgnoreArmy,3">0,1,Clark/Sad,4,2,Left,None</Unit>
 	<Unit tag="Add,LevelUp,2/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.5">0,1,Bowhuckin/Chuckerslass,4,5,Right,None</Unit>
-	<Unit tag="Add,Patrol,Stage,=:1.5/Add,IgnoreArmy,3">0,1,Xander/Bilt,6,11,Left,None</Unit>
-	<Unit tag="Add,LevelUp,6/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Irate Crossbow Aficionado/,7,5,Down,Screw-Firing Crossbow[E]</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Bruiser/,7,8,Left,None</Unit>
+	<Unit tag="Add,Patrol,Stage,=:5/Add,IgnoreArmy,3">0,1,Xander/Bilt,6,11,Left,None</Unit>
+	<Unit tag="Add,LevelUp,6/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Passive">0,1,Irate Crossbow Aficionado/,7,5,Down,Screw-Firing Crossbow[E]</Unit>
+	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Bruiser/,7,8,Left,None</Unit>
 	<Unit tag="Add,LevelUp,5/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Breaker/,9,3,Down,None</Unit>
 	<Unit tag="Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,9,5,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
 	<Unit>0,1,Rubble Rouser Golem/,9,9,Down,None</Unit>
 	<Unit tag="Add,Passive/Add,Pursue/Add,AggroGroup,3/Add,Patrol,StartingArea,=,1.5/Add,Patrol,StartingChoke,=,1.2">0,1,Rubble Rouser Golem/,10,1,Down,None</Unit>
 	<Unit tag="Add,LevelUp,2/Add,AreaPreference,StartingArea,=:1.5">0,1,Rubble Rouser Bruiser/,10,12,Left,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,11,4,Right,Limited-Issue Bayonet Only Crossbow[E]</Unit>
-	<Unit tag="Add,AreaPreference,StartingArea,=:1.5">0,1,Rubble Rouser Golem/,11,6,Right,None</Unit>
+	<Unit tag="Add,AreaPreference,StartingArea,=:1.5">0,1,Rubble Rouser Golem/,11,5,Right,None</Unit>
 	<Unit tag="Add,IgnoreArmy,3">0,1,Coderick/Gutterson,12,1,Down,None</Unit>
 	<Unit tag="Add,AreaPreference,StartingArea,=:1.5/Add,Patrol,StartingChoke,=,1.2">0,1,Rubble Rouser Golem/,13,2,Right,None</Unit>
 	<Unit tag="Add,Passive/Add,LevelUp,8/Add,Patrol,ViewingBooth,=,5/Add,TargetValue,1.3">0,2,Loud Theater Enjoyer/,1,11,Down,None</Unit>
@@ -252,7 +254,7 @@
 			<Action>SetVal/TurnsUntilBossAppears,-:1</Action>
 			<Action>SetVal/MoreLesbianDiscussions,=:0</Action>
 			<Action>IfValRun/Lesbian Discussions,l,3,_SetVal,ValueName,MoreLesbianDiscussions,Value,1</Action>
-			<Action>Run/IsAllTrue_2,ValueOneName,MoreLesbianDiscussions,ValueOneCompareTo,1,ValueTwoName,TurnsSinceLastLesbianConvo,ValueTwoCompareTo,6</Action>
+			<Action>Run/IsAllTrue_2,ValueOneName,MoreLesbianDiscussions,ValueOneCompareTo,1,ValueTwoName,TurnsSinceLastLesbianConvo,ValueTwoCompareTo,12</Action>
 			<Action>IfValRun/AnswerComposite,g=,1,Set Lesbian Talkable</Action>
 			<Action>IfValRun/Arora Alive,=,0,Arora Shift Roll</Action>
 			<Action>Log/'-VAL:TurnsSinceLastLesbianConvo-' '-VAL:Lesbian Discussions-' '-VAL:MoreLesbianDiscussions-' '-VAL:AnswerComposite-'</Action>
@@ -357,12 +359,13 @@
 			<Action>SetStat/Mary O Nette,Morale,+:3</Action>
 			<Action>SpawnFloatingText/Morale + 3,Mary O Nette,Yellow</Action>
 			<Action>SetStat/Nobeta Lifts,Morale,+:1</Action>
-			<Action>SpawnFloatingText/Morale + 1,Nobeta Lifts,Yellow</Action>
 			<Action>SetStat/Mary O Nette,Psy,+:1</Action>
 			<Action>SpawnFloatingText/Psy + 1,Mary O Nette,Yellow</Action>
-			<Action>MovePortrait/Mary O Nette,15,0,80</Action>
 			<Action>Run/RemoveTalkability,Speaker One,Mary O Nette,Speaker Two,Nobeta Lifts</Action>
 			<Action>SetVal/Lesbian Discussions,+:1</Action>
+			<Action>PortraitParticles/Mary O Nette,Heart</Action>
+			<Action>/</Action>
+			<Action>MovePortrait/Mary O Nette,15,0,80</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -689,14 +692,17 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Harrien Lifts,,,Coderick Gutterson" convID="Coderick and Harrien Lifts" r="false">
-		<Branch num="0" name="">Coderick Gutterson/Bah, what are you supposed to be? Put those muscles away, you're embarassing yourself. And geez, get freakishly tall and big why don't you?
-			<Action>AddPortrait/Harrien Lifts,Harrien Lifts,left,,Mean</Action>
+		<Branch num="0" name="">Coderick Gutterson/Bah, what are you supposed to be? You're so freakishly tall! Put those muscles away, you're embarassing yourself.
+			<Action>AddPortrait/Harrien Lifts,Harrien Lifts,left,,Mean,5,0</Action>
 			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Harrien Lifts/If you speak to my friends or me that way, I will break you.
+		<Branch num="1" name="">Harrien Lifts/You cannot hurt me with your words. [He grunts] I will hurt you with my axe.
 			<Action>ChangeExpression/Harrien Lifts,Yell</Action>
 			<Action>ChangeExpression/Coderick Gutterson,Irritated</Action>
+			<Action>MovePortrait/Harrien Lifts,10,0,60</Action>
+			<Action>Wait/.5</Action>
+			<Action>ChangeExpression/Coderick Gutterson,Concerned</Action>
 			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
@@ -707,7 +713,7 @@
 			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Shocked</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Nobeta Lifts/W--well, good! I don't want to attract men like you!
+		<Branch num="1" name="">Nobeta Lifts/W--well, good! [She grunts] I don't want to attract men like you!
 			<Action>ChangeExpression/Nobeta Lifts,Irritated</Action>
 			<Action>ChangeExpression/Coderick Gutterson,Irritated</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -716,12 +722,14 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Mary O Nette,,,Coderick Gutterson" convID="Coderick and Mary O Nette" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Huh, I can barely see you. You must not be important! Do everyone a favor and grow up, you little girl!
-			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,left,,Mad</Action>
-			<Action>AddPortrait/Mary O Nette,Mary O Nette,right,,Mean</Action>
+			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,left,,YellMad</Action>
+			<Action>AddPortrait/Mary O Nette,Mary O Nette,right,,Quizzical,5,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Mary O Nette/[b]You[/b] do not get to call me a little girl. Show respect, creep.
 			<Action>ChangeExpression/Coderick Gutterson,Irritated</Action>
+			<Action>ChangeExpression/Mary O Nette,Mean</Action>
+			<Action>MovePortrait/Mary O Nette,6,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -735,12 +743,18 @@
 		<Branch num="1" name="">Arora/Ouch! My turn, how about... Your parents named you Coderick, and you kept that name.
 			<Action>ChangeExpression/Coderick Gutterson,Irritated</Action>
 			<Action>ChangeExpression/Arora,Quizzical</Action>
+			<Action>Wait/.5</Action>
+			<Action>FlipPortrait/Arora</Action>
+			<Action>Wait/.5</Action>
+			<Action>FlipPortrait/Arora</Action>
+			<Action>MovePortrait/Arora,7,0</Action>
+			<Action>ChangeExpression/Arora,Amused</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Drasan Winterbloom,,,Coderick Gutterson" convID="Coderick and Drasan" r="false">
-		<Branch num="0" name="">Coderick Gutterson/Now doesn't [b]someone[/b] look entirely uncomfortable. It's your skin, buddy, get used to it! None of us can change what we are, and what I am is a [b]champion among vermin[/b].
+		<Branch num="0" name="">Coderick Gutterson/Now doesn't [b]this guy[/b] look entirely uncomfortable. It's your skin, buddy, get used to it! None of us can change what we are, and what I am is a [b]champion among vermin[/b].
 			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,left,,Mad</Action>
 			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,right,,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -925,7 +939,7 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="BeforeTurn/3" convID="Save Reminder" r="false">
+	<Dialogue trigger="BeforeTurn/4" convID="Save Reminder" r="false">
 		<Branch num="0" name="">Reminder For Players/[You can save at the start of your turn, using the button on the bottom left of the pop up.]
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
