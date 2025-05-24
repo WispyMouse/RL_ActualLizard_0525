@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Test Map" maptype="Single Player" maxplayers="2" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/15/2025 2:16:22 PM">
+<Level mapname="Test Map" maptype="Single Player" maxplayers="0" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 1:17:42 PM">
 
 	<Army num="0" AI="false" aiProfile="NOT FOUND" name="Army 1" color="Blue" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="NOT FOUND" name="Army 2" color="Red" alliedWith="" assignRoster="-1"></Army>
 	
 	<Condition>Defeat Army,0,1</Condition>
 	
-	<Tileset>01,Grass</Tileset>
+	<Tileset>01,Castle</Tileset>
+	<Tileset>02,Dirt</Tileset>
+	<Tileset>03,Grass</Tileset>
 	
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.04,02.0c,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
+	<Row>01.01,01.01,01.04,02.0c,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
+	<Row>01.01,01.01,01.04,02.0c,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
+	<Row>01.01,01.01,01.04,02.0c,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
+	<Row>01.01,01.01,01.04,02.0c,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
+	<Row>01.01,01.01,01.04,02.0c,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
+	<Row>01.01,01.01,01.04,02.0c,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
+	<Row>01.01,01.01,01.04,02.0c,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
 	
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
@@ -26,7 +28,19 @@
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	
-	<Unit>0,0,Nobeta/,1,2,Down,None</Unit>
-	<Unit>0,1,Nobeta/,6,7,Down,None</Unit>
+	<Unit>0,99,Blue Pride Light,0,9,None,None</Unit>
+	<Unit>0,99,Red Pride Light,1,1,None,None</Unit>
+	<Unit>0,99,Orange Pride Light,1,1,None,None</Unit>
+	<Unit>0,99,Red Pride Light,1,5,None,None</Unit>
+	<Unit>0,99,Yellow Pride Light,2,1,None,None</Unit>
+	<Unit>0,99,Green Pride Light,2,1,None,None</Unit>
+	<Unit>0,99,Orange Pride Light,2,5,None,None</Unit>
+	<Unit>0,99,Indigo Pride Light,2,9,None,None</Unit>
+	<Unit>0,99,Blue Pride Light,3,1,None,None</Unit>
+	<Unit>0,99,Indigo Pride Light,3,1,None,None</Unit>
+	<Unit>0,99,Violet Pride Light,4,1,None,None</Unit>
+	<Unit>0,99,Yellow Pride Light,4,5,None,None</Unit>
+	<Unit>0,99,Violet Pride Light,4,9,None,None</Unit>
+	<Unit>0,99,Green Pride Light,6,5,None,None</Unit>
 
 </Level>
