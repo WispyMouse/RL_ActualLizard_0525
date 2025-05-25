@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 2:24:15 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 6:09:32 PM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
@@ -167,6 +167,8 @@
 			<Action>SetVal/Sandra Winterbloom Alive,=:0</Action>
 			<Action>SetVal/Asandr Winterbloom Alive,=:0</Action>
 			<Action>IfValRun/Perfect Ending,=,1,Perfect Ending</Action>
+			<Action>SetVal/Loud Theater Enjoyer Alive,=:1</Action>
+			<Action>SetVal/Emma Strider Promotional Cutout Alive,=:1</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>

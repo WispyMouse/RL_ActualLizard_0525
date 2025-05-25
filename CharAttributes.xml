@@ -43,6 +43,8 @@
     <e type="Physical Trait" id="phys26" name="Swimmer" posOrNeg="pos" charAttExcl="Aquaphobic" baseStatFX="Drowning Res.,+:90" tags="ModAfterAttack,Swim,Unlimited" txt="90% drowning resistance; Swim doesn't end the turn." raceReq="Human,Lissit"></e>
     <e type="Physical Trait" id="phys27" name="Fruit Allergy" posOrNeg="neg" charAttExcl="" tags="ModItemSFX,Apple,Sick/ModItemSFX,Mango,Sick" txt="Gets the Sick status effect from eating mangos, apples, or other fruit." raceReq="Human,Lissit,Shadowling,Spriggat"></e>
     <e type="Physical Trait" id="phys28" name="Sugar Fiend" posOrNeg="pos" charAttExcl="" tags="ModItemSFX,Cake,Move Bonus/ModItemSFX,Cookies,Move Bonus/ModItemSFX,Pie,Move Bonus" txt="Gets the Move Bonus status effect from eating cakes, pies, cookies, or other baked goods." raceReq="Human,Lissit,Shadowling,Spriggat"></e>
+	<e Type="Physical Trait" id="physBurly" name="Burly" posOrNeg="pos" baseStatFX="Speed,-:1" growthFX="Pierce Res.,+:1/Crush Res.,+:1/Slash Res.,+:1" txt="-Char1Name- is large and well-rounded. Less move, more physical resistance growth."></e>
+	
   </Physical>
   <!--	Life skills: one chosen randomly.	-->
   <LifeSkill>

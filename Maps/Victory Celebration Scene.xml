@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Victory Celebration Scene" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Dance of the Isles" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="false" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 1:53:45 AM">
+<Level mapname="Victory Celebration Scene" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Dance of the Isles" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="false" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 6:13:17 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Player Characters" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Custom" name="Audience" color="Green" alliedWith="" assignRoster="-1"></Army>
@@ -79,7 +79,7 @@
 	<Unit>0,0,Rubble Rouser Golem/,5,8,Left,None</Unit>
 	<Unit>0,1,Loud Theater Enjoyer/,1,7,Left,None</Unit>
 	<Unit>0,2,Rubble Rouser Golem/,1,6,Left,None</Unit>
-	<Unit>0,2,Rubble Rouser Golem/,3,6,Left,None</Unit>
+	<Unit>0,2,Rubble Rouser Golem/,3,6,Up,None</Unit>
 	<Unit>0,2,Rubble Rouser Golem/,5,4,Up,None</Unit>
 	<Unit>0,2,Rubble Rouser Golem/,6,2,Up,None</Unit>
 	<Unit>0,2,Rubble Rouser Golem/,6,7,Up,None</Unit>
@@ -142,6 +142,7 @@
 			<Action>Run/Set Alive Unit,Character Name,Sandra Winterbloom</Action>
 			<Action>Run/Set Alive Unit,Character Name,Asandr Winterbloom</Action>
 			<Action>Run/Set Alive Unit,Character Name,Loud Theater Enjoyer</Action>
+			<Action>Run/Set Alive Unit,Character Name,Emma Strider Promotional Cutout</Action>
 			<Action>GoToNextBranch/</Action>
 			<Reply>/None</Reply>
 		</Branch>
@@ -178,7 +179,7 @@
 			<Action>/</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="11" name="Asandr Winterbloom">/[Asandr got a lot [b]lot[/b] out of this experience, apparently! She's excited to learn what it all means.]
+		<Branch num="11" name="Asandr Winterbloom">/[Asandr got a lot [b]lot[/b] out of this experience, apparently! Recent developments push her enough to audition for the role of Lakshmi. Good luck!]
 			<Action>ClearPortraits/</Action>
 			<Action>IfValGoTo/Asandr Winterbloom Alive,=,0,BRANCH[Arora]</Action>
 			<Action>AddPortrait/Asandr Winterbloom,Asandr/Winterbloom,left,,Winking</Action>
@@ -190,7 +191,7 @@
 		</Branch>
 		<Branch num="10" name="Asandr Winterbloom">/[Arora had a good time with the experience, and continues vibing. It's hard to get a good bigender lizard down.]
 			<Action>ClearPortraits/</Action>
-			<Action>IfValGoTo/Arora Alive,=,0,BRANCH[End Slate]</Action>
+			<Action>IfValGoTo/Arora Alive,=,0,BRANCH[Loud Theater Enjoyer]</Action>
 			<Action>AddPortrait/Arora,Arora,left,,Winking</Action>
 			<Action>MoveCam/,,Arora</Action>
 			<Action>/</Action>
@@ -198,7 +199,17 @@
 			<Action>/</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="End Slate">/[This is the end slate! Now for our actors to...]
+		<Branch num="13" name="Loud Theater Enjoyer">/[[i]Some[/i] have learned nothing at all from the experience.]
+			<Action>ClearPortraits/</Action>
+			<Action>IfValGoTo/Loud Theater Enjoyer Alive,=,0,BRANCH[End Slate]</Action>
+			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Winking</Action>
+			<Action>MoveCam/,,Loud Theater Enjoyer</Action>
+			<Action>/</Action>
+			<Action>/</Action>
+			<Action>/</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="End Slate">/[This is the end slate! Now, for the actors of this part of the play to...]
 			<Action>ClearPortraits/</Action>
 			<Action>ShowDialogueBox/</Action>
 			<Reply>Conintue./NextBranch</Reply>
