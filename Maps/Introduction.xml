@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 7:38:05 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/25/2025 12:04:44 AM">
 
-	<Narration>It is a beautiful day at the city's market square. In just a few weeks, the local theater would be showing "Bolt-Action Love", a beloved dramatic retelling of Lakshmi Bana and Emma Strider's sapphic love, told from the perspective of a crossbow connoisseur. Five friends join together at the town square, eager to support the show.  -PIC:Market_Dese-|  -DIA:Intro-</Narration>
+	<Narration>It is a beautiful day at the city's market square. In just a few weeks, the local theater would be showing "Bolt-Action Love". This dramatic retelling of Lakshmi and Emma Strider's sapphic love, told from a crossbow lover's point of view, has been a regional sensation. Five friends join together at the town square, eager to support the show.   -PIC:Market_Dese-|  -DIA:Intro-</Narration>
 	
 	<NewRoster num="0">Harrien/,Clark Lutrinae/,Mary O Nette/,Nobeta/,Arora/,Rubble Rouser Golem/,Rabble Rouser Crossbowjock/,Rubble Rouser Bruiser/,Clark Lutrinae/,Save Me/,Asandr/Winterbloom,Sandra/Winterbloom,Rasand/Winterbloom,Andras/Winterbloom,Drasan/Winterbloom</NewRoster>
 
