@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 8:34:02 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 9:24:20 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Community Defense Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -176,7 +176,7 @@
 	<Unit tag="Add,Patrol,Stage,=:5/Add,IgnoreArmy,3">0,1,Xander/Bilt,6,11,Left,None</Unit>
 	<Unit tag="Add,LevelUp,6/Add,Pursue/Add,IgnoreArmy,2/Add,Passive/Add,AggroGroup,5">0,1,Irate Crossbow Aficionado/,7,5,Down,Screw-Firing Crossbow[E]</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Bruiser/,7,8,Left,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Slighted Rival Playwright/,9,2,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue">0,1,Slighted Rival Playwright/,9,2,Left,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,9,5,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
 	<Unit tag="Add,MoveFirst">0,1,Rubble Rouser Golem/,9,8,Down,None</Unit>
 	<Unit tag="Add,Pursue/Add,AggroGroup,3/Add,Patrol,StartingArea,=,1.5/Add,Patrol,StartingChoke,=,1.2/Add,MoveFirst">0,1,Rubble Rouser Golem/,10,1,Down,None</Unit>
@@ -329,14 +329,15 @@
 		</Branch>
 		<Branch num="3" name="">Irate Crossbow Aficionado/That Rubble Rouser guy is right! We don't have to stand for this! We can take matters in to our own hands! We can tear down this injust favoritism for over-hyped product line crossbows!
 			<Action>RemovePortrait/Loud Theater Enjoyer</Action>
-			<Action>AddPortrait/Irate Crossbow Aficionado,Irate Crossbow Aficionado,right,Red,Angry</Action>
+			<Action>AddPortrait/Irate Crossbow Aficionado,Irate Crossbow Aficionado,right,Red,Angry,-10,0,250</Action>
 			<Action>MoveCam/,,Irate Crossbow Aficionado</Action>
+			<Action>MovePortrait/Irate Crossbow Aficionado,5,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="6" name="">Rubble Rouser Bruiser/Uh, yeah. Yeah! Whatever gets your engine going, get smashing.
 			<Action>ChangeExpression/Rubble Rouser Bruiser,Quizzical</Action>
 			<Action>MoveCam/,,Rubble Rouser Bruiser</Action>
-			<Action>MovePortrait/Rubble Rouser Bruiser,14,0,200</Action>
+			<Action>MovePortrait/Rubble Rouser Bruiser,13,0,200</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Harrien Lifts/Bwuh?! Rubble Rousers? Hey, they're tearing up the place! Everyone, get your community defense face on, it's time to wrassle!
@@ -597,7 +598,7 @@
 			<Action>AddPortrait/Irate Crossbow Aficionado,Irate Crossbow Aficionado,right,,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Irate Crossbow Aficiando/A small mistake! Lakshmi would never be caught dead wi- [The scuffle outside rattles the windows]
+		<Branch num="1" name="">Irate Crossbow Aficionado/A small mistake! Lakshmi would never be caught dead wi- [The scuffle outside rattles the windows]
 			<Action>ChangeExpression/Clark Lutrinae,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -608,6 +609,7 @@
 		</Branch>
 		<Branch num="3" name="">Clark Lutrinae/Uh... alright...
 			<Action>ChangeExpression/Clark Lutrinae,Neutral</Action>
+			<Action>MovePortrait/Irate Crossbow Aficionado,-15,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Clark Lutrinae/[He sighs] I thought that boss guy was cute enough to spend a weekend with his pals, but... Second thoughts.
@@ -736,7 +738,7 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Harrien Lifts,,,Coderick Gutterson" convID="Coderick and Harrien Lifts" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Bah, what are you supposed to be? You're so freakishly tall! Put those muscles away, you're embarassing yourself.
-			<Action>AddPortrait/Harrien Lifts,Harrien Lifts,left,,Mean,15,0</Action>
+			<Action>AddPortrait/Harrien Lifts,Harrien Lifts,left,,Mean,17,0</Action>
 			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Mad,7,0</Action>
 			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -744,10 +746,10 @@
 		<Branch num="1" name="">Harrien Lifts/You cannot hurt me [i]with your words[/i]. [He grunts] I will hurt you [i]with my axe[/i].
 			<Action>ChangeExpression/Harrien Lifts,Yell</Action>
 			<Action>ChangeExpression/Coderick Gutterson,Irritated</Action>
-			<Action>MovePortrait/Harrien Lifts,12,0,60</Action>
+			<Action>MovePortrait/Harrien Lifts,14,0,40</Action>
 			<Action>Wait/.5</Action>
 			<Action>ChangeExpression/Coderick Gutterson,Concerned</Action>
-			<Action>MovePortrait/Coderick Gutterson,6,0</Action>
+			<Action>MovePortrait/Coderick Gutterson,5,0</Action>
 			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
@@ -776,7 +778,7 @@
 		<Branch num="1" name="">Mary O Nette/[b]You[/b] do not get to call me a little girl. Show respect, creep.
 			<Action>ChangeExpression/Coderick Gutterson,Irritated</Action>
 			<Action>ChangeExpression/Mary O Nette,Mean</Action>
-			<Action>MovePortrait/Mary O Nette,6,0</Action>
+			<Action>MovePortrait/Mary O Nette,14,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -1035,7 +1037,7 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 	<Dialogue trigger="OnCharDeath/-ANY-,Mary O Nette" convID="Mary KO" r="false">
 		<Branch num="0" name="">Mary O Nette/[She stammers around] [i]Winding. Down.[/i]
 			<Action>SetVal/Mary O Nette Alive,=:0</Action>
-			<Action>AddPortrait/Mary O Nette,Mary O Nette,left,,Blank</Action>
+			<Action>AddPortrait/Mary O Nette,Mary O Nette/,left,,Blank</Action>
 			<Action>MovePortrait/Mary O Nette,Mary O Nette,14,0</Action>
 			<Action>Wait/1</Action>
 			<Action>MovePortrait/Mary O Nette,Mary O Nette,16,0</Action>
@@ -1048,7 +1050,7 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 	<Dialogue trigger="OnCharDeath/-ANY-,Clark Lutrinae" convID="Clark Lutrinae KO" r="false">
 		<Branch num="0" name="">Clark Lutrinae/Damnit Clark Lutrinae... Gotta stop following these... muscley... [Clark Lutrinae groans and leaves] 
 			<Action>SetVal/Clark Lutrinae Alive,=:0</Action>
-			<Action>AddPortrait/Clark Lutrinae,Clark Lutrinae,left,,Headache</Action>
+			<Action>AddPortrait/Clark Lutrinae,Clark Lutrinae/,left,,Headache</Action>
 			<Reply>Continue/EndConv</Reply>
 		</Branch>
 	</Dialogue>
@@ -1056,7 +1058,7 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 	<Dialogue trigger="OnCharDeath/-ANY-,Arora" convID="Arora KO" r="false">
 		<Branch num="0" name="">Arora/That was my best, and now I'm gone. Good luck or something!
 			<Action>SetVal/Arora Alive,=:0</Action>
-			<Action>AddPortrait/Arora,Arora,left,,Headache</Action>
+			<Action>AddPortrait/Arora,Arora/,left,,Headache</Action>
 			<Reply>Continue/EndConv</Reply>
 		</Branch>
 	</Dialogue>
@@ -1118,7 +1120,7 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 
 	<Dialogue trigger="OnCharDeath/-ANY-,Loud Theater Enjoyer" convID="Loud Theater Enjoyer KO" r="false">
 		<Branch num="0" name="">Loud Theater Enjoyer/I'm still right about this! [Disappears in to smoke]
-			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Headache</Action>
+			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer/,left,,Headache</Action>
 			<Action>SetVal/Loud Theater Enjoyer,=:0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
