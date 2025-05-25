@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 6:08:53 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 7:01:04 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Community Defense Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -171,7 +171,7 @@
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,2,1,Down,Obviously Stolen Crossbow[E]</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,3,6,Left,Limited-Issue Bayonet Only Crossbow[E]</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2/Add,MoveFirst">0,1,Rubble Rouser Golem/,3,9,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,IgnoreArmy,3">0,1,Clark/Sad,4,2,Left,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,IgnoreArmy,3">0,1,Clark Lutrinae/Sad,4,2,Left,None</Unit>
 	<Unit tag="Add,LevelUp,2/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.5">0,1,Bowhuckin/Chuckerslass,4,5,Right,None</Unit>
 	<Unit tag="Add,MoveFirst">0,1,Rubble Rouser Golem/,5,1,Up,None</Unit>
 	<Unit tag="Add,Patrol,Stage,=:5/Add,IgnoreArmy,3">0,1,Xander/Bilt,6,11,Left,None</Unit>
@@ -291,7 +291,7 @@
 			<Action>SetVal/TurnsSinceLastLesbianConvo,=:0</Action>
 			<Action>Run/SetAreas</Action>
 			<Action>IfValGoTo/SkipIntro,=,1,9</Action>
-			<Action>SetVal/Clark Alive,=:0</Action>
+			<Action>SetVal/Clark Lutrinae Alive,=:0</Action>
 			<Action>SetStat/ID[901],Damage,=:40</Action>
 			<Action>/</Action>
 			<Action>/</Action>
@@ -304,7 +304,7 @@
 		</Branch>
 		<Branch num="9" name="">Xander Bilt/[He grumbles and stomps as he walks] Bah, Strider! Curse your name! Curse this theater for [i]celebrating[/i] your name! Enough of it all. Rubble Rousers, tear this place down!
 			<Action>ClearPortraits/</Action>
-			<Action>AddPortrait/Xander Bilt,Xander Bilt,left,,YellMad</Action>
+			<Action>AddPortrait/Xander Bilt,Xander Bilt,left,,Yell Mad</Action>
 			<Action>MoveCam/,,Xander Bilt</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -314,12 +314,12 @@
 			<Action>AddPortrait/Rubble Rouser Bruiser,Rubble Rouser Bruiser,left,Red,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">Loud Theater Enjoyer/Are you daft? Strider's efforts were only truly given life through [b]this[/b] play. Bolt-Action Love is [b]the[/b] essential crossbowpunk love story. Only a ignoramus would miss the subtle metaphors in the play's depiction of cocking.
+		<Branch num="2" name="">Loud Theater Enjoyer/Are you daft? Strider's efforts were only truly given life through [b]this[/b] play. Bolt-Action Love is [b]the[/b] essential crossbowpunk love story. Only a ignoramus would miss the cleverly delivered metaphors in the play's depiction of cocking.
 			<Action>MoveCam/,,Loud Theater Enjoyer</Action>
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,right,,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="7" name="">Rubble Rouser Bruiser/Crossbowwhatsit? Look, anything Strider, it's gotta go. Ain't she done enough damage?
+		<Branch num="7" name="">Rubble Rouser Bruiser/Kuh, what? Crossbowwhatsit? Look, anything Strider, it's gotta go. Ain't she done enough damage?
 			<Action>ChangeExpression/Rubble Rouser Bruiser,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -331,12 +331,14 @@
 		</Branch>
 		<Branch num="6" name="">Rubble Rouser Bruiser/Uh, yeah. Yeah! Whatever gets your engine going, get smashing.
 			<Action>ChangeExpression/Rubble Rouser Bruiser,Quizzical</Action>
+			<Action>MoveCam/,,Rubble Rouser Bruiser</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Harrien Lifts/Bwuh?! Rubble Rousers? Hey, they're tearing up the place! Everyone, get your community defense face on, it's time to wrassle!
 			<Action>ClearPortraits/</Action>
 			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,left,,Yell</Action>
 			<Action>MovePortrait/Harrien Lifts,18,0,60</Action>
+			<Action>ZoomCam/8</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="8" name="">/
@@ -350,6 +352,7 @@
 			<Action>AddPortrait/Mary O Nette,Mary O Nette,left,,Blank</Action>
 			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Happy</Action>
 			<Action>FlipPortrait/Mary O Nette</Action>
+			<Action>WaitForDialogue/</Action>
 			<Action>MovePortrait/Nobeta Lifts,5,0,100</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -360,7 +363,9 @@
 		</Branch>
 		<Branch num="3" name="">Nobeta Lifts/I should worry about you! Get behind me, and we will chase these goons out.
 			<Action>WaitForDialogue/</Action>
+			<Action>ChangeExpression/Nobeta Lifts,WinkingReference Name,Facial Expression</Action>
 			<Action>MovePortrait/Nobeta Lifts,8,0,150,false</Action>
+			<Action>Wait/1</Action>
 			<Action>FlipPortrait/Nobeta Lifts</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -382,14 +387,16 @@
 
 	<Dialogue trigger="None/" convID="Second Lesbian Dialogue" r="false">
 		<Branch num="0" name="">Mary O Nette/Perhaps [b]she[/b] can call me little girl. That would be acceptable.
-			<Action>AddPortrait/Mary O Nette,Mary O Nette,left,,Winking,15,0</Action>
+			<Action>AddPortrait/Mary O Nette,Mary O Nette,left,,Winking,18,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Mary O Nette/...ah, Nobeta Lifts. [She looks up at her] Behind you, yes?
 			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Concerned,5,0</Action>
+			<Action>RemovePortrait/Mary O Nette</Action>
+			<Action>AddPortrait/Mary O Nette,Mary O Nette,left,,Winking,18,0</Action>
 			<Action>FlipPortrait/Nobeta Lifts</Action>
 			<Action>ChangeExpression/Nobeta Lifts,Concerned</Action>
-			<Action>MovePortrait/Mary O Nette,12,0,80</Action>
+			<Action>MovePortrait/Mary O Nette,15,0,80</Action>
 			<Action>Wait/.5</Action>
 			<Action>FlipPortrait/Nobeta Lifts</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -406,9 +413,12 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Nobeta Lifts/So [i]these[/i] muscles -- [Nobeta flexes briefly] -- are for [b]you[/b], little girl! Well, let's go! [Nobeta grabs Mary's arm and leads towards her next firing position]
-			<Action>Wait/.5</Action>
-			<Action>MovePortrait/Nobeta Lifts,-5,0,140</Action>
-			<Action>MovePortrait/Mary O Nette,6,0,130</Action>
+			<Action>PortraitParticles/Nobeta Lifts,ExclamationsSmall</Action>
+			<Action>WaitForDialogue/</Action>
+			<Action>Wait/.25</Action>
+			<Action>MovePortrait/Nobeta Lifts,-15,0,140</Action>
+			<Action>Wait/.25</Action>
+			<Action>MovePortrait/Mary O Nette,2,0,130</Action>
 			<Action>FlipPortrait/Nobeta Lifts</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -435,6 +445,7 @@
 		</Branch>
 		<Branch num="1" name="">Nobeta Lifts/[Nobeta Lifts flexes as she gives Mary her attention] Ah, what was that?
 			<Action>FlipPortrait/Nobeta Lifts</Action>
+			<Action>PortraitParticles/Nobeta Lifts,ExclamationsSmall</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Mary O Nette/Goodness alright calm down.
@@ -460,49 +471,60 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="6" name="">Mary O Nette/[Nobeta gets in to position and flexes to draw her bow string] Yes. For this time, please keep doing... the things you are doing.
-			<Action>RemovePortrait/Nobeta Lifts</Action>
+			<Action>PortraitParticles/Nobeta Lifts,ExclamationsSmall</Action>
+			<Action>FlipPortrait/Nobeta Lifts</Action>
 			<Action>Run/RemoveTalkability,Speaker One,Mary O Nette,Speaker Two,Nobeta Lifts</Action>
+			<Action>MovePortrait/Nobeta Lifts,0,0</Action>
 			<Action>SetVal/Lesbian Discussions,+:1</Action>
+			<Action>WaitForDialogue/</Action>
+			<Action>PortraitParticles/Mary O Nette,Heart</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnTalk/Clark,Harrien Lifts" convID="Clark Dialogue" r="false">
-		<Branch num="0" name="">Clark/Man, I really don't wanna fight you. I was really hoping someone else would handle you... look at those arms! You could tear me apart!
-			<Action>AddPortrait/Clark,Clark,left,,Concerned</Action>
+	<Dialogue trigger="OnTalk/Clark Lutrinae,Harrien Lifts" convID="Clark Lutrinae Dialogue" r="false">
+		<Branch num="0" name="">Clark Lutrinae/Man, I really don't wanna fight you. I was really hoping someone else would handle you... look at those arms! You could tear me apart!
+			<Action>AddPortrait/Clark Lutrinae,Clark Lutrinae,left,,Concerned</Action>
 			<Action>AddPortrait/Harrien Lifts,Harrien Lifts,right,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Harrien Lifts/...Well, that just sucks all the fun out of fighting you. What's someone so meek doing with this lot?
 			<Action>ChangeExpression/Harrien Lifts,Kind</Action>
+			<Action>MovePortrait/Harrien Lifts,7,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">Clark/I... really don't know. I've been trying to find where it went wrong, but all I can really conclude is that I made very dumb decisions.
-			<Action>ChangeExpression/Clark,Concerned</Action>
+		<Branch num="2" name="">Clark Lutrinae/I... really don't know. I've been trying to find where it went wrong, but all I can really conclude is that I made very dumb decisions.
+			<Action>ChangeExpression/Clark Lutrinae,Concerned</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Harrien Lifts/Sounds like a lot of us, honestly.  ...Look, I can't undo the stuff you've been dealt;; but I can offer you an out. C'mon and join us! If you're on the field, you must have some skill, right?
 			<Action>ChangeExpression/Harrien Lifts,Excited</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="4" name="">Clark/W-w-what? Um, I... no;; I'd really just weigh you down.
+		<Branch num="4" name="">Clark Lutrinae/W-w-what? Um, I... no;; I'd really just weigh you down.
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="5" name="">Harrien Lifts/Hey, c'mon;; look at these guns. A little extra weight won't bug me.
 			<Action>ChangeExpression/Harrien Lifts,Happy</Action>
 			<Action>MovePortrait/Harrien Lifts,8,0,110</Action>
+			<Action>Wait/1</Action>
+			<Action>FlipPortrait/Harrien Lifts</Action>
+			<Action>PortraitParticles/Harrien Lifts,ExclamationsSmall</Action>
+			<Action>Wait/1</Action>
+			<Action>FlipPortrait/Harrien Lifts</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="6" name="">Clark/...W-well;; okay. ...Thank you.
-			<Action>SetStat/Clark,Army,=:0</Action>
-			<Action>Run/Swap Out Unit,Swap Out Name,Clark,Swap In Name,Clark,Swap In ID,Clark:Happy</Action>
-			<Action>ChangeExpression/Clark,Happy</Action>
-			<Action>SetStat/Clark,Morale,+:4</Action>
-			<Action>SpawnFloatingText/Morale + 4,Clark,Yellow</Action>
+		<Branch num="6" name="">Clark Lutrinae/...W-well;; okay. ...Thank you.
+			<Action>SetStat/Clark Lutrinae,Army,=:0</Action>
+			<Action>Run/Swap Out Unit,Swap Out Name,Clark Lutrinae,Swap In Name,Clark Lutrinae,Swap In ID,Clark Lutrinae:Happy</Action>
+			<Action>ChangeExpression/Clark Lutrinae,Happy</Action>
+			<Action>SetStat/Clark Lutrinae,Morale,+:4</Action>
+			<Action>SpawnFloatingText/Morale + 4,Clark Lutrinae,Yellow</Action>
 			<Action>RemoveConv/West Approach Recognized</Action>
 			<Action>SetVal/WestApproachFlag,3</Action>
-			<Action>Run/RemoveTalkability,Speaker One,Clark,Speaker Two,Harrien Lifts</Action>
-			<Action>SetVal/Clark Alive,=:1</Action>
+			<Action>Run/RemoveTalkability,Speaker One,Clark Lutrinae,Speaker Two,Harrien Lifts</Action>
+			<Action>SetVal/Clark Lutrinae Alive,=:1</Action>
+			<Action>PortraitParticles/Clark Lutrinae,Heart</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -565,13 +587,13 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="WestApproach Recognized" r="false">
-		<Branch num="0" name="">Clark/I mean;; maybe the author made a small mistake about the bolt-head manufacturer, but--
-			<Action>AddPortrait/Clark,Clark,left,,Concerned</Action>
+		<Branch num="0" name="">Clark Lutrinae/I mean;; maybe the author made a small mistake about the bolt-head manufacturer, but--
+			<Action>AddPortrait/Clark Lutrinae,Clark Lutrinae,left,,Concerned</Action>
 			<Action>AddPortrait/Irate Crossbow Aficionado,Irate Crossbow Aficionado,right,,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Irate Crossbow Aficiando/A small mistake! Lakshmi would never be caught dead wi- [The scuffle outside rattles the windows]
-			<Action>ChangeExpression/Clark,Sad</Action>
+			<Action>ChangeExpression/Clark Lutrinae,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Irate Crossbow Aficionado/Argh;; there's never enough time to educate arbalest-ignorants! Let's teach them proper technique!
@@ -579,19 +601,19 @@
 			<Action>FlipPortrait/Irate Crossbow Aficionado</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="3" name="">Clark/Uh... alright...
-			<Action>ChangeExpression/Clark,Neutral</Action>
+		<Branch num="3" name="">Clark Lutrinae/Uh... alright...
+			<Action>ChangeExpression/Clark Lutrinae,Neutral</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="4" name="">Clark/[He sighs] I thought that boss guy was cute enough to spend a weekend with his pals, but... Second thoughts.
-			<Action>ClearPortraits/Clark</Action>
-			<Action>ChangeExpression/Clark,Headache</Action>
+		<Branch num="4" name="">Clark Lutrinae/[He sighs] I thought that boss guy was cute enough to spend a weekend with his pals, but... Second thoughts.
+			<Action>ClearPortraits/Clark Lutrinae</Action>
+			<Action>ChangeExpression/Clark Lutrinae,Headache</Action>
 			<Action>RemoveTagFromGroup/1,Passive</Action>
 			<Action>RemoveTagFromGroup/1,Inactive</Action>
 			<Action>SpawnUnit/1,Rubble Rouser Golem,6,0,Down,,Add:ID:901</Action>
 			<Action>SpawnUnit/1,Rubble Rouser Bruiser,6,1,Down,,Add:LevelUp:4::Add:ID:902</Action>
 			<Action>SetVal/WestApproachFlag,=,2</Action>
-			<Action>Run/AddTalkability,Speaker One,Clark,Speaker Two,Harrien Lifts</Action>
+			<Action>Run/AddTalkability,Speaker One,Clark Lutrinae,Speaker Two,Harrien Lifts</Action>
 			<Action>SetStat/ID[901],Turn Ended,true</Action>
 			<Action>SetStat/ID[902],Turn Ended,true</Action>
 			<Reply>Continue./LoadConv/Round Start Dialogue Dispatch</Reply>
@@ -698,7 +720,7 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Irate Crossbow Aficionado/You dare?! That's it, this gas blob is getting it, too! [They hurrumph and start towards the stairs]
-			<Action>AddPortrait/Irate Crossbow Aficionado,Irate Crossbow Aficionado/,right,,YellMad</Action>
+			<Action>AddPortrait/Irate Crossbow Aficionado,Irate Crossbow Aficionado/,right,,Yell Mad</Action>
 			<Action>RemoveTagFromArmy/1,IgnoreArmy,2</Action>
 			<Action>RemoveTagFromGroup/2,Inactive</Action>
 			<Action>RemoveTagFromGroup/2,Passive</Action>
@@ -709,12 +731,12 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Harrien Lifts,,,Coderick Gutterson" convID="Coderick and Harrien Lifts" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Bah, what are you supposed to be? You're so freakishly tall! Put those muscles away, you're embarassing yourself.
-			<Action>AddPortrait/Harrien Lifts,Harrien Lifts,left,,Mean,5,0</Action>
-			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Mad</Action>
+			<Action>AddPortrait/Harrien Lifts,Harrien Lifts,left,,Mean,15,0</Action>
+			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Mad,8,0</Action>
 			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Harrien Lifts/You cannot hurt me with your words. [He grunts] I will hurt you with my axe.
+		<Branch num="1" name="">Harrien Lifts/You cannot hurt me [i]with your words[/i]. [He grunts] I will hurt you [i]with my axe[/i].
 			<Action>ChangeExpression/Harrien Lifts,Yell</Action>
 			<Action>ChangeExpression/Coderick Gutterson,Irritated</Action>
 			<Action>MovePortrait/Harrien Lifts,10,0,60</Action>
@@ -726,8 +748,8 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Nobeta Lifts,,,Coderick Gutterson" convID="Coderick and Nobeta Lifts" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Well look who inherited her father's huge body! Grah, you can't attract men like me with [b]that[/b] hair cut.
-			<Action>AddPortrait/Coderick Gutterson,Coderick/Gutterson,left,,Mad</Action>
-			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Shocked</Action>
+			<Action>AddPortrait/Coderick Gutterson,Coderick/Gutterson,right,,Mad,8,0</Action>
+			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,left,,Shocked</Action>
 			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -740,8 +762,8 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Mary O Nette,,,Coderick Gutterson" convID="Coderick and Mary O Nette" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Huh, I can barely see you. You must not be important! Do everyone a favor and grow up, you little girl!
-			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,left,,YellMad</Action>
-			<Action>AddPortrait/Mary O Nette,Mary O Nette,right,,Quizzical,5,0</Action>
+			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Yell Mad,8,0</Action>
+			<Action>AddPortrait/Mary O Nette,Mary O Nette,left,,Quizzical,15,0</Action>
 			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -755,17 +777,17 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Arora/Feminine,,,Coderick Gutterson" convID="Coderick and Arora" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Ech, what are you even going for? Make up your mind! I, Coderick Gutterson, and the rest of [b]civil[/b] society need to know if you're a man or not!
-			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,left,,Mad</Action>
-			<Action>AddPortrait/Arora,Arora/Feminine,right,,Winking</Action>
+			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Mad,8,0</Action>
+			<Action>AddPortrait/Arora,Arora/Feminine,left,,Winking</Action>
 			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Arora/Ouch! My turn, how about... Your parents named you Coderick, and you kept that name.
 			<Action>ChangeExpression/Coderick Gutterson,Irritated</Action>
 			<Action>ChangeExpression/Arora,Quizzical</Action>
-			<Action>Wait/.5</Action>
+			<Action>Wait/1</Action>
 			<Action>FlipPortrait/Arora</Action>
-			<Action>Wait/.5</Action>
+			<Action>Wait/1.5</Action>
 			<Action>FlipPortrait/Arora</Action>
 			<Action>MovePortrait/Arora,7,0</Action>
 			<Action>ChangeExpression/Arora,Amused</Action>
@@ -775,8 +797,8 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Drasan Winterbloom,,,Coderick Gutterson" convID="Coderick and Drasan" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Now doesn't [b]this guy[/b] look entirely uncomfortable. It's your skin, buddy, get used to it! Nothing ever changes about the body we are given!
-			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,left,,Mad</Action>
-			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,right,,Sad</Action>
+			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Mad,8,0</Action>
+			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,left,,Sad</Action>
 			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -790,8 +812,8 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharAttacked/-ANY-,Clark,,,Coderick Gutterson" convID="Clark and Coderick" r="false">
-		<Branch num="0" name="">/[Good job finding this dialogue! You recruited Clark [b]before[/b] fighting that guy? Way to go.]
+	<Dialogue trigger="OnCharAttacked/-ANY-,Clark Lutrinae,,,Coderick Gutterson" convID="Clark Lutrinae and Coderick" r="false">
+		<Branch num="0" name="">/[Good job finding this dialogue! You recruited Clark Lutrinae [b]before[/b] fighting that guy? Way to go.]
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -838,7 +860,7 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharAttacked/1,Coderick Gutterson,,,Clark" convID="Coderick and Clark Offense" r="false">
+	<Dialogue trigger="OnCharAttacked/1,Coderick Gutterson,,,Clark Lutrinae" convID="Coderick and Clark Lutrinae Offense" r="false">
 		<Branch num="0" name="">/
 			<Action>LoadConv/Coderick and Drasan</Action>
 			<Action>EndConvImmediately/</Action>
@@ -847,14 +869,18 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Xander Bilt,,,Harrien Lifts" convID="Xander and Harrien" r="false">
 		<Branch num="0" name="">Xander Bilt/So you're the leader of this pro-Strider propaganda affair! Do you understand how much she has ruined my financial affairs!?
-			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,YellMad</Action>
+			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,Yell Mad</Action>
 			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,right,,Mad</Action>
+			<Action>MovePortrait/Xander Bilt,13,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Harrien Lifts/I can only think of so many reasons for that, and all of them are worth breaking a chair over your head.
+			<Action>MovePortrait/Harrien Lifts,8,0</Action>
+			<Action>ChangeExpression/Harrien Lifts,Mean</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Xander Bilt/It doesn't matter. If I get through you, the theater is as good as destroyed. Take this!
+			<Action>MovePortrait/Xander Bilt,12,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -868,7 +894,7 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Xander Bilt,,,Nobeta Lifts" convID="Xander and Nobeta" r="false">
 		<Branch num="0" name="">Xander Bilt/If I were you, young lady, I wouldn't follow in your father's foolish footsteps.
-			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,YellMad
+			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,Yell Mad
 Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial Expression (optional),X Position (optional),Y Position (optional),Force Skin Palette (integer -- optional)</Action>
 			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -887,7 +913,7 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Asandr Winterbloom,,,Xander Bilt" convID="Xander and Asandr" r="false">
 		<Branch num="0" name="">Xander Bilt/Young man, surely I can provide you a better opportunity than working with this motley crew.
-			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,YellMad</Action>
+			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,Yell Mad</Action>
 			<Action>AddPortrait/Asandr Winterbloom,Xander/Bilt,right,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -911,7 +937,7 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Mary O Nette,,,Xander Bilt" convID="Xander and Mary" r="false">
 		<Branch num="0" name="">Xander Bilt/...This isn't what I want to be doing with my time. Run away young lady, and I promise on my family name you won't be harmed.
-			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,YellMad</Action>
+			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,Yell Mad</Action>
 			<Action>AddPortrait/Mary O Nette,Mary O Nette,right,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -929,7 +955,7 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Arora,,,Xander Bilt" convID="Xander and Arora" r="false">
 		<Branch num="0" name="">Xander Bilt/My my, what rare talents. You're truly wasted here.
-			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,YellMad</Action>
+			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,Yell Mad</Action>
 			<Action>AddPortrait/Arora,Arora,right,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -945,20 +971,20 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharAttacked/-ANY-,Xander Bilt,,,Clark" convID="Xander and Clark" r="false">
-		<Branch num="0" name="">Xander Bilt/Clark! Lad, what are you doing? Get back to being obedient and smash the theater, not me and my men!
-			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,YellMad</Action>
-			<Action>AddPortrait/Clark,Clark,right,,Mad</Action>
+	<Dialogue trigger="OnCharAttacked/-ANY-,Xander Bilt,,,Clark Lutrinae" convID="Xander and Clark Lutrinae" r="false">
+		<Branch num="0" name="">Xander Bilt/Clark Lutrinae! Lad, what are you doing? Get back to being obedient and smash the theater, not me and my men!
+			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,Yell Mad</Action>
+			<Action>AddPortrait/Clark Lutrinae,Clark Lutrinae,right,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Clark/Oh don't worry, it's not [b]your[/b] men I want to [b]smash[/b].
+		<Branch num="1" name="">Clark Lutrinae/Oh don't worry, it's not [b]your[/b] men I want to [b]smash[/b].
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharAttacked/-ANY-,Clark,,,Xander Bilt" convID="Xander and Clark Offense" r="false">
+	<Dialogue trigger="OnCharAttacked/-ANY-,Clark Lutrinae,,,Xander Bilt" convID="Xander and Clark Lutrinae Offense" r="false">
 		<Branch num="0" name="">/
-			<Action>LoadConv/Xander and Clark</Action>
+			<Action>LoadConv/Xander and Clark Lutrinae</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
@@ -1013,10 +1039,10 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharDeath/-ANY-,Clark" convID="Clark KO" r="false">
-		<Branch num="0" name="">Clark/Damnit Clark... Gotta stop following these... muscley... [Clark groans and leaves] 
-			<Action>SetVal/Clark Alive,=:0</Action>
-			<Action>AddPortrait/Clark,Clark,left,,Headache</Action>
+	<Dialogue trigger="OnCharDeath/-ANY-,Clark Lutrinae" convID="Clark Lutrinae KO" r="false">
+		<Branch num="0" name="">Clark Lutrinae/Damnit Clark Lutrinae... Gotta stop following these... muscley... [Clark Lutrinae groans and leaves] 
+			<Action>SetVal/Clark Lutrinae Alive,=:0</Action>
+			<Action>AddPortrait/Clark Lutrinae,Clark Lutrinae,left,,Headache</Action>
 			<Reply>Continue/EndConv</Reply>
 		</Branch>
 	</Dialogue>
@@ -1072,7 +1098,7 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Xander Bilt/Bah! They must be [i]sympathizers[/i]. Crush them!
-			<Action>ChangeExpression/Xander Bilt,YellMad</Action>
+			<Action>ChangeExpression/Xander Bilt,Yell Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -1089,6 +1115,55 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Headache</Action>
 			<Action>SetVal/Loud Theater Enjoyer,=:0</Action>
 			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/0,-ANY-,,,Slighted Rival Playwright" convID="Slighted Rival Playwright Attacks" r="false">
+		<Branch num="0" name="">Slighted Rival Playwright/It should be [b]my[/b] play going up with light, not [i]this rubbish[/i]. Listen to my elevator pitch, or die!
+			<Action>AddPortrait/Slighted Rival Playwright,Slighted Rival Playwright/,left,,Yell Mad</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharDeath/-ANY-,Slighted Rival Playwright" convID="Slighted Rival Playwright Falls" r="false">
+		<Branch num="0" name="">Slighted Rival Playwright/Arggh! Someday, [i]Quintillion Centipede Marching Orders[/i] will have its day in the sun!!
+			<Action>AddPortrait/Slighted Rival Playwright,Slighted Rival Playwright,left,,Yell Mad</Action>
+			<Reply>Continue/NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">/
+			<Action>RemovePortrait/Slighted Rival Playwright</Action>
+			<Action>SetString/Attacker,-ATTACKER-</Action>
+			<Action>IfStringGoTo/Attacker,Harrien Lifts,BRANCH[Harrien]</Action>
+			<Action>IfStringGoTo/Attacker,Nobeta Lifts,BRANCH[Nobeta]</Action>
+			<Action>IfStringGoTo/Attacker,Mary O Nette,BRANCH[Mary]</Action>
+			<Action>IfStringGoTo/Attacker,Arora,BRANCH[Arora]</Action>
+			<Action>IfStringContainsGoTo/Attacker,Winterbloom,Branch[Asandr]</Action>
+			<Action>IfStringGoTo/Attacker,Clark Lutrinae,Branch[Clark Lutrinae]</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+		<Branch num="3" name="Harrien">Harrien Lifts/You don't have to tear something else down to build yourself up. Find your audience, bwahah.
+			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,right,,Blank</Action>
+			<Reply>Continue./EndConv</Reply>
+		</Branch>
+		<Branch num="2" name="Nobeta">Nobeta Lifts/There's no props for that here, right? [She nervously looks around]
+			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Quizzical</Action>
+			<Reply>Continue./EndConv</Reply>
+		</Branch>
+		<Branch num="4" name="Mary">Mary O Nette/Centipedes? Oh, do find time to join the local antenna-lovers club. They meet weekly, down the street.
+			<Action>AddPortrait/Mary O Nette,Mary O Nette,right,,Kind</Action>
+			<Reply>Continue./EndConv</Reply>
+		</Branch>
+		<Branch num="5" name="Clark Lutrinae">Clark Lutrinae/Crucius in a pit. [Clark Lutrinae sighs] I don't want to listen to any more [i]that[/i].
+			<Action>AddPortrait/Clark Lutrinae,Clark Lutrinae,right,,Headache</Action>
+			<Reply>Continue./EndConv</Reply>
+		</Branch>
+		<Branch num="6" name="Arora">Arora/Wait that sounds awesome actually.
+			<Action>AddPortrait/Arora,Arora,right,,Shocked</Action>
+			<Reply>Continue./EndConv</Reply>
+		</Branch>
+		<Branch num="7" name="Asandr">-STR:Asandr Current Name-/I have ideas that I want to show people, too... but uh, I'll pass on hearing more about yours for now.
+			<Action>AddPortrait/Attacker,Attacker,right,,Sad</Action>
+			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
 

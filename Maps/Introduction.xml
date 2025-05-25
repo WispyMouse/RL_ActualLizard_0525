@@ -3,7 +3,7 @@
 
 	<Narration>In just a few weeks, the local theater would be showing "Bolt-Action Love", a beloved dramatic retelling of Lakshmi Bana and Emma Strider's sapphic love, told from the perspective of a crossbow connoisseur. Five friends join together at the town square, eager to support the show. -PIC:Market_Dese-|  -DIA:Intro-</Narration>
 	
-	<NewRoster num="0">Harrien/,Clark/,Mary O Nette/,Nobeta/,Arora/,Rubble Rouser Golem/,Rabble Rouser Crossbowjock/,Rubble Rouser Bruiser/,Clark/,Save Me/,Asandr/Winterbloom,Sandra/Winterbloom,Rasand/Winterbloom,Andras/Winterbloom,Drasan/Winterbloom</NewRoster>
+	<NewRoster num="0">Harrien/,Clark Lutrinae/,Mary O Nette/,Nobeta/,Arora/,Rubble Rouser Golem/,Rabble Rouser Crossbowjock/,Rubble Rouser Bruiser/,Clark Lutrinae/,Save Me/,Asandr/Winterbloom,Sandra/Winterbloom,Rasand/Winterbloom,Andras/Winterbloom,Drasan/Winterbloom</NewRoster>
 
 	<Shop costMultiplier="100" baseSalePrice="50" itemQuality="3" qualityVariance="2" foodCostPercent="300">Default Store
 		<Stock type="Weapons" chance="100" num="1-5" materials="WeaponMaterials">GEN:Axe</Stock>

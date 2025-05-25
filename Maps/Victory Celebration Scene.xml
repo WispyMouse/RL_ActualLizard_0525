@@ -90,7 +90,7 @@
 	<Unit>0,4,Mary O Nette/,2,0,Right,None</Unit>
 	<Unit>0,4,Arora/Masculine,2,2,Right,None</Unit>
 	<Unit>0,4,Nobeta/Lifts,3,0,Right,None</Unit>
-	<Unit>0,4,Clark/Happy,3,2,Right,None</Unit>
+	<Unit>0,4,Clark Lutrinae/Happy,3,2,Right,None</Unit>
 	<Unit>0,4,Harrien/Lifts,4,2,Right,None</Unit>
 
 	<Script>Randomize Villagers
@@ -136,7 +136,7 @@
 			<Action>Run/Set Alive Unit,Character Name,Nobeta Lifts</Action>
 			<Action>Run/Set Alive Unit,Character Name,Arora</Action>
 			<Action>Run/Set Alive Unit,Character Name,Mary O Nette</Action>
-			<Action>Run/Set Alive Unit,Character Name,Clark</Action>
+			<Action>Run/Set Alive Unit,Character Name,Clark Lutrinae</Action>
 			<Action>Run/Set Alive Unit,Character Name,Drasan Winterbloom</Action>
 			<Action>Run/Set Alive Unit,Character Name,Andras Winterbloom</Action>
 			<Action>Run/Set Alive Unit,Character Name,Sandra Winterbloom</Action>
@@ -150,12 +150,12 @@
 			<Action>ShowDialogueBox/</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="8" name="Harrien and Clark">/[Clark is more than happy to distance himself from the Rubble Rousers. Harrien takes Clark under his wing, and massive arms.]
+		<Branch num="8" name="Harrien and Clark Lutrinae">/[Clark Lutrinae is more than happy to distance himself from the Rubble Rousers. Harrien takes Clark Lutrinae under his wing, and massive arms.]
 			<Action>ClearPortraits/</Action>
 			<Action>IfValGoTo/Harrien Lifts Alive,=,0,BRANCH[Nobeta and Mary]</Action>
-			<Action>IfValGoTo/Clark Alive,=,0,5,BRANCH[Nobeta and Mary]</Action>
+			<Action>IfValGoTo/Clark Lutrinae Alive,=,0,5,BRANCH[Nobeta and Mary]</Action>
 			<Action>AddPortrait/Harrien Lifts,Harrien Lifts,left,,Excited</Action>
-			<Action>AddPortrait/Clark,Clark,right,,Kind</Action>
+			<Action>AddPortrait/Clark Lutrinae,Clark Lutrinae,right,,Kind</Action>
 			<Action>MoveCam/Harrien Lifts</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -221,7 +221,7 @@
 			<Action>MoveUnitBy/Mary O Nette,0,1</Action>
 			<Action>MoveUnitBy/Arora,0,1</Action>
 			<Action>MoveUnitBy/Asandr Winterbloom,0,1,</Action>
-			<Action>MoveUnitBy/Clark,0,1,</Action>
+			<Action>MoveUnitBy/Clark Lutrinae,0,1,</Action>
 			<Action>MoveUnitBy/Andras Winterbloom,0,1,</Action>
 			<Action>MoveUnitBy/Drasan Winterbloom,0,1,</Action>
 			<Action>MoveUnitBy/Sandra Winterbloom,0,1</Action>
@@ -245,7 +245,7 @@
 			<Action>HideDialogueBox/</Action>
 			<Action>PlayAnim/Harrien Lifts,Cast</Action>
 			<Action>PlayAnim/Nobeta Lifts,Cast</Action>
-			<Action>PlayAnim/Clark,Ability</Action>
+			<Action>PlayAnim/Clark Lutrinae,Ability</Action>
 			<Action>PlayAnim/Mary O Nette,Cast</Action>
 			<Action>PlayAnim/Arora,Cast</Action>
 			<Action>PlayAnim/Asandr Winterbloom,Cast</Action>
