@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 7:01:04 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 8:13:48 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Community Defense Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -8,8 +8,9 @@
 	
 	<Condition>Defeat Army,0,1</Condition>
 	<Condition>Global Lighting,Overcast</Condition>
+	<Condition>Defeat Army,1,0</Condition>
 	
-	<Objective>Reclaim the theater and cast out all enemies!</Objective>
+	<Objective>Defeat all enemies to save the theater!</Objective>
 	
 	<Tileset>01,Cave</Tileset>
 	<Tileset>02,Castle</Tileset>
@@ -46,7 +47,7 @@
 	
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,5,5</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,5,5</RowElev>
-	<RowElev>0,0,1,1,3,3,3,3,1,1,1,5,5</RowElev>
+	<RowElev>0,0,1,1,3,3,3,3,2,1,1,5,5</RowElev>
 	<RowElev>0,0,0,2,3,3,3,3,1,1,3,3,5</RowElev>
 	<RowElev>0,0,0,2,3,3,3,3,1,1,1,5,5</RowElev>
 	<RowElev>1,1,0,2,3,3,3,3,1,1,1,5,4</RowElev>
@@ -85,9 +86,8 @@
 	<Unit>0,99,Rug9TL,2,4,None,None</Unit>
 	<Unit>0,99,Rug9T,2,5,None,None</Unit>
 	<Unit>0,99,Rug9T,2,6,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,=,1">0,99,Emma Strider Promotional Cutout,2,7,None,None</Unit>
 	<Unit>0,99,Rug9TR,2,7,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,=,.5">0,99,Barrel,2,8,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,=,3">0,99,EmmaStriderPromotionalCutout,2,8,None,None</Unit>
 	<Unit>0,99,StairsWood_S,2,10,None,None</Unit>
 	<Unit>0,99,TableFood,2,11,None,None</Unit>
 	<Unit trigger="Use Once,Lever Flipped">0,99,Switch,3,0,None,None</Unit>
@@ -102,7 +102,6 @@
 	<Unit>0,99,HouseWallVertical,4,3,None,None</Unit>
 	<Unit>0,99,Rug9L,4,4,None,None</Unit>
 	<Unit>0,99,Rug9C,4,5,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,=,.5">0,99,Barrel,4,6,None,None</Unit>
 	<Unit>0,99,Rug9C,4,6,None,None</Unit>
 	<Unit>0,99,Rug9R,4,7,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,4,9,None,None</Unit>
@@ -225,13 +224,13 @@
 	</Script>
 
 	<Script>Lever Flipped
-		<Action>SpawnUnit/99,Red Pride Light,1,3,Down</Action>
-		<Action>SpawnUnit/99,Orange Pride Light,1,4,Down</Action>
-		<Action>SpawnUnit/99,Yellow Pride Light,1,5,Down</Action>
-		<Action>SpawnUnit/99,Green Pride Light,1,6,Down</Action>
-		<Action>SpawnUnit/99,Blue Pride Light,1,7,Down</Action>
-		<Action>SpawnUnit/99,Indigo Pride Light,1,8,Down</Action>
-		<Action>SpawnUnit/99,Violet Pride Light,1,9,Down</Action>
+		<Action>SpawnUnit/99,RedPrideLight,1,3,Down</Action>
+		<Action>SpawnUnit/99,OrangePrideLight,1,4,Down</Action>
+		<Action>SpawnUnit/99,YellowPrideLight,1,5,Down</Action>
+		<Action>SpawnUnit/99,GreenPrideLight,1,6,Down</Action>
+		<Action>SpawnUnit/99,BluePrideLight,1,7,Down</Action>
+		<Action>SpawnUnit/99,IndigoPrideLight,1,8,Down</Action>
+		<Action>SpawnUnit/99,VioletPrideLight,1,9,Down</Action>
 	</Script>
 
 	<Dialogue trigger="OnTalk/Mary O Nette,-STR:Nobeta Lifts Can Talk-" convID="Lesbians Talk Dialogue" r="true">
@@ -298,8 +297,9 @@
 			<Action>GoToNextBranch/</Action>
 		</Branch>
 		<Branch num="1" name="Intro Dialogue Start">Drasan Winterbloom/W--what? The theater! People are--?
-			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,right,,Shocked</Action>
+			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,right,,Shocked,3,0</Action>
 			<Action>MoveCam/,,Drasan Winterbloom</Action>
+			<Action>MovePortrait/Drasan Winterbloom,5,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="9" name="">Xander Bilt/[He grumbles and stomps as he walks] Bah, Strider! Curse your name! Curse this theater for [i]celebrating[/i] your name! Enough of it all. Rubble Rousers, tear this place down!
@@ -314,7 +314,7 @@
 			<Action>AddPortrait/Rubble Rouser Bruiser,Rubble Rouser Bruiser,left,Red,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">Loud Theater Enjoyer/Are you daft? Strider's efforts were only truly given life through [b]this[/b] play. Bolt-Action Love is [b]the[/b] essential crossbowpunk love story. Only a ignoramus would miss the cleverly delivered metaphors in the play's depiction of cocking.
+		<Branch num="2" name="">Loud Theater Enjoyer/Trying to stop the showing of this play -- are you daft? Strider's efforts were only truly given life through [b]Bolt-Action Love[/b]! It is [b]the[/b] essential crossbowpunk love story. Only a ignoramus would miss the cleverly delivered metaphors in the play's depiction of cocking.
 			<Action>MoveCam/,,Loud Theater Enjoyer</Action>
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,right,,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -332,13 +332,14 @@
 		<Branch num="6" name="">Rubble Rouser Bruiser/Uh, yeah. Yeah! Whatever gets your engine going, get smashing.
 			<Action>ChangeExpression/Rubble Rouser Bruiser,Quizzical</Action>
 			<Action>MoveCam/,,Rubble Rouser Bruiser</Action>
+			<Action>MovePortrait/Rubble Rouser Bruiser,14,0,200</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Harrien Lifts/Bwuh?! Rubble Rousers? Hey, they're tearing up the place! Everyone, get your community defense face on, it's time to wrassle!
 			<Action>ClearPortraits/</Action>
 			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,left,,Yell</Action>
 			<Action>MovePortrait/Harrien Lifts,18,0,60</Action>
-			<Action>ZoomCam/8</Action>
+			<Action>ZoomCam/12</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="8" name="">/
@@ -732,7 +733,7 @@
 	<Dialogue trigger="OnCharAttacked/-ANY-,Harrien Lifts,,,Coderick Gutterson" convID="Coderick and Harrien Lifts" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Bah, what are you supposed to be? You're so freakishly tall! Put those muscles away, you're embarassing yourself.
 			<Action>AddPortrait/Harrien Lifts,Harrien Lifts,left,,Mean,15,0</Action>
-			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Mad,8,0</Action>
+			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Mad,7,0</Action>
 			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -748,7 +749,7 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Nobeta Lifts,,,Coderick Gutterson" convID="Coderick and Nobeta Lifts" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Well look who inherited her father's huge body! Grah, you can't attract men like me with [b]that[/b] hair cut.
-			<Action>AddPortrait/Coderick Gutterson,Coderick/Gutterson,right,,Mad,8,0</Action>
+			<Action>AddPortrait/Coderick Gutterson,Coderick/Gutterson,right,,Mad,7,0</Action>
 			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,left,,Shocked</Action>
 			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -762,7 +763,7 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Mary O Nette,,,Coderick Gutterson" convID="Coderick and Mary O Nette" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Huh, I can barely see you. You must not be important! Do everyone a favor and grow up, you little girl!
-			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Yell Mad,8,0</Action>
+			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Yell Mad,7,0</Action>
 			<Action>AddPortrait/Mary O Nette,Mary O Nette,left,,Quizzical,15,0</Action>
 			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -777,7 +778,7 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Arora/Feminine,,,Coderick Gutterson" convID="Coderick and Arora" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Ech, what are you even going for? Make up your mind! I, Coderick Gutterson, and the rest of [b]civil[/b] society need to know if you're a man or not!
-			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Mad,8,0</Action>
+			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Mad,7,0</Action>
 			<Action>AddPortrait/Arora,Arora/Feminine,left,,Winking</Action>
 			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -789,7 +790,7 @@
 			<Action>FlipPortrait/Arora</Action>
 			<Action>Wait/1.5</Action>
 			<Action>FlipPortrait/Arora</Action>
-			<Action>MovePortrait/Arora,7,0</Action>
+			<Action>MovePortrait/Arora,11,0</Action>
 			<Action>ChangeExpression/Arora,Amused</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -797,7 +798,7 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Drasan Winterbloom,,,Coderick Gutterson" convID="Coderick and Drasan" r="false">
 		<Branch num="0" name="">Coderick Gutterson/Now doesn't [b]this guy[/b] look entirely uncomfortable. It's your skin, buddy, get used to it! Nothing ever changes about the body we are given!
-			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Mad,8,0</Action>
+			<Action>AddPortrait/Coderick Gutterson,Coderick Gutterson,right,,Mad,7,0</Action>
 			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,left,,Sad</Action>
 			<Action>PortraitParticles/Coderick Gutterson,Exclamation</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -846,7 +847,7 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharAttacked/1,Coderick Gutterson,,,Arora" convID="Codercik and Arora Offense" r="false">
+	<Dialogue trigger="OnCharAttacked/1,Coderick Gutterson,,,Arora" convID="Coderick and Arora Offense" r="false">
 		<Branch num="0" name="">/
 			<Action>LoadConv/Coderick and Arora</Action>
 			<Action>EndConvImmediately/</Action>

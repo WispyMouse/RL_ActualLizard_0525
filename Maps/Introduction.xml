@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 3:14:40 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="Getting To Know You" winAura="0" nextbattle="The One Map" saveable="true" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 7:38:05 PM">
 
-	<Narration>In just a few weeks, the local theater would be showing "Bolt-Action Love", a beloved dramatic retelling of Lakshmi Bana and Emma Strider's sapphic love, told from the perspective of a crossbow connoisseur. Five friends join together at the town square, eager to support the show. -PIC:Market_Dese-|  -DIA:Intro-</Narration>
+	<Narration>It is a beautiful day at the city's market square. In just a few weeks, the local theater would be showing "Bolt-Action Love", a beloved dramatic retelling of Lakshmi Bana and Emma Strider's sapphic love, told from the perspective of a crossbow connoisseur. Five friends join together at the town square, eager to support the show.  -PIC:Market_Dese-|  -DIA:Intro-</Narration>
 	
 	<NewRoster num="0">Harrien/,Clark Lutrinae/,Mary O Nette/,Nobeta/,Arora/,Rubble Rouser Golem/,Rabble Rouser Crossbowjock/,Rubble Rouser Bruiser/,Clark Lutrinae/,Save Me/,Asandr/Winterbloom,Sandra/Winterbloom,Rasand/Winterbloom,Andras/Winterbloom,Drasan/Winterbloom</NewRoster>
 
@@ -34,8 +34,8 @@
 
 	<Dialogue trigger="OnTurn/0" convID="Intro" r="true">
 		<Branch num="0" name="">Harrien Lifts/Thanks for meeting on such short notice. Everyone here? Alright, grab your things or hand them to me, it's time to...
-			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Happy,2,0</Action>
-			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,right,,Kind,-2,0</Action>
+			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Happy,0,0</Action>
+			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,right,,Yell,-7,0,70</Action>
 			<Action>AddPortrait/Arora,Arora/Feminine,left,,Winking,26,0</Action>
 			<Action>AddPortrait/Mary O Nette,Mary O Nette/,left,,Happy,24,0</Action>
 			<Action>AddPortrait/Drasan Winterbloom,Drasan/Winterbloom,left,,Concerned,29,0</Action>
@@ -44,6 +44,7 @@
 			<Action>MovePortrait/Drasan Winterbloom,23,0,65</Action>
 			<Action>MovePortrait/Harrien Lifts,-1,0,80</Action>
 			<Action>MovePortrait/Nobeta Lifts,4,0,80</Action>
+			<Action>MovePortrait/Harrien Lifts,-2,0,</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Nobeta Lifts/[A thud echoes from the north] Bwuh? What was that sound?
@@ -71,12 +72,12 @@
 			<Action>PlaySound/FootstepsFading_Outdoors</Action>
 			<Action>FlipPortrait/Arora</Action>
 			<Action>MovePortrait/Arora,30,0,120</Action>
-			<Action>Wait/.25</Action>
+			<Action>Wait/.20</Action>
 			<Action>MovePortrait/Mary O Nette,30,0,140</Action>
 			<Action>FlipPortrait/Mary O Nette</Action>
-			<Action>Wait/.25</Action>
+			<Action>Wait/.15</Action>
 			<Action>MovePortrait/Nobeta Lifts,30,0,90</Action>
-			<Action>Wait/1</Action>
+			<Action>Wait/.8</Action>
 			<Action>NextScene/</Action>
 		</Branch>
 	</Dialogue>
