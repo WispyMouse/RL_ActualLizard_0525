@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Victory Celebration Scene" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Dance of the Isles" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="false" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/24/2025 6:13:17 PM">
+<Level mapname="Victory Celebration Scene" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Dance of the Isles" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="false" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/25/2025 6:30:44 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Player Characters" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Custom" name="Audience" color="Green" alliedWith="" assignRoster="-1"></Army>
@@ -189,7 +189,7 @@
 			<Action>/</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="10" name="Asandr Winterbloom">/[Arora had a good time with the experience, and continues vibing. It's hard to get a good bigender lizard down.]
+		<Branch num="10" name="Arora">/[Arora had a good time with the experience, and continues vibing. It's hard to get a good bigender lizard down.]
 			<Action>ClearPortraits/</Action>
 			<Action>IfValGoTo/Arora Alive,=,0,BRANCH[Loud Theater Enjoyer]</Action>
 			<Action>AddPortrait/Arora,Arora,left,,Winking</Action>
