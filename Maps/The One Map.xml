@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/25/2025 6:29:11 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/25/2025 7:40:47 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Community Defense Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -37,7 +37,6 @@
 	<Row>06.01,05.0n,05.01,05.0c,07.01,07.07,07.2R,05.03,05.0o,06.01,05.07,05.1K,05.1K</Row>
 	
 	<Light type="Point Light" size="4" intensity="0.7" y="0" x="12" A="1" R="1" G="0.5" B="0" animType="Static" direction="Up"></Light>
-	<Light type="Point Light" size="5" intensity="0.5" y="1" x="1" A="1" R="1" G="0.5" B="0" animType="Static" direction="Up"></Light>
 	<Light type="Directional Light" size="2" intensity="1.5" y="2" x="5" A="1" R="1" G="1" B="1" animType="Static" direction="Down"></Light>
 	<Light type="Directional Light" size="2" intensity="1.5" y="3" x="4" A="1" R="1" G="1" B="1" animType="Static" direction="Right"></Light>
 	<Light type="Point Light" size="10" intensity="0.2" y="4" x="10" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
@@ -47,7 +46,7 @@
 	
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,5,5</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,5,5</RowElev>
-	<RowElev>0,0,1,1,3,3,3,3,2,1,1,5,5</RowElev>
+	<RowElev>0,0,1,1,3,3,3,3,1,1,1,5,5</RowElev>
 	<RowElev>0,0,0,2,3,3,3,3,1,1,3,3,5</RowElev>
 	<RowElev>0,0,0,2,3,3,3,3,1,1,1,5,5</RowElev>
 	<RowElev>1,1,0,2,3,3,3,3,1,1,1,5,4</RowElev>
@@ -74,7 +73,6 @@
 	<Unit>0,99,Chair,0,11,None,None</Unit>
 	<Unit>0,99,CandelabraLit,0,12,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.9">0,99,ChinaCabinet,1,0,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.9">0,99,BookcaseFull,1,1,None,None</Unit>
 	<Unit>0,99,Snare,1,3,None,None</Unit>
 	<Unit>0,99,StairsCave_S,1,4,None,None</Unit>
 	<Unit>0,99,StairsCave_S,1,5,None,None</Unit>
@@ -87,7 +85,7 @@
 	<Unit>0,99,Rug9T,2,5,None,None</Unit>
 	<Unit>0,99,Rug9T,2,6,None,None</Unit>
 	<Unit>0,99,Rug9TR,2,7,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,10">0,3,EmmaStriderPromotionalCutout,2,8,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3">0,3,EmmaStriderPromotionalCutout,2,7,None,None</Unit>
 	<Unit>0,99,StairsWood_S,2,10,None,None</Unit>
 	<Unit>0,99,TableFood,2,11,None,None</Unit>
 	<Unit trigger="Use Once,Lever Flipped">0,99,Switch,3,0,None,None</Unit>
@@ -98,14 +96,14 @@
 	<Unit>0,99,Rug9C,3,6,None,None</Unit>
 	<Unit>0,99,Rug9R,3,7,None,None</Unit>
 	<Unit>0,99,StairsWood_E,3,11,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,BookcaseSparse,4,0,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,ClothingBin,4,0,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,4,3,None,None</Unit>
 	<Unit>0,99,Rug9L,4,4,None,None</Unit>
 	<Unit>0,99,Rug9C,4,5,None,None</Unit>
 	<Unit>0,99,Rug9C,4,6,None,None</Unit>
 	<Unit>0,99,Rug9R,4,7,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,4,9,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,1.5">0,99,CandelabraLit,4,10,None,None</Unit>
+	<Unit>0,99,CandelabraLit,4,10,None,None</Unit>
 	<Unit>0,99,HouseWallNW,4,11,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,4,12,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,CandelabraLit,5,0,None,None</Unit>
@@ -118,7 +116,8 @@
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,TableFood,5,9,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,5,10,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,5,11,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,CandelabraLit,5,12,None,None</Unit>
+	<Unit>0,99,CandelabraLit,5,12,None,None</Unit>
+	<Unit>0,99,ItemSack,6,0,None,Cookies/Cookies/Cookies</Unit>
 	<Unit>0,99,ClothingBin,6,3,None,None</Unit>
 	<Unit>0,99,StairsWood_N,6,4,None,None</Unit>
 	<Unit>0,99,StairsWood_E,6,10,None,None</Unit>
@@ -152,7 +151,8 @@
 	<Unit>0,99,Bush,10,9,None,None</Unit>
 	<Unit>0,99,BushFlowerLavender,10,10,None,None</Unit>
 	<Unit>0,99,WildflowersAlt,10,11,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Barrel,11,2,None,None</Unit>
+	<Unit>0,99,ScrapeMarks,11,5,None,None</Unit>
+	<Unit>0,99,ScrapeMarks,11,6,None,None</Unit>
 	<Unit>0,99,Reeds,11,10,None,None</Unit>
 	<Unit>0,99,Wildflowers,11,11,None,None</Unit>
 	<Unit>0,99,ItemSack,12,0,None,Focus Pills</Unit>
@@ -163,26 +163,26 @@
 	<Unit>0,99,LampLit,13,10,None,None</Unit>
 	<Unit>0,99,Birdbath,13,11,None,None</Unit>
 	<Unit tag="Add,LevelTo,7">0,0,Arora/Feminine,11,8,Up,Grapple Chain[E]/Mango/Indestructible Whalloper[E]</Unit>
-	<Unit tag="Add,LevelTo,11">0,0,Harrien/Lifts,12,7,Left,None</Unit>
+	<Unit tag="Add,LevelTo,9">0,0,Harrien/Lifts,12,7,Left,None</Unit>
 	<Unit tag="Add,LevelTo,2">0,0,Drasan/Winterbloom,12,8,Left,None</Unit>
 	<Unit tag="Add,LevelTo,4">0,0,Mary O Nette/,13,8,Left,None</Unit>
 	<Unit tag="Add,LevelTo,3">0,0,Nobeta/Lifts,13,9,Left,None</Unit>
-	<Unit>0,1,Slighted Rival Playwright/,1,2,Down,None</Unit>
+	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,Parol,ClothingZone,=,1.5">0,1,Slighted Rival Playwright/,1,2,Down,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,2,1,Down,Obviously Stolen Crossbow[E]</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Pursue/Add,LevelUp,4">0,1,Irate Crossbow Aficionado/,3,6,Left,Limited-Issue Bayonet Only Crossbow[E]</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,IgnoreArmy,2/Add,MoveFirst">0,1,Rubble Rouser Golem/,3,9,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Pursue/Add,LevelUp,4/Add,Patrol,Stage,=,1.5//Add,TargetPreference,Emma Strider Promotional Cutout,+:1">0,1,Irate Crossbow Aficionado/,3,6,Left,Limited-Issue Bayonet Only Crossbow[E]</Unit>
+	<Unit tag="Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,MoveFirst//Add,TargetPreference,Emma Strider Promotional Cutout,+:1/Add,Patrol,Theater,1.5">0,1,Rubble Rouser Golem/,3,9,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,IgnoreArmy,3">0,1,Clark Lutrinae/Sad,4,2,Left,None</Unit>
 	<Unit tag="Add,LevelUp,2/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.2">0,1,Bowhuckin/Chuckerslass,4,5,Right,None</Unit>
 	<Unit tag="Add,Patrol,Stage,=:5/Add,IgnoreArmy,2/Add,TargetPreference,Emma Strider Promotional Cutout,+:1">0,1,Xander/Bilt,6,11,Left,None</Unit>
-	<Unit tag="Add,LevelUp,6/Add,Pursue/Add,IgnoreArmy,2/Add,Passive/Add,AggroGroup,5">0,1,Irate Crossbow Aficionado/,7,5,Down,Screw-Firing Crossbow[E]</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2">0,1,Rubble Rouser Bruiser/,7,8,Left,None</Unit>
+	<Unit tag="Add,LevelUp,6/Add,Pursue/Add,IgnoreArmy,2/Add,Passive/Add,AggroGroup,5/Add,Patrol,Theater,1.5">0,1,Irate Crossbow Aficionado/,7,5,Down,Screw-Firing Crossbow[E]</Unit>
+	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Theater,1.5">0,1,Rubble Rouser Bruiser/,7,8,Left,None</Unit>
+	<Unit tag="Add,LevelUp,4/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Bruiser/,9,2,Down,None</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,9,5,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
 	<Unit tag="Add,MoveFirst">0,1,Rubble Rouser Golem/,9,8,Down,None</Unit>
-	<Unit tag="Add,Pursue/Add,AggroGroup,3/Add,Patrol,StartingArea,=,1.5/Add,Patrol,StartingChoke,=,1.2/Add,MoveFirst">0,1,Rubble Rouser Golem/,10,1,Down,None</Unit>
+	<Unit tag="Add,LevelUp,5/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Breaker/,10,1,Right,None</Unit>
 	<Unit tag="Add,LevelUp,2/Add,AreaPreference,StartingArea,=:1.5">0,1,Rubble Rouser Bruiser/,10,12,Left,None</Unit>
 	<Unit tag="Add,AreaPreference,StartingArea,=:1.5/Add,MoveFirst">0,1,Rubble Rouser Golem/,11,6,Right,None</Unit>
-	<Unit tag="Add,IgnoreArmy,3">0,1,Coderick/Gutterson,12,1,Down,None</Unit>
-	<Unit tag="Add,LevelUp,5/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Breaker/,13,3,Left,None</Unit>
+	<Unit tag="Add,IgnoreArmy,3/Add,IgnoreArmy,1">0,1,Coderick/Gutterson,12,1,Down,None</Unit>
 	<Unit tag="Add,Inactive/Add,LevelUp,8/Add,Patrol,ViewingBooth,=,5/Add,TargetValue,1.3">0,2,Loud Theater Enjoyer/,1,11,Down,None</Unit>
 
 	<Script>Set Lesbian Talkable
@@ -563,9 +563,15 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnReachingArea/ClothingZone,Drasan Winterbloom" convID="Asandr First Clothes" r="false">
-		<Branch num="0" name="">Drasan Winterbloom/Oh, what do we have here? [Drasan sees an open container of clothes for performers] These clothes are...
+	<Dialogue trigger="BeforeTurn/-VAL:Turn Trigger-" convID="Asandr First Clothes" r="true">
+		<Branch num="3" name="">/
+			<Action>IfValGoTo/AsandrReachedClothes,=,1,BRANCH[START]
+Variable Name,Comparison Method ( = / g / l / etc),Amount (integer),Branch Number</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+		<Branch num="0" name="Start">Drasan Winterbloom/Oh, what do we have here? [Drasan sees an open container of clothes for performers] These clothes are...
 			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,left,,Quizzical</Action>
+			<Action>RemoveConv/Asandr First Clothes</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Drasan Winterbloom/[Drasan nervously grabs a couple outfits from the chest]
@@ -1272,6 +1278,36 @@ Reference Name,Portrait Name,Facing (left or right),Color Name (optional),Facial
 		</Branch>
 		<Branch num="8" name="Exit">/
 			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnUse/Mango,Arora" convID="Arora Eats Mango" r="false">
+		<Branch num="0" name="">Arora/Why does the delicious fruit have to hurt me so?
+			<Action>AddPortrait/Arora,Arora,left,,Crying</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnReachingArea/ClothingZone,Drasan Winterbloom" convID="Asandr Reaches Clothes" r="false">
+		<Branch num="0" name="">/
+			<Action>SetVal/AsandrReachedClothes,=:1</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnObjDeath/-ANY-,Emma Strider Promotional Cutout" convID="Emma Defeated" r="false">
+		<Branch num="0" name="">/
+			<Action>IfPresentGoTo/Xander Bilt,1</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+		<Branch num="1" name="">Xander Bilt/Hah! Yeah, take that, Strider!
+			<Action>AddPortrait/Xander Bilt,Xander/Bilt,right,,Mad,0,0</Action>
+			<Action>MovePortrait/Xander Bilt,5,0</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="2" name="">Rubble Rouser Bruiser/Yeah uh... Really showed her, boss.
+			<Action>AddPortrait/Rubble Rouser Bruiser,Rubble Rouser Bruiser,left</Action>
+			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 

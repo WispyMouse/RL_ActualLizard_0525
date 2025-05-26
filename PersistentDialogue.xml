@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/25/2025 12:27:59 AM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/25/2025 7:01:14 PM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
@@ -133,9 +133,9 @@
 	</Script>
 
 	<Script>Perfect Ending
-		<Action>SetVal/Clark Alive,=:1</Action>
+		<Action>SetVal/Clark Lutrinae Alive,=:1</Action>
 		<Action>SetVal/Harrien Lifts Alive,=:1</Action>
-		<Action>SetVal/Nobeta Alive,=:1</Action>
+		<Action>SetVal/Nobeta Lifts Alive,=:1</Action>
 		<Action>SetVal/Arora Alive,=:1</Action>
 		<Action>SetVal/Asandr Winterbloom Alive,=:1</Action>
 		<Action>SetVal/Drasan Winterbloom Alive,=:0</Action>
@@ -159,7 +159,7 @@
 			<Action>SetVal/Nobeta Lifts Alive,=:1</Action>
 			<Action>SetVal/Mary O Nette Alive,=:1</Action>
 			<Action>SetVal/Arora Alive,=:1</Action>
-			<Action>SetVal/Clark Alive,=:0</Action>
+			<Action>SetVal/Clark Lutrinae Alive,=:0</Action>
 			<Action>SetVal/Loud Theater Enjoyer Alive,=:1
 </Action>
 			<Action>SetVal/Drasan Winterbloom Alive,=:1</Action>
