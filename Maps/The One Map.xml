@@ -559,6 +559,8 @@
 			<Action>SetVal/Clark Lutrinae Alive,=:1</Action>
 			<Action>PortraitParticles/Clark Lutrinae,Heart</Action>
 			<Action>ChangeExpression/Harrien Lifts,Happy</Action>
+			<Action>SetRelationshipLabel/Clark,Harrien Lifts,New Daddy??,false</Action>
+			<Action>SetRelationshipLabel/Harrien Lifts,Harrien Lifts,New Friend,false</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>

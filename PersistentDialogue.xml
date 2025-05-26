@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/25/2025 7:01:14 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/25/2025 7:52:00 PM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
@@ -18,21 +18,15 @@
 	</Script>
 
 	<Script>Set Asandr Default Relationships And Change Name
-		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Nobeta</Action>
-		<Action>SetString/Asandr Current Name,-STR:New Name-</Action>
-		<Action>SetRelationshipLabel/Harrien:Lifts,-STR:Asandr Current Name-,Troupe Member,true</Action>
-		<Action>SetRelationshipLabel/Nobeta:Lifts,-STR:Asandr Current Name-,Troupe Member,true</Action>
-		<Action>SetRelationshipLabel/Mary O Nette,-STR:Asandr Current Name-,Childhood Friend</Action>
-		<Action>SetRelationshipLabel/Arora,-STR:Asandr Current Name-,Troupe Member,true</Action>
 		<Action>RemoveRelationshipLabel/Nobeta:Lifts,-STR:Asandr Current Name-</Action>
 		<Action>RemoveRelationshipLabel/Mary O Nette,-STR:Asandr Current Name-</Action>
-		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Mary O Nette</Action>
 		<Action>RemoveRelationshipLabel/Harrien:Lifts,-STR:Asandr Current Name-</Action>
-		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Harrien</Action>
 		<Action>RemoveRelationshipLabel/Arora,-STR:Asandr Current Name-</Action>
-		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Arora</Action>
-		<Action>RemoveRelationshipLabel/Clark,-STR:Asandr Current Name-</Action>
-		<Action>RemoveRelationshipLabel/-STR:Asandr Current Name-,Clark</Action>
+		<Action>SetString/Asandr Current Name,-STR:New Name-</Action>
+		<Action>SetRelationshipLabel/Harrien:Lifts,-STR:Asandr Current Name-,Friend,true</Action>
+		<Action>SetRelationshipLabel/Nobeta:Lifts,-STR:Asandr Current Name-,Friend,true</Action>
+		<Action>SetRelationshipLabel/Mary O Nette,-STR:Asandr Current Name-,Close Friend,true</Action>
+		<Action>SetRelationshipLabel/Arora,-STR:Asandr Current Name-,Friend,true</Action>
 	</Script>
 
 	<Script>Swap Out Unit
@@ -144,24 +138,30 @@
 		<Action>SetVal/Perfect Ending,=:1</Action>
 	</Script>
 
+	<Script>Set Start Relationships
+		<Action>SetRelationshipLabel/Arora,Drasan Winterbloom,Friend,true</Action>
+		<Action>SetRelationshipLabel/Arora,Harrien Lifts,Friend,true</Action>
+		<Action>SetRelationshipLabel/Arora,Nobeta Lifts,Friend,true</Action>
+		<Action>SetRelationshipLabel/Arora,Mary O Nette,Childhood Friend,true</Action>
+		<Action>SetRelationshipLabel/Nobeta Lifts,Mary O Nette,Close Friend,true</Action>
+		<Action>SetRelationshipLabel/Nobeta Lifts,Harrien Lifts,Father,false</Action>
+		<Action>SetRelationshipLabel/Harrien Lifts,Nobeta Lifts,Daughter,false</Action>
+		<Action>SetRelationshipLabel/Harrien Lifts,Mary O Nette,Friend,true</Action>
+		<Action>SetRelationshipLabel/Harrien Lifts,Drasan Winterbloom,Friend,true</Action>
+		<Action>SetRelationshipLabel/Drasan Winterbloom,Mary O Nette,Friend,true</Action>
+		<Action>SetRelationshipLabel/Drasan Winterbloom,Nobeta Lifts,Friend,true</Action>
+	</Script>
+
 	<Dialogue trigger="OnLoaded/" convID="Set Root Relationships" r="false">
 		<Branch num="0" name="Starting Relationships">/
-			<Action>SetRelationshipLabel/Harrien:Lifts,Mary O Nette,Troupe Member,true</Action>
-			<Action>SetRelationshipLabel/Harrien:Lifts,Arora,Troupe Member,true</Action>
 			<Action>SetString/Asandr Current Name,Drasan Winterbloom</Action>
-			<Action>SetRelationshipLabel/Nobeta:Lifts,Arora,Troupe Member,true</Action>
-			<Action>SetRelationshipLabel/Mary O Nette,Nobeta:Lifts,Troupe Member,true</Action>
-			<Action>SetRelationshipLabel/Mary O Nette,Arora,Troupe Member,true</Action>
-			<Action>SetRelationshipLabel/Nobeta:Lifts,Harrien:Lifts,Father,false</Action>
-			<Action>SetRelationshipLabel/Harrien:Lifts,Nobeta:Lifts,Daughter,false</Action>
 			<Action>/</Action>
 			<Action>SetVal/Harrien Lifts Alive,=:1</Action>
 			<Action>SetVal/Nobeta Lifts Alive,=:1</Action>
 			<Action>SetVal/Mary O Nette Alive,=:1</Action>
 			<Action>SetVal/Arora Alive,=:1</Action>
 			<Action>SetVal/Clark Lutrinae Alive,=:0</Action>
-			<Action>SetVal/Loud Theater Enjoyer Alive,=:1
-</Action>
+			<Action>SetVal/Loud Theater Enjoyer Alive,=:1</Action>
 			<Action>SetVal/Drasan Winterbloom Alive,=:1</Action>
 			<Action>SetVal/Andras Winterbloom Alive,=:0</Action>
 			<Action>SetVal/Sandra Winterbloom Alive,=:0</Action>
