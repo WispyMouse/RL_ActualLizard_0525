@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/25/2025 8:44:19 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/25/2025 9:06:29 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Community Defense Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -172,9 +172,9 @@
 	<Unit tag="Add,AggroGroup,1/Add,Pursue/Add,LevelUp,4/Add,Patrol,Stage,=,1.5//Add,TargetPreference,Emma Strider Promotional Cutout,+:1">0,1,Irate Crossbow Aficionado/,3,6,Left,Limited-Issue Bayonet Only Crossbow[E]</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,MoveFirst//Add,TargetPreference,Emma Strider Promotional Cutout,+:1/Add,Patrol,Theater,1.5">0,1,Rubble Rouser Golem/,3,9,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,IgnoreArmy,3">0,1,Clark Lutrinae/Sad,4,2,Left,None</Unit>
-	<Unit tag="Add,LevelUp,2/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.2">0,1,Bowhuckin/Chuckerslass,4,5,Right,None</Unit>
-	<Unit tag="Add,Patrol,Stage,=:5/Add,IgnoreArmy,2/Add,TargetPreference,Emma Strider Promotional Cutout,+:1">0,1,Xander/Bilt,6,11,Left,None</Unit>
-	<Unit tag="Add,LevelUp,3/Add,Pursue/Add,IgnoreArmy,2/Add,Passive/Add,AggroGroup,5/Add,Patrol,Theater,1.5">0,1,Irate Crossbow Aficionado/,7,5,Down,Screw-Firing Crossbow[E]</Unit>
+	<Unit tag="Add,LevelUp,2/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.2">0,1,Bowhuckin/Chuckerslass,4,5,Right,Bundle of Throwing Crossbows</Unit>
+	<Unit tag="Add,Patrol,Stage,=:5/Add,IgnoreArmy,2/Add,TargetPreference,Emma Strider Promotional Cutout,+:1/Add,Inactive">0,1,Xander/Bilt,6,11,Left,None</Unit>
+	<Unit tag="Add,LevelUp,3/Add,Pursue/Add,IgnoreArmy,2/Add,Passive/Add,AggroGroup,5/Add,Patrol,Theater,1.5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,7,5,Down,Screw-Firing Crossbow[E]</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Theater,1.5">0,1,Rubble Rouser Bruiser/,7,8,Left,None</Unit>
 	<Unit tag="Add,LevelUp,5/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Bruiser/,9,2,Down,None</Unit>
 	<Unit tag="Add,LevelUp,3/Add,AggroGroup,5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,9,5,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
@@ -234,6 +234,10 @@
 		<Action>SpawnUnit/99,VioletPrideLight,1,9,Down</Action>
 	</Script>
 
+	<Script>Xander Moves
+		<Action>RemoveTag/Xander Bilt,Inactive</Action>
+	</Script>
+
 	<Dialogue trigger="OnTalk/Mary O Nette,-STR:Nobeta Lifts Can Talk-" convID="Lesbians Talk Dialogue" r="true">
 		<Branch num="0" name="">/
 			<Action>Run/Set Lesbian Not Talkable</Action>
@@ -271,6 +275,7 @@
 			<Action>SetVal/ArmyTurnMod,mod:-FULLTURN-</Action>
 			<Action>Run/IsAllTrue_2,ValueOneName,ArmyTurnMod,ValueOneCompareTo,0,ValueTwoName,Arora Alive,ValueTwoCompareTo,1</Action>
 			<Action>IfValRun/AnswerComposite,=,1,Arora Shift Roll</Action>
+			<Action>IfValRun/Turn Trigger,=,5,Xander Moves</Action>
 		</Branch>
 		<Branch num="2" name="">/
 			<Action>LoadConv/Round Start Dialogue Dispatch</Action>
@@ -302,9 +307,9 @@
 			<Action>GoToNextBranch/</Action>
 		</Branch>
 		<Branch num="1" name="Intro Dialogue Start">Drasan Winterbloom/W--what? The theater! People are--?
-			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,right,,Shocked,0,0</Action>
+			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,right,,Shocked,-5,0</Action>
 			<Action>MoveCam/,,Drasan Winterbloom</Action>
-			<Action>MovePortrait/Drasan Winterbloom,5,0</Action>
+			<Action>MovePortrait/Drasan Winterbloom,3,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="9" name="">Xander Bilt/[He grumbles and stomps as he walks] Bah, Strider! Curse your name! Curse this theater for [i]celebrating[/i] your name! Enough of it all. Rubble Rousers, tear this place down!
@@ -319,9 +324,8 @@
 			<Action>ClearPortraits/</Action>
 			<Action>MoveCam/,,Rubble Rouser Bruiser</Action>
 			<Action>AddPortrait/Rubble Rouser Bruiser,Rubble Rouser Bruiser,right,Red,Mad</Action>
-			<Action>Wait/.36</Action>
-			<Action>PlayAnim/Rubble Rouser Bruiser,Ability
-</Action>
+			<Action>Wait/.46</Action>
+			<Action>PlayAnim/Rubble Rouser Bruiser,Slash</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Loud Theater Enjoyer/Trying to stop the showing of this play -- are you daft? Strider's efforts were only truly given life through [b]Bolt-Action Love[/b]! It is [b]the[/b] essential crossbowpunk love story. Only a ignoramus would miss the cleverly delivered metaphors in the play's depiction of cocking.
@@ -331,7 +335,7 @@
 		</Branch>
 		<Branch num="7" name="">Rubble Rouser Bruiser/Kuh, what? Crossbowwhatsit? Look, anything Strider, it's gotta go. Ain't she done enough damage?
 			<Action>ChangeExpression/Rubble Rouser Bruiser,Mad</Action>
-			<Action>ChangeExpression/Loud Theater Enjoyer,Mean</Action>
+			<Action>ChangeExpression/Loud Theater Enjoyer,Sad</Action>
 			<Action>MovePortrait/Rubble Rouser Bruiser,4,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -389,6 +393,8 @@
 			<Action>Wait/.5</Action>
 			<Action>ChangeExpression/Nobeta Lifts,Winking</Action>
 			<Action>FlipPortrait/Nobeta Lifts</Action>
+			<Action>Wait/.5</Action>
+			<Action>ChangeExpression/Nobeta Lifts,Happy</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Mary O Nette/It can be as you say. It can be time to... get behind you.
@@ -565,12 +571,7 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="BeforeTurn/-VAL:Turn Trigger-" convID="Asandr First Clothes" r="true">
-		<Branch num="3" name="">/
-			<Action>IfValGoTo/AsandrReachedClothes,=,1,BRANCH[START]
-Variable Name,Comparison Method ( = / g / l / etc),Amount (integer),Branch Number</Action>
-			<Action>EndConvImmediately/</Action>
-		</Branch>
+	<Dialogue trigger="None/" convID="Asandr First Clothes" r="true">
 		<Branch num="0" name="Start">Drasan Winterbloom/Oh, what do we have here? [Drasan sees an open container of clothes for performers] These clothes are...
 			<Action>SetVal/AsandrReachedClothes,=:2</Action>
 			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,left,,Quizzical</Action>
@@ -602,7 +603,7 @@ Variable Name,Comparison Method ( = / g / l / etc),Amount (integer),Branch Numbe
 			<Action>SpawnFloatingText/Psy + 1,Andras Winterbloom,Yellow</Action>
 			<Action>SpawnFloatingText/Dodge + 3,Andras Winterbloom,Yellow</Action>
 			<Action>SpawnFloatingText/Accuracy + 5,Andras Winterbloom,Yellow</Action>
-			<Reply>Continue./NextBranch</Reply>
+			<Reply>Continue./LoadConv/Round Start Dialogue Dispatch</Reply>
 		</Branch>
 	</Dialogue>
 
@@ -761,6 +762,11 @@ Variable Name,Comparison Method ( = / g / l / etc),Amount (integer),Branch Numbe
 		<Branch num="2" name="">/
 			<Action>LoadConv/Boss Spawn</Action>
 			<Action>SetVal/TurnsUntilBossAppears,=:-1</Action>
+			<Action>GoTo/0</Action>
+		</Branch>
+		<Branch num="3" name="">/
+			<Action>LoadConv/Asandr First Clothes</Action>
+			<Action>SetVal/AsandrReachedClothes,=:2</Action>
 			<Action>GoTo/0</Action>
 		</Branch>
 	</Dialogue>
