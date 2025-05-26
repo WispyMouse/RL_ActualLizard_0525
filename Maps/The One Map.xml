@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/25/2025 7:40:47 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/25/2025 8:44:19 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Community Defense Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -174,15 +174,15 @@
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,IgnoreArmy,3">0,1,Clark Lutrinae/Sad,4,2,Left,None</Unit>
 	<Unit tag="Add,LevelUp,2/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.2">0,1,Bowhuckin/Chuckerslass,4,5,Right,None</Unit>
 	<Unit tag="Add,Patrol,Stage,=:5/Add,IgnoreArmy,2/Add,TargetPreference,Emma Strider Promotional Cutout,+:1">0,1,Xander/Bilt,6,11,Left,None</Unit>
-	<Unit tag="Add,LevelUp,6/Add,Pursue/Add,IgnoreArmy,2/Add,Passive/Add,AggroGroup,5/Add,Patrol,Theater,1.5">0,1,Irate Crossbow Aficionado/,7,5,Down,Screw-Firing Crossbow[E]</Unit>
+	<Unit tag="Add,LevelUp,3/Add,Pursue/Add,IgnoreArmy,2/Add,Passive/Add,AggroGroup,5/Add,Patrol,Theater,1.5">0,1,Irate Crossbow Aficionado/,7,5,Down,Screw-Firing Crossbow[E]</Unit>
 	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Theater,1.5">0,1,Rubble Rouser Bruiser/,7,8,Left,None</Unit>
-	<Unit tag="Add,LevelUp,4/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Bruiser/,9,2,Down,None</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,9,5,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
+	<Unit tag="Add,LevelUp,5/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Bruiser/,9,2,Down,None</Unit>
+	<Unit tag="Add,LevelUp,3/Add,AggroGroup,5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,9,5,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
 	<Unit tag="Add,MoveFirst">0,1,Rubble Rouser Golem/,9,8,Down,None</Unit>
-	<Unit tag="Add,LevelUp,5/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Breaker/,10,1,Right,None</Unit>
-	<Unit tag="Add,LevelUp,2/Add,AreaPreference,StartingArea,=:1.5">0,1,Rubble Rouser Bruiser/,10,12,Left,None</Unit>
-	<Unit tag="Add,AreaPreference,StartingArea,=:1.5/Add,MoveFirst">0,1,Rubble Rouser Golem/,11,6,Right,None</Unit>
-	<Unit tag="Add,IgnoreArmy,3/Add,IgnoreArmy,1">0,1,Coderick/Gutterson,12,1,Down,None</Unit>
+	<Unit tag="Add,LevelUp,4/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Breaker/,10,1,Right,None</Unit>
+	<Unit tag="Add,LevelUp,1/Add,AreaPreference,StartingArea,=:1.5">0,1,Rubble Rouser Bruiser/,10,12,Left,None</Unit>
+	<Unit tag="Add,AreaPreference,StartingArea,=:1.5/Add,MoveFirst/Add,LevelTo,2">0,1,Rubble Rouser Golem/,11,6,Right,None</Unit>
+	<Unit tag="Add,IgnoreArmy,3/Add,IgnoreArmy,1/Add,LevelTo,6">0,1,Coderick/Gutterson,12,1,Down,None</Unit>
 	<Unit tag="Add,Inactive/Add,LevelUp,8/Add,Patrol,ViewingBooth,=,5/Add,TargetValue,1.3">0,2,Loud Theater Enjoyer/,1,11,Down,None</Unit>
 
 	<Script>Set Lesbian Talkable
@@ -311,7 +311,7 @@
 			<Action>ClearPortraits/</Action>
 			<Action>AddPortrait/Xander Bilt,Xander Bilt,left,,Yell Mad</Action>
 			<Action>MoveCam/,,Xander Bilt</Action>
-			<Action>Wait/.25</Action>
+			<Action>Wait/.76</Action>
 			<Action>PlayAnim/Xander Bilt,Slash</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -337,9 +337,9 @@
 		</Branch>
 		<Branch num="3" name="">Irate Crossbow Aficionado/That Rubble Rouser guy is right! We don't have to stand for this! We can take matters in to our own hands! We can tear down this injust favoritism for over-hyped product line crossbows!
 			<Action>RemovePortrait/Loud Theater Enjoyer</Action>
-			<Action>AddPortrait/Irate Crossbow Aficionado,Irate Crossbow Aficionado,left,Red,Angry,-15,0</Action>
+			<Action>AddPortrait/Irate Crossbow Aficionado,Irate Crossbow Aficionado,left,Red,Angry,35,0</Action>
 			<Action>MoveCam/,,Irate Crossbow Aficionado</Action>
-			<Action>MovePortrait/Irate Crossbow Aficionado,13,0,250</Action>
+			<Action>MovePortrait/Irate Crossbow Aficionado,14,0,300</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="6" name="">Rubble Rouser Bruiser/Uh, yeah. Yeah! Whatever gets your engine going, get smashing.
@@ -364,7 +364,7 @@
 
 	<Dialogue trigger="None/" convID="First Lesbian Dialogue" r="false">
 		<Branch num="1" name="">Nobeta Lifts/This is wild. Gotta get a grip... [Nobeta shakes her head] Oh, hey, Mary!
-			<Action>AddPortrait/Mary O Nette,Mary O Nette,left,,Blank,0,0</Action>
+			<Action>AddPortrait/Mary O Nette,Mary O Nette,left,,Blank,20,0</Action>
 			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Concerned</Action>
 			<Action>MovePortrait/Nobeta Lifts,5,0,80</Action>
 			<Action>FlipPortrait/Mary O Nette</Action>
@@ -379,7 +379,7 @@
 			<Action>Wait/.15</Action>
 			<Action>FlipPortrait/Mary O Nette</Action>
 			<Action>Wait/.5</Action>
-			<Action>MovePortrait/Mary O Nette,18,0,80</Action>
+			<Action>MovePortrait/Mary O Nette,15,0,80</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Nobeta Lifts/I should worry about you! Get behind me, and we will chase these goons out.
@@ -572,6 +572,7 @@ Variable Name,Comparison Method ( = / g / l / etc),Amount (integer),Branch Numbe
 			<Action>EndConvImmediately/</Action>
 		</Branch>
 		<Branch num="0" name="Start">Drasan Winterbloom/Oh, what do we have here? [Drasan sees an open container of clothes for performers] These clothes are...
+			<Action>SetVal/AsandrReachedClothes,=:2</Action>
 			<Action>AddPortrait/Drasan Winterbloom,Drasan Winterbloom,left,,Quizzical</Action>
 			<Action>RemoveConv/Asandr First Clothes</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -750,6 +751,7 @@ Variable Name,Comparison Method ( = / g / l / etc),Amount (integer),Branch Numbe
 		<Branch num="0" name="">/
 			<Action>IfValGoTo/WestApproachFlag,=,1,1</Action>
 			<Action>IfValGoTo/TurnsUntilBossAppears,=,0,2</Action>
+			<Action>IfValGoTo/AsandrReachedClothes,=,1,3</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
 		<Branch num="1" name="">/
@@ -765,25 +767,26 @@ Variable Name,Comparison Method ( = / g / l / etc),Amount (integer),Branch Numbe
 
 	<Dialogue trigger="OnTurn/6" convID="Greek Chorus Heckles 1" r="false">
 		<Branch num="0" name="">Loud Theater Enjoyer/Rubble Rousers, entitled critics, bah. You clearly don't see the metaphors for bittersweet sorrow in the choice of Lakshmi's bolts.
-			<Action>MovePortrait/Loud Theater Enjoyer</Action>
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Amused</Action>
+			<Action>MoveCam/Loud Theater Enjoyer</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Rubble Rouser Golem/WRONG OPINION DETECTED.
 			<Action>AddPortrait/Rubble Rouser Golem,Rubble Rouser Golem,right,,Neutral</Action>
+			<Action>ChangeExpression/Loud Theater Enjoyer,Irritated</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnTurn/14" convID="Greek Chorus Heckles 2" r="false">
 		<Branch num="0" name="">Loud Theater Enjoyer/And what even [b]is[/b] "over centralization" of such a crucial crossbow. Everyone knows the 20DV changed the world. Fools!
-			<Action>MoveCam/Loud Theater Enjoyer</Action>
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Quizzical</Action>
+			<Action>MoveCam/Loud Theater Enjoyer</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Rubble Rouser Bruiser/Ey keep it down up there! We're busy!
 			<Action>AddPortrait/Rubble Rouser Bruiser,Rubble Rouser Bruiser,right,,Yell</Action>
-			<Action>/</Action>
+			<Action>ChangeExpression/Loud Theater Enjoyer,Mean</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -800,6 +803,7 @@ Variable Name,Comparison Method ( = / g / l / etc),Amount (integer),Branch Numbe
 			<Action>RemoveTagFromGroup/2,Inactive</Action>
 			<Action>RemoveTagFromGroup/2,Passive</Action>
 			<Action>SpawnUnit/1,Irate Crossbow Aficionado,1,8,Right,,Add:LevelUp:3::Add:TargetPreference:Loud Theater Enjoyer:=::9,Sorrow-Less Recoil Crossbow[E]</Action>
+			<Action>ChangeExpression/Loud Theater Enjoyer,Concerned</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
