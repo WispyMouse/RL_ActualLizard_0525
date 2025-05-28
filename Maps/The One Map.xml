@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/27/2025 7:08:30 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/27/2025 7:52:59 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Community Defense Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -30,7 +30,7 @@
 	<Row>01.01,01.01,01.02,01.3C,01.03,04.0P,04.01,04.01,04.01,04.01,04.01,04.01,03.01,03.01,03.01</Row>
 	<Row>01.01,01.01,01.01,01.01,01.01,03.01,04.01,04.01,04.01,04.01,04.01,04.01,03.01,03.01,03.01</Row>
 	<Row>05.19,05.19,05.07,05.06,06.0K,03.01,04.01,04.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
-	<Row>07.01,07.01,03.01,03.01,07.01,03.01,03.01,03.01,03.01,07.01,07.01,07.01,07.01,06.0O,08.09</Row>
+	<Row>07.01,07.01,03.01,03.01,07.01,03.01,03.01,03.01,03.01,07.01,07.01,07.01,07.01,08.0O,08.09</Row>
 	<Row>05.1g,07.01,03.01,03.01,07.01,07.01,07.01,07.01,07.01,08.0Q,08.0N,08.0N,08.0R,07.01,07.01</Row>
 	<Row>05.1b,07.01,03.01,03.01,07.01,05.1f,05.1c,05.1c,05.07,05.1K,05.1K,05.1K,06.06,06.0R,07.01</Row>
 	<Row>05.1k,05.1c,05.1j,05.1k,05.1c,05.1j,05.01,05.01,05.1L,05.01,05.07,05.1K,05.06,06.06,07.01</Row>
@@ -148,8 +148,10 @@
 	<Unit>0,99,RugTurq9B,7,12,None,None</Unit>
 	<Unit>0,99,RugTurq9B,7,13,None,None</Unit>
 	<Unit>0,99,RubbleCastle,8,0,None,None</Unit>
+	<Unit>0,99,ScrapeMarks,8,2,None,None</Unit>
+	<Unit>0,99,ScrapeMarks,8,3,None,None</Unit>
 	<Unit>0,99,Poster,8,4,None,None</Unit>
-	<Unit>0,99,HouseWallVertical,8,5,None,None</Unit>
+	<Unit>0,99,HouseWallWindowVertical,8,5,None,None</Unit>
 	<Unit>0,99,HouseWallNW,8,8,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,8,9,None,None</Unit>
 	<Unit>0,99,BridgeWood,8,10,None,None</Unit>
@@ -163,12 +165,13 @@
 	<Unit>0,99,HouseWallWindowHorizontal,9,6,None,None</Unit>
 	<Unit>0,99,HouseWallWindowHorizontal,9,7,None,None</Unit>
 	<Unit>0,99,HouseWallSE,9,8,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Poster,9,13,None,None</Unit>
 	<Unit>0,99,ReedsFlowerSmall,9,13,None,None</Unit>
 	<Unit>0,99,ItemSack,9,14,None,Rejuvenation Orb</Unit>
+	<Unit>0,99,BridgeWood,9,14,None,None</Unit>
 	<Unit>0,99,LampLitAlt,11,0,None,None</Unit>
 	<Unit>0,99,ScrapeMarks,11,6,None,None</Unit>
 	<Unit>0,99,ScrapeMarks,11,7,None,None</Unit>
+	<Unit>0,99,Reeds,11,13,None,None</Unit>
 	<Unit>0,99,ItemSack,12,0,None,Focus Pills/Cookies/Novice Battle Primer</Unit>
 	<Unit>0,99,BarricadeWood,12,1,None,None</Unit>
 	<Unit>0,99,ScrapeMarks,12,6,None,None</Unit>
@@ -195,7 +198,7 @@
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,IgnoreArmy,3/Add,IgnoreArmy,2">0,1,Clark Lutrinae/Sad,4,3,Left,None</Unit>
 	<Unit tag="Add,LevelTo,2/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.2">0,1,Bowhuckin/Chuckerslass,4,6,Right,Bundle of Throwing Crossbows</Unit>
 	<Unit tag="Add,Patrol,Stage,=:5/Add,IgnoreArmy,2/Add,TargetPreference,Emma Strider Promotional Cutout,+:1">0,1,Xander/Bilt,6,12,Left,None</Unit>
-	<Unit tag="Add,LevelTo,3/Add,Pursue/Add,IgnoreArmy,2/Add,Passive/Add,AggroGroup,5/Add,Patrol,Theater,1.5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,7,6,Down,Screw-Firing Crossbow[E]</Unit>
+	<Unit tag="Add,LevelTo,3/Add,Pursue/Add,IgnoreArmy,2/Add,Passive/Add,AggroGroup,5/Add,Patrol,Sniper Nest,1.5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,7,6,Down,Screw-Firing Crossbow[E]</Unit>
 	<Unit tag="Add,LevelTo,4/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Theater,1.5/Add,TargetPreference,Emma Strider Promotional Cutout,=,1.5">0,1,Rubble Rouser Bruiser/,7,9,Left,None</Unit>
 	<Unit tag="Add,LevelTo,3/Add,AggroGroup,5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,8,3,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
 	<Unit tag="Add,LevelTo,4/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Breaker/,11,2,Right,None</Unit>
@@ -241,6 +244,7 @@
 		<Action>SetArea/Stage,2,5,5,8</Action>
 		<Action>SetArea/Theater,1,8,5,11</Action>
 		<Action>SetArea/ClothingZone,0,7,0,4</Action>
+		<Action>SetArea/Sniper Nest,8,8,6,7</Action>
 	</Script>
 
 	<Script>Lever Flipped
@@ -315,15 +319,15 @@
 			<Action>SetString/AndrasReadyToShave,INVALID</Action>
 			<Action>SetVal/TurnsUntilBossAppears,=:-1</Action>
 			<Action>SetVal/Turn Trigger,=:0</Action>
-			<Action>IfValGoTo/Skip Dialogue,=,1,999</Action>
 			<Action>SetVal/WestApproachFlag,=:0</Action>
 			<Action>SetVal/Sandra Attacks,=:0</Action>
 			<Action>AddTagToArmy/1,IgnoreArmy,2</Action>
 			<Action>SetVal/TurnsSinceLastLesbianConvo,=:0</Action>
 			<Action>Run/SetAreas</Action>
-			<Action>IfValGoTo/SkipIntro,=,1,9</Action>
 			<Action>SetVal/Clark Lutrinae Alive,=:0</Action>
 			<Action>SetStat/ID[901],Damage,=:40</Action>
+			<Action>IfValGoTo/Skip Dialogue,=,1,999</Action>
+			<Action>IfValGoTo/SkipIntro,=,1,9</Action>
 			<Action>/</Action>
 			<Action>/</Action>
 			<Action>GoToNextBranch/</Action>
@@ -578,7 +582,7 @@
 		<Branch num="6" name="">Clark Lutrinae/...W-well;; okay. ...Thank you.
 			<Action>SetStat/Clark Lutrinae,Army,=:0</Action>
 			<Action>SetStat/Clark Lutrinae,Morale,+:4</Action>
-			<Action>Run/Swap Out Unit,Swap Out Name,Clark Lutrinae,Swap In Name,Clark Lutrinae,Swap In ID,Clark Lutrinae:Happy</Action>
+			<Action>Run/Swap Out Unit,Swap Out Name,Clark Lutrinae,Swap In Name,Clark Lutrinae,Swap In ID,Clark Lutrinae/Happy</Action>
 			<Action>ChangeExpression/Clark Lutrinae,Happy</Action>
 			<Action>RemoveConv/West Approach Recognized</Action>
 			<Action>SetVal/WestApproachFlag,=:3</Action>

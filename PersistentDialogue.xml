@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/25/2025 11:10:34 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/27/2025 8:03:19 PM">
 
 	<Script>ComparisonScript_Equals
 		<Action>SetVal/-STR:Prefix-Answer,=:0</Action>
@@ -44,12 +44,14 @@
 		<Action>EquipmentToList/-STR:Character Name-,-STR:Prefix-Equipped,true</Action>
 		<Action>ForLoop/-ii-,0-LASTINLIST[Variables To List],1,SetValByStat,-STR:Prefix-LIST{Variables To List,-ii-},=,-STR:Swap Out Name-,LIST{Variables To List,-ii-}</Action>
 		<Action>SetStringByStat/-STR:Prefix-Facing,-STR:Character Name-,Facing</Action>
+		<Action>SkillsToList/-STR:Character Name-,-STR:Prefix-Skills,true</Action>
 	</Script>
 
 	<Script>Load Character Stats
 		<Action>SetList/Variables To List,Accuracy|Dodge|Counter Limit|Experience|Level|Morale|Perception|Psy|Reflexes|Slash Res.|Pierce Res.|Crush Res.|Mental Res.|Heat Res.|Cold Res.|Shadow Res.|Light Res.|Poison Res.|Speed|Strength|Health|Salary|Drain|Damage|Turn Ended</Action>
 		<Action>ForLoop/-ii-,0-LASTINLIST[Variables To List],1,Run,Load Character Stat Subroutine,Prefix,-STR:Prefix-,Character Name,-STR:Character Name-,Stat,LIST{Variables To List,-ii-}</Action>
 		<Action>SetStatByString/-STR:Character Name-,-STR:Prefix-Facing</Action>
+		<Action>ForLoop/-jj-,0-LASTINLIST[SwapOutSkills],1,LearnSkill,-STR:Character Name-,LIST{SwapOutSkills,-ii-},true</Action>
 	</Script>
 
 	<Script>Load Character Stat Subroutine
