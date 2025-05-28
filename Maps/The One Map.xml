@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/27/2025 7:52:59 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/27/2025 8:11:28 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Community Defense Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -30,8 +30,8 @@
 	<Row>01.01,01.01,01.02,01.3C,01.03,04.0P,04.01,04.01,04.01,04.01,04.01,04.01,03.01,03.01,03.01</Row>
 	<Row>01.01,01.01,01.01,01.01,01.01,03.01,04.01,04.01,04.01,04.01,04.01,04.01,03.01,03.01,03.01</Row>
 	<Row>05.19,05.19,05.07,05.06,06.0K,03.01,04.01,04.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
-	<Row>07.01,07.01,03.01,03.01,07.01,03.01,03.01,03.01,03.01,07.01,07.01,07.01,07.01,08.0O,08.09</Row>
-	<Row>05.1g,07.01,03.01,03.01,07.01,07.01,07.01,07.01,07.01,08.0Q,08.0N,08.0N,08.0R,07.01,07.01</Row>
+	<Row>07.01,07.01,03.01,03.01,07.01,03.01,03.01,03.01,03.01,07.01,07.01,07.01,07.01,07.01,06.09</Row>
+	<Row>05.1g,07.01,03.01,03.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01</Row>
 	<Row>05.1b,07.01,03.01,03.01,07.01,05.1f,05.1c,05.1c,05.07,05.1K,05.1K,05.1K,06.06,06.0R,07.01</Row>
 	<Row>05.1k,05.1c,05.1j,05.1k,05.1c,05.1j,05.01,05.01,05.1L,05.01,05.07,05.1K,05.06,06.06,07.01</Row>
 	<Row>05.01,05.01,05.01,05.01,05.01,05.01,05.0j,05.0a,05.09,05.05,05.1L,05.01,05.1M,06.02,06.2R</Row>
@@ -56,8 +56,8 @@
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>1,1,2,2,1,1,1,1,1,1,1,1,2,2,2</RowElev>
-	<RowElev>0,0,2,2,0,1,1,1,1,0,0,0,0,1,2</RowElev>
-	<RowElev>1,0,2,2,0,0,0,0,0,1,1,1,1,0,0</RowElev>
+	<RowElev>0,0,2,2,0,1,1,1,1,0,0,0,0,0,2</RowElev>
+	<RowElev>1,0,2,2,0,0,0,0,0,0,0,0,0,0,0</RowElev>
 	<RowElev>1,0,2,2,0,1,1,1,2,2,2,2,2,1,0</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,2,2,3,3,3,2,0</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,2,2,3,3,3,2,2</RowElev>
@@ -165,9 +165,10 @@
 	<Unit>0,99,HouseWallWindowHorizontal,9,6,None,None</Unit>
 	<Unit>0,99,HouseWallWindowHorizontal,9,7,None,None</Unit>
 	<Unit>0,99,HouseWallSE,9,8,None,None</Unit>
-	<Unit>0,99,ReedsFlowerSmall,9,13,None,None</Unit>
+	<Unit>0,99,BridgeWood,9,13,None,None</Unit>
 	<Unit>0,99,ItemSack,9,14,None,Rejuvenation Orb</Unit>
-	<Unit>0,99,BridgeWood,9,14,None,None</Unit>
+	<Unit>0,99,BridgeWood,10,9,None,None</Unit>
+	<Unit>0,99,BridgeWood,10,10,None,None</Unit>
 	<Unit>0,99,LampLitAlt,11,0,None,None</Unit>
 	<Unit>0,99,ScrapeMarks,11,6,None,None</Unit>
 	<Unit>0,99,ScrapeMarks,11,7,None,None</Unit>
@@ -313,8 +314,8 @@
 		<Branch num="0" name="">/
 			<Action>SetVal/AroraGender,=:0</Action>
 			<Action>SetVal/Lesbian Discussions Count,=:0</Action>
-			<Action>Run/Set Lesbian Talkable</Action>
-			<Action>SetVal/Asandr Name Progress,0</Action>
+			<Action>/</Action>
+			<Action>SetVal/Asandr Name Progress,=:0</Action>
 			<Action>SetString/Asandr Current Name,Drasan Winterbloom</Action>
 			<Action>SetString/AndrasReadyToShave,INVALID</Action>
 			<Action>SetVal/TurnsUntilBossAppears,=:-1</Action>
@@ -349,7 +350,7 @@
 		<Branch num="5" name="">Rubble Rouser Bruiser/The boss says this place has got to go! No one supporting these shmucks has a place in [b]our[/b] town!
 			<Action>ClearPortraits/</Action>
 			<Action>MoveCam/,,Rubble Rouser Bruiser</Action>
-			<Action>AddPortrait/Rubble Rouser Bruiser,Rubble Rouser Bruiser,right,Red,Mad</Action>
+			<Action>AddPortrait/Rubble Rouser Bruiser,Rubble Rouser Bruiser,right,Red,Mad,4,0</Action>
 			<Action>Wait/.46</Action>
 			<Action>PlayAnim/Rubble Rouser Bruiser,Slash</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -359,17 +360,17 @@
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Sad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="7" name="">Rubble Rouser Bruiser/Kuh, what? Crossbowwhatsit? Look, anything Strider, it's gotta go. Ain't she done enough damage?
+		<Branch num="7" name="">Rubble Rouser Bruiser/Kuh, what? Crossbowwhatsit? Look, anything Strider, it's gotta go. Ain't she done enough damage to fine people, like our boss?
 			<Action>ChangeExpression/Rubble Rouser Bruiser,Mad</Action>
 			<Action>ChangeExpression/Loud Theater Enjoyer,Sad</Action>
-			<Action>MovePortrait/Rubble Rouser Bruiser,4,0</Action>
+			<Action>MovePortrait/Rubble Rouser Bruiser,5,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Irate Crossbow Aficionado/That Rubble Rouser guy is right! We don't have to stand for this! We can take matters in to our own hands! We can tear down this injust favoritism for over-hyped product line crossbows!
 			<Action>RemovePortrait/Loud Theater Enjoyer</Action>
 			<Action>AddPortrait/Irate Crossbow Aficionado,Irate Crossbow Aficionado,left,Red,Angry,35,0</Action>
 			<Action>MoveCam/,,Irate Crossbow Aficionado</Action>
-			<Action>MovePortrait/Irate Crossbow Aficionado,14,0,300</Action>
+			<Action>MovePortrait/Irate Crossbow Aficionado,15,0,300</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="6" name="">Rubble Rouser Bruiser/Uh, yeah. Yeah! Whatever gets your engine going, get smashing.
@@ -798,7 +799,7 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnTurn/6" convID="Greek Chorus Heckles 1" r="false">
+	<Dialogue trigger="OnTurn/10" convID="Greek Chorus Heckles 1" r="false">
 		<Branch num="0" name="">Loud Theater Enjoyer/Rubble Rousers, entitled critics, bah. You clearly don't see the metaphors for bittersweet sorrow in the choice of Lakshmi's bolts.
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Amused</Action>
 			<Action>MoveCam/Loud Theater Enjoyer</Action>
@@ -824,7 +825,7 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnTurn/22" convID="Greek Chorus Heckles 3" r="false">
+	<Dialogue trigger="OnTurn/18" convID="Greek Chorus Heckles 3" r="false">
 		<Branch num="0" name="">Loud Theater Enjoyer/Did you even pick up on [b]any[/b] of the subthemes about recoil representing revolution? And you dare say you know this craft!
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Amused</Action>
 			<Action>MoveCam/Loud Theater Enjoyer</Action>
@@ -1347,6 +1348,16 @@
 			<Action>AddPortrait/Rubble Rouser Bruiser,Rubble Rouser Bruiser,left</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnTurn/0" convID="Post Start Game" r="false">
+		<Branch num="0" name="">/
+			<Action>Run/Set Lesbian Talkable</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnTurn/5" convID="Xander Starts Moving Watcher" r="false">
 	</Dialogue>
 
 </Level>
