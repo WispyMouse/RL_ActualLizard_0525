@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/27/2025 8:15:28 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/27/2025 8:40:11 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Community Defense Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -14,29 +14,29 @@
 	
 	<Tileset>01,Cave</Tileset>
 	<Tileset>02,Castle</Tileset>
-	<Tileset>03,Wood</Tileset>
-	<Tileset>04,CastleSandstone</Tileset>
+	<Tileset>03,CastleSandstone</Tileset>
+	<Tileset>04,Wood</Tileset>
 	<Tileset>05,Street</Tileset>
 	<Tileset>06,Grass</Tileset>
 	<Tileset>07,Water</Tileset>
 	<Tileset>08,Dirt</Tileset>
 	
-	<Row>01.01,01.01,01.01,01.01,01.01,02.0S,02.0W,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01</Row>
-	<Row>03.01,03.01,03.01,01.05,01.01,01.01,02.0P,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01</Row>
-	<Row>01.3B,01.01,01.01,01.09,01.05,03.01,03.01,02.01,03.01,04.01,04.01,02.01,02.01,02.01,02.01</Row>
-	<Row>01.3B,01.01,01.01,01.01,01.07,03.01,03.01,03.01,03.01,04.01,04.01,02.01,02.01,02.01,02.01</Row>
-	<Row>01.3B,01.01,01.01,01.01,01.3A,03.01,03.01,03.01,03.01,04.01,04.01,04.01,02.01,02.01,02.01</Row>
-	<Row>01.02,01.3C,01.06,01.01,01.09,03.01,03.01,03.01,03.01,04.01,04.01,04.01,02.01,02.01,02.01</Row>
-	<Row>01.01,01.01,01.02,01.3C,01.03,04.0P,04.01,04.01,04.01,04.01,04.01,04.01,03.01,03.01,03.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,03.01,04.01,04.01,04.01,04.01,04.01,04.01,03.01,03.01,03.01</Row>
-	<Row>05.19,05.19,05.07,05.06,06.0K,03.01,04.01,04.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
-	<Row>07.01,07.01,03.01,03.01,07.01,03.01,03.01,03.01,03.01,07.01,07.01,07.01,07.01,07.01,06.09</Row>
-	<Row>05.1g,07.01,03.01,03.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01</Row>
-	<Row>05.1b,07.01,03.01,03.01,07.01,05.1f,05.1c,05.1c,05.07,05.1K,05.1K,05.1K,06.06,06.0R,07.01</Row>
-	<Row>05.1k,05.1c,05.1j,05.1k,05.1c,05.1j,05.01,05.01,05.1L,05.01,05.07,05.1K,05.06,06.06,07.01</Row>
-	<Row>05.01,05.01,05.01,05.01,05.01,05.01,05.0j,05.0a,05.09,05.05,05.1L,05.01,05.1M,06.02,06.2R</Row>
-	<Row>05.0m,05.0m,05.0u,05.01,05.0j,05.0a,05.0f,08.01,08.01,05.1L,05.1L,05.01,05.02,06.3D,06.2R</Row>
-	<Row>06.01,06.01,05.0n,05.01,05.0c,08.01,08.01,08.01,08.01,05.07,05.03,05.01,05.01,05.0o,06.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,02.0S,03.01,03.01,03.01,03.01,03.01,03.01,02.01,02.01,02.01</Row>
+	<Row>04.01,04.01,04.01,01.05,01.01,01.01,03.0P,03.01,03.01,03.01,03.01,03.01,02.01,02.01,02.01</Row>
+	<Row>01.3B,01.01,01.01,01.09,01.05,04.01,04.01,04.01,04.01,03.01,03.01,03.01,02.01,02.01,02.01</Row>
+	<Row>01.3B,01.01,01.01,01.01,01.07,04.01,04.01,04.01,04.01,03.01,03.01,02.01,02.01,02.01,02.01</Row>
+	<Row>01.3B,01.01,01.01,01.01,01.3A,04.01,04.01,04.01,04.01,03.01,03.01,03.01,02.01,02.01,02.01</Row>
+	<Row>01.02,01.3C,01.06,01.01,01.09,04.01,04.01,04.01,04.01,03.01,03.01,03.01,02.01,02.01,02.01</Row>
+	<Row>01.01,01.01,01.02,01.3C,01.03,03.0P,03.01,03.01,03.01,03.01,03.01,03.01,04.01,04.01,04.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,04.01,03.01,03.01,03.01,03.01,03.01,03.01,04.01,04.01,04.01</Row>
+	<Row>05.19,05.19,05.07,05.06,06.0K,04.01,03.01,03.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>07.01,07.01,04.01,04.01,07.01,04.01,04.01,04.01,04.01,07.01,07.01,07.01,07.01,07.01,06.09</Row>
+	<Row>07.01,07.01,04.01,04.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01</Row>
+	<Row>05.1g,07.01,04.01,04.01,07.01,07.01,05.1f,05.1c,05.07,05.1K,05.06,06.0N,06.0N,06.0R,07.01</Row>
+	<Row>05.1k,05.1c,05.1j,05.1k,05.1c,05.1c,05.1j,05.01,05.1L,05.01,05.07,05.1K,05.06,06.06,07.01</Row>
+	<Row>05.01,05.01,05.01,05.01,05.01,05.01,05.01,05.01,05.09,05.05,05.1L,05.01,05.02,06.06,06.2R</Row>
+	<Row>05.0m,05.0m,05.0u,05.01,05.0j,05.0a,05.0a,05.0a,05.0a,05.1L,05.1L,05.01,05.0x,06.07,06.2R</Row>
+	<Row>06.01,06.01,05.0n,05.01,05.0c,08.01,08.01,08.01,08.01,05.07,05.03,05.01,05.01,05.1L,06.01</Row>
 	
 	<Light type="Point Light" size="4" intensity="0.7" y="0" x="13" A="1" R="1" G="0.5" B="0" animType="Static" direction="Up"></Light>
 	<Light type="Directional Light" size="2" intensity="1.5" y="2" x="5" A="1" R="1" G="1" B="1" animType="Static" direction="Down"></Light>
@@ -57,12 +57,12 @@
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>1,1,2,2,1,1,1,1,1,1,1,1,2,2,2</RowElev>
 	<RowElev>0,0,2,2,0,1,1,1,1,0,0,0,0,0,2</RowElev>
-	<RowElev>1,0,2,2,0,0,0,0,0,0,0,0,0,0,0</RowElev>
-	<RowElev>1,0,2,2,0,1,1,1,2,2,2,2,2,1,0</RowElev>
+	<RowElev>0,0,2,2,0,0,0,0,0,0,0,0,0,0,0</RowElev>
+	<RowElev>1,0,2,2,0,0,1,1,2,2,2,1,1,1,0</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,2,2,3,3,3,2,0</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,2,2,3,3,3,2,2</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,2,3,3,3,4,3</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,3,3,3,3,3,3</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,2,2,3,3,3,3,2</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,2,3,3,3,4,4</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,3,3,3,3,4,4</RowElev>
 	
 	<Unit>0,99,CastleWallT_N,0,0,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,0,1,None,None</Unit>
@@ -85,6 +85,8 @@
 	<Unit>0,99,StairsCave_S,1,6,None,None</Unit>
 	<Unit>0,99,StairsCave_S,1,7,None,None</Unit>
 	<Unit>0,99,StairsWood_S,1,8,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Poster,1,10,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,BookcaseFull,1,11,None,None</Unit>
 	<Unit>0,99,RugTurq,1,12,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,2,0,None,None</Unit>
 	<Unit>0,99,IronJaw,2,1,None,None</Unit>
@@ -167,8 +169,6 @@
 	<Unit>0,99,HouseWallSE,9,8,None,None</Unit>
 	<Unit>0,99,BridgeWood,9,13,None,None</Unit>
 	<Unit>0,99,ItemSack,9,14,None,Rejuvenation Orb</Unit>
-	<Unit>0,99,BridgeWood,10,9,None,None</Unit>
-	<Unit>0,99,BridgeWood,10,10,None,None</Unit>
 	<Unit>0,99,LampLitAlt,11,0,None,None</Unit>
 	<Unit>0,99,ScrapeMarks,11,6,None,None</Unit>
 	<Unit>0,99,ScrapeMarks,11,7,None,None</Unit>
@@ -194,13 +194,13 @@
 	<Unit tag="Add,LevelTo,4">0,0,Mary O Nette/,14,11,Left,None</Unit>
 	<Unit tag="Add,LevelTo,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,Parol,ClothingZone,=,1.5">0,1,Slighted Rival Playwright/,1,3,Down,None</Unit>
 	<Unit tag="Add,LevelTo,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,2,2,Down,Obviously Stolen Crossbow[E]</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Pursue/Add,LevelTo,4/Add,Patrol,Stage,=,1.5//Add,TargetPreference,Emma Strider Promotional Cutout,+:1">0,1,Irate Crossbow Aficionado/,3,7,Left,Limited-Issue Bayonet Only Crossbow[E]</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,MoveFirst//Add,TargetPreference,Emma Strider Promotional Cutout,+:1/Add,Patrol,Theater,1.5">0,1,Rubble Rouser Golem/,3,10,Down,None</Unit>
+	<Unit tag="Add,LevelTo,4/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Theater,1.5/Add,TargetPreference,Emma Strider Promotional Cutout,=:1.5">0,1,Rubble Rouser Bruiser/,3,7,Left,None</Unit>
+	<Unit tag="Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,MoveFirst/Add,Patrol,Theater,1.5">0,1,Rubble Rouser Golem/,3,10,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Pursue/Add,LevelTo,4/Add,Patrol,Stage,=,1.5//Add,TargetPreference,Emma Strider Promotional Cutout,+:1">0,1,Irate Crossbow Aficionado/,4,2,Up,Limited-Issue Bayonet Only Crossbow[E]</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,IgnoreArmy,3/Add,IgnoreArmy,2">0,1,Clark Lutrinae/Sad,4,3,Left,None</Unit>
-	<Unit tag="Add,LevelTo,2/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.2">0,1,Bowhuckin/Chuckerslass,4,6,Right,Bundle of Throwing Crossbows</Unit>
-	<Unit tag="Add,Patrol,Stage,=:5/Add,IgnoreArmy,2/Add,TargetPreference,Emma Strider Promotional Cutout,+:1">0,1,Xander/Bilt,6,12,Left,None</Unit>
+	<Unit tag="Add,LevelTo,6/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.2">0,1,Bowhuckin/Chuckerslass,4,6,Right,Bundle of Throwing Crossbows</Unit>
+	<Unit tag="Add,Patrol,Stage,=:5/Add,IgnoreArmy,2/Add,TargetPreference,Emma Strider Promotional Cutout,+:1/Add,Inactive">0,1,Xander/Bilt,6,12,Left,None</Unit>
 	<Unit tag="Add,LevelTo,3/Add,Pursue/Add,IgnoreArmy,2/Add,Passive/Add,AggroGroup,5/Add,Patrol,Sniper Nest,1.5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,7,6,Down,Screw-Firing Crossbow[E]</Unit>
-	<Unit tag="Add,LevelTo,4/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Theater,1.5/Add,TargetPreference,Emma Strider Promotional Cutout,=,1.5">0,1,Rubble Rouser Bruiser/,7,9,Left,None</Unit>
 	<Unit tag="Add,LevelTo,3/Add,AggroGroup,5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,8,3,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
 	<Unit tag="Add,LevelTo,4/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Breaker/,11,2,Right,None</Unit>
 	<Unit tag="Add,MoveFirst">0,1,Rubble Rouser Golem/,11,8,Down,None</Unit>
@@ -301,7 +301,7 @@
 			<Action>SetVal/ArmyTurnMod,mod:-FULLTURN-</Action>
 			<Action>Run/IsAllTrue_2,ValueOneName,ArmyTurnMod,ValueOneCompareTo,0,ValueTwoName,Arora Alive,ValueTwoCompareTo,1</Action>
 			<Action>IfValRun/AnswerComposite,=,1,Arora Shift Roll</Action>
-			<Action>IfValRun/Turn Trigger,=,5,Xander Moves</Action>
+			<Action>/</Action>
 			<Action>GoTo/1</Action>
 		</Branch>
 		<Branch num="2" name="">/
@@ -617,7 +617,7 @@
 		</Branch>
 		<Branch num="1" name="">Drasan Winterbloom/[Drasan nervously grabs a couple outfits from the chest]
 			<Action>ChangeExpression/Drasan Winterbloom,Concerned</Action>
-			<Action>MovePortrait/Drasan Winterbloom,7,0</Action>
+			<Action>MovePortrait/Drasan Winterbloom,10,0</Action>
 			<Action>PlaySound/Card Shuffle</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -629,7 +629,7 @@
 			<Action>SetStat/Andras Winterbloom,Accuracy,+:5</Action>
 			<Action>SetVal/Asandr Name Progress,+:1</Action>
 			<Action>Run/Asandr Progresses Script</Action>
-			<Action>AddPortrait/Andras Winterbloom,Andras Winterbloom,left,,Happy</Action>
+			<Action>AddPortrait/Andras Winterbloom,Andras Winterbloom,left,,Happy,10,0</Action>
 			<Action>Run/Set Asandr Default Relationships And Change Name,New Name,Andras Winterbloom</Action>
 			<Action>PortraitParticles/Andras Winterbloom,Heart</Action>
 			<Action>Run/Swap Out Unit,Swap Out Name,Drasan Winterbloom,Swap In Name,Andras Winterbloom,Swap In ID,Andras/Winterbloom</Action>
@@ -663,7 +663,8 @@
 			<Action>AddStatus/Asandr Winterbloom,Talkable</Action>
 			<Action>SetVal/Andras Winterbloom Alive,=:0</Action>
 			<Action>SetVal/Sandra Winterbloom Alive,=:1</Action>
-			<Action>WaitForPostDialogue</Action>
+			<Action>Run/AddTalkability,Speaker One,Mary O Nette,Speaker Two,Sandra Winterbloom</Action>
+			<Action>WaitForPostDialogue/</Action>
 			<Action>SpawnFloatingText/Morale + 3,Sandra Winterbloom,Yellow</Action>
 			<Action>SpawnFloatingText/Psy + 1,Sandra Winterbloom,Yellow</Action>
 			<Action>SpawnFloatingText/Dodge + 3,Sandra Winterbloom,Yellow</Action>
@@ -703,12 +704,12 @@
 			<Action>ChangeExpression/Clark Lutrinae,Headache</Action>
 			<Action>RemoveTagFromGroup/1,Passive</Action>
 			<Action>RemoveTagFromGroup/1,Inactive</Action>
-			<Action>SpawnUnit/1,Rubble Rouser Golem,6,1,Down,,Add:ID:901</Action>
-			<Action>SpawnUnit/1,Rubble Rouser Bruiser,6,2,Down,,Add:LevelUp:4::Add:ID:902</Action>
+			<Action>/</Action>
+			<Action>/</Action>
 			<Action>SetVal/WestApproachFlag,=,2</Action>
 			<Action>Run/AddTalkability,Speaker One,Clark Lutrinae,Speaker Two,Harrien Lifts</Action>
-			<Action>SetStat/ID[901],Turn Ended,true</Action>
-			<Action>SetStat/ID[902],Turn Ended,true</Action>
+			<Action>/</Action>
+			<Action>/</Action>
 			<Reply>Continue./LoadConv/Round Start Dialogue Dispatch</Reply>
 		</Branch>
 	</Dialogue>
@@ -1000,18 +1001,18 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,Xander Bilt,,,Harrien Lifts" convID="Xander and Harrien" r="false">
 		<Branch num="0" name="">Xander Bilt/So you're the leader of this pro-Strider propaganda affair! Do you understand how much she has ruined my financial affairs!?
-			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,Yell Mad</Action>
+			<Action>AddPortrait/Xander Bilt,Xander/Bilt,left,,Yell Mad,17,0</Action>
 			<Action>AddPortrait/Harrien Lifts,Harrien/Lifts,right,,Mad</Action>
-			<Action>MovePortrait/Xander Bilt,13,0</Action>
+			<Action>MovePortrait/Xander Bilt,15,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Harrien Lifts/I can only think of so many reasons for that, and all of them are worth breaking a chair over your head.
-			<Action>MovePortrait/Harrien Lifts,8,0</Action>
+			<Action>MovePortrait/Harrien Lifts,7,0</Action>
 			<Action>ChangeExpression/Harrien Lifts,Mean</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="2" name="">Xander Bilt/It doesn't matter. If I get through you, the theater is as good as destroyed. Take this!
-			<Action>MovePortrait/Xander Bilt,12,0</Action>
+			<Action>MovePortrait/Xander Bilt,13,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -1029,7 +1030,7 @@
 			<Action>AddPortrait/Nobeta Lifts,Nobeta/Lifts,right,,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Nobeta Lifts/Oh that does it. I'm absolutely beating you up now.
+		<Branch num="1" name="">Nobeta Lifts/His footsteps lead right up to kicking your butt!
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -1112,6 +1113,7 @@
 		</Branch>
 		<Branch num="1" name="">Clark Lutrinae/Oh don't worry, it's not [b]your[/b] men I want to [b]smash[/b].
 			<Action>RemoveConv/Xander and Clark Lutrinae</Action>
+			<Action>ChangeExpression/Clark Lutrinae,Irritated</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -1367,6 +1369,10 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnTurn/5" convID="Xander Starts Moving Watcher" r="false">
+		<Branch num="0" name="">/
+			<Action>RemoveTag/Xander Bilt,Inactive</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
 	</Dialogue>
 
 </Level>
