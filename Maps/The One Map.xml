@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/26/2025 4:26:57 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/27/2025 7:00:32 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Community Defense Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -188,22 +188,22 @@
 	<Unit tag="Add,LevelTo,2">0,0,Drasan/Winterbloom,14,9,Left,None</Unit>
 	<Unit tag="Add,LevelTo,4">0,0,Mary O Nette/,15,9,Left,None</Unit>
 	<Unit tag="Add,LevelTo,3">0,0,Nobeta/Lifts,15,11,Left,None</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,Parol,ClothingZone,=,1.5">0,1,Slighted Rival Playwright/,1,3,Down,None</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,2,2,Down,Obviously Stolen Crossbow[E]</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Pursue/Add,LevelUp,4/Add,Patrol,Stage,=,1.5//Add,TargetPreference,Emma Strider Promotional Cutout,+:1">0,1,Irate Crossbow Aficionado/,3,7,Left,Limited-Issue Bayonet Only Crossbow[E]</Unit>
+	<Unit tag="Add,LevelTo,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue/Add,Parol,ClothingZone,=,1.5">0,1,Slighted Rival Playwright/,1,3,Down,None</Unit>
+	<Unit tag="Add,LevelTo,4/Add,AggroGroup,2/Add,Inactive/Add,Pursue">0,1,Irate Crossbow Aficionado/,2,2,Down,Obviously Stolen Crossbow[E]</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Pursue/Add,LevelTo,4/Add,Patrol,Stage,=,1.5//Add,TargetPreference,Emma Strider Promotional Cutout,+:1">0,1,Irate Crossbow Aficionado/,3,7,Left,Limited-Issue Bayonet Only Crossbow[E]</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,MoveFirst//Add,TargetPreference,Emma Strider Promotional Cutout,+:1/Add,Patrol,Theater,1.5">0,1,Rubble Rouser Golem/,3,10,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,IgnoreArmy,3/Add,IgnoreArmy,2">0,1,Clark Lutrinae/Sad,4,3,Left,None</Unit>
-	<Unit tag="Add,LevelUp,2/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.2">0,1,Bowhuckin/Chuckerslass,4,6,Right,Bundle of Throwing Crossbows</Unit>
+	<Unit tag="Add,LevelTo,2/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Stage,=:1.2">0,1,Bowhuckin/Chuckerslass,4,6,Right,Bundle of Throwing Crossbows</Unit>
 	<Unit tag="Add,Patrol,Stage,=:5/Add,IgnoreArmy,2/Add,TargetPreference,Emma Strider Promotional Cutout,+:1">0,1,Xander/Bilt,6,12,Left,None</Unit>
-	<Unit tag="Add,LevelUp,3/Add,Pursue/Add,IgnoreArmy,2/Add,Passive/Add,AggroGroup,5/Add,Patrol,Theater,1.5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,7,6,Down,Screw-Firing Crossbow[E]</Unit>
-	<Unit tag="Add,LevelUp,4/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Theater,1.5/Add,TargetPreference,Emma Strider Promotional Cutout,=,1.5">0,1,Rubble Rouser Bruiser/,7,9,Left,None</Unit>
-	<Unit tag="Add,LevelUp,4/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Breaker/,11,2,Right,None</Unit>
+	<Unit tag="Add,LevelTo,3/Add,Pursue/Add,IgnoreArmy,2/Add,Passive/Add,AggroGroup,5/Add,Patrol,Theater,1.5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,7,6,Down,Screw-Firing Crossbow[E]</Unit>
+	<Unit tag="Add,LevelTo,4/Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Theater,1.5/Add,TargetPreference,Emma Strider Promotional Cutout,=,1.5">0,1,Rubble Rouser Bruiser/,7,9,Left,None</Unit>
+	<Unit tag="Add,LevelTo,3/Add,AggroGroup,5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,8,3,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
+	<Unit tag="Add,LevelTo,4/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Breaker/,11,2,Right,None</Unit>
 	<Unit tag="Add,MoveFirst">0,1,Rubble Rouser Golem/,11,8,Down,None</Unit>
-	<Unit tag="Add,LevelUp,3/Add,AggroGroup,5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,12,3,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
 	<Unit tag="Add,AreaPreference,StartingArea,=:1.5/Add,MoveFirst/Add,LevelTo,2">0,1,Rubble Rouser Golem/,12,5,Right,None</Unit>
 	<Unit tag="Add,IgnoreArmy,3/Add,IgnoreArmy,1/Add,LevelTo,6">0,1,Coderick/Gutterson,13,1,Down,None</Unit>
-	<Unit tag="Add,LevelUp,5/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Bruiser/,14,3,Left,None</Unit>
-	<Unit tag="Add,Inactive/Add,LevelUp,8/Add,Patrol,ViewingBooth,=,5/Add,TargetValue,1.3">0,2,Loud Theater Enjoyer/,1,12,Down,None</Unit>
+	<Unit tag="Add,LevelTo,5/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Bruiser/,14,3,Left,None</Unit>
+	<Unit tag="Add,Inactive/Add,LevelTo,8/Add,Patrol,ViewingBooth,=,5/Add,TargetValue,1.3">0,2,Loud Theater Enjoyer/,1,12,Down,None</Unit>
 
 	<Script>Set Lesbian Talkable
 		<Action>Run/AddTalkability,Speaker One,Mary O Nette,Speaker Two,Nobeta Lifts</Action>
@@ -422,14 +422,14 @@
 		<Branch num="4" name="">Mary O Nette/It can be as you say. It can be time to... get behind you.
 			<Action>ChangeExpression/Mary O Nette,Happy</Action>
 			<Action>Run/RemoveTalkability,Speaker One,Mary O Nette,Speaker Two,Nobeta Lifts</Action>
+			<Action>SetStat/Mary O Nette,Morale,+:3</Action>
+			<Action>SetStat/Nobeta Lifts,Morale,+:1</Action>
+			<Action>SetStat/Mary O Nette,Psy,+:1</Action>
 			<Action>SetVal/Lesbian Discussions,+:1</Action>
 			<Action>PortraitParticles/Mary O Nette,Heart</Action>
 			<Action>Wait/.25</Action>
 			<Action>MovePortrait/Mary O Nette,15,0,80</Action>
 			<Action>WaitForPostDialogue</Action>
-			<Action>SetStat/Mary O Nette,Morale,+:3</Action>
-			<Action>SetStat/Nobeta Lifts,Morale,+:1</Action>
-			<Action>SetStat/Mary O Nette,Psy,+:1</Action>
 			<Action>SpawnFloatingText/Morale + 1,Nobeta Lifts,Yellow</Action>
 			<Action>SpawnFloatingText/Psy + 1,Mary O Nette,Yellow</Action>
 			<Action>SpawnFloatingText/Morale + 3,Mary O Nette,Yellow</Action>
@@ -482,11 +482,11 @@
 			<Action>PortraitParticles/Mary O Nette,Hearts</Action>
 			<Action>Run/RemoveTalkability,Speaker One,Mary O Nette,Speaker Two,Nobeta Lifts</Action>
 			<Action>SetVal/Lesbian Discussions,+:1</Action>
-			<Action>WaitForPostDialogue</Action>
 			<Action>SetStat/Mary O Nette,Psy,+:1</Action>
 			<Action>SetStat/Mary O Nette,Morale,+:2</Action>
-			<Action>SetStat/Nobeta Lifts,Morale,+:1</Action>
-			<Action>SpawnFloatingText/Morale + 1,Nobeta Lifts,Yellow</Action>
+			<Action>SetStat/Nobeta Lifts,Morale,+:2</Action>
+			<Action>WaitForPostDialogue</Action>
+			<Action>SpawnFloatingText/Morale + 2,Nobeta Lifts,Yellow</Action>
 			<Action>SpawnFloatingText/Psy + 1,Mary O Nette,Yellow</Action>
 			<Action>SpawnFloatingText/Morale + 2,Mary O Nette,Yellow</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -524,6 +524,9 @@
 		</Branch>
 		<Branch num="6" name="">Mary O Nette/[Nobeta gets in to position and flexes to draw her bow string] Yes. For this time, please keep doing... the things you are doing.
 			<Action>PortraitParticles/Nobeta Lifts,ExclamationsSmall</Action>
+			<Action>SetVal/Mary O Nette,Psy,+:1</Action>
+			<Action>SetStat/Mary O Nette,Morale,+:3</Action>
+			<Action>SetStat/Nobeta Lifts,Morale,+:3</Action>
 			<Action>FlipPortrait/Nobeta Lifts</Action>
 			<Action>Run/RemoveTalkability,Speaker One,Mary O Nette,Speaker Two,Nobeta Lifts</Action>
 			<Action>MovePortrait/Nobeta Lifts,0,0</Action>
@@ -531,9 +534,6 @@
 			<Action>WaitForDialogue/</Action>
 			<Action>PortraitParticles/Mary O Nette,Heart</Action>
 			<Action>WaitForPostDialogue</Action>
-			<Action>SetVal/Mary O Nette,Psy,+:1</Action>
-			<Action>SetStat/Mary O Nette,Morale,+:3</Action>
-			<Action>SetStat/Nobeta Lifts,Morale,+:3</Action>
 			<Action>SpawnFloatingText/Morale + 3,Nobeta Lifts,Yellow</Action>
 			<Action>SpawnFloatingText/Morale + 3,Mary O Nette,Yellow</Action>
 			<Action>SpawnFloatingText/Psy + 1,Mary O Nette,Yellow</Action>
@@ -577,6 +577,7 @@
 		</Branch>
 		<Branch num="6" name="">Clark Lutrinae/...W-well;; okay. ...Thank you.
 			<Action>SetStat/Clark Lutrinae,Army,=:0</Action>
+			<Action>SetStat/Clark Lutrinae,Morale,+:4</Action>
 			<Action>Run/Swap Out Unit,Swap Out Name,Clark Lutrinae,Swap In Name,Clark Lutrinae,Swap In ID,Clark Lutrinae:Happy</Action>
 			<Action>ChangeExpression/Clark Lutrinae,Happy</Action>
 			<Action>RemoveConv/West Approach Recognized</Action>
@@ -587,7 +588,7 @@
 			<Action>ChangeExpression/Harrien Lifts,Happy</Action>
 			<Action>SetRelationshipLabel/Clark,Harrien Lifts,New Daddy??,false</Action>
 			<Action>SetRelationshipLabel/Harrien Lifts,Harrien Lifts,New Friend,false</Action>
-			<Action>SetStat/Clark Lutrinae,Morale,+:4</Action>
+			<Action>WaitForPostDialogue</Action>
 			<Action>SpawnFloatingText/Morale + 4,Clark Lutrinae,Yellow</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -608,6 +609,10 @@
 		</Branch>
 		<Branch num="2" name="">Andras Winterbloom/I could... use a change.
 			<Action>ClearPortraits/</Action>
+			<Action>SetStat/Andras Winterbloom,Morale,+:3</Action>
+			<Action>SetStat/Andras Winterbloom,Psy,+:1</Action>
+			<Action>SetStat/Andras Winterbloom,Dodge,+:3</Action>
+			<Action>SetStat/Andras Winterbloom,Accuracy,+:5</Action>
 			<Action>SetVal/Asandr Name Progress,+:1</Action>
 			<Action>Run/Asandr Progresses Script</Action>
 			<Action>AddPortrait/Andras Winterbloom,Andras Winterbloom,left,,Happy</Action>
@@ -617,10 +622,6 @@
 			<Action>SetVal/Drasan Winterbloom Alive,=:0</Action>
 			<Action>SetVal/Andras Winterbloom Alive,=:1</Action>
 			<Action>WaitForPostDialogue</Action>
-			<Action>SetStat/Andras Winterbloom,Morale,+:3</Action>
-			<Action>SetStat/Andras Winterbloom,Psy,+:1</Action>
-			<Action>SetStat/Andras Winterbloom,Dodge,+:3</Action>
-			<Action>SetStat/Andras Winterbloom,Accuracy,+:5</Action>
 			<Action>SpawnFloatingText/Morale + 3,Andras Winterbloom,Yellow</Action>
 			<Action>SpawnFloatingText/Psy + 1,Andras Winterbloom,Yellow</Action>
 			<Action>SpawnFloatingText/Dodge + 3,Andras Winterbloom,Yellow</Action>
@@ -637,6 +638,10 @@
 		</Branch>
 		<Branch num="1" name="">Sandra Winterbloom/...that feels much better.
 			<Action>AddPortrait/Sandra Winterbloom,Sandra Winterbloom,,Happy</Action>
+			<Action>SetStat/Sandra Winterbloom,Morale,+:3</Action>
+			<Action>SetStat/Sandra Winterbloom,Psy,+:1</Action>
+			<Action>SetStat/Sandra Winterbloom,Dodge,+:3</Action>
+			<Action>SetStat/Sandra Winterbloom,Accuracy,+:5</Action>
 			<Action>PortraitParticles/Sandra Winterbloom,Heart</Action>
 			<Action>SetVal/Asandr Name Progress,+:1</Action>
 			<Action>Run/Swap Out Unit,Swap Out Name,Andras Winterbloom,Swap In Name,Sandra Winterbloom,Swap In ID,Sandra/Winterbloom</Action>
@@ -645,10 +650,6 @@
 			<Action>SetVal/Andras Winterbloom Alive,=:0</Action>
 			<Action>SetVal/Sandra Winterbloom Alive,=:1</Action>
 			<Action>WaitForPostDialogue</Action>
-			<Action>SetStat/Sandra Winterbloom,Morale,+:3</Action>
-			<Action>SetStat/Sandra Winterbloom,Psy,+:1</Action>
-			<Action>SetStat/Sandra Winterbloom,Dodge,+:3</Action>
-			<Action>SetStat/Sandra Winterbloom,Accuracy,+:5</Action>
 			<Action>SpawnFloatingText/Morale + 3,Sandra Winterbloom,Yellow</Action>
 			<Action>SpawnFloatingText/Psy + 1,Sandra Winterbloom,Yellow</Action>
 			<Action>SpawnFloatingText/Dodge + 3,Sandra Winterbloom,Yellow</Action>
@@ -746,14 +747,14 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="5" name="">Mary O Nette/"Asandr Winterbloom", it suits you. Later will we have time to talk about [i]other[/i] possible changes, hmm?
-			<Action>ChangeExpression/Mary O Nette,Winking</Action>
-			<Action>MovePortrait/Mary O Nette,13,0,40</Action>
-			<Action>WaitForPostDialogue</Action>
-			<Action>SetVal/Mary O Nette,Psy,+:1</Action>
 			<Action>SetStat/Asandr Winterbloom,Psy,+:1</Action>
 			<Action>SetStat/Asandr Winterbloom,Morale,+:2</Action>
 			<Action>SetStat/Asandr Winterbloom,Dodge,+:3</Action>
 			<Action>SetStat/Asandr Winterbloom,Accuracy,+:5</Action>
+			<Action>ChangeExpression/Mary O Nette,Winking</Action>
+			<Action>MovePortrait/Mary O Nette,13,0,40</Action>
+			<Action>WaitForPostDialogue</Action>
+			<Action>SetVal/Mary O Nette,Psy,+:1</Action>
 			<Action>SpawnFloatingText/Psy + 1,Asandr Winterbloom,Yellow</Action>
 			<Action>SpawnFloatingText/Psy + 1,Mary O Nette,Yellow</Action>
 			<Action>SpawnFloatingText/Morale + 2,Asandr Winterbloom,Yellow</Action>
