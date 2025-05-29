@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/28/2025 6:36:22 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="City of the Empire" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/28/2025 7:24:04 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Community Defense Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -14,29 +14,28 @@
 	
 	<Tileset>01,Cave</Tileset>
 	<Tileset>02,Castle</Tileset>
-	<Tileset>03,CastleSandstone</Tileset>
-	<Tileset>04,Wood</Tileset>
-	<Tileset>05,Street</Tileset>
-	<Tileset>06,Grass</Tileset>
-	<Tileset>07,Water</Tileset>
-	<Tileset>08,Dirt</Tileset>
+	<Tileset>03,Wood</Tileset>
+	<Tileset>04,Street</Tileset>
+	<Tileset>05,Grass</Tileset>
+	<Tileset>06,Water</Tileset>
+	<Tileset>07,Dirt</Tileset>
 	
-	<Row>01.01,01.01,01.01,01.01,01.01,02.0S,03.01,03.01,03.01,03.01,03.01,03.01,02.01,02.01,02.01</Row>
-	<Row>04.01,04.01,04.01,01.05,01.01,01.01,03.0P,03.01,03.01,03.01,03.01,03.01,02.01,02.01,02.01</Row>
-	<Row>01.3B,01.01,01.01,01.09,01.05,04.01,04.01,04.01,04.01,03.01,03.01,03.01,02.01,02.01,02.01</Row>
-	<Row>01.3B,01.01,01.01,01.01,01.07,04.01,04.01,04.01,04.01,03.01,03.01,02.01,02.01,02.01,02.01</Row>
-	<Row>01.3B,01.01,01.01,01.01,01.3A,04.01,04.01,04.01,04.01,03.01,03.01,03.01,02.01,02.01,02.01</Row>
-	<Row>01.02,01.3C,01.06,01.01,01.09,04.01,04.01,04.01,04.01,03.01,03.01,03.01,02.01,02.01,02.01</Row>
-	<Row>01.01,01.01,01.02,01.3C,01.03,03.0P,03.01,03.01,03.01,03.01,03.01,03.01,04.01,04.01,04.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,04.01,03.01,03.01,03.01,03.01,03.01,03.01,04.01,04.01,04.01</Row>
-	<Row>05.19,05.19,05.07,05.06,06.0K,04.01,03.01,03.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
-	<Row>07.01,07.01,04.01,04.01,07.01,04.01,04.01,04.01,04.01,07.01,07.01,07.01,07.01,07.01,06.09</Row>
-	<Row>07.01,07.01,04.01,04.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01,07.01</Row>
-	<Row>05.1g,07.01,04.01,04.01,07.01,07.01,05.1f,05.1c,05.07,05.1K,05.06,06.0N,06.0N,06.0R,07.01</Row>
-	<Row>05.1k,05.1c,05.1j,05.1k,05.1c,05.1c,05.1j,05.01,05.1L,05.01,05.07,05.1K,05.06,06.06,07.01</Row>
-	<Row>05.01,05.01,05.01,05.01,05.01,05.01,05.01,05.01,05.09,05.05,05.1L,05.01,05.02,06.06,06.2R</Row>
-	<Row>05.0m,05.0m,05.0u,05.01,05.0j,05.0a,05.0a,05.0a,05.0a,05.1L,05.1L,05.01,05.0x,06.07,06.2R</Row>
-	<Row>06.01,06.01,05.0n,05.01,05.0c,08.01,08.01,08.01,08.01,05.07,05.03,05.01,05.01,05.1L,06.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,02.0S,02.0W,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01</Row>
+	<Row>03.01,03.01,03.01,01.05,01.01,01.01,02.0P,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01</Row>
+	<Row>01.3B,01.01,01.01,01.09,01.05,03.01,03.01,03.01,03.01,02.01,02.01,02.01,02.01,02.01,02.01</Row>
+	<Row>01.3B,01.01,01.01,01.01,01.07,03.01,03.01,03.01,03.01,02.01,02.01,02.01,02.01,02.01,02.01</Row>
+	<Row>01.3B,01.01,01.01,01.01,01.3A,03.01,03.01,03.01,03.01,02.01,02.01,02.01,02.01,02.01,02.01</Row>
+	<Row>01.02,01.3C,01.06,01.01,01.09,03.01,03.01,03.01,03.01,02.01,02.01,02.01,02.01,02.01,02.01</Row>
+	<Row>01.01,01.01,01.02,01.3C,01.03,02.0P,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,03.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01</Row>
+	<Row>04.19,04.19,04.07,04.06,05.0K,04.1h,02.01,02.01,04.1i,04.19,04.19,04.19,04.19,04.19,04.1L</Row>
+	<Row>06.01,06.01,03.01,03.01,06.01,04.1d,04.19,04.19,04.1e,06.01,06.01,06.01,06.01,06.01,05.09</Row>
+	<Row>06.01,06.01,03.01,03.01,06.01,06.01,06.01,06.01,06.01,06.01,06.01,06.01,06.01,06.01,06.01</Row>
+	<Row>04.1g,06.01,03.01,03.01,06.01,06.01,04.1f,04.1c,04.07,04.1K,04.06,05.0N,05.0N,05.0R,06.01</Row>
+	<Row>04.1k,04.1c,04.1j,04.1k,04.1c,04.1c,04.1j,04.01,04.1L,04.01,04.07,04.1K,04.06,05.06,06.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.09,04.05,04.1L,04.01,04.02,05.06,05.2R</Row>
+	<Row>04.0m,04.0m,04.0u,04.01,04.0j,04.0a,04.0a,04.0a,04.0a,04.1L,04.1L,04.01,04.0x,05.07,05.2R</Row>
+	<Row>05.01,05.01,04.0n,04.01,04.0c,07.01,07.01,07.01,07.01,04.07,04.03,04.01,04.01,04.1L,05.01</Row>
 	
 	<Light type="Point Light" size="4" intensity="0.7" y="0" x="13" A="1" R="1" G="0.5" B="0" animType="Static" direction="Up"></Light>
 	<Light type="Directional Light" size="2" intensity="1.5" y="2" x="5" A="1" R="1" G="1" B="1" animType="Static" direction="Down"></Light>
@@ -45,7 +44,9 @@
 	<Light type="Point Light" size="2" intensity="1.5" y="5" x="1" A="1" R="1" G="0.7" B="0" animType="Static" direction="Up"></Light>
 	<Light type="Point Light" size="10" intensity="0.3" y="5" x="13" A="1" R="1" G="0.7" B="0" animType="Static" direction="Up"></Light>
 	<Light type="Point Light" size="20" intensity="0.4" y="11" x="0" A="1" R="1" G="1" B="0" animType="Pulse" direction="Up"></Light>
+	<Light type="Point Light" size="20" intensity="0.4" y="12" x="0" A="1" R="1" G="1" B="0" animType="Pulse" direction="Up"></Light>
 	<Light type="Point Light" size="20" intensity="0.4" y="15" x="13" A="1" R="1" G="1" B="0" animType="Pulse" direction="Up"></Light>
+	<Light type="Point Light" size="20" intensity="0.4" y="16" x="13" A="1" R="1" G="1" B="0" animType="Pulse" direction="Up"></Light>
 	
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,5,5,5</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,5,5,5</RowElev>
@@ -55,7 +56,7 @@
 	<RowElev>1,1,1,0,2,3,3,3,3,1,1,1,5,4,4</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,3,3,3</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,3,3,3</RowElev>
-	<RowElev>1,1,2,2,1,1,1,1,1,1,1,1,2,2,2</RowElev>
+	<RowElev>1,1,2,2,1,1,1,1,1,1,1,1,1,1,2</RowElev>
 	<RowElev>0,0,2,2,0,1,1,1,1,0,0,0,0,0,2</RowElev>
 	<RowElev>0,0,2,2,0,0,0,0,0,0,0,0,0,0,0</RowElev>
 	<RowElev>1,0,2,2,0,0,1,1,2,2,2,1,1,1,0</RowElev>
