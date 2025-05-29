@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/28/2025 10:09:50 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/28/2025 10:14:06 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Community Defense Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -1285,7 +1285,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnCharDeath/-ANY-,Loud Theater Enjoyer" convID="Loud Theater Enjoyer KO" r="false">
-		<Branch num="0" name="">Loud Theater Enjoyer/I'm still right about this! [Disappears in to smoke]
+		<Branch num="0" name="">Loud Theater Enjoyer/I'm still right about this! [They disappear in to smoke]
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer/,left,,Headache</Action>
 			<Action>SetVal/Loud Theater Enjoyer,=:0</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -1293,13 +1293,13 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/0,-ANY-,,,Slighted Rival Playwright" convID="Slighted Rival Playwright Attacks" r="false">
-		<Branch num="0" name="">Slighted Rival Playwright/It should be [b]my[/b] play going up with light, not [i]this rubbish[/i]. Listen to my elevator pitch, or die!
+		<Branch num="0" name="">Slighted Rival Playwright/It should be [b]my[/b] play going up with light, not [i]this rubbish[/i]. Listen to my masterpiece's pitch, or die!
 			<Action>AddPortrait/Slighted Rival Playwright,Slighted Rival Playwright/,left,,Yell Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharAttacked/-ANY-,Slighted Rival Playwright" convID="Slighted Rival Playwright Falls" r="false">
+	<Dialogue trigger="OnCharDeath/-ANY-,Slighted Rival Playwright" convID="Slighted Rival Playwright Falls" r="false">
 		<Branch num="0" name="">Slighted Rival Playwright/Arggh! Someday, [i]Quintillion Centipede Marching Orders[/i] will have its day in the sun!!
 			<Action>IfPresentGoTo/Slighted Rival Playwright,BRANCH[Exit]</Action>
 			<Action>AddPortrait/Slighted Rival Playwright,Slighted Rival Playwright,left,,Yell Mad</Action>
