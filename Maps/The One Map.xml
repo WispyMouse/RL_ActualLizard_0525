@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/28/2025 8:47:54 PM" nextbattle="Victory Celebration Scene">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/28/2025 9:01:15 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Community Defense Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -108,8 +108,8 @@
 	<Unit>0,99,EmmaStriderPromotionalCutout,3,9,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3">0,99,Rug9R,3,9,None,None</Unit>
 	<Unit>0,99,StairsWood_W,3,10,None,None</Unit>
-	<Unit>0,99,Chair,3,12,None,None</Unit>
-	<Unit>0,99,Chair,3,13,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,3,12,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,3,13,None,None</Unit>
 	<Unit trigger="Use Once,Lever Flipped">0,99,Switch,4,0,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,ClothingRack,4,3,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,4,4,None,None</Unit>
@@ -119,8 +119,8 @@
 	<Unit>0,99,Rug9C,4,8,None,None</Unit>
 	<Unit>0,99,Rug9R,4,9,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,4,11,None,None</Unit>
-	<Unit>0,99,Chair,4,12,None,None</Unit>
-	<Unit>0,99,Chair,4,13,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,4,12,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,4,13,None,None</Unit>
 	<Unit>0,99,StairsWood_E,4,15,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,ClothingBin,5,0,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,5,4,None,None</Unit>
@@ -129,19 +129,19 @@
 	<Unit>0,99,Rug9B,5,7,None,None</Unit>
 	<Unit>0,99,Rug9B,5,8,None,None</Unit>
 	<Unit>0,99,Rug9BR,5,9,None,None</Unit>
-	<Unit>0,99,Chair,5,11,None,None</Unit>
-	<Unit>0,99,Chair,5,12,None,None</Unit>
-	<Unit>0,99,Chair,5,13,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,5,11,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,5,12,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,5,13,None,None</Unit>
 	<Unit>0,99,HouseWallNW,5,15,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,5,16,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,ClothingRackWithClothes,6,3,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,6,4,None,None</Unit>
 	<Unit>0,99,CandelabraLit,6,5,None,None</Unit>
-	<Unit>0,99,Chair,6,7,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,6,7,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,6,8,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,6,9,None,None</Unit>
-	<Unit>0,99,Chair,6,12,None,None</Unit>
-	<Unit>0,99,Chair,6,13,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,6,12,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,6,13,None,None</Unit>
 	<Unit>0,99,HouseWallVertical,6,15,None,None</Unit>
 	<Unit>0,99,CandelabraLit,6,16,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,CandelabraLit,7,0,None,None</Unit>
@@ -154,11 +154,11 @@
 	<Unit>0,99,DoorWood,8,3,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,8,4,None,None</Unit>
 	<Unit>0,99,HouseWallT_E,8,5,None,None</Unit>
-	<Unit>0,99,Chair,8,7,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,8,7,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,TableBeerAlt,8,8,None,None</Unit>
-	<Unit>0,99,Chair,8,9,None,None</Unit>
-	<Unit>0,99,Chair,8,10,None,None</Unit>
-	<Unit>0,99,Chair,8,11,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,8,9,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,8,10,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,8,11,None,None</Unit>
 	<Unit>0,99,StairsWood_E,8,13,None,None</Unit>
 	<Unit>0,99,RugTurq9T,8,14,None,None</Unit>
 	<Unit>0,99,RugTurq9T,8,15,None,None</Unit>
@@ -259,24 +259,24 @@
 	</Script>
 
 	<Script>SetAreas
-		<Action>SetArea/StartingArea,11,14,6,13</Action>
-		<Action>SetArea/Choke,11,13,4,7</Action>
-		<Action>SetArea/WestApproach,0,12,0,4</Action>
-		<Action>SetArea/ViewingBooth,0,12,2,14</Action>
-		<Action>SetArea/Stage,2,5,5,8</Action>
-		<Action>SetArea/Theater,1,8,5,11</Action>
-		<Action>SetArea/ClothingZone,0,7,0,4</Action>
-		<Action>SetArea/Sniper Nest,8,8,6,7</Action>
+		<Action>SetArea/StartingArea,14,17,10,14</Action>
+		<Action>SetArea/Choke,13,16,3,4</Action>
+		<Action>SetArea/WestApproach,8,17,0,5</Action>
+		<Action>SetArea/ViewingBooth,0,2,15,16</Action>
+		<Action>SetArea/Stage,1,5,5,9</Action>
+		<Action>SetArea/Theater,0,8,0,16</Action>
+		<Action>SetArea/ClothingZone,0,8,0,4</Action>
+		<Action>SetArea/Sniper Nest,9,9,6,10</Action>
 	</Script>
 
 	<Script>Lever Flipped
-		<Action>SpawnUnit/99,RedPrideLight,1,3,Down</Action>
-		<Action>SpawnUnit/99,OrangePrideLight,1,4,Down</Action>
-		<Action>SpawnUnit/99,YellowPrideLight,1,5,Down</Action>
-		<Action>SpawnUnit/99,GreenPrideLight,1,6,Down</Action>
-		<Action>SpawnUnit/99,BluePrideLight,1,7,Down</Action>
-		<Action>SpawnUnit/99,IndigoPrideLight,1,8,Down</Action>
-		<Action>SpawnUnit/99,VioletPrideLight,1,9,Down</Action>
+		<Action>SpawnUnit/99,RedPrideLight,1,4,Down</Action>
+		<Action>SpawnUnit/99,OrangePrideLight,1,5,Down</Action>
+		<Action>SpawnUnit/99,YellowPrideLight,1,6,Down</Action>
+		<Action>SpawnUnit/99,GreenPrideLight,1,7,Down</Action>
+		<Action>SpawnUnit/99,BluePrideLight,1,8,Down</Action>
+		<Action>SpawnUnit/99,IndigoPrideLight,1,9,Down</Action>
+		<Action>SpawnUnit/99,VioletPrideLight,1,10,Down</Action>
 	</Script>
 
 	<Script>Xander Moves
@@ -333,6 +333,7 @@
 		<Branch num="2" name="">/
 			<Action>LoadConv/Round Start Dialogue Dispatch</Action>
 			<Action>EndConvImmediately/</Action>
+			<Action>/</Action>
 		</Branch>
 	</Dialogue>
 
@@ -872,8 +873,9 @@
 			<Action>RemoveTagFromArmy/1,IgnoreArmy,2</Action>
 			<Action>RemoveTagFromGroup/2,Inactive</Action>
 			<Action>RemoveTagFromGroup/2,Passive</Action>
-			<Action>SpawnUnit/1,Irate Crossbow Aficionado,1,8,Right,,Add:LevelUp:3::Add:TargetPreference:Loud Theater Enjoyer:=:9,Sorrow-Less Recoil Crossbow[E]</Action>
+			<Action>SpawnUnit/1,Irate Crossbow Aficionado,2,14,Right,,Add:LevelUp:3::Add:ID:150,Sorrow-Less Recoil Crossbow[E]</Action>
 			<Action>ChangeExpression/Loud Theater Enjoyer,Concerned</Action>
+			<Action>AddTag/ID[150],TargetPreference,Loud Theater Enjoyer,=:1.5</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
