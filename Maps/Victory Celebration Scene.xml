@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Victory Celebration Scene" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Dance of the Isles" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="false" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/27/2025 7:55:12 PM">
+<Level mapname="Victory Celebration Scene" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Dance of the Isles" winAura="0" winMorale="0" lossMorale="0" nextbattle="" defeatScene="" saveable="false" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/28/2025 6:40:12 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Player Characters" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Custom" name="Audience" color="Green" alliedWith="" assignRoster="-1"></Army>
@@ -40,6 +40,7 @@
 	<Unit>0,99,StairsCave_S,0,2,None,None</Unit>
 	<Unit>0,99,StairsWood_S,0,3,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,Barrel,0,5,None,None</Unit>
+	<Unit>0,99,EmmaStriderPromotionalCutout,0,6,None,None</Unit>
 	<Unit>0,99,Chair,0,7,None,None</Unit>
 	<Unit>0,99,CandelabraLit,0,8,None,None</Unit>
 	<Unit>0,99,Rug9TL,1,0,None,None</Unit>
@@ -202,12 +203,17 @@
 		</Branch>
 		<Branch num="13" name="Loud Theater Enjoyer">/[[i]Some[/i] have learned nothing at all from the experience.]
 			<Action>ClearPortraits/</Action>
-			<Action>IfValGoTo/Loud Theater Enjoyer Alive,=,0,BRANCH[End Slate]</Action>
+			<Action>IfValGoTo/Loud Theater Enjoyer Alive,=,0,BRANCH[Cutout]</Action>
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Winking</Action>
 			<Action>MoveCam/,,Loud Theater Enjoyer</Action>
 			<Action>/</Action>
 			<Action>/</Action>
 			<Action>/</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="14" name="Cutout">/[You even managed to save the promotional cutout of Emma Strider! The theater appreciates your efforts.]
+			<Action>ClearPortraits/</Action>
+			<Action>IfValGoTo/Emma Strider Promotional Cutout Alive,=,0,BRANCH[End Slate]</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="End Slate">/[This is the end slate! Now, for the actors of this part of the play to...]
