@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/28/2025 10:14:06 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/29/2025 6:39:53 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Community Defense Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -105,8 +105,8 @@
 	<Unit>0,99,Rug9C,3,6,None,None</Unit>
 	<Unit>0,99,Rug9C,3,7,None,None</Unit>
 	<Unit>0,99,Rug9C,3,8,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3">0,99,Rug9R,3,9,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3">0,99,EmmaStriderPromotionalCutout,3,9,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,1">0,99,Rug9R,3,9,None,None</Unit>
 	<Unit>0,99,StairsWood_W,3,10,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,3,12,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,3,13,None,None</Unit>
@@ -219,7 +219,7 @@
 	<Unit tag="Add,AggroGroup,1/Add,Inactive/Add,Pursue/Add,IgnoreArmy,3/Add,IgnoreArmy,2">0,1,Clark Lutrinae/Sad,5,3,Left,None</Unit>
 	<Unit tag="Add,LevelTo,4/Add,Pursue/Add,IgnoreArmy,2/Add,Patrol,Theater,1.5/Add,TargetPreference,Emma Strider Promotional Cutout,=:1.5">0,1,Rubble Rouser Bruiser/,6,11,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Pursue/Add,IgnoreArmy,2/Add,MoveFirst/Add,Patrol,Theater,1.5">0,1,Rubble Rouser Golem/,7,10,Down,None</Unit>
-	<Unit tag="Add,Patrol,Stage,=:5/Add,IgnoreArmy,2/Add,TargetPreference,Emma Strider Promotional Cutout,+:1/Add,Inactive">0,1,Xander/Bilt,8,14,Left,None</Unit>
+	<Unit tag="Add,Patrol,Stage,=:5/Add,IgnoreArmy,3/Add,TargetPreference,Emma Strider Promotional Cutout,+:1/Add,Inactive">0,1,Xander/Bilt,8,14,Left,None</Unit>
 	<Unit tag="Add,LevelTo,3/Add,AggroGroup,5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,9,3,Down,EFv-55 Replica With Realistic Uncomfortable Recoil Action[E]</Unit>
 	<Unit tag="Add,LevelTo,3/Add,Pursue/Add,IgnoreArmy,2/Add,Passive/Add,AggroGroup,5/Add,Patrol,Sniper Nest,=:1.5/Add,IgnoreArmy,3">0,1,Irate Crossbow Aficionado/,9,7,Down,Screw-Firing Crossbow[E]</Unit>
 	<Unit tag="Add,LevelTo,4/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Breaker/,13,2,Right,None</Unit>
@@ -227,6 +227,7 @@
 	<Unit tag="Add,AreaPreference,StartingArea,=:1.5/Add,MoveFirst/Add,LevelTo,2/Add,AggroGroup,7">0,1,Rubble Rouser Golem/,14,6,Right,None</Unit>
 	<Unit tag="Add,IgnoreArmy,3/Add,IgnoreArmy,1/Add,LevelTo,6">0,1,Coderick/Gutterson,15,1,Down,None</Unit>
 	<Unit tag="Add,LevelTo,5/Add,Pursue/Add,AggroGroup,7">0,1,Rubble Rouser Bruiser/,15,7,Right,None</Unit>
+	<Unit>0,1,Slighted Rival Playwright/,15,11,Down,None</Unit>
 	<Unit tag="Add,LevelTo,5/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Bruiser/,16,3,Left,None</Unit>
 	<Unit tag="Add,Inactive/Add,LevelTo,8/Add,Patrol,ViewingBooth,=,5/Add,TargetValue,1.3">0,2,Loud Theater Enjoyer/,1,15,Down,None</Unit>
 
@@ -1292,16 +1293,15 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharAttacked/0,-ANY-,,,Slighted Rival Playwright" convID="Slighted Rival Playwright Attacks" r="false">
+	<Dialogue trigger="OnUnitAttacked/0,-ANY-,,Slighted Rival Playwright" convID="Slighted Rival Playwright Attacks" r="false">
 		<Branch num="0" name="">Slighted Rival Playwright/It should be [b]my[/b] play going up with light, not [i]this rubbish[/i]. Listen to my masterpiece's pitch, or die!
 			<Action>AddPortrait/Slighted Rival Playwright,Slighted Rival Playwright/,left,,Yell Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharDeath/-ANY-,Slighted Rival Playwright" convID="Slighted Rival Playwright Falls" r="false">
+	<Dialogue trigger="OnCharDeath/1,Slighted Rival Playwright" convID="Slighted Rival Playwright Falls" r="false">
 		<Branch num="0" name="">Slighted Rival Playwright/Arggh! Someday, [i]Quintillion Centipede Marching Orders[/i] will have its day in the sun!!
-			<Action>IfPresentGoTo/Slighted Rival Playwright,BRANCH[Exit]</Action>
 			<Action>AddPortrait/Slighted Rival Playwright,Slighted Rival Playwright,left,,Yell Mad</Action>
 			<Action>RemoveConv/Slighted Rival Playwright Falls</Action>
 			<Reply>Continue/NextBranch</Reply>
