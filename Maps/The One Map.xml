@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/29/2025 11:11:56 PM">
+<Level mapname="The One Map" maptype="Single Player" maxplayers="3" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Victory Celebration Scene" defeatScene="" saveable="true" procgen="false" campaign="Actual Lizard Tactics Jam Map for Pride" lastEdited="5/29/2025 11:20:26 PM">
 
 	<Army num="0" AI="false" aiProfile="Custom" name="Community Defense Team" color="Blue" alliedWith="2" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Rubble Rousers" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -96,6 +96,7 @@
 	<Unit>0,99,Rug9C,2,7,None,None</Unit>
 	<Unit>0,99,Rug9C,2,8,None,None</Unit>
 	<Unit>0,99,Rug9R,2,9,None,None</Unit>
+	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.8">0,99,EmmaStriderPromotionalCutout,2,10,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Poster,2,11,None,None</Unit>
 	<Unit>0,99,TableFood,2,15,None,None</Unit>
 	<Unit>0,99,ClothingBin,3,0,None,None</Unit>
@@ -105,7 +106,6 @@
 	<Unit>0,99,Rug9C,3,6,None,None</Unit>
 	<Unit>0,99,Rug9C,3,7,None,None</Unit>
 	<Unit>0,99,Rug9C,3,8,None,None</Unit>
-	<Unit tag="Add,TreatAsArmy,3">0,99,EmmaStriderPromotionalCutout,3,8,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,1">0,99,Rug9R,3,9,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,3,12,None,None</Unit>
 	<Unit tag="Add,TreatAsArmy,3/Add,TargetValue,.5">0,99,Chair,3,13,None,None</Unit>
@@ -165,7 +165,6 @@
 	<Unit>0,99,RubbleCastle,9,0,None,None</Unit>
 	<Unit>0,99,ScrapeMarks,9,2,None,None</Unit>
 	<Unit>0,99,ScrapeMarks,9,3,None,None</Unit>
-	<Unit>0,99,Poster,9,4,None,None</Unit>
 	<Unit>0,99,HouseWallWindowVertical,9,5,None,None</Unit>
 	<Unit>0,99,StairsWood_E,9,13,None,None</Unit>
 	<Unit>0,99,RugTurq9B,9,14,None,None</Unit>
@@ -185,12 +184,12 @@
 	<Unit>0,99,HouseWallT_S,10,15,None,None</Unit>
 	<Unit>0,99,HouseWallHorizontal,10,16,None,None</Unit>
 	<Unit>0,99,BridgeWood,11,15,None,None</Unit>
+	<Unit>0,99,Poster,11,15,None,None</Unit>
 	<Unit>0,99,ItemSack,11,16,None,Rejuvenation Orb</Unit>
 	<Unit>0,99,LampLit,13,0,None,None</Unit>
 	<Unit>0,99,ScrapeMarks,13,6,None,None</Unit>
 	<Unit>0,99,ScrapeMarks,13,7,None,None</Unit>
 	<Unit>0,99,ScrapeMarks,13,9,None,None</Unit>
-	<Unit>0,99,Bartop_C,13,10,None,None</Unit>
 	<Unit>0,99,LampLit,13,11,None,None</Unit>
 	<Unit>0,99,Reeds,13,15,None,None</Unit>
 	<Unit>0,99,ItemSack,14,0,None,Focus Pills/Cookies/Novice Battle Primer</Unit>
@@ -228,7 +227,7 @@
 	<Unit tag="Add,IgnoreArmy,3/Add,IgnoreArmy,1/Add,LevelTo,5">0,1,Coderick/Gutterson,15,1,Down,None</Unit>
 	<Unit tag="Add,LevelTo,5/Add,Pursue/Add,AggroGroup,7">0,1,Rubble Rouser Bruiser/,15,7,Right,None</Unit>
 	<Unit tag="Add,LevelTo,5/Add,Pursue/Add,AggroGroup,3">0,1,Rubble Rouser Bruiser/,16,3,Left,None</Unit>
-	<Unit tag="Add,Inactive/Add,LevelTo,8/Add,Patrol,ViewingBooth,=,5/Add,TargetValue,1.3">0,2,Loud Theater Enjoyer/,1,15,Down,None</Unit>
+	<Unit tag="Add,Inactive/Add,LevelTo,19/Add,Patrol,ViewingBooth,=,5/Add,TargetValue,1.3">0,2,Loud Theater Enjoyer/,1,15,Down,None</Unit>
 
 	<Script>Set Lesbian Talkable
 		<Action>Run/AddTalkability,Speaker One,Mary O Nette,Speaker Two,Nobeta Lifts</Action>
@@ -319,7 +318,7 @@
 			<Action>SetVal/TurnsUntilBossAppears,-:1</Action>
 			<Action>SetVal/MoreLesbianDiscussions,=:0</Action>
 			<Action>IfValRun/Lesbian Discussions,l,3,_SetVal,ValueName,MoreLesbianDiscussions,Value,1</Action>
-			<Action>Run/IsAllTrue_2,ValueOneName,MoreLesbianDiscussions,ValueOneCompareTo,1,ValueTwoName,TurnsSinceLastLesbianConvo,ValueTwoCompareTo,12</Action>
+			<Action>Run/IsAllTrue_2,ValueOneName,MoreLesbianDiscussions,ValueOneCompareTo,1,ValueTwoName,TurnsSinceLastLesbianConvo,ValueTwoCompareTo,16</Action>
 			<Action>IfValRun/AnswerComposite,g=,1,Set Lesbian Talkable</Action>
 			<Action>Log/'-VAL:TurnsSinceLastLesbianConvo-' '-VAL:Lesbian Discussions-' '-VAL:MoreLesbianDiscussions-' '-VAL:AnswerComposite-'</Action>
 			<Action>/</Action>
@@ -837,7 +836,7 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnTurn/10" convID="Greek Chorus Heckles 1" r="false">
+	<Dialogue trigger="OnTurn/14" convID="Greek Chorus Heckles 1" r="false">
 		<Branch num="0" name="">Loud Theater Enjoyer/Rubble Rousers, entitled critics, bah. You clearly don't see the metaphors for bittersweet sorrow in the choice of Lakshmi's bolts.
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Amused</Action>
 			<Action>MoveCam/Loud Theater Enjoyer</Action>
@@ -850,7 +849,7 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnTurn/14" convID="Greek Chorus Heckles 2" r="false">
+	<Dialogue trigger="OnTurn/22" convID="Greek Chorus Heckles 2" r="false">
 		<Branch num="0" name="">Loud Theater Enjoyer/And what even [b]is[/b] "over centralization" of such a crucial crossbow. Everyone knows the 20DV changed the world. Fools!
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Quizzical</Action>
 			<Action>MoveCam/Loud Theater Enjoyer</Action>
@@ -863,7 +862,7 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnTurn/18" convID="Greek Chorus Heckles 3" r="false">
+	<Dialogue trigger="OnTurn/34" convID="Greek Chorus Heckles 3" r="false">
 		<Branch num="0" name="">Loud Theater Enjoyer/Did you even pick up on [b]any[/b] of the subthemes about recoil representing revolution? And you dare say you know this craft!
 			<Action>AddPortrait/Loud Theater Enjoyer,Loud Theater Enjoyer,left,,Amused</Action>
 			<Action>MoveCam/Loud Theater Enjoyer</Action>
@@ -874,7 +873,7 @@
 			<Action>RemoveTagFromArmy/1,IgnoreArmy,2</Action>
 			<Action>RemoveTagFromGroup/2,Inactive</Action>
 			<Action>RemoveTagFromGroup/2,Passive</Action>
-			<Action>SpawnUnit/1,Irate Crossbow Aficionado:,2,14,Right,,Add:LevelUp:3::Add:ID:150,Sorrowless Recoil Crossbow[E]</Action>
+			<Action>SpawnUnit/1,Irate Crossbow Aficionado:,2,11,Right,,Add:LevelUp:3::Add:ID:150,Sorrowless Recoil Crossbow[E]</Action>
 			<Action>ChangeExpression/Loud Theater Enjoyer,Concerned</Action>
 			<Action>AddTag/ID[150],TargetPreference,Loud Theater Enjoyer,=:1.5</Action>
 			<Reply>Continue./NextBranch</Reply>
